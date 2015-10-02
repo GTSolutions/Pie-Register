@@ -1,0 +1,33 @@
+#adminmenu a.toplevel_page_pie-register {
+  background-color: #fafafa !important;
+  color: #D12128 !important;
+  text-shadow:none !important;
+}
+#adminmenu a.toplevel_page_pie-register img {
+    padding: 5px 4px;
+}
+#adminmenu li.toplevel_page_pie-register li:last-child a {
+	color:#F00 !important;
+	font-size:14px;
+}
+#adminmenu li.toplevel_page_pie-register li a {
+	color:#012D7F !important;
+}
+#adminmenu li.toplevel_page_pie-register li:hover,
+#adminmenu li.toplevel_page_pie-register li a:hover{
+	color:#f00 !important;
+	background: rgba(200, 200, 200,0.5) !important;
+}
+ul#adminmenu li#toplevel_page_pie-register ul.wp-submenu
+{
+  background-color: #FFFFFF !important;
+}
+ul#adminmenu li#toplevel_page_pie-register ul.wp-submenu li.current a
+{
+	color: #FF0000 !important;
+}
+ul#adminmenu li#toplevel_page_pie-register ul.wp-submenu li.current
+{
+	background: rgba(200, 200, 200,0.5) !important;
+}
+

@@ -1,0 +1,3055 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pie Register\n"
+"POT-Creation-Date: 2014-06-06 12:39+0500\n"
+"PO-Revision-Date: 2015-03-04 12:28+0500\n"
+"Last-Translator: Baqar <baqarsoft@gmail.com>\n"
+"Language-Team: Borisa Djuraskovic\n"
+"Language: sr_RS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: \\\\wp-content\\plugins\\pie-register\n"
+
+#: \\wp-content\plugins\pie-register/classes/base.php:125
+msgid "New User Registration"
+msgstr "Registracija novog korisnika"
+
+#: \\wp-content\plugins\pie-register/classes/base.php:190
+#: \\wp-content\plugins\pie-register/widget.php:10
+msgid "Registration Form"
+msgstr "]Formular za registraciju"
+
+#: \\wp-content\plugins\pie-register/classes/base.php:191
+msgid "Please fill the form below to register."
+msgstr "Molimo vas da popunite sledeći formular kako biste se registrovali."
+
+#: \\wp-content\plugins\pie-register/classes/base.php:537
+msgid ""
+"Pie-Register is only compatible with WordPress v3.5 and up. You are "
+"currently using WordPress."
+msgstr ""
+"Pie-Register kompatibilan je samo sa WordPress v3.5 i novijim verzijama. "
+"Trenutno koristite WordPress."
+
+#: \\wp-content\plugins\pie-register/classes/base.php:544
+msgid "Your are using the unregistered version of Pie Register. "
+msgstr "Koristite neregistrovanu Pie Register verziju. "
+
+#: \\wp-content\plugins\pie-register/classes/base.php:544
+msgid "Click here"
+msgstr "Kliknite ovde"
+
+#: \\wp-content\plugins\pie-register/classes/base.php:544
+msgid " to get your key. "
+msgstr "da biste dobili svoj ključ."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:747
+msgid "Invalid E-mail address"
+msgstr "Nevažeća e-mail adresa"
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:752
+msgid "Error in your password fields"
+msgstr "Greška u vašim poljima za lozinku"
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:805
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:980
+msgid " Fail to upload file."
+msgstr "Neuspešno otpremanje datoteke."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:829
+#: \\wp-content\plugins\pie-register/classes/profile_admin.php:408
+msgid " field must contain only numbers."
+msgstr "polje mora sadržavati samo brojeve."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:836
+#: \\wp-content\plugins\pie-register/classes/profile_admin.php:412
+msgid " field may only contain alpha-numeric characters."
+msgstr "polje može sadržavati samo alfanumeričke karaktere."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:843
+#: \\wp-content\plugins\pie-register/classes/profile_admin.php:416
+msgid " field must contain a valid email address."
+msgstr "polje mora sadržavati validnu e-mail adresu."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:850
+#: \\wp-content\plugins\pie-register/classes/profile_admin.php:420
+msgid " must be a valid URL."
+msgstr "mora biti validan URL."
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:935
+msgid " Invalid Username"
+msgstr "polje mora sadržavati validnu e-mail adresu."
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:939
+msgid " Username already exists"
+msgstr "Korisničko ime već postoji"
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:944
+msgid " Invalid E-mail address"
+msgstr "Nevažeće korisničko ime"
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:948
+msgid " E-mail address already exists"
+msgstr "E-mail adresa već postoji"
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:987
+msgid " Invalid File Type."
+msgstr "Nevažeća e-mail adresa"
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:1008
+msgid " Invalid Invitation Code."
+msgstr "Nevažeći pozivni kod."
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:1013
+msgid " Invitation Code has expired."
+msgstr "Pozivni kod je istekao."
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:1029
+msgid "Invalid Security Code "
+msgstr "Nevažeći bezbednosni kod"
+
+#: \\wp-content\plugins\pie-register/dash_widget.php:21
+msgid " Code Tracking"
+msgstr "Pozivni kod je istekao."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:4
+msgid ""
+"Please enter your username or email address. You will receive a link to "
+"create a new password via email."
+msgstr ""
+"Unesite svoje korisničko ime ili e-mail adresu. Dobićete link za kreiranje "
+"nove lozinke putem mail-a."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:22
+msgid "Username or Email was not found, try again!"
+msgstr "Korisničko ime ili e-mail nisu pronađeni, pokušajte ponovo!"
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:44
+msgid ""
+"Someone has asked to reset the password for the following site and username."
+msgstr ""
+"Neko je zatražio resetovanje lozinke i korisničkog imena za sledeći site."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:46
+msgid "Username:"
+msgstr "Korisničko ime:"
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:47
+msgid ""
+"To reset your password visit the following address, otherwise just ignore "
+"this email and nothing will happen."
+msgstr ""
+"Da biste resetovali svoju lozinku, posetite datu adresu. U suprotnom, "
+"zanemarite ovaj e-mail i ništa se neće desiti."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:51
+msgid "Password Reset"
+msgstr "Korisničko ime:"
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:52
+msgid "The e-mail could not be sent."
+msgstr "Nije bilo moguće poslati e-mail."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:52
+msgid "Possible reason: your host may have disabled the mail() function..."
+msgstr "Mogući razlog: možda je vaš host deaktivirao mail() funkciju..."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:56
+msgid "A message will be sent to your email address."
+msgstr "Na vašu e-mail adresu biće poslata poruka."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:93
+msgid "Reset my password"
+msgstr "Resetuj moju lozinku"
+
+#: \\wp-content\plugins\pie-register/get_password.php:4
+msgid "Enter your new password below."
+msgstr "Dole unesite svoju novu lozinku."
+
+#: \\wp-content\plugins\pie-register/get_password.php:12
+msgid "The passwords do not match."
+msgstr "Lozinke se ne podudaraju."
+
+#: \\wp-content\plugins\pie-register/get_password.php:20
+msgid "Your password has been reset."
+msgstr "Vaša lozinka je resetovana."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:36
+msgid "Settings"
+msgstr "Lozinke se ne podudaraju."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:38
+msgid "General Settings"
+msgstr "Opšta podešavanja"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:40
+msgid "Support License Key"
+msgstr "Ključ podrške licence"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:42
+msgid "The license key is used for access to automatic upgrades and support."
+msgstr ""
+"Ključ licence koristi se za pristup automatskom nadograđivanju i podršci."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:44
+msgid "Get Theme Styles"
+msgstr "Obezbedite stilove teme"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:47
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:57
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:68
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:110
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:123
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:146
+msgid "Yes"
+msgstr "Da"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:49
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:59
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:70
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:112
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:125
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:148
+msgid "No"
+msgstr "Ne"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:54
+msgid "Display Hints"
+msgstr "Prikaži hint-ove"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:61
+msgid "Set this to Yes if you would like to see the Tips on Form Editor Page ."
+msgstr ""
+"Podesite ovu opciju na ‘Da’ ako želite da vidite savete na stranici urednika "
+"obrasca."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:65
+msgid "Block WP-Login Pages"
+msgstr "Blokiraj stranice za WP prijavljivanje"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:72
+msgid ""
+"Set this to Yes if you would like to block WP Login. You must select "
+"alternate pages."
+msgstr ""
+"Podesite ovu opciju na ‘Da’ ako hoćete da blokirate prijavljivanje na WP. "
+"Morate odabrati alternativne stranice."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:76
+msgid "Login Page"
+msgstr "Stranica za prijavljivanje"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:82
+msgid "This page must contain the Pie Register Login form short code."
+msgstr ""
+"Ova stranica mora sadržati shortcode formulara za Pie Register "
+"prijavljivanje. "
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:86
+msgid "Registration Page"
+msgstr "Stranica za registraciju"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:92
+msgid "This page must contain the Pie Register Registration form short code."
+msgstr ""
+"Ova stranica mora sadržati shortcode Pie Register obrasca za registraciju."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:96
+msgid "Forgot Password Page"
+msgstr "Stranica za zaboravljenu lozinku"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:102
+msgid ""
+"This page must contain the Pie Register Forgot Password form short code."
+msgstr ""
+"Ova stranica mora sadržati shortcode Pie Register obrasca za zaboravljenu "
+"lozinku."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:107
+msgid "Subscriber Redirect"
+msgstr "Preusmeri pretplatnika"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:114
+msgid ""
+"Set this to Yes if you would like to block Login, Registration & Forgot "
+"Password pages for logged in users."
+msgstr ""
+"Podesite ovu opciju na ‘Da’ ako želite da blokirate stranice za "
+"prijavljivanje, registraciju i zaboravljenu lozinku za prijavljene korisnike."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:120
+msgid "Subscibers Access"
+msgstr "Pristup pretplatnika"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:127
+msgid ""
+"Set this to No if you would like to disable the wp-admin login for "
+"subscribers."
+msgstr ""
+"Podesite ovu opciju na ‘Ne’ ako želite da deaktivirate wp-admin "
+"prijavljivanje za pretplatnike."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:131
+msgid "After Login Page"
+msgstr "Posle stranice za prijavljivanje"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:137
+msgid "Only valid for subscribers."
+msgstr "Važi samo za pretplatnike"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:143
+msgid "Output CSS"
+msgstr "Izlazni CSS"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:150
+msgid ""
+"Set this to No if you would like to disable the plugin from outputting the "
+"form CSS."
+msgstr ""
+"Podesite ovu opciju na ‘Ne’ ako biste želeli da sprečite plugin da prikaže "
+"CSS formular."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:154
+msgid "Currency"
+msgstr "Valuta"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:161
+msgid "Verifications"
+msgstr "Verifikacije"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:164
+msgid "Email Verification"
+msgstr "E-mail verifikacije"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:166
+msgid "Admin Verification"
+msgstr "Verifikacije administratora"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:168
+msgid "Off"
+msgstr "Isključeno"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:171
+msgid ""
+"Requires new registrations to click a link in the notification email to "
+"enable their account."
+msgstr ""
+"Zahteva da novi registrovani kliknu na link u obaveštenju poslatom na e-mail "
+"da bi aktivirali svoje naloge. "
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:172
+msgid "Grace Period (days)"
+msgstr "Grace Period (u danima)"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:175
+msgid ""
+"Unverified Users will be automatically deleted after grace period expires"
+msgstr ""
+"Neverifikovani korisnici biće automatski obrisani posle isteka grace perioda"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:178
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:208
+msgid "Save Settings"
+msgstr "Sačuvaj podešavanja"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:185
+msgid "Installation Status"
+msgstr "Status instaliranja"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:187
+msgid "PHP Version"
+msgstr "PHP verzija"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:190
+msgid "MySQL Version"
+msgstr "MySQL verzija"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:193
+msgid "Wordpress Version"
+msgstr "Wordpress verzija"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:195
+msgid "reCAPTCHA Settings"
+msgstr "reCAPTCHA podešavanja"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:197
+msgid ""
+"Pie Register integrates with reCAPTCHA, a free CAPTCHA services that helps "
+"to digitize Books while Protecting your forms from spam bots. Read more "
+"about reCAPTCHA."
+msgstr ""
+"Pie Register sarađuje sa reCAPTCHA-om, besplatnom CAPTCHA uslugom koja "
+"pomaže da se digitalizuju knjige istovremeno štiteći vaše formulare od spam "
+"robota. Pročitajte više o reCAPTCHA-i."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:200
+msgid "reCAPTCHA Site Key"
+msgstr "reCAPTCHA Site Key"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:202
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:206
+msgid ""
+"Required Only if you decide to Use the reCAPTCHA field. Sign Up for a Free "
+"account to get the key."
+msgstr ""
+"Obavezan samo ako odlučite da koristite reCAPTCHA polje. Napravite besplatan "
+"nalog da biste dobili ključ."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:204
+msgid "reCAPTCHA Secret Key"
+msgstr "reCAPTCHA Secret Key"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:212
+msgid "Custom CSS"
+msgstr "Prilagođeni CSS"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:214
+msgid "Please don't use style tags."
+msgstr "Nemojte koristiti oznake stilova"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:219
+msgid "Tracking Code"
+msgstr "Kod za praćenje"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:226
+msgid "Reset to Default"
+msgstr "Vrati na podrazumevanu vrednost"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:15
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:72
+msgid "Notifications : Registration Form"
+msgstr "Obaveštenja: formular za registraciju"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:20
+msgid "Notifications to Administrator"
+msgstr "Obaveštenja za administratora"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:22
+msgid "Enable email notification to administrators"
+msgstr "Aktiviraj e-mail obaveštenja za administratore"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:23
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:83
+msgid ""
+"Enter a message below to receive a notification email when users submit this "
+"form."
+msgstr ""
+"Unesite poruku dole da biste primili e-mail obaveštenja kad korisnici "
+"podnesu ovaj formular."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:28
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:98
+msgid "Send To Email*"
+msgstr "Pošalji na e-mail*"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:34
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:104
+msgid "From Name"
+msgstr "Sa imena"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:40
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:110
+msgid "From Email"
+msgstr "Sa mail-a"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:46
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:116
+msgid "Reply To"
+msgstr "Odgovori na"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:52
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:122
+msgid "BCC"
+msgstr "BCC"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:58
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:128
+msgid "Subject"
+msgstr "Predmet"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:64
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:134
+msgid "Message"
+msgstr "Poruka"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:106
+#: \\wp-content\plugins\pie-register/menus/PieRegEditForm.php:52
+#: \\wp-content\plugins\pie-register/menus/PieRegInvitationCodes.php:69
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:46
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:91
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:76
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:149
+msgid "Save Changes"
+msgstr "Sačuvaj izmene"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegEditForm.php:47
+msgid "Form Editor : Registration Form"
+msgstr "Uređivač obrasca: formular za registraciju"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegEditForm.php:54
+msgid "Preview"
+msgstr "Pregled"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegEditForm.php:97
+msgid "Drag Fields Here"
+msgstr "Pozicionirajte polja ovde"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:55
+msgid "Import/Export User Entries"
+msgstr "Uvoz/Izvoz korisničkih unosa"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:70
+msgid "Export"
+msgstr "Izvoz"
+
+msgid "Import/Export"
+msgstr "Uvoz/Izvoz "
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:72
+msgid ""
+"Now you can export all users fields with a particular date range in a CSV "
+"file! Simply select your fields and select your Date Range. The Date Range "
+"feature is optional which means that if you do not select a date range then "
+"all entries will be exported. Click on the Download Export Files to complete "
+"the operation."
+msgstr ""
+"Now you can export all users fields with a particular date range in a CSV "
+"file! Simply select your fields and select your Date Range. The Date Range "
+"feature is optional which means that if you do not select a date range then "
+"all entries will be exported. Click on the Download Export Files to complete "
+"the operation."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:78
+msgid "Select Fields"
+msgstr "Odaberi polja"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:171
+msgid "Import"
+msgstr "Uvezi"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:174
+msgid ""
+"Select the  CSV file you would like to import. When you click the import "
+"button below, Pie Register will import the users. Please see the example of "
+"CSV file before the import operartion."
+msgstr ""
+"Odaberite CSV datoteku koju biste želeli da uvezete. Kad kliknete na taster "
+"za uvoz, Pie Register će uvesti korisnike. Pogledajte primer CSV datoteke "
+"pre operacije uvoza."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:182
+msgid "You may want to see"
+msgstr "Možda želite da pogledate"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:182
+msgid "the example of the CSV file"
+msgstr "primer CSV datoteke"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegInvitationCodes.php:39
+msgid ""
+"Protect your privacy. If you want your blog to be exclusive, enable "
+"Invitation Codes and keep track of your users."
+msgstr ""
+"Zaštitite svoju privatnost. Ako želite da vaš blog bude ekskluzivan, "
+"aktivirajte kodove za pozivanje i pratite svoje korisnike."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:13
+msgid "Payment Gateway Settings"
+msgstr "Podešavanja kapije plaćanja"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:30
+msgid "Enter Your Paypal hosted button ID."
+msgstr "Unesite ID svog Paypal tastera"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:39
+msgid "Paypal Mode"
+msgstr "Paypal režim"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:53
+msgid "Please follow the steps below to create and set the required Options."
+msgstr ""
+"Pratite korake koji slede da biste kreirali i podesili obavezne opcije."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:81
+msgid "Notifications to Users"
+msgstr "Obaveštenja za korisnike"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:89
+msgid "Messsage Type"
+msgstr "Vrsta poruke"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:255
+msgid "Add Pie Register Form"
+msgstr "Dodaj Pie Register formular"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:275
+msgid "Please select a form"
+msgstr "Molimo odaberite formular"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:288
+msgid "Select A Form"
+msgstr "Odaberite formular"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:290
+msgid "Select a form below to add it to your post or page."
+msgstr "Odaberite formular da biste ga dodali svom postu ili stranici. "
+
+#: \\wp-content\plugins\pie-register/pie-register.php:306
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:348
+#: \\wp-content\plugins\pie-register/pie-register.php:359
+#: \\wp-content\plugins\pie-register/pie-register.php:375
+msgid "There was a problem with your username or password."
+msgstr "Došlo je do problema u vezi s vašim korisničkim imenom ili lozinkom."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:643
+msgid "Thank you for your registration. Your password has been emailed to you."
+msgstr "Hvala vam što ste se registrovali. Lozinka vam je poslata u mail-u."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:683
+msgid ""
+"Thank you for your registration. You will be notified once the admin "
+"approves your account."
+msgstr ""
+"Hvala vam što ste se registrovali. Bićete obavešteni kad administrator "
+"odobri vaš nalog. "
+
+#: \\wp-content\plugins\pie-register/pie-register.php:710
+msgid ""
+"Thank you for your registration. An activation link with your password has "
+"been sent to you."
+msgstr ""
+"Hvala vam što ste se registrovali. Link za aktivaciju i lozinka su vam "
+"poslati."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:786
+msgid "Unverified Users"
+msgstr "Neverifikovani korisnici"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:792
+msgid "Verify Checked Users"
+msgstr "Verifikuj štiklirane korisnike"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:795
+msgid "Resend Pending Payment E-mail"
+msgstr "Ponovo pošalji e-mail na čekanju za plaćanje"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:798
+msgid "Resend Verification E-mail"
+msgstr "Ponovo pošalji verifikacioni e-mail"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:801
+msgid "Delete"
+msgstr "Obriši"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:811
+msgid "User Name"
+msgstr "Korisničko ime"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:812
+#: \\wp-content\plugins\pie-register/pie-register.php:833
+msgid "E-mail"
+msgstr "E-mail"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:813
+msgid "Registration Type"
+msgstr "Tip registracije"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:814
+msgid "Role"
+msgstr "Uloga"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:876
+msgid "User(s) has been activated"
+msgstr "Korisnik je aktiviran/Korisnici su aktivirani"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:879
+#: \\wp-content\plugins\pie-register/pie-register.php:927
+#: \\wp-content\plugins\pie-register/pie-register.php:978
+msgid "Error"
+msgstr "Greška"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:879
+#: \\wp-content\plugins\pie-register/pie-register.php:927
+#: \\wp-content\plugins\pie-register/pie-register.php:978
+msgid "Please select a user to send emails to"
+msgstr "Odaberite korisnika kome treba poslati mail-ove"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:920
+msgid "Payment Link Emails have been re-sent"
+msgstr "Mail-ovi sa linkom za plaćanje ponovo su poslati"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:922
+#: \\wp-content\plugins\pie-register/pie-register.php:975
+msgid "Invalid User Types"
+msgstr "Nevažeći tipovi korisnika"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:973
+msgid "Verification Emails have been re-sent"
+msgstr "Verifikacioni mail-ovi ponovo su poslati"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:996
+msgid "User(s) has been deleted"
+msgstr "Korisnik je obrisan/Korisnici su obrisani"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1197
+msgid "You did not select a file to import users"
+msgstr "Niste odabrali datoteku za uvoz korisnika"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1203
+msgid "Invalid CSV file."
+msgstr "Nevažeća CSV datoteka"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1231
+msgid "Invalid CSV File. It must contain all the default user fields."
+msgstr ""
+"Nevažeća CSV datoteka. Mora sadržati sva podrazumevana korisnička polja."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1339
+msgid "Your plugin has been registered"
+msgstr "Vaš plugin je registrovan"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1371
+msgid "Settings Saved"
+msgstr "Podešavanja su sačuvana"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1976
+msgid "Please"
+msgstr "Molimo "
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1976
+msgid "login"
+msgstr "prijavite se"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1976
+msgid "to see your profile"
+msgstr "da biste videli svoj profil "
+
+#: \\wp-content\plugins\pie-register/register_form_preview.php:25
+msgid "Form Preview"
+msgstr "Pregled formulara"
+
+#: \\wp-content\plugins\pie-register/widget.php:9
+msgid "Pie Register - Registration Form"
+msgstr "Pie Register - formular za registraciju"
+
+#: \\wp-content\plugins\pie-register/widget.php:52
+msgid "Pie Register - Login Form"
+msgstr "Pie Register - formular za prijavljivanje"
+
+#: \\wp-content\plugins\pie-register/widget.php:53
+msgid "Login Form"
+msgstr "formular za prijavljivanje"
+
+#: \\wp-content\plugins\pie-register/widget.php:96
+msgid "Pie Register - Forgot Password Form"
+msgstr "Pie Register - formular za zaboravljenu lozinku"
+
+#: \\wp-content\plugins\pie-register/widget.php:97
+msgid "Forgot Password Form"
+msgstr "formular za zaboravljenu lozinku"
+
+msgid "Default Fields"
+msgstr "Podrazumevana polja"
+
+msgid "Name"
+msgstr "Ime"
+
+msgid "Website"
+msgstr "Web site"
+
+msgid "Last Name"
+msgstr "Prezime"
+
+msgid "First Name"
+msgstr "Ime"
+
+msgid "Street Address"
+msgstr "Adresa/Ulica"
+
+msgid "AIM"
+msgstr "AIM"
+
+msgid "Address Line 2"
+msgstr "Adresa, 2. red"
+
+msgid "City"
+msgstr "Grad"
+
+msgid "State / Province / Region"
+msgstr "Država / Oblast /Region"
+
+msgid "Zip / Postal Code"
+msgstr "Poštanski broj"
+
+msgid "Country"
+msgstr "Država "
+
+msgid "MM"
+msgstr "MM"
+
+msgid "Submit Button Text"
+msgstr "Tekst tastera ‘Podnesi’"
+
+msgid "Show Reset Button"
+msgstr "Prikazi taster za reset"
+
+msgid "Confirmation Message"
+msgstr "Potvrdna poruka "
+
+msgid "Text"
+msgstr "Tekst"
+
+msgid "Page"
+msgstr "Stranica"
+
+msgid "URL Settings"
+msgstr "URL Podešavanja"
+
+msgid "Need Help?"
+msgstr "Treba vam pomoć?"
+
+msgid "If you have any query, feel free to post your Questions at our"
+msgstr "Ako imate bilo kakvu nedoumicu, slobodno objavite pitanja na našem "
+
+msgid "Hosted Forum"
+msgstr "forumu"
+
+msgid "to get free support"
+msgstr "da biste dobili besplatnu podršku"
+
+msgid "Pie-Register"
+msgstr "Pie-Register"
+
+msgid "Do you like this plugin?"
+msgstr "Da li vam se sviđa ovaj plugin?"
+
+msgid "Rate it 5"
+msgstr "Ocenite ga peticom"
+
+msgid "on WordPress.org"
+msgstr "na WordPress.org"
+
+msgid "Blog about it & link to the"
+msgstr "Pišite na blogu o njemu i stavite link za "
+
+msgid "plugin page"
+msgstr "stranicu plugin-a"
+
+msgid "Check out our"
+msgstr "Pogledajte naše"
+
+msgid "WordPress plugins"
+msgstr "WordPress plugin-ove"
+
+msgid "Developed by"
+msgstr "Koje su razvili"
+
+msgid "Forgot Password"
+msgstr "Zaboravili ste lozinku"
+
+msgid "Frontend Setting"
+msgstr "Frontend podešavanje"
+
+msgid "User Verification"
+msgstr "Verifikacija korisnika"
+
+msgid "Redirect"
+msgstr "Preusmeri"
+
+msgid "Registration Success Message"
+msgstr "Poruka o uspešnoj registraciji"
+
+msgid "DD"
+msgstr "DD"
+
+msgid "YYYY"
+msgstr "YYYY"
+
+msgid "Invalid File Type In Profile Picture"
+msgstr "Nevažeći tip datoteke na profilnoj slici"
+
+msgid "Invalid File Type"
+msgstr "Nevažeći tip datoteke"
+
+msgid "E-mail Address"
+msgstr "E-mail adresa"
+
+msgid "Invalid Invitation Code"
+msgstr "Nevažeći kod za pozivanje"
+
+msgid "Invitation Code has expired"
+msgstr "Kod za pozivanje je istekao"
+
+msgid "Field must contain only numbers"
+msgstr "Polje mora da sadrži samo brojeve"
+
+msgid "Must be a valid URL"
+msgstr "Mora biti važeći URL"
+
+msgid "Field may only contain alpha-numeric characters"
+msgstr "Polje može sadržati samo alfanumeričke karaktere"
+
+msgid "Field must contain a valid email address"
+msgstr "Polje mora sadržati validnu e-mail adresu"
+
+msgid "License Key"
+msgstr "Ključ licence"
+
+msgid "Label Alignment"
+msgstr "Poravnanje oznake"
+
+msgid "The plugin may not work as expected."
+msgstr "Možda plugin neće raditi u skladu s očekivanjima."
+
+msgid "Free License Key Setting"
+msgstr "Podešavanje ključa slobodne licence"
+
+msgid "Subscriber level users will redirect to this page after signing in."
+msgstr ""
+"Korisnici na nivou pretplatnika biće preusmereni na ovu stranicu nakon "
+"prijavljivanja."
+
+msgid "After logout will redirect to this page after Logout page."
+msgstr ""
+"Posle odjavljivanja, biće preusmereni na ovu stranicu nakon stranice za "
+"odjavljivanje."
+
+msgid "After logout will redirect to this url after Logout."
+msgstr ""
+"Posle odjavljivanja, biće preusmereni na ovaj url nakon stranice za "
+"odjavljivanje."
+
+msgid "Profile Page"
+msgstr "Stranica profila"
+
+msgid "After Sign-in Page"
+msgstr "Posle stranice za prijavljivanje"
+
+msgid "After Logout URL"
+msgstr "URL posle odjavljivanja"
+
+msgid "Redirect Logged-in Users"
+msgstr "Preusmeri prijavljene korisnike"
+
+msgid "Show Admin Bar"
+msgstr "Prikaži traku sa menijem administratora"
+
+msgid "Show Admin Bar for Subscriber."
+msgstr "Prikaži traku sa menijem administratora za pretplatnika"
+
+msgid "Modify WP-LOGIN"
+msgstr "Izmeni WP-LOGIN"
+
+msgid "Override WP-Profile"
+msgstr "Poništi WP-Profil"
+
+msgid "Allow Pie-Register to Add header Footer on wp-login.php."
+msgstr "Dozvoli da Pie-Register doda zaglavlje i podnožje na wp-login.php."
+
+msgid "Redirect Your Subscriber to Custom Profile Page (if Exists)"
+msgstr ""
+"Preusmerite svog pretplatnika na prilagođenu profilnu stranicu (ako postoji)"
+
+msgid ""
+"Set this to No if you would like to disable Pie-Register from outputting the "
+"form CSS."
+msgstr ""
+"Podesite ovu opciju na ‘Ne’ ako ne biste želeli da Pie-Register prikaže CSS "
+"formular."
+
+msgid ""
+"Unverified Users will be automatically deleted after grace period expires. 0 "
+"(Zero) For Unlimited"
+msgstr ""
+"Nepotvrđeni korisnici biće automatski obrisani nakon isteka grace perioda. 0 "
+"(Nula) za neograničeno"
+
+msgid "CURL Enable"
+msgstr "Aktiviraj CURL"
+
+msgid "CURL Disable"
+msgstr "Deaktiviraj CURL"
+
+msgid "Custom Logo"
+msgstr "Prilagođeni logo"
+
+msgid "Custom Logo URL"
+msgstr "URL prilagođenog loga"
+
+msgid "Tooltip Text"
+msgstr "Tooltip Tekst"
+
+msgid "Link URL"
+msgstr "URL Link-a "
+
+msgid "Show tooltip on custom logo."
+msgstr "Prikaži tooltip na prilagođenom logu"
+
+msgid "OR"
+msgstr "ILI"
+
+msgid "The license key for support."
+msgstr "Ključ licence za podršku"
+
+msgid "You have been using registered version of pie-register"
+msgstr "Koristite registrovanu verziju pie-register-a"
+
+msgid "Click here to de-activate your license key"
+msgstr "Kliknite ovde da biste deaktivirali svoj ključ licence"
+
+msgid "Remove License Key"
+msgstr "Ukloni ključ licence"
+
+msgid "Active Code"
+msgstr "Aktiviraj kod"
+
+msgid "Unactive Code"
+msgstr "Deaktiviraj kod"
+
+msgid "Click Here To Edit"
+msgstr "Kliknite ovde da biste uredili"
+
+msgid ""
+"Please Click on the license icon to get and auto-filled your free license key"
+msgstr ""
+"Kliknite na ikonicu licence da biste dobili i automatski popunili svoj ključ "
+"slobodne licence"
+
+msgid "Click here to get your free license key"
+msgstr "Kliknite ovde da biste dobili svoj ključ slobodne licence"
+
+msgid "Password reset is not allowed for this user"
+msgstr "Ovom korisniku nije dozvoljeno da menja lozinku"
+
+msgid "Your account is not activated!."
+msgstr "Vaš nalog nije aktiviran!"
+
+msgid "Your account is now active"
+msgstr "Vaš nalog je sada aktivan"
+
+msgid "Please enter Logo URL"
+msgstr "Unesite URL loga"
+
+msgid "Curl"
+msgstr "Curl"
+
+msgid "Enter logo tooltip"
+msgstr "Unesite logo tooltip"
+
+msgid "Enter logo Link"
+msgstr "Unesite link za logo"
+
+msgid "Select Image to Upload"
+msgstr "Odaberite sliku za otpremanje"
+
+msgid "Yahoo IM"
+msgstr "Yahoo IM"
+
+msgid "Jabber / Google Talk"
+msgstr "Jabber / Google Talk"
+
+msgid "About Yourself"
+msgstr "O vama"
+
+msgid "Standard Fields"
+msgstr "Standardna polja"
+
+msgid "Text Field"
+msgstr "Tekstualno polje"
+
+msgid "Text Area"
+msgstr "Oblast teksta"
+
+msgid "Drop Down"
+msgstr "Opadajući"
+
+msgid "Multi Select"
+msgstr "Odaberi više"
+
+msgid "Numbers"
+msgstr "Brojevi"
+
+msgid "Checkbox"
+msgstr "Polje za štikliranje"
+
+msgid "Radio Buttons"
+msgstr "Radio tasteri"
+
+msgid "Hidden"
+msgstr "Skriveni"
+
+msgid "HTML"
+msgstr "HTML"
+
+msgid "Top"
+msgstr "Na vrhu"
+
+msgid "Left"
+msgstr "Levo"
+
+msgid "Rgistering User Role"
+msgstr "Registrovanje korisničke uloge"
+
+msgid "Default User Registration Template"
+msgstr "Podrazumevani šablon za registraciju korisnika "
+
+msgid "E-Mail Verification"
+msgstr "E-mail Verifikacija "
+
+msgid "Thank You Message"
+msgstr "Poruka zahvalnosti"
+
+msgid "Pending Payment"
+msgstr "Plaćanje na čekanju"
+
+msgid "Payment Success"
+msgstr "Plaćanje uspešno"
+
+msgid "Payment Faild"
+msgstr "Plaćanje neuspešno"
+
+msgid "Show in Profile"
+msgstr "Prikaži na profilu"
+
+msgid "Validation Rule"
+msgstr "Pravilo za validaciju"
+
+msgid "Default Value"
+msgstr "Podrazumevana vrednost"
+
+msgid "Rules"
+msgstr "Pravila"
+
+msgid "Length"
+msgstr "Dužina"
+
+msgid "Required"
+msgstr "Obavezna"
+
+msgid "Pending Payment Reminder"
+msgstr "Podsetnik za plaćanje na čekanju"
+
+msgid "E-Mail Verification Reminder"
+msgstr "E-mail podsetnik za verifikaciju"
+
+msgid "Forgot Password Notification"
+msgstr "Obaveštenje za zaboravljenu lozinku"
+
+msgid "Send HTML Format"
+msgstr "Pošalji HTML format"
+
+msgid "Replacement Keys"
+msgstr "Ključevi za zamenu"
+
+msgid "Section Break"
+msgstr "Prekid odeljka"
+
+msgid "Frontend Settings"
+msgstr "Frontend podešavanja"
+
+msgid "Pie Register"
+msgstr "Pie Register"
+
+msgid "Username"
+msgstr "Korisničko ime"
+
+msgid "Password"
+msgstr "Lozinka"
+
+msgid "Select File"
+msgstr "Odaberi datoteku"
+
+msgid "You are already activate"
+msgstr "Već ste aktivirali"
+
+msgid "You are block"
+msgstr "Vi ste blokirani"
+
+msgid "Update Existing Users"
+msgstr "Ažuriraj postojeće korisnike"
+
+msgid "Select All"
+msgstr "Odaberi sve"
+
+msgid "CSS Class Name"
+msgstr "Naziv CSS klase"
+
+msgid "Label"
+msgstr "Oznaka"
+
+msgid "Label2"
+msgstr "Oznaka2"
+
+msgid "Validation Message"
+msgstr "Poruka o validaciji"
+
+msgid "Placeholder"
+msgstr "Zamenski tekst"
+
+msgid "Description"
+msgstr "Opis"
+
+msgid "Show Strength Meter"
+msgstr "Prikaži merač jačine"
+
+msgid "Nickname"
+msgstr "Nadimak"
+
+msgid "Display Value"
+msgstr "Prikaži vrednost"
+
+msgid "Value"
+msgstr "Vrednost"
+
+msgid "Checked"
+msgstr "Štikliran"
+
+msgid "List Type"
+msgstr "Tip liste"
+
+msgid "Remove Settings"
+msgstr "Ukloni podešavanja"
+
+msgid "After Logout"
+msgstr "Posle prijavljivanja"
+
+msgid "Starting Date"
+msgstr "Datum početka"
+
+msgid "Ending Date"
+msgstr "Datum završetka"
+
+msgid "After Logout Page"
+msgstr "Posle stranice odjavljivanja"
+
+msgid "Password Label"
+msgstr "Oznaka lozinke"
+
+msgid "Password Placeholder"
+msgstr "Zamenski tekst lozinke"
+
+msgid "Captcha Label"
+msgstr "Captcha oznaka"
+
+msgid "Username Label"
+msgstr "Oznaka korisničkog imena"
+
+msgid "Username Placeholder"
+msgstr "Zamenski tekst korisničkog imena"
+
+msgid "Remove Settings On Deactivation"
+msgstr "Ukloni podešavanja posle deaktiviranja"
+
+msgid "Display name"
+msgstr "Prikaži ime"
+
+msgid "Biographical Info"
+msgstr "Biografski podaci"
+
+msgid "User Registered"
+msgstr "Korisnik registrovan"
+
+msgid "Select User Registration Date Range"
+msgstr "Odaberite raspon datuma registracije korisnika"
+
+msgid "Start"
+msgstr "Početak"
+
+msgid "End"
+msgstr "Kraj"
+
+msgid ""
+"Date Range is optional, if no date range is selected all entries will be "
+"exported."
+msgstr ""
+"Raspon datuma je opcioni. Ako nije odabran raspon datuma, svi unosi biće "
+"izvezeni."
+
+msgid "Download CSV File"
+msgstr "Download CSV File"
+
+msgid "Confirm Password"
+msgstr "Potvrdi lozinku"
+
+msgid "Page Break"
+msgstr "Prekid stranice"
+
+msgid "Yes Thanks !"
+msgstr "Da, hvala!"
+
+msgid "Advanced Fields"
+msgstr "Napredna polja"
+
+msgid "Time"
+msgstr "Vreme"
+
+msgid "Paypal Information"
+msgstr "Paypal podaci"
+
+msgid "Enable Paypal"
+msgstr "Aktiviraj Paypal"
+
+msgid "Steps"
+msgstr "Koraci"
+
+msgid "Login to your"
+msgstr "Prijavite se na svoj"
+
+msgid "Paypal account"
+msgstr "Paypal nalog"
+
+msgid "Go to Merchant Services and Click on"
+msgstr "Idite na Merchant Services i kliknite na"
+
+msgid "Buy Now"
+msgstr "Kupi sada"
+
+msgid "button"
+msgstr "taster"
+
+msgid "Give Your Button a Name. i.e: Website Access fee and Set Price."
+msgstr ""
+"Dajte naziv svom tasteru, npr. naknada za pristup web site-u i Odredi cenu."
+
+msgid ""
+"Click on Step3: Customize advance features (optional) Tab, select \"Add "
+"advanced variables\" checkbox and add the following snippet"
+msgstr ""
+"Kliknite na Korak 3: Tabulator ‘Prilagodi napredne funkcije’ (opciono), "
+"odaberite polje za štikliranje \"Dodaj napredne varijable\" i dodajte "
+"sledeći isečak"
+
+msgid ""
+"Click Create button, On the next page, you will see the generated button "
+"code snippet like the following"
+msgstr ""
+"Kliknite na taster ‘Kreiraj’. Na sledećoj stranici videćete generisan taster "
+"sa isečkom koda, kao što je ovaj"
+
+msgid ""
+"Copy the snippet into any text editor, extract and put the hosted_button_id "
+"value (XXXXXXXXXX) into the Above Field."
+msgstr ""
+"Kopirajte isečak u bilo koji uređivač teksta, izvucite id_vrednost_hosted "
+"tastera (XXXXXXXXXX) i unesite je u gornje polje."
+
+msgid "Save Changes, You're done!"
+msgstr "Sačuvajte izmene, gotovi ste!"
+
+msgid "Address"
+msgstr "Adresa"
+
+msgid "Captcha"
+msgstr "Captcha"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Hide Address 2"
+msgstr "Sakrij 2. adresu"
+
+msgid "Hide State"
+msgstr "Sakrij državu"
+
+msgid "Default Country"
+msgstr "Podrazumevana država"
+
+msgid "Phone Format"
+msgstr "Format broja telefona"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Upload"
+msgstr "Otpremi"
+
+msgid "Profile Picture"
+msgstr "Profil slika"
+
+msgid "List"
+msgstr "Lista"
+
+msgid "Invitation Code"
+msgstr "Pozivni kod "
+
+msgid "Did You Know ?"
+msgstr "Jeste li znali?"
+
+msgid "You can Drag n Drop fields."
+msgstr "Možete prevući i pozicionirati polja."
+
+msgid "Form Editor"
+msgstr "Uređivač formulara"
+
+msgid "Username or E-mail:"
+msgstr "Korisničko ime ili e-mail"
+
+msgid "warning"
+msgstr "upozorenje"
+
+msgid "Guideline"
+msgstr "Smernice"
+
+msgid "Apply"
+msgstr "Primeni"
+
+msgid "Each Code will be on a Separate Line"
+msgstr "Svaki kod biće u odvojenom redu"
+
+msgid "Note"
+msgstr "Napomena"
+
+msgid "Not Found Invitaion Code"
+msgstr "Pozivni kod nije pronađen"
+
+msgid ""
+"Welcome to the Pie-Register’s Customer Support Page. Many of your "
+"installation and setup related queries are answered in our FAQ’s, "
+"Documentation and Forums sections listed below. It is suggested that before "
+"you submit a support ticket, please review the mentioned sections for a "
+"clear and better understanding of Pie-Register. This will reduce the Support "
+"Volume for a timely execution of the Support Process"
+msgstr ""
+"Dobro došli na Pie-Register stranicu za podršku klijentima. Na mnoga vaša "
+"pitanja u vezi sa instalacijom i postavkama naći ćete odgovore u često "
+"postavljanim pitanjima, u dokumentaciji ili na sledećim forumima. Predlažemo "
+"vam da pre podnošenja pitanja podršci pregledate pomenute oblasti kako biste "
+"bolje razumeli Pie-Register. Time će se smanjiti obim posla podrške za "
+"blagovremeno izvršenje procesa podrške."
+
+msgid ""
+"If you still have any query, feel free to contact us by submitting a support "
+"ticket form on the right"
+msgstr ""
+"Ako i dalje imate pitanja, obratite nam se tako što ćete podneti formular za "
+"podršku sa desne strane"
+
+msgid "Browse Frequently Asked Questions"
+msgstr "Pretraži često postavljana pitanja"
+
+msgid "Pie-Register v2.0 Beta Problems"
+msgstr "Pie-Register v2.0 Beta Problemi"
+
+msgid "Go To Forums"
+msgstr ""
+"Ako i dalje imate pitanja, obratite nam se tako što ćete podneti formular za "
+"podršku sa desne strane"
+
+msgid "Review Documentation"
+msgstr "Pregledaj dokumentaciju"
+
+msgid "Getting Started"
+msgstr "Počni"
+
+msgid "Setting up Pie-Register"
+msgstr "Podesi Pie-Register"
+
+msgid "Installation Problems"
+msgstr "Problemi pri instalaciji"
+
+msgid "Using Pie-Register"
+msgstr "Upotreba Pie-Register-a"
+
+msgid "success"
+msgstr "uspeh"
+
+msgid "Invalid username"
+msgstr "Nevažeće korisničko ime"
+
+msgid "is incorrect"
+msgstr "nije tačno"
+
+msgid "Invalid Security Code"
+msgstr "Nevažeći bezbednosni kod "
+
+msgid "Username already exists"
+msgstr "Korisničko ime već postoji"
+
+msgid "E-mail address already exists"
+msgstr "E-mail adresa već postoji"
+
+msgid "is required"
+msgstr "je obavezno"
+
+msgid "The password you entered for the username"
+msgstr "Lozinka koju ste uneli za korisničko ime"
+
+msgid "Invalid username or password."
+msgstr "Nevažeće korisničko ime ili lozinka"
+
+msgid "News and Announcements"
+msgstr "Novosti i objave"
+
+msgid "Embedding Forms/Shortcodes"
+msgstr "Ugrađeni formulari / Shortcode-ovi"
+
+msgid ""
+"Now, you can easily embed your Login, Registration, Forgot Password forms "
+"and Profile pages anywhere inside a post, page or a custom post type or even "
+"into the widgets through the use of following shortcodes"
+msgstr ""
+"Sad možete jednostavno ugraditi svoje formulare za prijavljivanje, "
+"registraciju, zaboravljenu lozinku i profilne stranice bilo gde u postu, na "
+"stranici ili na tipu prilagođenog posta, pa čak i na widget-ima "
+"upotrebljavajući sledeće shortcode-ove"
+
+msgid "For login form use"
+msgstr "Za formular prijavljivanja koristite"
+
+msgid "For Registration form use"
+msgstr "Za registracioni formular koristite"
+
+msgid "For forgot password form use"
+msgstr "Za formular zaboravljene lozinke koristite"
+
+msgid "For profile page use"
+msgstr "Za profilnu stranicu koristite"
+
+msgid "Comments"
+msgstr "Komentari"
+
+msgid "Submit"
+msgstr "Podnesi"
+
+msgid "State"
+msgstr "Država"
+
+msgid "Log in"
+msgstr "Prijavite se"
+
+msgid "Back to"
+msgstr "Nazad na"
+
+msgid "Logout"
+msgstr "Odjavite se"
+
+msgid "Reset"
+msgstr "Vrati na početne vrednosti"
+
+msgid "* This field is required"
+msgstr "*Ovo polje je obavezno"
+
+msgid "* Please select an option"
+msgstr "* Odaberite opciju"
+
+msgid "* This checkbox is required"
+msgstr "*Ovo polje za štikliranje je obavezno"
+
+msgid "* Both date range fields are required"
+msgstr "*Oba polja za raspon datuma su obavezna"
+
+msgid "* Field must equal test"
+msgstr "* Polje mora biti isto kao test"
+
+msgid "* Invalid "
+msgstr "*Nevažeće"
+
+msgid "Date Range"
+msgstr "Raspon datuma"
+
+msgid "Date Time Range"
+msgstr "Raspon datuma i vremena"
+
+msgid "* Minimum "
+msgstr "*Minimum"
+
+msgid " characters required"
+msgstr "obaveznih karaktera"
+
+msgid "* Maximum "
+msgstr "*Maksimum"
+
+msgid " characters allowed"
+msgstr "dozvoljenih karaktera"
+
+msgid "* You must fill one of the following fields"
+msgstr "*Morate popuniti jedno od sledećih polja"
+
+msgid "* Minimum value is "
+msgstr "*Maksimum"
+
+msgid "* Date prior to "
+msgstr "*Datum pre"
+
+msgid "* Date past "
+msgstr "*Datum posle"
+
+msgid " options allowed"
+msgstr "dozvoljene opcije"
+
+msgid "* Please select "
+msgstr "*Odaberite"
+
+msgid " options"
+msgstr "opcije"
+
+msgid "* Fields do not match"
+msgstr "*Polja se ne poklapaju"
+
+msgid "* Invalid credit card number"
+msgstr "*Nevažeći broj kreditne kartice"
+
+msgid "* Invalid phone number"
+msgstr "*Nevažeći broj telefona"
+
+msgid "* Allowed Format (xxx) xxx-xxxx"
+msgstr "*Dozvoljeni format (xxx) xxx-xxxx"
+
+msgid "* Minimum 10 Digits starting with Country Code"
+msgstr "*Najmanje 10 cifara koje počinju pozivnim brojem za državu"
+
+msgid "* Invalid email address"
+msgstr "*Nevažeća e-mail adresa"
+
+msgid "* Not a valid integer"
+msgstr "*Nevažeći ceo broj"
+
+msgid "* Invalid number"
+msgstr "*Nevažeći broj"
+
+msgid "* Invalid month"
+msgstr "*Nevažeći ceo broj"
+
+msgid "* Invalid day"
+msgstr "*Nevažeći dan"
+
+msgid "* Invalid year"
+msgstr "*Nevažeći mesec"
+
+msgid "* Invalid file extension"
+msgstr "*Nevažeća ekstenzija datoteke"
+
+msgid "* Invalid date, must be in YYYY-MM-DD format"
+msgstr "*Nevažeća godina"
+
+msgid "* Invalid IP address"
+msgstr "*Nevažeća IP adresa"
+
+msgid "* Invalid URL"
+msgstr "*Nevažeći URL"
+
+msgid "* Numbers only"
+msgstr "*Samo brojevi"
+
+msgid "* Letters only"
+msgstr "*Samo slova"
+
+msgid "* No special characters allowed"
+msgstr "*Nisu dozvoljeni posebni karakteri"
+
+msgid "* This user is already taken"
+msgstr "*Ovo korisničko ime već postoji"
+
+msgid "* This username is available"
+msgstr "*Ovo korisničko ime je slobodno"
+
+msgid "* This name is available"
+msgstr "*Ovo ime je raspoloživo"
+
+msgid "* Validating, please wait"
+msgstr "*Provera u toku, molimo sačekajte"
+
+msgid "* This name is already taken"
+msgstr "*Ovo ime već postoji"
+
+msgid "* Please input HELLO"
+msgstr "*Unesite HELLO"
+
+msgid "* Invalid Date"
+msgstr "*Nevažeći datum"
+
+msgid "* Invalid Date or Date Format"
+msgstr "*Nevažeći datum ili format datuma"
+
+msgid "Expected Format: "
+msgstr "Očekivani format:"
+
+msgid "mm/dd/yyyy hh:mm:ss AM|PM or "
+msgstr "mm/dd/yyyy hh:mm:ss AM|PM ili"
+
+msgid "yyyy-mm-dd hh:mm:ss AM|PM"
+msgstr "yyyy-mm-dd hh:mm:ss AM|PM"
+
+msgid "none"
+msgstr "nijedan"
+
+msgid "AM"
+msgstr "AM"
+
+msgid "PM"
+msgstr "PM"
+
+msgid "Strength Indicator"
+msgstr "Indikator jačine"
+
+msgid "Very weak"
+msgstr "Veoma slaba"
+
+msgid "You can sort fields vertically"
+msgstr "Možete sortitati polja vertikalno"
+
+msgid "Weak"
+msgstr "Slabo"
+
+msgid "Medium"
+msgstr "Srednje"
+
+msgid "Strong"
+msgstr "Jako"
+
+msgid "Mismatch"
+msgstr "Ne podudara se"
+
+msgid "Short Code"
+msgstr "Short Code"
+
+msgid "Reset Button Text"
+msgstr "Tekst tastera za reset"
+
+msgid "Create a Support Ticket"
+msgstr "Kreirajte tiket za podršku"
+
+msgid "Enable Invitation Codes"
+msgstr "Aktiviraj pozivne kodove"
+
+msgid ""
+"Set this to Yes if you want users to register only by your defined invitaion "
+"codes. You will have to add invitation code field in the form editor"
+msgstr ""
+"Podesite ovu opciju na ‘Da’ ako želite da se korisnici registruju isključivo "
+"po vašim definisanim pozivnim kodovima. Moraćete da dodate polje za pozivni "
+"kod u uređivač formulara"
+
+msgid "Insert Code"
+msgstr "Unesi kod"
+
+msgid "Number of time a particular code can be used for registration"
+msgstr "Koliko se puta određeni kod može koristiti za registraciju"
+
+msgid "Add Code"
+msgstr "Dodaj kod"
+
+msgid "Per-Page Item"
+msgstr "Stavka po stranici"
+
+msgid "Bulk Actions"
+msgstr "Grupne aktivnosti"
+
+msgid "Active"
+msgstr "Aktiviraj"
+
+msgid "Unactive"
+msgstr "Deaktiviraj"
+
+msgid "Code Name"
+msgstr "Naziv koda"
+
+msgid "Usage"
+msgstr "Upotreba"
+
+msgid "Used"
+msgstr "Upotrebljen"
+
+msgid "Action"
+msgstr "Aktivnost"
+
+msgid "Register"
+msgstr "Registrujte se"
+
+msgid "Lost your password?"
+msgstr "Zaboravili ste lozinku? "
+
+msgid "Payment Gateway"
+msgstr "Način plaćanja"
+
+msgid "Admin Notifications"
+msgstr "Administratorska obaveštenja"
+
+msgid "User Notifications"
+msgstr "Korisnička obaveštenja"
+
+msgid "Invitation Codes"
+msgstr "Pozivni kodovi"
+
+msgid "Help"
+msgstr "Pomoć"
+
+msgid "Previous"
+msgstr "Prethodni"
+
+msgid "Selected Logo"
+msgstr "Odabrani logo"
+
+msgid "Show Custom Logo"
+msgstr "Prikaži prilagođeni logo"
+
+msgid "Paypal (one time subscription)"
+msgstr "Paypal (trajna pretplata)"
+
+msgid "Next"
+msgstr "Sledeći"
+
+msgid "Log In"
+msgstr "Prijavite se"
+
+msgid "Remember Me"
+msgstr "Zapamti me"
+
+msgid "Confirm E-mail"
+msgstr "GREŠKA"
+
+msgid "ERROR"
+msgstr "GREŠKA"
+
+msgid "e-mail: "
+msgstr "e-mail: "
+
+msgid ""
+"Your account requires activation by an administrator before you will be able "
+"to login."
+msgstr ""
+"Vaš nalog zahteva aktiviranje od strane administratora pre nego što vam "
+"prijavljivanje bude omogućeno."
+
+msgid "Verification URL: "
+msgstr "Verifikacioni URL:"
+
+msgid "Please use the link above to verify and activate your account"
+msgstr "Koristite gornji link da biste verifikovali i aktivirali svoj nalog"
+
+msgid "Please click on the above link to verify your email"
+msgstr ""
+"Vaš nalog zahteva aktiviranje od strane administratora pre nego što vam "
+"prijavljivanje bude omogućeno."
+
+msgid "Alternate Login Page"
+msgstr "Alternativna stranica za prijavljivanje"
+
+msgid "Redirect Users"
+msgstr "Preusmeri korisnike"
+
+#: ******* Add These Variables Since 2.0.13 ********
+msgid "HH"
+msgstr "HH"
+
+msgid "* Invalid Username"
+msgstr "*Nevažeće korisničko ime"
+
+msgid "* Invalid File"
+msgstr "*Nevažeća datoteka"
+
+msgid "* Maximum value is "
+msgstr "*Maksimalna vrednost je"
+
+msgid "No Icon"
+msgstr "Nema ikonice"
+
+msgid "Calendar Icon"
+msgstr "Ikonica kalendara"
+
+msgid "Custom Icon"
+msgstr "Prilagođena ikonica"
+
+msgid "Number"
+msgstr "Broj"
+
+msgid "Alphanumeric"
+msgstr "Alfanumerički"
+
+msgid "None"
+msgstr "Nijedan"
+
+msgid "USA Format (xxx) (xxx-xxxx)"
+msgstr "USA Format (xxx) (xxx-xxxx)"
+
+msgid "Phone International xxx-xxx-xxxx"
+msgstr "Međunarodni broj telefona xxx-xxx-xxxx"
+
+msgid "Rows"
+msgstr "Redovi"
+
+msgid "Columns"
+msgstr "Kolone"
+
+msgid "Min"
+msgstr "Min"
+
+msgid "Max"
+msgstr "Max"
+
+msgid "12 hour"
+msgstr "12 sati"
+
+msgid "24 hour"
+msgstr "24 sata"
+
+msgid "Date Field"
+msgstr "Polje za datum"
+
+msgid "Date Picker"
+msgstr "Birač datuma"
+
+msgid "Date Drop Down"
+msgstr "Opadajući datum"
+
+msgid "Re-Captcha"
+msgstr "Re-Captcha"
+
+msgid "Math Captcha"
+msgstr "Upari Captcha"
+
+msgid "Select Page"
+msgstr "Odaberi stranicu"
+
+msgid "Redirect URL"
+msgstr "Preusmeri URL"
+
+msgid "Appear Captcha in login form which you want"
+msgstr "Neka se Captcha pojavljuje u formularu za prijavljivanje koji želite"
+
+msgid "Appear Captcha in Forgot Password form which you want"
+msgstr ""
+"Neka se Captcha pojavljuje u formularu za zaboravljenu lozinku koji želite"
+
+msgid ""
+"Warning: Turning off any script here may stop Pie-Register to work properly, "
+"please do it carefully!"
+msgstr ""
+"Upozorenje: Isključivanje bilo koje skripte ovde može sprečiti Pie-Register "
+"da radi kako treba. Budite oprezni!"
+
+msgid "Password Strength Meter Settings"
+msgstr "Podešavanja merača jačine lozinke"
+
+msgid "Re-Captcha Skin"
+msgstr "Re-Captcha boja"
+
+msgid "red"
+msgstr "crvena"
+
+msgid "white"
+msgstr "bela"
+
+msgid "clean"
+msgstr "providna"
+
+msgid "blackglass"
+msgstr "crno staklo"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Sandbox"
+msgstr "Kutija s peskom"
+
+msgid "Select"
+msgstr "Odaberi"
+
+msgid "Custom Fields"
+msgstr "Prilagođena polja"
+
+msgid "Other"
+msgstr "Ostalo"
+
+msgid "User E-mail"
+msgstr "E-mail korisnika"
+
+msgid "User First Name"
+msgstr "Ime korisnika"
+
+msgid "User Last Name"
+msgstr "Prezime  korisnika"
+
+msgid "User URL"
+msgstr "URL korisnika"
+
+msgid "User AIM"
+msgstr "AIM korisnika"
+
+msgid "User YIM"
+msgstr "YIM korisnika"
+
+msgid "User Jabber"
+msgstr "Jabber korisnika"
+
+msgid "User Biographical Info"
+msgstr "Biografski podaci korisnika"
+
+msgid "User Registration Date"
+msgstr "Datum registracije korisnika"
+
+msgid "Blog Name"
+msgstr "naziv bloga"
+
+msgid "Site URL"
+msgstr "URL site-a"
+
+msgid "Blog Name With Site URL"
+msgstr "Naziv bloga sa URL-om site-a"
+
+msgid "Reset Password URL"
+msgstr "URL za promenu lozinke"
+
+msgid "User Activation URL"
+msgstr "URL aktivacije korisnika"
+
+msgid "Reset Email URL"
+msgstr "URL za resetovanje mail-a"
+
+msgid "User IP"
+msgstr "IP korisnika"
+
+msgid "User New E-mail"
+msgstr "Novi e-mail korisnika"
+
+msgid "Pending Payment URL"
+msgstr "URL za plaćanje na čekanju"
+
+msgid "Email Edit Verification"
+msgstr "URL za plaćanje na čekanju"
+
+msgid "Select Per-Page Invitaion code"
+msgstr "Odaberite pozivni kod po stranici"
+
+msgid "Edit Form"
+msgstr "Uredi formular"
+
+msgid "Edit Button"
+msgstr "Uredi taster"
+
+msgid "Edit Field"
+msgstr "Uredi polje"
+
+msgid "International"
+msgstr "Međunarodni"
+
+msgid "Default State"
+msgstr "Podrazumevana država"
+
+msgid "Click Here to Select/De-select All"
+msgstr "Kliknite ovde da biste odabrali sve / Poništili odabir svega"
+
+#: Countries Name
+msgid "Afghanistan"
+msgstr "Avganistan"
+
+msgid "Albania"
+msgstr "Albanija"
+
+msgid "Algeria"
+msgstr "Alžir"
+
+msgid "American Samoa"
+msgstr "Američka Samoa"
+
+msgid "Andorra"
+msgstr "Andora"
+
+msgid "Angola"
+msgstr "Angola"
+
+msgid "Antigua and Barbuda"
+msgstr "Antigva i Barbuda"
+
+msgid "Argentina"
+msgstr "Argentina"
+
+msgid "Armenia"
+msgstr "Jermenija"
+
+msgid "Australia"
+msgstr "Australija"
+
+msgid "Austria"
+msgstr "Austrija"
+
+msgid "Azerbaijan"
+msgstr "Azerbejdžan"
+
+msgid "Bahamas"
+msgstr "Bahami"
+
+msgid "Bahrain"
+msgstr "Bahrein"
+
+msgid "Bangladesh"
+msgstr "Bangladeš"
+
+msgid "Barbados"
+msgstr "Barbados"
+
+msgid "Belarus"
+msgstr "Belorusija"
+
+msgid "Belgium"
+msgstr "Belgija"
+
+msgid "Belize"
+msgstr "Belize"
+
+msgid "Benin"
+msgstr "Benin"
+
+msgid "Bermuda"
+msgstr "Bermuda"
+
+msgid "Bhutan"
+msgstr "Butan"
+
+msgid "Bolivia"
+msgstr "Bolivija"
+
+msgid "Bosnia and Herzegovina"
+msgstr "Bosna i Hercegovina"
+
+msgid "Botswana"
+msgstr "Bocvana"
+
+msgid "Brazil"
+msgstr "Brazil"
+
+msgid "Brunei"
+msgstr "Brunej"
+
+msgid "Bulgaria"
+msgstr "Bugarska"
+
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+msgid "Burundi"
+msgstr "Burundi"
+
+msgid "Cambodia"
+msgstr "Kambodža"
+
+msgid "Cameroon"
+msgstr "Kamerun"
+
+msgid "Canada"
+msgstr "Kanada"
+
+msgid "Cape Verde"
+msgstr "Zelenortska Ostrva"
+
+msgid "Central African Republic"
+msgstr "Centralnoafrička Republika"
+
+msgid "Chad"
+msgstr "Čad"
+
+msgid "Chile"
+msgstr "Čile"
+
+msgid "China"
+msgstr "Kina"
+
+msgid "Colombia"
+msgstr "Kolumbija"
+
+msgid "Comoros"
+msgstr "Komori"
+
+msgid "Congo"
+msgstr "Kongo"
+
+msgid "Costa Rica"
+msgstr "Kostarika"
+
+msgid "Côte d'Ivoire"
+msgstr "Obala Slonovače"
+
+msgid "Croatia"
+msgstr "Hrvatska"
+
+msgid "Cuba"
+msgstr "Kuba"
+
+msgid "Cyprus"
+msgstr "Kipar"
+
+msgid "Czech Republic"
+msgstr "Češka Republika"
+
+msgid "Denmark"
+msgstr "Danska"
+
+msgid "Djibouti"
+msgstr "Džibuti"
+
+msgid "Dominica"
+msgstr "Dominika"
+
+msgid "Dominican Republic"
+msgstr "Dominikanska Republika"
+
+msgid "East Timor"
+msgstr "Istočni Timor"
+
+msgid "Ecuador"
+msgstr "Ekvador"
+
+msgid "Egypt"
+msgstr "Egipat"
+
+msgid "El Salvador"
+msgstr "El Salvador"
+
+msgid "Equatorial Guinea"
+msgstr "Ekvatorijalna Gvineja"
+
+msgid "Eritrea"
+msgstr "Eritreja"
+
+msgid "Estonia"
+msgstr "Estonija"
+
+msgid "Ethiopia"
+msgstr "Etiopija"
+
+msgid "Fiji"
+msgstr "Fidži"
+
+msgid "Finland"
+msgstr "Finska"
+
+msgid "France"
+msgstr "Francuska"
+
+msgid "Gabon"
+msgstr "Gabon"
+
+msgid "Gambia"
+msgstr "Gambija"
+
+msgid "Georgia"
+msgstr "Džordžija"
+
+msgid "Germany"
+msgstr "Nemačka"
+
+msgid "Ghana"
+msgstr "Gana"
+
+msgid "Greece"
+msgstr "Grčka"
+
+msgid "Greenland"
+msgstr "Grenland"
+
+msgid "Grenada"
+msgstr "Grenada"
+
+msgid "Guam"
+msgstr "Guam"
+
+msgid "Guatemala"
+msgstr "Gvatemala"
+
+msgid "Guinea"
+msgstr "Gvineja"
+
+msgid "Guinea-Bissau"
+msgstr "Gvineja Bisao "
+
+msgid "Guyana"
+msgstr "Gvajana"
+
+msgid "Haiti"
+msgstr "Haiti"
+
+msgid "Honduras"
+msgstr "Honduras"
+
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+msgid "Hungary"
+msgstr "Mađarska"
+
+msgid "Iceland"
+msgstr "Island"
+
+msgid "India"
+msgstr "Indija"
+
+msgid "Indonesia"
+msgstr "Indonezija"
+
+msgid "Iran"
+msgstr "Iran"
+
+msgid "Iraq"
+msgstr "Irak"
+
+msgid "Ireland"
+msgstr "Irska"
+
+msgid "Israel"
+msgstr "Izrael"
+
+msgid "Italy"
+msgstr "Italija"
+
+msgid "Jamaica"
+msgstr "Jamajka"
+
+msgid "Japan"
+msgstr "Japan"
+
+msgid "Jordan"
+msgstr "Jordan"
+
+msgid "Kazakhstan"
+msgstr "Kazahstan"
+
+msgid "Kenya"
+msgstr "Kenija"
+
+msgid "Kiribati"
+msgstr "Kiribati"
+
+msgid "North Korea"
+msgstr "Severna Koreja"
+
+msgid "South Korea"
+msgstr "Južna Koreja"
+
+msgid "Kuwait"
+msgstr "Kuvajt"
+
+msgid "Kyrgyzstan"
+msgstr "Kirgistan"
+
+msgid "Laos"
+msgstr "Laos"
+
+msgid "Latvia"
+msgstr "Letonija"
+
+msgid "Lebanon"
+msgstr "Liban"
+
+msgid "Lesotho"
+msgstr "Lesoto"
+
+msgid "Liberia"
+msgstr "Liberija"
+
+msgid "Libya"
+msgstr "Libija"
+
+msgid "Liechtenstein"
+msgstr "Lihtenštajn"
+
+msgid "Lithuania"
+msgstr "Litvanija"
+
+msgid "Luxembourg"
+msgstr "Luksemburg"
+
+msgid "Macedonia"
+msgstr "Makedonija"
+
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+msgid "Malawi"
+msgstr "Malavi"
+
+msgid "Malaysia"
+msgstr "Malezija"
+
+msgid "Maldives"
+msgstr "Maldivi"
+
+msgid "Mali"
+msgstr "Mali"
+
+msgid "Malta"
+msgstr "Malta"
+
+msgid "Marshall Islands"
+msgstr "Maršalska ostrva"
+
+msgid "Mauritania"
+msgstr "Mauritanija "
+
+msgid "Mauritius"
+msgstr "Mauricijus"
+
+msgid "Mexico"
+msgstr "Meksiko"
+
+msgid "Micronesia"
+msgstr "Mikronezija"
+
+msgid "Moldova"
+msgstr "Moldavija"
+
+msgid "Monaco"
+msgstr "Monako"
+
+msgid "Mongolia"
+msgstr "Mongolija"
+
+msgid "Montenegro"
+msgstr "Crna Gora"
+
+msgid "Morocco"
+msgstr "Maroko"
+
+msgid "Mozambique"
+msgstr "Mozambik"
+
+msgid "Myanmar"
+msgstr "Mijanmar"
+
+msgid "Namibia"
+msgstr "Namibija"
+
+msgid "Nauru"
+msgstr "Nauru"
+
+msgid "Nepal"
+msgstr "Nepal"
+
+msgid "Netherlands"
+msgstr "Holandija"
+
+msgid "New Zealand"
+msgstr "Novi Zeland"
+
+msgid "Nicaragua"
+msgstr "Nikaragva"
+
+msgid "Niger"
+msgstr "Niger"
+
+msgid "Nigeria"
+msgstr "Nigerija"
+
+msgid "Norway"
+msgstr "Norveška"
+
+msgid "Northern Mariana Islands"
+msgstr "Severna Marijanska ostrva"
+
+msgid "Oman"
+msgstr "Oman"
+
+msgid "Pakistan"
+msgstr "Pakistan"
+
+msgid "Palau"
+msgstr "Palau "
+
+msgid "Palestine"
+msgstr "Palestina"
+
+msgid "Panama"
+msgstr "Panama"
+
+msgid "Papua New Guinea"
+msgstr "Papua Nova Gvineja"
+
+msgid "Paraguay"
+msgstr "Paragvaj"
+
+msgid "Peru"
+msgstr "Peru"
+
+msgid "Philippines"
+msgstr "Filipini"
+
+msgid "Poland"
+msgstr "Poljska"
+
+msgid "Portugal"
+msgstr "Portugal"
+
+msgid "Puerto Rico"
+msgstr "Porto Riko"
+
+msgid "Qatar"
+msgstr "Katar"
+
+msgid "Romania"
+msgstr "Rumunija"
+
+msgid "Russia"
+msgstr "Rusija"
+
+msgid "Rwanda"
+msgstr "Ruanda"
+
+msgid "Saint Kitts and Nevis"
+msgstr "Sveti Kits i Nevis  "
+
+msgid "Saint Lucia"
+msgstr "Sveta Lucija"
+
+msgid "Saint Vincent and the Grenadines"
+msgstr "Sveti Vinsent i Grenadini"
+
+msgid "Samoa"
+msgstr "Samoa  "
+
+msgid "San Marino"
+msgstr "San Marino"
+
+msgid "Sao Tome and Principe"
+msgstr "Saudijska Arabija"
+
+msgid "Saudi Arabia"
+msgstr "Saudijska Arabija"
+
+msgid "Senegal"
+msgstr "Senegal"
+
+msgid "Serbia and Montenegro"
+msgstr "Srbija i Crna gora"
+
+msgid "Seychelles"
+msgstr "Sejšeli "
+
+msgid "Sierra Leone"
+msgstr "Sijera Leone "
+
+msgid "Singapore"
+msgstr "Singapur"
+
+msgid "Slovakia"
+msgstr "Slovačka"
+
+msgid "Slovenia"
+msgstr "Slovenija  "
+
+msgid "Solomon Islands"
+msgstr "Solomonska Ostrva "
+
+msgid "Somalia"
+msgstr "Somalija "
+
+msgid "South Africa"
+msgstr "Južna Afrika"
+
+msgid "Spain"
+msgstr "Španija"
+
+msgid "Sri Lanka"
+msgstr "Šri Lanka "
+
+msgid "Sudan"
+msgstr "Sudan "
+
+msgid "Sudan, South"
+msgstr "Južni Sudan"
+
+msgid "Suriname"
+msgstr "Surinam "
+
+msgid "Swaziland"
+msgstr "Švajcarska "
+
+msgid "Sweden"
+msgstr "Švedska "
+
+msgid "Switzerland"
+msgstr "Švajcarska "
+
+msgid "Syria"
+msgstr "Sirija"
+
+msgid "Taiwan"
+msgstr "Tajvan  "
+
+msgid "Tajikistan"
+msgstr "Tadžikistan"
+
+msgid "Tanzania"
+msgstr "Tanzanija"
+
+msgid "Thailand"
+msgstr "Tajland"
+
+msgid "Togo"
+msgstr "Togo "
+
+msgid "Tonga"
+msgstr "Tonga "
+
+msgid "Trinidad and Tobago"
+msgstr "Trinidad i Tobago"
+
+msgid "Tunisia"
+msgstr "Tunis   "
+
+msgid "Turkey"
+msgstr "Turska "
+
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+msgid "Uganda"
+msgstr "Uganda "
+
+msgid "Ukraine"
+msgstr "Ukrajina"
+
+msgid "United Arab Emirates"
+msgstr "Ujedinjeni Arapski Emirati  "
+
+msgid "United Kingdom"
+msgstr "Ujedinjeno Kraljevstvo"
+
+msgid "United States"
+msgstr "Sjedinjene Američke Države"
+
+msgid "Uruguay"
+msgstr "Urugvaj  "
+
+msgid "Uzbekistan"
+msgstr "Uzbekistan "
+
+msgid "Vanuatu"
+msgstr "Vanuatu "
+
+msgid "Vatican City"
+msgstr "Vatikan"
+
+msgid "Venezuela"
+msgstr "Venecuela"
+
+msgid "Vietnam"
+msgstr "Vijetnam  "
+
+msgid "Virgin Islands, British"
+msgstr "Britanska Devičanska Ostrva"
+
+msgid "Virgin Islands, U.S."
+msgstr "Devičanska Ostrva, SAD "
+
+msgid "Yemen"
+msgstr "Jemen"
+
+msgid "Zambia"
+msgstr "Zambija "
+
+msgid "Zimbabwe"
+msgstr "Zimbabve"
+
+#: USA State
+msgid "Alabama"
+msgstr "Alabama"
+
+msgid "Alaska"
+msgstr "Aljaska"
+
+msgid "Arizona"
+msgstr "Arizona "
+
+msgid "Arkansas"
+msgstr " Arkansas "
+
+msgid "California"
+msgstr "Kalifornija"
+
+msgid "Colorado"
+msgstr "Kolorado"
+
+msgid "Connecticut"
+msgstr "Konektikat."
+
+msgid "Delaware"
+msgstr "Delaver"
+
+msgid "District of Columbia"
+msgstr "Kolumbijski distrikt"
+
+msgid "Florida"
+msgstr "Florida"
+
+msgid "Hawaii"
+msgstr "Havaji"
+
+msgid "Idaho"
+msgstr "Ajdaho"
+
+msgid "Illinois"
+msgstr "Ilinois"
+
+msgid "Indiana"
+msgstr "Indijana"
+
+msgid "Iowa"
+msgstr "Ajova"
+
+msgid "Kansas"
+msgstr "Kanzas"
+
+msgid "Kentucky"
+msgstr "Kentaki"
+
+msgid "Louisiana"
+msgstr "Luizijana"
+
+msgid "Maine"
+msgstr "Mejn  "
+
+msgid "Maryland"
+msgstr "Merilend"
+
+msgid "Massachusetts"
+msgstr "Masačusets "
+
+msgid "Michigan"
+msgstr "Mičigen"
+
+msgid "Minnesota"
+msgstr "Minesota"
+
+msgid "Mississippi"
+msgstr "Misisipi"
+
+msgid "Missouri"
+msgstr "Misuri"
+
+msgid "Montana"
+msgstr "Montana"
+
+msgid "Nebraska"
+msgstr "Nebraska"
+
+msgid "Nevada"
+msgstr "Nevada"
+
+msgid "New Hampshire"
+msgstr "Nju Hempšir"
+
+msgid "New Jersey"
+msgstr "Nju Džerzi "
+
+msgid "New Mexico"
+msgstr "Novi Meksiko"
+
+msgid "New York"
+msgstr "Njujork"
+
+msgid "North Carolina"
+msgstr "Severna Karolina"
+
+msgid "North Dakota"
+msgstr "Severna Dakota"
+
+msgid "Ohio"
+msgstr "Ohajo"
+
+msgid "Oklahoma"
+msgstr "Oklahoma"
+
+msgid "Oregon"
+msgstr "Oregon"
+
+msgid "Pennsylvania"
+msgstr "Pensilvanija"
+
+msgid "Rhode Island"
+msgstr "Rod Ajland"
+
+msgid "South Carolina"
+msgstr "Južna Karolina"
+
+msgid "South Dakota"
+msgstr "Južna Dakota"
+
+msgid "Tennessee"
+msgstr "Tenesi"
+
+msgid "Texas"
+msgstr "Teksas"
+
+msgid "Utah"
+msgstr "Juta"
+
+msgid "Vermont"
+msgstr "Vermont "
+
+msgid "Virginia"
+msgstr "Virdžinija "
+
+msgid "Washington"
+msgstr "Vašington  "
+
+msgid "West Virginia"
+msgstr "Zapadna Virdžinija"
+
+msgid "Wisconsin"
+msgstr "Viskonsin "
+
+msgid "Wyoming"
+msgstr "Vajoming"
+
+msgid "Armed Forces Americas"
+msgstr "Oružane Snage Amerike"
+
+msgid "Armed Forces Europe"
+msgstr "Oružane Snage Evrope"
+
+msgid "Armed Forces Pacific"
+msgstr "Oružane Snage Pacifika"
+
+#: Canada State
+msgid "Alberta"
+msgstr "Alberta"
+
+msgid "British Columbia"
+msgstr "Britanska Kolumbija"
+
+msgid "Manitoba"
+msgstr "Manitoba "
+
+msgid "New Brunswick"
+msgstr "Novi Brunsvik"
+
+msgid "Newfoundland and Labrador"
+msgstr "Njufaundlend i Labrador"
+
+msgid "Northwest Territories"
+msgstr "Severozapadne teritorije"
+
+msgid "Nova Scotia"
+msgstr "Nova Škotska"
+
+msgid "Nunavut"
+msgstr "Nunavut"
+
+msgid "Ontario"
+msgstr "Ontario"
+
+msgid "Prince Edward Island"
+msgstr "Ostrvo Princa Edvarda  "
+
+msgid "Quebec"
+msgstr "Kvebek"
+
+msgid "Saskatchewan"
+msgstr "Saskačevan "
+
+msgid "Yukon"
+msgstr "Jukon"
+
+msgid "Pie Register - Login"
+msgstr "Pie Register - Prijavljivanje"
+
+msgid "Pie Register - Registration"
+msgstr "Pie Register - Registracija"
+
+msgid "Pie Register - Forgot Password"
+msgstr "Pie Register - Zaboravili ste lozinku"
+
+msgid "Pie Register - Profile"
+msgstr "Pie Register - Profil"
+
+msgid "Password Fields do not macth!"
+msgstr "Polja sa lozinkama se ne poklapaju!"
+
+msgid "There was a problem and the email was probably not sent."
+msgstr "Došlo je do problema i e-mail verovatno nije poslat."
+
+msgid ""
+"Please follow the link sent to your new Email to verify and make the change "
+"applied!"
+msgstr ""
+"Pratite link poslat na vaš novi e-mail kako biste se verifikovali i "
+"primenili izmene."
+
+msgid "This Email already Exists"
+msgstr "Ovaj e-mail već postoji"
+
+msgid "Something Went Wrong updating Profile fields, please try again!"
+msgstr ""
+"Došlo je do greške prilikom ažuriranja polja profila, pokušajte ponovo!"
+
+msgid "Your Profile has been updated."
+msgstr "Vaš profil je ažuriran."
+
+msgid "Invalid profile picture"
+msgstr "Nevažeća profil slika"
+
+msgid "Invalid upload file."
+msgstr "Nevažeća datoteka za otpremanje."
+
+msgid "Password not entered"
+msgstr "Lozinka nije uneta"
+
+msgid "Invalid Math Captcha"
+msgstr "Nevažeće Captcha poklapanje"
+
+msgid "Invalid Username or Email, try again!"
+msgstr "Nevažeće korisničko ime ili e-mail"
+
+msgid "Invalid Captcha"
+msgstr "Nevažeći Captcha"
+
+msgid ""
+"Thank you for your registration. You will receieve your login credentials "
+"soon."
+msgstr ""
+"Hvala vam što ste se registrovali. Uskoro ćete dobiti svoje akreditive za "
+"prijavljivanje."
+
+msgid "Invalid activation key"
+msgstr "Nevažeći aktivacioni ključ"
+
+msgid "You key has been expired, please reset password again!"
+msgstr "Vaš ključ je istekao, ponovo vratite lozinku na početne vrednosti!"
+
+msgid "Password Lost and Found"
+msgstr "Lozinka izgubljena i nađena"
+
+msgid ""
+"This Reset key is invalid or no longer exists. Please reset password again!"
+msgstr ""
+"Ovaj ključ za vraćanje na početne vrednosti nije važeći ili više ne postoji. "
+"Ponovo vratite lozinku na početne vrednosti!"
+
+msgid "Minimum 8 characters required in password"
+msgstr "Lozinka mora imati najmanje 8 karaktera"
+
+msgid "New password"
+msgstr "Nova lozinka"
+
+msgid "Confirm new password"
+msgstr "Potvrdite novu lozinku"
+
+msgid "Reset Password"
+msgstr "Resetuj lozinku"
+
+msgid "Jan"
+msgstr "Jan"
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "Mar"
+msgstr "Mar"
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "Jun"
+msgstr "Jun"
+
+msgid "Jul"
+msgstr "Jul"
+
+msgid "Aug"
+msgstr "Avg"
+
+msgid "Sep"
+msgstr "Sep"
+
+msgid "Oct"
+msgstr "Okt"
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "Dec"
+msgstr "Dec"
+
+msgid "There is a problem updating your new Email Address, Pleasde try again!"
+msgstr ""
+"Došlo je do greške prilikom ažuriranja vaše nove e-mail adrese. Pokušajte "
+"ponovo!"
+
+msgid ""
+"You have successfully verified your new Email address. Your Account Email "
+"has been changed"
+msgstr ""
+"Uspešno ste verifikovali svoju novu e-mail adresu. E-mail vašeg naloga je "
+"promenjen"
+
+msgid "Invalid or malformed request. This key is no longer exists"
+msgstr "Nevažeći ili loše postavljen zahtev.Ovaj ključ više ne postoji."
+
+#: ******* Add These Variables Since 2.0.13 ********
+msgid "Sorry, your nonce did not verify."
+msgstr "Žao nam je, vaš nonce nije potvrđen"
+
+#: ******* Add These Variables Since 2.0.15 ********
+msgid "File Get Contents"
+msgstr "File Get Contents"
+
+msgid "MB String"
+msgstr "MB String"
+
+msgid "PHP Post Max Size"
+msgstr "PHP Post Max Size"
+
+msgid "PHP Time Limit"
+msgstr "PHP Time Limit"
+
+msgid "WP Memory Limit"
+msgstr "WP Memory Limit"
+
+msgid "WP Debug Mode"
+msgstr "WP Debug Mode"
+
+msgid "WP Language"
+msgstr "WP Language"
+
+msgid "WP Max Upload Size"
+msgstr "WP Max Upload Size"
+
+msgid "Please install File Get Contents on server"
+msgstr "Please install File Get Contents on server"
+
+msgid "Please install MB String on server"
+msgstr "Please install MB String on server"
+
+msgid "Please install ini_get on server"
+msgstr "Please install ini_get on server"
+
+msgid "Please install CURL on server"
+msgstr "Please install CURL on server"
+
+msgid "Old Password"
+msgstr "Old Password"
+
+msgid "Old Password Field do not macth!"
+msgstr "Old Password Field do not macth!"
+
+msgid "Old and New passwords are same!"
+msgstr "Old and New passwords are same!"
+
+msgid "Invalid Old Password Field!"
+msgstr "Invalid Old Password Field!"
+
+msgid "Email Edit Verifications"
+msgstr "Email Edit Verifications"
+
+msgid "1 Step (Verify new address only)"
+msgstr "1 Step (Verify new address only)"
+
+msgid ""
+"2 Step (Authenticate request by sending an email to old address + verify new "
+"address)"
+msgstr ""
+"2 Step (Authenticate request by sending an email to old address + verify new "
+"address)"
+
+msgid "Invalid request. This key is no longer exists"
+msgstr "Invalid request. This key is no longer exists"

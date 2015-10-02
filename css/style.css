@@ -1,0 +1,326 @@
+body{margin:0;}
+/*.clear{clear:both; height:10px;}*/
+.piereg_clear{clear:both; height:10px;}
+#container.pieregister-admin{float:left; width:100%;}
+#container.pieregister-admin .left_section{float:left; width: 12%;}
+#container.pieregister .right_section{float:left;width: 86%;margin-left: 0px;}
+.pieregister-admin .fields_hint{position: absolute;display:none;background-color: #FFFFFF;box-shadow: 0 0 10px #BBBBBB;-o-box-shadow: 0 0 10px #BBBBBB;-moz-box-shadow: 0 0 10px #BBBBBB;-webkit-box-shadow: 0 0 10px #BBBBBB;-ms-box-shadow: 0 0 10px #BBBBBB;padding: 9px 10px;width: 190px;}
+.pieregister-admin .fields_hint .hint_content{text-align:center;}
+.pieregister-admin .fields_hint .hint_content h4{color:#306091; font-size:15px; font-weight:bold; font-family:arial; margin:33px 0px 0px 0px; width:250px;}
+.pieregister-admin .fields_hint .hint_content span{color:#666666; font-size:13px;}
+.pieregister-admin .fields_hint .hint_content .thanks{background:#f5f8fd; font-size:11px; color:#53789f; border:1px solid #7697b9; cursor:pointer;padding: 5px 10px;border-radius: 12px; margin-top:10px;outline:none;}
+.pieregister-admin .pie_wrap fieldset .sort-state-highlight{float: left;background-color: #effff2;height: 100px; width:100%;border:1px solid #a2ceab; }
+.pieregister-admin .pie_wrap fieldset li.ui-sortable-helper{background-color: #effff2; }
+.pieregister-admin .pie_wrap fieldset .ui-sortable-helper:hover .fields_optionsbg{background: #effff2;border:1px solid #a2ceab;}
+.pieregister-admin .pie_wrap{float:left;width: 70%;margin-left: 19px;padding-bottom: 40px;}
+.pieregister-admin .pie_wrap h2{font-family: 'HelveticaRegular'; color:#111111; font-size:24px; font-weight:normal; background:url(../images/form_editor.png) no-repeat top left;float: left;height: 37px;width: 78%;padding-left: 59px;}
+.pieregister-admin .pie_wrap fieldset{border:dashed #b0b0b0 thin;padding:20px;width:85%;position: relative;float:left;}
+.pieregister-admin .pie_wrap fieldset legend{color:#cdcdcd; font-weight:bold; padding:0px 5px 0px 5px; font-size:15px;}
+.pieregister-admin .pie_wrap ul{margin:0; padding:0; list-style:none;float:left; width:100%;}
+.pieregister-admin .pie_wrap .fields{float:left; width: 90%; font-family:arial; color:#66696b; font-size: 14px;position: relative;margin-top: 9px;}
+.pieregister-admin .pie_wrap fieldset .fields{width:100%;background-color:#f7f7f7;}
+
+.pieregister-admin .pie_wrap .fields .fields_options{width: 91.9%; padding: 2% 4% 8px 4%;border:1px solid #ffffff;float:left;margin-bottom:2px; min-height:67px;}
+.pieregister-admin .pie_wrap .fields .fields_options .delete_btn{position: absolute;right: 8px;top: 4px;text-decoration: none;font-size: 10px;color: #919191; display:none;}
+.pieregister-admin .pie_wrap .fields:hover .fields_options .delete_btn{display:block;}
+.pieregister-admin .pie_wrap .fields .submit_field{width: 22%; height: 33px;float: right;padding: 16px 12px 8px 12px;margin-right: 33px;margin-top: -9px;position: relative;}
+.pieregister-admin .pie_wrap .fields .submit_field .submit_btn{float:right; background:#464646; color:#ffffff;border: 0;cursor: pointer;width:74px; height:26px;}
+.pieregister-admin .pie_wrap .fields:hover .fields_options{border:1px solid #7697b9; cursor:move;}
+.pieregister-admin .pie_wrap .fields:hover .fields_optionsbg{background: #f5f8fd;}
+.pieregister-admin .pie_wrap .fields .textarea_edit .edit_btn{top:78px;}
+.pieregister-admin .pie_wrap .fields .label_position{float:left; line-height:43px; margin-right:7px;min-width: 13%;}
+.pieregister-admin .pie_wrap .fields .fields_position{float:right; width:74%;}
+.pieregister-admin .pie_wrap .fields label{font-family: 'HelveticaRegular'; font-size: 18px; color:#2d2f30;float: left;width: 100%; /*text-transform:capitalize;*/}
+.pieregister-admin .pie_wrap .fields .submit_field .edit_btn{left: -15px;top: 13px;}
+.pieregister-admin .pie_wrap .fields .edit_btn{background:url(../images/form_edit_btn.png) no-repeat top left; width:29px; height:29px; float:left; position:absolute;left: -15px;top: 38px;display: none;}
+.pieregister-admin .pie_wrap .fields .input_fields{width: 262px;border-radius: 3px;border: 1px solid #ababab; height:32px;padding: 0px 5px 0px 5px;margin-top: 7px;margin-bottom: 10px;}
+.pieregister-admin .pie_wrap .fields .radio_wrap{float:left; width:100%;margin-top:10px;}
+.pieregister-admin .pie_wrap .fields .radio_wrap label{font-size: 15px;float: left;width: auto;margin-right: 5px;}
+.pieregister-admin .pie_wrap .fields .fields_position .radio_wrap{margin-top:12px;}
+.pieregister-admin .pie_wrap .fields .radio_wrap .radio_fields{width: 12px;float: left;margin-right: 20px;vertical-align: middle;margin-top: 3px;}
+.pieregister-admin .pie_wrap .fields .radio_fields{float:left;}
+.pieregister-admin .pie_wrap .fields input[type="checkbox"].input_fields , .pie_wrap .fields input[type="radio"].input_fields{width:auto;}
+.pieregister-admin .pie_wrap .fields select{width: 262px;border-radius: 3px;border: 1px solid #ababab;padding: 5px 5px 5px 5px;margin-top: 7px;margin-bottom: 10px;}
+.pieregister-admin .pie_wrap .fields textarea{border-radius: 3px;border: 1px solid #ababab; padding: 5px 5px 5px 5px;margin-top: 7px;margin-bottom: 10px;resize: none;font-family: arial;}
+.pieregister-admin .pie_wrap .fields:hover .edit_btn{background:url(../images/form_edit_btn_active.png) no-repeat top left;display: block;}
+.pieregister-admin .pie_wrap .fields .advance_options{background: url(../images/options_bg.jpg) repeat-x top left;  width: 857px; float:left;padding: 22px 40px 23px 40px; position:relative;}
+.pieregister-admin .pie_wrap .fields .advance_options label{font-size: 11px; color:#fff; width:auto; float: left;font-family:arial;margin-right: 6px;margin-top: 3px;}
+.pieregister-admin .pie_wrap .fields .advance_options .input_fields{width:217px;border-radius: 3px;border: 0;height: auto; padding:0px 5px 0px 5px; margin:0;font-size: 11px;height: 16px;}
+.pieregister-admin .pie_wrap .fields .advance_options .fields_checkbox{margin-left: 83px;margin-top: 6px;}
+.pieregister-admin .pie_wrap .fields .advance_options .checkbox_fields{float: left;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .advance_fields a.info{color:white;font-size: 11px;margin-left: 7px;float:none;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .advance_fields a{color: white;vertical-align: middle;margin-top: 4px;float: left;}
+.pieregister-admin .pie_wrap .fields .advance_btn{background: url(../images/advance_btn.png) no-repeat 4px 3px #1e4f80; width: 99px; height:20px; float:right; font-family: arial;font-size: 11px;padding-left: 20px;color: #ededed;line-height: 20px;}
+.pieregister-admin .pie_wrap .fields .fields_main{float:left; width:100%; display:none;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields{background: url(../images/options_bg.jpg) repeat-x top left #878787; width: 97%; float:left;padding:10px; position:relative;display: block;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .advance_fields{float: left;width: 100%;margin: 2px 0px 4px 0px;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .advance_fields a{text-decoration:none;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields label{font-size: 10px; color:#fff; width:auto; float: left;font-family:arial;margin-right: 6px;margin-top: 5px;min-width: 100px;text-align: right;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .advance_fields input[type="radio"] , .pie_wrap .fields .advance_options_fields .advance_fields input[type="checkbox"]{margin: 6px 4px 0 0px;vertical-align: bottom;float: left;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .sel_options_2 a , .pie_wrap .fields .advance_options_fields .sel_options_3 a{color: white;font-size: 13px;margin: 3px 0px 0px 5px;float: left;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .calendar_icon_type{float:left;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .calendar_icon_type label{min-width:10px; margin-right:8px;}
+.pieregister-admin .pie_wrap .fields .fields_options .date_format_field .time_fields{margin-right:10px;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .input_fields{width:185px;border-radius: 3px;border: 0;height: 19px;; padding:0px 5px 0px 5px; margin: 3px 0px 0px 0px;font-size:11px;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields textarea{width:187px; height:46px; resize:none;padding:5px 5px 5px 5px;border-radius: 3px; border:1px solid #6b6b6b;font-size:11px; font-family:arial;margin-bottom: 0;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .checkbox_fields{float: left;margin-left: 0;margin-top: 5px;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .required{min-width:49px;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields select{width:186px; font-size:11px;border-radius: 3px;border: 1px solid #ababab;height: 20px;padding: 0;margin: 0;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .character_fields{width:55px; height:19px;float:left;}
+.pieregister-admin .pie_wrap .fields .advance_options_fields .advance_btn{background: url(../images/advance_btn.png) no-repeat 4px 3px #1e4f80; width: 99px; height:20px; float:right; position:absolute;right: 0px;bottom: -20px;font-family: arial;font-size: 11px;padding-left: 20px;color: #ededed;line-height: 20px;}
+.pieregister-admin .pie_wrap .fields .advance_options_submit{width: 211px;float: right;clear: both;margin-right: 33px;padding: 6px 7px 6px 13px;}
+.pieregister-admin .pie_wrap .fields .advance_options_submit .advance_fields{margin: 2px 0px 2px 0px;}
+.pieregister-admin .pie_wrap .fields .advance_options_submit .radio_fields{float:left; width:100%;}
+.pieregister-admin .pie_wrap .fields .advance_options_submit .radio_fields input{float:left;margin-top: 5px;margin-left: 0;}
+.pieregister-admin .pie_wrap .fields .advance_options_submit .radio_fields label{min-width: 20px;margin-right: 23px;}
+.pieregister-admin .pie_wrap .fields .advance_options_submit textarea{height: 148px;}
+.pieregister-admin .pie_wrap .fields .fields_options .inner_fields{float:left;}
+.pieregister-admin .pie_wrap .fields .fields_options .time{float:left; width:100%;}
+.pieregister-admin .pie_wrap .fields .fields_options .date_format_field img{vertical-align:middle;}
+.pieregister-admin .pie_wrap .fields .fields_options .time .colon{float:left;line-height: 48px;margin-right: 10px;margin-left: 0px;}
+.pieregister-admin .pie_wrap .fields .fields_options .time .time_fields{float:left;width: 79px;}
+.pieregister-admin .pie_wrap .fields .fields_options .time .time_fields .input_fields{width:70px; margin-bottom:3px;float: left;}
+.pieregister-admin .pie_wrap .fields .fields_options .time .time_fields label{font-size:14px;width: auto;float: none;}
+.pieregister-admin .pie_wrap .fields .fields_options .time .time_fields select{width:80px; height:32px;}
+.pieregister-admin .pie_wrap .fields .fields_options .address{float:left; width: 60%;}
+.pieregister-admin .pie_wrap .fields .fields_options .address label{font-size:13px;width: auto;}
+.pieregister-admin .pie_wrap .fields .fields_options .address .input_fields{width: 97%;}
+.pieregister-admin .pie_wrap .fields .fields_options .address2{float:left; width:49.6%;}
+.pieregister-admin .pie_wrap .fields .fields_options .address2 .input_fields{width: 92%;}
+.pieregister-admin .pie_wrap .fields .fields_options .address2 select{width:96%;}
+
+.pieregister-admin .notifications{float:left;/*width: 99%;margin-left: 19px;padding-bottom: 40px;*/padding:10px;}
+.pieregister-admin .notifications h2{font-family: 'HelveticaRegular'; color:#111111; font-size:24px; font-weight:normal; background:url(../images/form_editor.png) no-repeat top left;float: left;height: 37px;width: 78%;padding-left: 59px;}
+.pieregister-admin .notifications ul{margin:0; padding:0; list-style:none;}
+.pieregister-admin .notifications .fields{float:left; width: 95%; font-family:arial; color:#66696b; font-size: 14px;position: relative;margin-top: 9px;}
+.pieregister-admin .notifications .fields h2{background:none; padding:0; margin:0; font-size:18px;width: 100%;}
+.pieregister-admin .notifications .fields .checkbox{margin: 1px 7px 0px 0px;float: left;}
+.pieregister-admin .notifications .fields label{font-family: 'MyriadProRegular'; font-size: 15px; color:#2d2f30;float: left;width: 100%;}
+.pieregister-admin .notifications .fields .input_fields{width: 62%;border-radius: 3px;border: 1px solid #ababab; height:32px;padding: 0px 5px 0px 5px;margin-top: 7px;margin-bottom: 10px;}
+.pieregister-admin .notifications .fields .input_fields2{width: 62%;border-radius: 3px;border: 1px solid #ababab; height:32px;padding: 0px 5px 0px 5px;margin-top: 7px;margin-bottom: 10px;}
+.pieregister-admin .notifications .fields select{width: 250px;border-radius: 3px;border: 1px solid #ababab; height:32px;padding: 5px 5px 5px 5px;margin-top: 7px;margin-bottom: 10px;margin-left: 6px;color: #66696b;font-size: 11px;}
+.pieregister-admin .notifications .fields img{float:left;}
+.pieregister-admin .notifications .export{float:left; width: 48%; border-right:1px solid #9f9f9f;}
+.pieregister-admin .notifications .export h2{font-family: 'MyriadProRegular'; font-size:20px;height: auto;margin-bottom: 5px;}
+.pieregister-admin .notifications .export li:first-child .fields{margin-top:0;}
+.pieregister-admin .notifications .export .select_checkbox label{width: 90%;margin: 8px 0px 9px 0px;}
+.pieregister-admin .notifications .export .select_checkbox .checkbox{margin: 9px 8px 2px 0px;float: left;width: 4%;}
+.pieregister-admin .notifications .export .date .input_fields{width: 72%;padding-right: 34px;}
+.pieregister-admin .notifications .export .date label{width:100%;}
+.pieregister-admin .notifications .export .date .start_date{float:left; width:50%;}
+.pieregister-admin .notifications .export .date .end_date{float:left; width:50%;}
+.pieregister-admin .notifications .export .date .calendar_img{position:absolute;margin: 13px 0px 0px -30px;cursor: pointer;}
+.pieregister-admin .notifications .export .date .submit_btn{float:left; background:#464646; color:#ffffff;border: 0;cursor: pointer; height:26px; margin-top:15px;}
+.pieregister-admin .notifications .export .export_field{width:100%; overflow:hidden; display:inline-block;}
+.pieregister-admin .notifications .import{float:left; width: 48%;margin-left: 20px;}
+.pieregister-admin .notifications .import h2{font-family: 'MyriadProRegular'; font-size:20px;height: auto;margin-bottom: 7px;}
+.pieregister-admin .notifications .import li:first-child .fields{margin-top:0;}
+.pieregister-admin .notifications .import .input_fields{width:auto;/*width: 52%;float: left;*/}
+.pieregister-admin .notifications .import .submit_btn{float:left; background:#464646; color:#ffffff;border: 0;cursor: pointer; height: 29px; margin-top: 9px;min-width: 100px;margin-left: 8px;}
+.pieregister-admin .notifications .import .submit_btn2{float:left; background:#464646; color:#ffffff;border: 0;cursor: pointer; height: 29px; margin-top: 0px;min-width: 70px;margin-left: 0;}
+.pieregister-admin .notifications .import .fields input[type=checkbox]{float:left;margin:1px 5px 0 0;width: 4%;}
+.pieregister-admin .notifications .import .fields label{float:left;width:80%;}
+@media (max-width : 980px){
+	.pieregister-admin .notifications .export{width: auto;border:0px;border-bottom:1px solid #9f9f9f;padding-bottom: 20px;margin-bottom:20px; }
+	.pieregister-admin .notifications .import{margin-left:0px;width:auto;}
+}
+
+.pieregister-admin .right_menu{float:left; width: 13%;background: #2d2f30; /*margin-top: 16%;*/ position:fixed;left:81%; /*right:45px;*/ z-index:1;}
+.pieregister-admin .right_menu ul{list-style:none; margin:0; padding:0; width:100%;float: left;background: #2d2f30;}
+.pieregister-admin .right_menu ul li{ color:#ffffff;font-family: 'HelveticaRegular'; font-size: 12px; background:url(../images/standard_fields_bg.jpg) repeat-x; float: left; width: 100%;margin-bottom: 0;}
+.pieregister-admin .right_menu ul li a{background: url(../images/standard_fields_arrow.png) no-repeat 94% 10px; color:#ffffff; text-decoration:none; width: 96%; float:left;height: 29px;padding: 7px 0px 0px 6px;}
+.pieregister-admin .right_menu ul li ul li{background:none;padding-left: 0;width: 100%;padding: 0;}
+.pieregister-admin .right_menu ul li ul li a{background:none; color:#b4b4b4;font-size: 11px;height: 32px;padding-left: 39px;line-height: 25px;width: 74%;}
+.pieregister-admin .right_menu ul li ul li a img{vertical-align:middle; margin-right: 9px;margin-left: 5px;}
+/*.pieregister-admin .right_menu ul li ul li.standard_single_line a{background: url(../images/standard_field_images.png) no-repeat 6px -832px;}
+.pieregister-admin .right_menu ul li ul li.standard_textarea a{background: url(../images/standard_field_images.png) no-repeat 6px 8px;}
+.pieregister-admin .right_menu ul li ul li.standard_dropdown a{background: url(../images/standard_field_images.png) no-repeat 6px -59px;}
+.pieregister-admin .right_menu ul li ul li.standard_multiselect a{background: url(../images/standard_field_images.png) no-repeat 6px -94px;}
+.pieregister-admin .right_menu ul li ul li.standard_numbers a{background: url(../images/standard_field_images.png) no-repeat 6px -127px;}
+.pieregister-admin .right_menu ul li ul li.standard_checkbox a{background: url(../images/standard_field_images.png) no-repeat 6px -160px;}
+.pieregister-admin .right_menu ul li ul li.standard_radio a{background: url(../images/standard_field_images.png) no-repeat 6px -194px;}
+.pieregister-admin .right_menu ul li ul li.standard_hidden a{background: url(../images/standard_field_images.png) no-repeat 6px -227px;}
+.pieregister-admin .right_menu ul li ul li.standard_html a{background: url(../images/standard_field_images.png) no-repeat 6px -261px;}
+.pieregister-admin .right_menu ul li ul li.standard_selection a{background: url(../images/standard_field_images.png) no-repeat 6px -295px;}
+.pieregister-admin .right_menu ul li ul li.standard_pagebreak a{background: url(../images/standard_field_images.png) no-repeat 6px -328px;}
+.pieregister-admin .right_menu ul li ul li.standard_website a{background: url(../images/standard_field_images.png) no-repeat 6px -295px;}
+.pieregister-admin .right_menu ul li ul li.standard_aim a{background: url(../images/standard_field_images.png) no-repeat 6px -798px;}
+.pieregister-admin .right_menu ul li ul li.standard_yahoo a{background: url(../images/standard_field_images.png) no-repeat 6px -764px;}
+.pieregister-admin .right_menu ul li ul li.standard_google a{background: url(../images/standard_field_images.png) no-repeat 6px -731px;}
+.pieregister-admin .right_menu ul li ul li.standard_about a{background: url(../images/standard_field_images.png) no-repeat 6px -867px;}
+.pieregister-admin .right_menu ul li ul li.standard_text a{background: url(../images/standard_field_images.png) no-repeat 6px -830px;}
+.pieregister-admin .right_menu ul li ul li.standard_invitation a{background: url(../images/standard_field_images.png) no-repeat 6px -901px;}
+.pieregister-admin .right_menu ul li ul li.standard_hidden a.hidden{display:block;}
+.pieregister-admin .right_menu ul li ul li.standard_name a{background: url(../images/standard_field_images.png) no-repeat 6px -361px;}
+.pieregister-admin .right_menu ul li ul li.standard_time a{background: url(../images/standard_field_images.png) no-repeat 6px -394px;}
+.pieregister-admin .right_menu ul li ul li.standard_address a{background: url(../images/standard_field_images.png) no-repeat 6px -428px;}
+.pieregister-admin .right_menu ul li ul li.standard_email a{background: url(../images/standard_field_images.png) no-repeat 6px -461px;}
+.pieregister-admin .right_menu ul li ul li.standard_captcha a{background: url(../images/standard_field_images.png) no-repeat 6px -494px;}
+.pieregister-admin .right_menu ul li ul li.standard_date a{background: url(../images/standard_field_images.png) no-repeat 6px -527px;}
+.pieregister-admin .right_menu ul li ul li.standard_phone a{background: url(../images/standard_field_images.png) no-repeat 6px -562px;}
+.pieregister-admin .right_menu ul li ul li.standard_website a{background: url(../images/standard_field_images.png) no-repeat 6px -595px;}
+.pieregister-admin .right_menu ul li ul li.standard_upload a{background: url(../images/standard_field_images.png) no-repeat 6px -628px;}
+.pieregister-admin .right_menu ul li ul li.standard_list a{background: url(../images/standard_field_images.png) no-repeat 6px -664px;}
+*/
+.pieregister-admin .right_menu ul li ul li.standard_single_line a{background:url(../images/standard_field_images.png) no-repeat 6px -832px;}
+.pieregister-admin .right_menu ul li ul li.standard_textarea a{background:url(../images/standard_field_images.png) no-repeat 6px 8px;}
+.pieregister-admin .right_menu ul li ul li.standard_dropdown a{background:url(../images/standard_field_images.png) no-repeat 6px -59px;}
+.pieregister-admin .right_menu ul li ul li.standard_multiselect a{background:url(../images/standard_field_images.png) no-repeat 6px -94px;}
+.pieregister-admin .right_menu ul li ul li.standard_numbers a{background:url(../images/standard_field_images.png) no-repeat 6px -127px;}
+.pieregister-admin .right_menu ul li ul li.standard_checkbox a{background:url(../images/standard_field_images.png) no-repeat 6px -160px;}
+.pieregister-admin .right_menu ul li ul li.standard_radio a{background:url(../images/standard_field_images.png) no-repeat 6px -194px;}
+.pieregister-admin .right_menu ul li ul li.standard_hidden a{background:url(../images/standard_field_images.png) no-repeat 6px -227px;}
+.pieregister-admin .right_menu ul li ul li.standard_html a{background:url(../images/standard_field_images.png) no-repeat 6px -261px;}
+.pieregister-admin .right_menu ul li ul li.standard_selection a{background:url(../images/standard_field_images.png) no-repeat 6px -295px;}
+.pieregister-admin .right_menu ul li ul li.standard_pagebreak a{background:url(../images/standard_field_images.png) no-repeat 6px -328px;}
+.pieregister-admin .right_menu ul li ul li.standard_website a{background:url(../images/standard_field_images.png) no-repeat 6px -295px;}
+.pieregister-admin .right_menu ul li ul li.standard_aim a{background:url(../images/standard_field_images.png) no-repeat 6px -798px;}
+.pieregister-admin .right_menu ul li ul li.standard_yahoo a{background:url(../images/standard_field_images.png) no-repeat 6px -764px;}
+.pieregister-admin .right_menu ul li ul li.standard_google a{background:url(../images/standard_field_images.png) no-repeat 6px -731px;}
+.pieregister-admin .right_menu ul li ul li.standard_about a{background:url(../images/standard_field_images.png) no-repeat 6px -867px;}
+.pieregister-admin .right_menu ul li ul li.standard_text a{background:url(../images/standard_field_images.png) no-repeat 6px -830px;}
+.pieregister-admin .right_menu ul li ul li.standard_invitation a{background:url(../images/standard_field_images.png) no-repeat 6px -901px;}
+.pieregister-admin .right_menu ul li ul li.standard_hidden a.hidden{display:block;}
+.pieregister-admin .right_menu ul li ul li.standard_name a{background:url(../images/standard_field_images.png) no-repeat 6px -361px;}
+.pieregister-admin .right_menu ul li ul li.standard_time a{background:url(../images/standard_field_images.png) no-repeat 6px -394px;}
+.pieregister-admin .right_menu ul li ul li.standard_address a{background:url(../images/standard_field_images.png) no-repeat 6px -428px;}
+.pieregister-admin .right_menu ul li ul li.standard_email a{background:url(../images/standard_field_images.png) no-repeat 6px -461px;}
+.pieregister-admin .right_menu ul li ul li.standard_captcha a{background:url(../images/standard_field_images.png) no-repeat 6px -494px;}
+.pieregister-admin .right_menu ul li ul li.standard_date a{background:url(../images/standard_field_images.png) no-repeat 6px -527px;}
+.pieregister-admin .right_menu ul li ul li.standard_phone a{background:url(../images/standard_field_images.png) no-repeat 6px -562px;}
+.pieregister-admin .right_menu ul li ul li.standard_website a{background:url(../images/standard_field_images.png) no-repeat 6px -595px;}
+.pieregister-admin .right_menu ul li ul li.standard_upload a{background:url(../images/standard_field_images.png) no-repeat 6px -628px;}
+.pieregister-admin .right_menu ul li ul li.standard_list a{background:url(../images/standard_field_images.png) no-repeat 6px -664px;}
+.pieregister-admin .right_menu ul li ul li:hover{background:#141515;}
+.pieregister-admin .right_menu ul li ul li.standard_captcha_n a{background:url("../images/captcha-icon.png") no-repeat scroll 6px 7px rgba(0, 0, 0, 0);}
+.pieregister-admin .right_menu ul li ul li.standard_profile a{background:url("../images/profile-icon.png") no-repeat scroll 6px 7px rgba(0, 0, 0, 0);}
+.htmldiv{float: left;/*width: 800px;*/width: 100%;min-height: 35px;word-wrap: break-word;}
+.controls{display:none;}
+
+@font-face {
+    font-family: 'HelveticaRegular';
+    src: url('../fonts/helvetica-webfont.eot');
+    src: url('../fonts/helvetica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-webfont.woff') format('woff'),
+         url('../fonts/helvetica-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: normal;font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/myriadp2-webfont.eot');
+    src: url('../fonts/myriadp2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadp2-webfont.woff') format('woff'),
+         url('../fonts/myriadp2-webfont.ttf') format('truetype'),
+         url('../fonts/myriadp2-webfont.svg#MyriadProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Settings*/
+.pieregister-admin .settings fieldset.piereg_fieldset_area{float:left; width: 95%; font-family:arial; color:#66696b; font-size: 14px;position: relative;margin-top: 20px;border:#C6C4C4 1px solid; border-radius:10px;padding:10px;overflow:hidden;}
+.pieregister-admin .settings fieldset.piereg_fieldset_area legend{font-size:16px;margin-left:20px;}
+
+
+.pieregister-admin .settings{float:left;width: 95%;margin-left: 19px;padding-bottom: 40px;}
+.pieregister-admin .settings h2{font-family: 'HelveticaRegular'; color:#111111; font-size:24px; font-weight:normal; background:url(../images/form_editor.png) no-repeat top left;float: left;height: 37px;width: 78%;padding-left: 59px;}
+.pieregister-admin .settings h3{font-size: 20px; color: #2d2f30;font-family: 'MyriadProRegular';float: left;width: 95%;font-weight: normal;background: #f4f4f4;padding: 7px 0px 7px 20px;border-radius: 4px;margin-bottom: 0;margin-left: -20px;}
+.pieregister-admin .settings .fields{float:left; width: 95%; font-family:arial; color:#66696b; font-size: 14px;position: relative;margin-top: 20px;}
+.pieregister-admin .settings .fields h2{background:none; padding:0; margin:0; font-size:18px;width: 100%;}
+.pieregister-admin .settings .fields .checkbox{margin: 1px 7px 0px 0px;float: left;}
+.pieregister-admin .settings .fields label{font-family: 'MyriadProRegular'; font-size: 16px; color:#2d2f30;float: left;margin-top: 7px;width: 170px;}
+.pieregister-admin .settings .fields .label_two{margin-top: 0px;}
+.pieregister-admin .settings .fields .input_fields{width: 62%;border-radius: 3px;border: 1px solid #ababab; height:32px;padding: 0px 5px 0px 5px;margin-top: 0px;margin-bottom: 3px;float: left;}
+.pieregister-admin .settings .fields .quotation{float: left;font-size: 10px;margin-left: 170px;width: 85%;}
+.pieregister-admin .settings .fields .radio_fields{float:left;}
+.pieregister-admin .settings .fields .radio_fields label{min-width: 20px;margin-top: 6px;font-size: 12px;margin-right: 30px;}
+.pieregister-admin .settings .fields .radio_fields input{float:left;margin-top: 5px;margin-right: 4px;width: 11px;margin-left: 0;}
+.pieregister-admin .settings .fields select{width:62%;border-radius: 3px;border: 1px solid #ababab; height:32px;padding: 5px 5px 5px 5px;margin-top: 1px;margin-bottom: 0px;}
+.pieregister-admin .settings .fields .verification_data{float: left;font-size: 12px;margin-left: 170px;width: 85%;margin-top: 5px;}
+.pieregister-admin .settings .fields .verification_data p{margin: 5px 0px 5px 0px;}
+.pieregister-admin .settings .fields .verification_data p strong{color:#333333;}
+.pieregister-admin .settings .fields .verification_data .input_fields2{border:1px solid #dfdfdf; border-radius:3px; width: 40px;height: 22px;padding: 0px 5px 0px 5px;}
+.pieregister-admin .settings .fields .installation_status{background: url(../images/installation_status.png) no-repeat 0px -2px; float:left; height: 20px; width:50%;padding-left: 30px; margin-top:7px;}
+.pieregister-admin .settings .fields .installation_status_no_bg{background: none;padding-left:0px;}
+.pieregister-admin .settings .fields .installation_status_faild{background: url(../images/installation_status_faild.png) no-repeat 0px 0px; float:left; height: 22px; width:50%;padding-left: 30px; margin-top:7px;}
+.pieregister-admin .settings .fields p{float:left; width:100%; margin:0; padding:0;}
+.pieregister-admin .settings .fields ol{float:left; width:100%; margin:10px 0px 0px 20px;}
+.pieregister-admin .settings .fields ol li{float:left; width:100%;}
+.pieregister-admin .settings .fields ol li ul{list-style:initial;margin: 10px 0px 10px 20px;float: left;width: 100%;}
+.pieregister-admin .settings .fields .submit_btn{float:right; background:#464646; color:#ffffff;border: 0;cursor: pointer; padding:5px 0px 5px 0px; margin-top:15px; min-width:113px;}
+.pieregister-admin .settings .fields .important_info{float:left; width:100%;}
+.pieregister-admin .settings .fields .important_info p{color:#66696b; margin-top:20px;}
+.pieregister-admin .settings .fields .important_info a{color:#1e5f7f;margin-top: 4px;float: left;}
+.pieregister-admin .settings .fields .important_info span{color:#3d3e3e;margin-top: 4px;float: left;margin-right: 5px;}
+.pieregister-admin .settings .fields textarea{float:left; width:100%; border:1px solid #ababab; border-radius:3px; /*resize:none;*/ margin-left:-14px;max-width: 100%;min-height: 230px;min-width: 100%; height:230px; font-family:arial;}
+.pieregister-admin .settings .fields2{text-align:center;}
+.pieregister-admin .settings .fields2 .submit_btn{background:#1b803a;width: 186px;font-size: 19px;height: 47px;float: none;}
+.pieregister-admin .settings .fields2 .restore{color:#464646;margin-left: 4px;}
+/*Settings*/
+
+.error {background-color: #ffebe8;border-color: #c00;margin: 0 0 16px 8px;padding: 12px;border-width: 1px;border-style: solid;}
+.success{background-color:#ffffe0;border-color: #e6db55;margin:0 0 16px 8px;padding: 12px;-webkit-border-radius: 3px;border-radius: 3px;border-width: 1px;border-style:solid;}
+/*Invitation Code*/
+.pieregister-admin .invitation{float:left;width: 95%;margin-left: 19px;padding-bottom: 40px;}
+.pieregister-admin .invitation h2{font-family: 'MyriadProRegular'; color:#111111; font-size:24px; font-weight:normal; background:url(../images/form_editor.png) no-repeat top left;float: left;height: 37px;width: 78%;padding-left: 59px;}
+.pieregister-admin .invitation ul{margin:0; padding:0px 0px 40px 0px; list-style:none; float:left;}
+.pieregister-admin .invitation .fields{float:left; width: 95%; font-family:arial; color:#66696b; font-size: 14px;position: relative;margin-top: 9px;}
+.pieregister-admin .invitation .fields h2{background:none; padding:0; margin:0; font-size:21px;width: 100%;}
+.pieregister-admin .invitation .fields .radio_fields{margin-top:10px; float:left; width:100%;}
+.pieregister-admin .invitation .fields .quotation{float:left; margin-top:8px; padding-bottom:15px;}
+.pieregister-admin .invitation .fields h3{background:none; padding:0; margin:0; font-size:17px;width: 100%; font-weight:normal;color:#111111;}
+.pieregister-admin .invitation .fields textarea{float:left; width: 99%; border:1px solid #ababab; border-radius:3px; resize:none; height:230px; font-family:arial; margin-top:5px;}
+.pieregister-admin .invitation .fields .note{font-family:arial; font-size:12px; color:#9a9a9a;float: right; margin-top:5px;}
+.pieregister-admin .invitation .fields .input_fields2{width: 262px;border-radius: 3px;border: 1px solid #ababab; height:32px;padding: 0px 5px 0px 5px;margin-top: 7px;margin-bottom: 10px;}
+.pieregister-admin .invitation table{font-family:arial;font-size: 12px;width: 95%; text-align:center; border-color:#d0d0d0;border:none;}
+.pieregister-admin .invitation table th{background:#64727c; border:none; color:#ffffff;}
+.pieregister-admin .invitation table td{ border:none;border-left:1px solid #d0d0d0; border-top:1px solid #d0d0d0; color:#646464; height:24px;}
+.pieregister-admin .invitation table tr td:first-child{border-left:none;}
+.pieregister-admin .invitation table tr:first-child td{border-top:none;}
+.pieregister-admin .invitation table tr td .delete{background:url(../images/invitation_action_icon.png) no-repeat -42px 0px; width:10px; height:10px; display:inline-block; margin:0px 5px;}
+.pieregister-admin .invitation table tr td .active{background:url(../images/invitation_action_icon.png) no-repeat -21px 0px; width:10px; height:10px; display:inline-block; margin:0px 5px;}
+.pieregister-admin .invitation table tr td .inactive{background:url(../images/invitation_action_icon.png) no-repeat 0px 0px; width:10px; height:10px; display:inline-block; margin:0px 5px;}
+.pieregister-admin .invitation table tbody tr{transition:background 400ms;-webkit-transition:background 400ms;-o-transition:background 400ms;-moz-transition:background 400ms;}
+.pieregister-admin .invitation table tbody tr:hover{background:#EDEAEA;}
+.pieregister-admin .invitation .pagination{width: 95%; background:#e9e9e9; font-family:arial; font-size: 14px;text-align:center; display:inline-block; min-height:39px;margin-top: 40px;}
+.pieregister-admin .invitation .pagination ul{margin:0; padding:0;text-align: center;width: 100%;}
+.pieregister-admin .invitation .pagination ul li{display:inline-block;margin: 0px 0px 0px 0px;}
+.pieregister-admin .invitation .pagination ul li a{color:#646464; text-decoration:none; line-height: inherit;padding: 12px 8px 12px 7px;display: inline-block; font-weight: normal;}
+.pieregister-admin .invitation .pagination ul li:before{content:'-'; margin:0px 8px 0px 0px;}
+.pieregister-admin .invitation .pagination ul li:first-child:before{content:'';}
+.pieregister-admin .invitation .pagination ul li a:hover{background:#ffffff; color:#567c98;}
+.pieregister-admin .invitation .pagination ul li.active a{background:#ffffff; color:#567c98;}
+.pie_msg_type:hover{text-decoration:underline;}
+/*Invitation Code*/
+.right_section p.pieHelpPara{font-size:14px; color:#666; text-align:justify; padding:0px 10px 0px 10px;}
+div.pieHelpMenuButtonContaner{ width:100%; height:auto; position:relative; display:inline-block;}
+ul.pieHelpMenuButton{list-style:square;list-style-position:inside;}
+ul.pieHelpMenuButton li{float:left; background:#f4f4f4; color:#2d2f30; width:45%; padding:10px; margin:10px; position:relative;}
+ul.pieHelpMenuButton li:hover{float:left; background:#e9f4fc; color:#2175af;  width:45%;}
+ul.pieHelpMenuButton li a{text-decoration:none; color:#2d2f30; width:90%; height:65%; padding-top:10px; margin-top:-10px; position:absolute; }
+ul.pieHelpMenuButton li a:hover{text-decoration:none; color:#2175af;}
+div.pieHelpTicket{margin-top:10px; width:100%; border:#000 0px solid; display:inline-block;}
+ul.pieHelpTicketHelp li{ float:left; width:45%;margin:5px;}
+ul.pieHelpTicketHelp label, div.pieHelpTicket_input_fileds label{width:100%;float:left;}
+ul.pieHelpTicketHelp input{width:99%;}
+div.pieHelpTicket_input_fileds{display:inline-block; width:100%; margin:10px 0px;}
+div.pieHelpTicket_input_fileds input{width:91%;}
+div.pieHelpTicket_input_fileds textarea{width:91%; height:200px;   resize: none;}
+div.pieHelpTicket_input_fileds input[type=submit]{background: none repeat scroll 0 0 rgb(70, 70, 70);border: 0 none;color: rgb(255, 255, 255);cursor: pointer;float: right;margin: 15px 9%;padding: 5px 0;width: 100px;}
+#recaptcha_widget_div{float:left;}
+#pie_register .fields .fieldset{padding:5px 10px;}
+table.piereg_dash_widget tr td h3{border:none;}
+table.piereg_dash_widget tr td a{display:none;}
+table.piereg_dash_widget tr:nth-child(even){background:#F3F3F3;}
+table.piereg_dash_widget tr:hover{background:#E0E0E0;}
+.pieregister-admin div.piereg_message_type_links{float:left;padding:5px;}
+.pieregister-admin div.piereg_message_type_links label{float:none !important;}
+.pieregister-admin div.piereg_message_type_links label:hover{text-decoration:underline;}
+
+.pieregister-admin #piereg_paypal_payment_gateway{display:inline-block}
+
+/* Pie-Register Pro Advertisment (Start)*/
+.pieregister-admin .pieregister-adds {clear: both;position: relative;display:inline-block;}
+.pieregister-admin .pieregister-adds .pieregister-adds-img {position: relative;float:left;}
+.pieregister-admin .pieregister-adds .pieregister-adds-img img{position: relative;z-index: 1;width:91%;}
+.pieregister-admin .pieregister-adds .pieregister-adds-img span.pieregister-adds-close{background-color: rgb(204, 204, 204);color: rgb(0, 0, 0);font-family: arial;font-size: 16px;line-height: 12px;padding: 2px 3px;position: absolute;right: 9.5%;top: 5px;z-index: 2;cursor:pointer;}
+/* Pie-Register Pro Advertisment (end)*/

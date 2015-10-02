@@ -1,0 +1,3027 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pie Register\n"
+"POT-Creation-Date: 2014-06-06 12:39+0500\n"
+"PO-Revision-Date: 2015-04-30 14:02-0500\n"
+"Last-Translator: Baqar <baqarsoft@gmail.com>\n"
+"Language-Team: Baqar\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: \\\\wp-content\\plugins\\pie-register\n"
+
+#: \\wp-content\plugins\pie-register/classes/base.php:125
+msgid "New User Registration"
+msgstr "New User Registration"
+
+#: \\wp-content\plugins\pie-register/classes/base.php:190
+#: \\wp-content\plugins\pie-register/widget.php:10
+msgid "Registration Form"
+msgstr "Registration Form"
+
+#: \\wp-content\plugins\pie-register/classes/base.php:191
+msgid "Please fill the form below to register."
+msgstr "Please fill the form below to register."
+
+#: \\wp-content\plugins\pie-register/classes/base.php:537
+msgid ""
+"Pie-Register is only compatible with WordPress v3.5 and up. You are "
+"currently using WordPress."
+msgstr ""
+"Pie-Register is only compatible with WordPress v3.5 and up. You are "
+"currently using WordPress."
+
+#: \\wp-content\plugins\pie-register/classes/base.php:544
+msgid "Your are using the unregistered version of Pie Register. "
+msgstr "Your are using the unregistered version of Pie Register. "
+
+#: \\wp-content\plugins\pie-register/classes/base.php:544
+msgid "Click here"
+msgstr "Click here"
+
+#: \\wp-content\plugins\pie-register/classes/base.php:544
+msgid " to get your key. "
+msgstr " to get your key. "
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:747
+msgid "Invalid E-mail address"
+msgstr "Invalid E-mail address"
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:752
+msgid "Error in your password fields"
+msgstr "Error in your password fields"
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:805
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:980
+msgid " Fail to upload file."
+msgstr " Fail to upload file."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:829
+#: \\wp-content\plugins\pie-register/classes/profile_admin.php:408
+msgid " field must contain only numbers."
+msgstr " field must contain only numbers."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:836
+#: \\wp-content\plugins\pie-register/classes/profile_admin.php:412
+msgid " field may only contain alpha-numeric characters."
+msgstr " field may only contain alpha-numeric characters."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:843
+#: \\wp-content\plugins\pie-register/classes/profile_admin.php:416
+msgid " field must contain a valid email address."
+msgstr " field must contain a valid email address."
+
+#: \\wp-content\plugins\pie-register/classes/edit_form.php:850
+#: \\wp-content\plugins\pie-register/classes/profile_admin.php:420
+msgid " must be a valid URL."
+msgstr " must be a valid URL."
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:935
+msgid " Invalid Username"
+msgstr " Invalid Username"
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:939
+msgid " Username already exists"
+msgstr " Username already exists"
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:944
+msgid " Invalid E-mail address"
+msgstr " Invalid E-mail address"
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:948
+msgid " E-mail address already exists"
+msgstr " E-mail address already exists"
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:987
+msgid " Invalid File Type."
+msgstr " Invalid File Type."
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:1008
+msgid " Invalid Invitation Code."
+msgstr " Invalid Invitation Code."
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:1013
+msgid " Invitation Code has expired."
+msgstr " Invitation Code has expired."
+
+#: \\wp-content\plugins\pie-register/classes/registration_form.php:1029
+msgid "Invalid Security Code "
+msgstr "Invalid Security Code "
+
+#: \\wp-content\plugins\pie-register/dash_widget.php:21
+msgid " Code Tracking"
+msgstr " Code Tracking"
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:4
+msgid ""
+"Please enter your username or email address. You will receive a link to "
+"create a new password via email."
+msgstr ""
+"Please enter your username or email address. You will receive a link to "
+"create a new password via email."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:22
+msgid "Username or Email was not found, try again!"
+msgstr "Username or Email was not found, try again!"
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:44
+msgid ""
+"Someone has asked to reset the password for the following site and username."
+msgstr ""
+"Someone has asked to reset the password for the following site and username."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:46
+msgid "Username:"
+msgstr "Username:"
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:47
+msgid ""
+"To reset your password visit the following address, otherwise just ignore "
+"this email and nothing will happen."
+msgstr ""
+"To reset your password visit the following address, otherwise just ignore "
+"this email and nothing will happen."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:51
+msgid "Password Reset"
+msgstr "Password Reset"
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:52
+msgid "The e-mail could not be sent."
+msgstr "The e-mail could not be sent."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:52
+msgid "Possible reason: your host may have disabled the mail() function..."
+msgstr "Possible reason: your host may have disabled the mail() function..."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:56
+msgid "A message will be sent to your email address."
+msgstr "A message will be sent to your email address."
+
+#: \\wp-content\plugins\pie-register/forgot_password.php:93
+msgid "Reset my password"
+msgstr "Reset my password"
+
+#: \\wp-content\plugins\pie-register/get_password.php:4
+msgid "Enter your new password below."
+msgstr "Enter your new password below."
+
+#: \\wp-content\plugins\pie-register/get_password.php:12
+msgid "The passwords do not match."
+msgstr "The passwords do not match."
+
+#: \\wp-content\plugins\pie-register/get_password.php:20
+msgid "Your password has been reset."
+msgstr "Your password has been reset."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:36
+msgid "Settings"
+msgstr "Settings"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:38
+msgid "General Settings"
+msgstr "General Settings"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:40
+msgid "Support License Key"
+msgstr "Support License Key"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:42
+msgid "The license key is used for access to automatic upgrades and support."
+msgstr "The license key is used for access to automatic upgrades and support."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:44
+msgid "Get Theme Styles"
+msgstr "Get Theme Styles"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:47
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:57
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:68
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:110
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:123
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:146
+msgid "Yes"
+msgstr "Yes"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:49
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:59
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:70
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:112
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:125
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:148
+msgid "No"
+msgstr "No"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:54
+msgid "Display Hints"
+msgstr "Display Hints"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:61
+msgid "Set this to Yes if you would like to see the Tips on Form Editor Page ."
+msgstr ""
+"Set this to Yes if you would like to see the Tips on Form Editor Page ."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:65
+msgid "Block WP-Login Pages"
+msgstr "Block WP-Login Pages"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:72
+msgid ""
+"Set this to Yes if you would like to block WP Login. You must select "
+"alternate pages."
+msgstr ""
+"Set this to Yes if you would like to block WP Login. You must select "
+"alternate pages."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:76
+msgid "Login Page"
+msgstr "Login Page"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:82
+msgid "This page must contain the Pie Register Login form short code."
+msgstr "This page must contain the Pie Register Login form short code."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:86
+msgid "Registration Page"
+msgstr "Registration Page"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:92
+msgid "This page must contain the Pie Register Registration form short code."
+msgstr "This page must contain the Pie Register Registration form short code."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:96
+msgid "Forgot Password Page"
+msgstr "Forgot Password Page"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:102
+msgid ""
+"This page must contain the Pie Register Forgot Password form short code."
+msgstr ""
+"This page must contain the Pie Register Forgot Password form short code."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:107
+msgid "Subscriber Redirect"
+msgstr "Subscriber Redirect"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:114
+msgid ""
+"Set this to Yes if you would like to block Login, Registration & Forgot "
+"Password pages for logged in users."
+msgstr ""
+"Set this to Yes if you would like to block Login, Registration & Forgot "
+"Password pages for logged in users."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:120
+msgid "Subscibers Access"
+msgstr "Subscibers Access"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:127
+msgid ""
+"Set this to No if you would like to disable the wp-admin login for "
+"subscribers."
+msgstr ""
+"Set this to No if you would like to disable the wp-admin login for "
+"subscribers."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:131
+msgid "After Login Page"
+msgstr "After Login Page"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:137
+msgid "Only valid for subscribers."
+msgstr "Only valid for subscribers."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:143
+msgid "Output CSS"
+msgstr "Output CSS"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:150
+msgid ""
+"Set this to No if you would like to disable the plugin from outputting the "
+"form CSS."
+msgstr ""
+"Set this to No if you would like to disable the plugin from outputting the "
+"form CSS."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:154
+msgid "Currency"
+msgstr "Currency"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:161
+msgid "Verifications"
+msgstr "Verifications"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:164
+msgid "Email Verification"
+msgstr "Email Verification"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:166
+msgid "Admin Verification"
+msgstr "Admin Verification"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:168
+msgid "Off"
+msgstr "Off"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:171
+msgid ""
+"Requires new registrations to click a link in the notification email to "
+"enable their account."
+msgstr ""
+"Requires new registrations to click a link in the notification email to "
+"enable their account."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:172
+msgid "Grace Period (days)"
+msgstr "Grace Period (days)"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:175
+msgid ""
+"Unverified Users will be automatically deleted after grace period expires"
+msgstr ""
+"Unverified Users will be automatically deleted after grace period expires"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:178
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:208
+msgid "Save Settings"
+msgstr "Save Settings"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:185
+msgid "Installation Status"
+msgstr "Installation Status"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:187
+msgid "PHP Version"
+msgstr "PHP Version"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:190
+msgid "MySQL Version"
+msgstr "MySQL Version"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:193
+msgid "Wordpress Version"
+msgstr "Wordpress Version"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:195
+msgid "reCAPTCHA Settings"
+msgstr "reCAPTCHA Settings"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:197
+msgid ""
+"Pie Register integrates with reCAPTCHA, a free CAPTCHA services that helps "
+"to digitize Books while Protecting your forms from spam bots. Read more "
+"about reCAPTCHA."
+msgstr ""
+"Pie Register integrates with reCAPTCHA, a free CAPTCHA services that helps "
+"to digitize Books while Protecting your forms from spam bots. Read more "
+"about reCAPTCHA."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:200
+msgid "reCAPTCHA Site Key"
+msgstr "reCAPTCHA Site Key"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:202
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:206
+msgid ""
+"Required Only if you decide to Use the reCAPTCHA field. Sign Up for a Free "
+"account to get the key."
+msgstr ""
+"Required Only if you decide to Use the reCAPTCHA field. Sign Up for a Free "
+"account to get the key."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:204
+msgid "reCAPTCHA Secret Key"
+msgstr "reCAPTCHA Secret Key"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:212
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:214
+msgid "Please don't use style tags."
+msgstr "Please don't use style tags."
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:219
+msgid "Tracking Code"
+msgstr "Tracking Code"
+
+#: \\wp-content\plugins\pie-register/menus/PieGeneralSettings.php:226
+msgid "Reset to Default"
+msgstr "Reset to Default"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:15
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:72
+msgid "Notifications : Registration Form"
+msgstr "Notifications : Registration Form"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:20
+msgid "Notifications to Administrator"
+msgstr "Notifications to Administrator"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:22
+msgid "Enable email notification to administrators"
+msgstr "Enable email notification to administrators"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:23
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:83
+msgid ""
+"Enter a message below to receive a notification email when users submit this "
+"form."
+msgstr ""
+"Enter a message below to receive a notification email when users submit this "
+"form."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:28
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:98
+msgid "Send To Email*"
+msgstr "Send To Email*"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:34
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:104
+msgid "From Name"
+msgstr "From Name"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:40
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:110
+msgid "From Email"
+msgstr "From Email"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:46
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:116
+msgid "Reply To"
+msgstr "Reply To"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:52
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:122
+msgid "BCC"
+msgstr "BCC"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:58
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:128
+msgid "Subject"
+msgstr "Subject"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:64
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:134
+msgid "Message"
+msgstr "Message"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegAdminNotification.php:106
+#: \\wp-content\plugins\pie-register/menus/PieRegEditForm.php:52
+#: \\wp-content\plugins\pie-register/menus/PieRegInvitationCodes.php:69
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:46
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:91
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:76
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:149
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegEditForm.php:47
+msgid "Form Editor : Registration Form"
+msgstr "Form Editor : Registration Form"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegEditForm.php:54
+msgid "Preview"
+msgstr "Preview"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegEditForm.php:97
+msgid "Drag Fields Here"
+msgstr "Drag Fields Here"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:55
+msgid "Import/Export User Entries"
+msgstr "Import/Export User Entries"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:70
+msgid "Export"
+msgstr "Export"
+
+msgid "Import/Export"
+msgstr "Import/Export"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:72
+msgid ""
+"Now you can export all users fields with a particular date range in a CSV "
+"file! Simply select your fields and select your Date Range. The Date Range "
+"feature is optional which means that if you do not select a date range then "
+"all entries will be exported. Click on the Download Export Files to complete "
+"the operation."
+msgstr ""
+"Now you can export all users fields with a particular date range in a CSV "
+"file! Simply select your fields and select your Date Range. The Date Range "
+"feature is optional which means that if you do not select a date range then "
+"all entries will be exported. Click on the Download Export Files to complete "
+"the operation."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:78
+msgid "Select Fields"
+msgstr "Select Fields"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:171
+msgid "Import"
+msgstr "Import"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:174
+msgid ""
+"Select the  CSV file you would like to import. When you click the import "
+"button below, Pie Register will import the users. Please see the example of "
+"CSV file before the import operartion."
+msgstr ""
+"Select the  CSV file you would like to import. When you click the import "
+"button below, Pie Register will import the users. Please see the example of "
+"CSV file before the import operartion."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:182
+msgid "You may want to see"
+msgstr "You may want to see"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegImportExport.php:182
+msgid "the example of the CSV file"
+msgstr "the example of the CSV file"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegInvitationCodes.php:39
+msgid ""
+"Protect your privacy. If you want your blog to be exclusive, enable "
+"Invitation Codes and keep track of your users."
+msgstr ""
+"Protect your privacy. If you want your blog to be exclusive, enable "
+"Invitation Codes and keep track of your users."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:13
+msgid "Payment Gateway Settings"
+msgstr "Payment Gateway Settings"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:30
+msgid "Enter Your Paypal hosted button ID."
+msgstr "Enter Your Paypal hosted button ID."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:39
+msgid "Paypal Mode"
+msgstr "Paypal Mode"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegPaymentGateway.php:53
+msgid "Please follow the steps below to create and set the required Options."
+msgstr "Please follow the steps below to create and set the required Options."
+
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:81
+msgid "Notifications to Users"
+msgstr "Notifications to Users"
+
+#: \\wp-content\plugins\pie-register/menus/PieRegUserNotification.php:89
+msgid "Messsage Type"
+msgstr "Messsage Type"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:255
+msgid "Add Pie Register Form"
+msgstr "Add Pie Register Form"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:275
+msgid "Please select a form"
+msgstr "Please select a form"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:288
+msgid "Select A Form"
+msgstr "Select A Form"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:290
+msgid "Select a form below to add it to your post or page."
+msgstr "Select a form below to add it to your post or page."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:306
+msgid "Cancel"
+msgstr "Cancel"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:348
+#: \\wp-content\plugins\pie-register/pie-register.php:359
+#: \\wp-content\plugins\pie-register/pie-register.php:375
+msgid "There was a problem with your username or password."
+msgstr "There was a problem with your username or password."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:643
+msgid "Thank you for your registration. Your password has been emailed to you."
+msgstr ""
+"Thank you for your registration. Your password has been emailed to you."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:683
+msgid ""
+"Thank you for your registration. You will be notified once the admin "
+"approves your account."
+msgstr ""
+"Thank you for your registration. You will be notified once the admin "
+"approves your account."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:710
+msgid ""
+"Thank you for your registration. An activation link with your password has "
+"been sent to you."
+msgstr ""
+"Thank you for your registration. An activation link with your password has "
+"been sent to you."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:786
+msgid "Unverified Users"
+msgstr "Unverified Users"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:792
+msgid "Verify Checked Users"
+msgstr "Verify Checked Users"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:795
+msgid "Resend Pending Payment E-mail"
+msgstr "Resend Pending Payment E-mail"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:798
+msgid "Resend Verification E-mail"
+msgstr "Resend Verification E-mail"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:801
+msgid "Delete"
+msgstr "Delete"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:811
+msgid "User Name"
+msgstr "User Name"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:812
+#: \\wp-content\plugins\pie-register/pie-register.php:833
+msgid "E-mail"
+msgstr "E-mail"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:813
+msgid "Registration Type"
+msgstr "Registration Type"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:814
+msgid "Role"
+msgstr "Role"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:876
+msgid "User(s) has been activated"
+msgstr "User(s) has been activated"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:879
+#: \\wp-content\plugins\pie-register/pie-register.php:927
+#: \\wp-content\plugins\pie-register/pie-register.php:978
+msgid "Error"
+msgstr "Error"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:879
+#: \\wp-content\plugins\pie-register/pie-register.php:927
+#: \\wp-content\plugins\pie-register/pie-register.php:978
+msgid "Please select a user to send emails to"
+msgstr "Please select a user to send emails to"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:920
+msgid "Payment Link Emails have been re-sent"
+msgstr "Payment Link Emails have been re-sent"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:922
+#: \\wp-content\plugins\pie-register/pie-register.php:975
+msgid "Invalid User Types"
+msgstr "Invalid User Types"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:973
+msgid "Verification Emails have been re-sent"
+msgstr "Verification Emails have been re-sent"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:996
+msgid "User(s) has been deleted"
+msgstr "User(s) has been deleted"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1197
+msgid "You did not select a file to import users"
+msgstr "You did not select a file to import users"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1203
+msgid "Invalid CSV file."
+msgstr "Invalid CSV file."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1231
+msgid "Invalid CSV File. It must contain all the default user fields."
+msgstr "Invalid CSV File. It must contain all the default user fields."
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1339
+msgid "Your plugin has been registered"
+msgstr "Your plugin has been registered"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1371
+msgid "Settings Saved"
+msgstr "Settings Saved"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1976
+msgid "Please"
+msgstr "Please"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1976
+msgid "login"
+msgstr "login"
+
+#: \\wp-content\plugins\pie-register/pie-register.php:1976
+msgid "to see your profile"
+msgstr "to see your profile"
+
+#: \\wp-content\plugins\pie-register/register_form_preview.php:25
+msgid "Form Preview"
+msgstr "Form Preview"
+
+#: \\wp-content\plugins\pie-register/widget.php:9
+msgid "Pie Register - Registration Form"
+msgstr "Pie Register - Registration Form"
+
+#: \\wp-content\plugins\pie-register/widget.php:52
+msgid "Pie Register - Login Form"
+msgstr "Pie Register - Login Form"
+
+#: \\wp-content\plugins\pie-register/widget.php:53
+msgid "Login Form"
+msgstr "Login Form"
+
+#: \\wp-content\plugins\pie-register/widget.php:96
+msgid "Pie Register - Forgot Password Form"
+msgstr "Pie Register - Forgot Password Form"
+
+#: \\wp-content\plugins\pie-register/widget.php:97
+msgid "Forgot Password Form"
+msgstr "Forgot Password Form"
+
+msgid "Default Fields"
+msgstr "Default Fields"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "Last Name"
+msgstr "Last Name"
+
+msgid "First Name"
+msgstr "First Name"
+
+msgid "Street Address"
+msgstr "Street Address"
+
+msgid "AIM"
+msgstr "AIM"
+
+msgid "Address Line 2"
+msgstr "Address Line 2"
+
+msgid "City"
+msgstr "City"
+
+msgid "State / Province / Region"
+msgstr "State / Province / Region"
+
+msgid "Zip / Postal Code"
+msgstr "Zip / Postal Code"
+
+msgid "Country"
+msgstr "Country"
+
+msgid "MM"
+msgstr "MM"
+
+msgid "Submit Button Text"
+msgstr "Submit Button Text"
+
+msgid "Show Reset Button"
+msgstr "Show Reset Button"
+
+msgid "Confirmation Message"
+msgstr "Confirmation Message"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "URL Settings"
+msgstr "URL Settings"
+
+msgid "Need Help?"
+msgstr "Need Help?"
+
+msgid "If you have any query, feel free to post your Questions at our"
+msgstr "If you have any query, feel free to post your Questions at our"
+
+msgid "Hosted Forum"
+msgstr "Hosted Forum"
+
+msgid "to get free support"
+msgstr "to get free support"
+
+msgid "Pie-Register"
+msgstr "Pie-Register"
+
+msgid "Do you like this plugin?"
+msgstr "Do you like this plugin?"
+
+msgid "Rate it 5"
+msgstr "Rate it 5"
+
+msgid "on WordPress.org"
+msgstr "on WordPress.org"
+
+msgid "Blog about it & link to the"
+msgstr "Blog about it & link to the"
+
+msgid "plugin page"
+msgstr "plugin page"
+
+msgid "Check out our"
+msgstr "Check out our"
+
+msgid "WordPress plugins"
+msgstr "WordPress plugins"
+
+msgid "Developed by"
+msgstr "Developed by"
+
+msgid "Forgot Password"
+msgstr "Forgot Password"
+
+msgid "Frontend Setting"
+msgstr "Frontend Setting"
+
+msgid "User Verification"
+msgstr "User Verification"
+
+msgid "Redirect"
+msgstr "Redirect"
+
+msgid "Registration Success Message"
+msgstr "Registration Success Message"
+
+msgid "DD"
+msgstr "DD"
+
+msgid "YYYY"
+msgstr "YYYY"
+
+msgid "Invalid File Type In Profile Picture"
+msgstr "Invalid File Type In Profile Picture"
+
+msgid "Invalid File Type"
+msgstr "Invalid File Type"
+
+msgid "E-mail Address"
+msgstr "E-mail Address"
+
+msgid "Invalid Invitation Code"
+msgstr "Invalid Invitation Code"
+
+msgid "Invitation Code has expired"
+msgstr "Invitation Code has expired"
+
+msgid "Field must contain only numbers"
+msgstr "Field must contain only numbers"
+
+msgid "Must be a valid URL"
+msgstr "Must be a valid URL"
+
+msgid "Field may only contain alpha-numeric characters"
+msgstr "Field may only contain alpha-numeric characters"
+
+msgid "Field must contain a valid email address"
+msgstr "Field must contain a valid email address"
+
+msgid "License Key"
+msgstr "License Key"
+
+msgid "Label Alignment"
+msgstr "Label Alignment"
+
+msgid "The plugin may not work as expected."
+msgstr "The plugin may not work as expected."
+
+msgid "Free License Key Setting"
+msgstr "Free License Key Setting"
+
+msgid "Subscriber level users will redirect to this page after signing in."
+msgstr "Subscriber level users will redirect to this page after signing in."
+
+msgid "After logout will redirect to this page after Logout page."
+msgstr "After logout will redirect to this page after Logout page."
+
+msgid "After logout will redirect to this url after Logout."
+msgstr "After logout will redirect to this url after Logout."
+
+msgid "Profile Page"
+msgstr "Profile Page"
+
+msgid "After Sign-in Page"
+msgstr "After Sign-in Page"
+
+msgid "After Logout URL"
+msgstr "After Logout URL"
+
+msgid "Redirect Logged-in Users"
+msgstr "Redirect Logged-in Users"
+
+msgid "Show Admin Bar"
+msgstr "Show Admin Bar"
+
+msgid "Show Admin Bar for Subscriber."
+msgstr "Show Admin Bar for Subscriber."
+
+msgid "Modify WP-LOGIN"
+msgstr "Modify WP-LOGIN"
+
+msgid "Override WP-Profile"
+msgstr "Override WP-Profile"
+
+msgid "Allow Pie-Register to Add header Footer on wp-login.php."
+msgstr "Allow Pie-Register to Add header Footer on wp-login.php."
+
+msgid "Redirect Your Subscriber to Custom Profile Page (if Exists)"
+msgstr "Redirect Your Subscriber to Custom Profile Page (if Exists)"
+
+msgid ""
+"Set this to No if you would like to disable Pie-Register from outputting the "
+"form CSS."
+msgstr ""
+"Set this to No if you would like to disable Pie-Register from outputting the "
+"form CSS."
+
+msgid ""
+"Unverified Users will be automatically deleted after grace period expires. 0 "
+"(Zero) For Unlimited"
+msgstr ""
+"Unverified Users will be automatically deleted after grace period expires. 0 "
+"(Zero) For Unlimited"
+
+msgid "CURL Enable"
+msgstr "CURL Enable"
+
+msgid "CURL Disable"
+msgstr "CURL Disable"
+
+msgid "Custom Logo"
+msgstr "Custom Logo"
+
+msgid "Custom Logo URL"
+msgstr "Custom Logo URL"
+
+msgid "Tooltip Text"
+msgstr "Tooltip Text"
+
+msgid "Link URL"
+msgstr "Link URL"
+
+msgid "Show tooltip on custom logo."
+msgstr "Show tooltip on custom logo."
+
+msgid "OR"
+msgstr "OR"
+
+msgid "The license key for support."
+msgstr "The license key for support."
+
+msgid "You have been using registered version of pie-register"
+msgstr "You have been using registered version of pie-register"
+
+msgid "Click here to de-activate your license key"
+msgstr "Click here to de-activate your license key"
+
+msgid "Remove License Key"
+msgstr "Remove License Key"
+
+msgid "Active Code"
+msgstr "Active Code"
+
+msgid "Unactive Code"
+msgstr "Unactive Code"
+
+msgid "Click Here To Edit"
+msgstr "Click Here To Edit"
+
+msgid ""
+"Please Click on the license icon to get and auto-filled your free license key"
+msgstr ""
+"Please Click on the license icon to get and auto-filled your free license key"
+
+msgid "Click here to get your free license key"
+msgstr "Click here to get your free license key"
+
+msgid "Password reset is not allowed for this user"
+msgstr "Password reset is not allowed for this user"
+
+msgid "Your account is not activated!."
+msgstr "Your account is not activated Yet!"
+
+msgid "Your account is now active"
+msgstr "Your account has been activated"
+
+msgid "Please enter Logo URL"
+msgstr "Please enter Logo URL"
+
+msgid "Curl"
+msgstr "Curl"
+
+msgid "Enter logo tooltip"
+msgstr "Enter logo tooltip"
+
+msgid "Enter logo Link"
+msgstr "Enter logo Link"
+
+msgid "Select Image to Upload"
+msgstr "Select Image to Upload"
+
+msgid "Yahoo IM"
+msgstr "Yahoo IM"
+
+msgid "Jabber / Google Talk"
+msgstr "Jabber / Google Talk"
+
+msgid "About Yourself"
+msgstr "About Yourself"
+
+msgid "Standard Fields"
+msgstr "Standard Fields"
+
+msgid "Text Field"
+msgstr "Text Field"
+
+msgid "Text Area"
+msgstr "Text Area"
+
+msgid "Drop Down"
+msgstr "Drop Down"
+
+msgid "Multi Select"
+msgstr "Multi Select"
+
+msgid "Numbers"
+msgstr "Numbers"
+
+msgid "Checkbox"
+msgstr "Checkbox"
+
+msgid "Radio Buttons"
+msgstr "Radio Buttons"
+
+msgid "Hidden"
+msgstr "Hidden"
+
+msgid "HTML"
+msgstr "HTML"
+
+msgid "Top"
+msgstr "Top"
+
+msgid "Left"
+msgstr "Left"
+
+msgid "Rgistering User Role"
+msgstr "Rgistering User Role"
+
+msgid "Default User Registration Template"
+msgstr "Default User Registration Template"
+
+msgid "E-Mail Verification"
+msgstr "E-Mail Verification"
+
+msgid "Thank You Message"
+msgstr "Thank You Message"
+
+msgid "Pending Payment"
+msgstr "Pending Payment"
+
+msgid "Payment Success"
+msgstr "Payment Success"
+
+msgid "Payment Faild"
+msgstr "Payment Faild"
+
+msgid "Show in Profile"
+msgstr "Show in Profile"
+
+msgid "Validation Rule"
+msgstr "Validation Rule"
+
+msgid "Default Value"
+msgstr "Default Value"
+
+msgid "Rules"
+msgstr "Rules"
+
+msgid "Length"
+msgstr "Length"
+
+msgid "Required"
+msgstr "Required"
+
+msgid "Pending Payment Reminder"
+msgstr "Pending Payment Reminder"
+
+msgid "E-Mail Verification Reminder"
+msgstr "E-Mail Verification Reminder"
+
+msgid "Forgot Password Notification"
+msgstr "Forgot Password Notification"
+
+msgid "Send HTML Format"
+msgstr "Send HTML Format"
+
+msgid "Replacement Keys"
+msgstr "Replacement Keys"
+
+msgid "Section Break"
+msgstr "Section Break"
+
+msgid "Frontend Settings"
+msgstr "Frontend Settings"
+
+msgid "Pie Register"
+msgstr "Pie Register"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Select File"
+msgstr "Select File"
+
+msgid "You are already activate"
+msgstr "Your account is already activated"
+
+msgid "You are block"
+msgstr "You account has been blocked"
+
+msgid "Update Existing Users"
+msgstr "Update Existing Users"
+
+msgid "Select All"
+msgstr "Select All"
+
+msgid "CSS Class Name"
+msgstr "CSS Class Name"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "Label2"
+msgstr "Label2"
+
+msgid "Validation Message"
+msgstr "Validation Message"
+
+msgid "Placeholder"
+msgstr "Placeholder"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Show Strength Meter"
+msgstr "Show Strength Meter"
+
+msgid "Nickname"
+msgstr "Nickname"
+
+msgid "Display Value"
+msgstr "Display Value"
+
+msgid "Value"
+msgstr "Value"
+
+msgid "Checked"
+msgstr "Checked"
+
+msgid "List Type"
+msgstr "List Type"
+
+msgid "Remove Settings"
+msgstr "Remove Settings"
+
+msgid "After Logout"
+msgstr "After Logout"
+
+msgid "Starting Date"
+msgstr "Starting Date"
+
+msgid "Ending Date"
+msgstr "Ending Date"
+
+msgid "After Logout Page"
+msgstr "After Logout Page"
+
+msgid "Password Label"
+msgstr "Password Label"
+
+msgid "Password Placeholder"
+msgstr "Password Placeholder"
+
+msgid "Captcha Label"
+msgstr "Captcha Label"
+
+msgid "Username Label"
+msgstr "Username Label"
+
+msgid "Username Placeholder"
+msgstr "Username Placeholder"
+
+msgid "Remove Settings On Deactivation"
+msgstr "Remove Settings On Deactivation"
+
+msgid "Display name"
+msgstr "Display name"
+
+msgid "Biographical Info"
+msgstr "Biographical Info"
+
+msgid "User Registered"
+msgstr "User Registered"
+
+msgid "Select User Registration Date Range"
+msgstr "Select User Registration Date Range"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "End"
+msgstr "End"
+
+msgid ""
+"Date Range is optional, if no date range is selected all entries will be "
+"exported."
+msgstr ""
+"Date Range is optional, if no date range is selected all entries will be "
+"exported."
+
+msgid "Download CSV File"
+msgstr "Download CSV File"
+
+msgid "Confirm Password"
+msgstr "Confirm Password"
+
+msgid "Page Break"
+msgstr "Page Break"
+
+msgid "Yes Thanks !"
+msgstr "Yes Thanks !"
+
+msgid "Advanced Fields"
+msgstr "Advanced Fields"
+
+msgid "Time"
+msgstr "Time"
+
+msgid "Paypal Information"
+msgstr "Paypal Information"
+
+msgid "Enable Paypal"
+msgstr "Enable Paypal"
+
+msgid "Steps"
+msgstr "Steps"
+
+msgid "Login to your"
+msgstr "Login to your"
+
+msgid "Paypal account"
+msgstr "Paypal account"
+
+msgid "Go to Merchant Services and Click on"
+msgstr "Go to Merchant Services and Click on"
+
+msgid "Buy Now"
+msgstr "Buy Now"
+
+msgid "button"
+msgstr "button"
+
+msgid "Give Your Button a Name. i.e: Website Access fee and Set Price."
+msgstr "Give Your Button a Name. i.e: Website Access fee and Set Price."
+
+msgid ""
+"Click on Step3: Customize advance features (optional) Tab, select \"Add "
+"advanced variables\" checkbox and add the following snippet"
+msgstr ""
+"Click on Step3: Customize advance features (optional) Tab, select \"Add "
+"advanced variables\" checkbox and add the following snippet"
+
+msgid ""
+"Click Create button, On the next page, you will see the generated button "
+"code snippet like the following"
+msgstr ""
+"Click Create button, On the next page, you will see the generated button "
+"code snippet like the following"
+
+msgid ""
+"Copy the snippet into any text editor, extract and put the hosted_button_id "
+"value (XXXXXXXXXX) into the Above Field."
+msgstr ""
+"Copy the snippet into any text editor, extract and put the hosted_button_id "
+"value (XXXXXXXXXX) into the Above Field."
+
+msgid "Save Changes, You're done!"
+msgstr "Save Changes, You're done!"
+
+msgid "Address"
+msgstr "Address"
+
+msgid "Captcha"
+msgstr "Captcha"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Hide Address 2"
+msgstr "Hide Address 2"
+
+msgid "Hide State"
+msgstr "Hide State"
+
+msgid "Default Country"
+msgstr "Default Country"
+
+msgid "Phone Format"
+msgstr "Phone Format"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid "Profile Picture"
+msgstr "Profile Picture"
+
+msgid "List"
+msgstr "List"
+
+msgid "Invitation Code"
+msgstr "Invitation Code"
+
+msgid "Did You Know ?"
+msgstr "Did You Know ?"
+
+msgid "You can Drag n Drop fields."
+msgstr "You can Drag n Drop fields."
+
+msgid "Form Editor"
+msgstr "Form Editor"
+
+msgid "Username or E-mail:"
+msgstr "Username or E-mail:"
+
+msgid "warning"
+msgstr "warning"
+
+msgid "Guideline"
+msgstr "Guideline"
+
+msgid "Apply"
+msgstr "Apply"
+
+msgid "Each Code will be on a Separate Line"
+msgstr "Each Code will be on a Separate Line"
+
+msgid "Note"
+msgstr "Note"
+
+msgid "Not Found Invitaion Code"
+msgstr "Not Found Invitaion Code"
+
+msgid ""
+"Welcome to the Pie-Register’s Customer Support Page. Many of your "
+"installation and setup related queries are answered in our FAQ’s, "
+"Documentation and Forums sections listed below. It is suggested that before "
+"you submit a support ticket, please review the mentioned sections for a "
+"clear and better understanding of Pie-Register. This will reduce the Support "
+"Volume for a timely execution of the Support Process"
+msgstr ""
+"Welcome to the Pie-Register’s Customer Support Page. Many of your "
+"installation and setup related queries are answered in our FAQ’s, "
+"Documentation and Forums sections listed below. It is suggested that before "
+"you submit a support ticket, please review the mentioned sections for a "
+"clear and better understanding of Pie-Register. This will reduce the Support "
+"Volume for a timely execution of the Support Process"
+
+msgid ""
+"If you still have any query, feel free to contact us by submitting a support "
+"ticket form on the right"
+msgstr ""
+"If you still have any query, feel free to contact us by submitting a support "
+"ticket form on the right"
+
+msgid "Browse Frequently Asked Questions"
+msgstr "Browse Frequently Asked Questions"
+
+msgid "Pie-Register v2.0 Beta Problems"
+msgstr "Pie-Register v2.0 Beta Problems"
+
+msgid "Go To Forums"
+msgstr "Go To Forums"
+
+msgid "Review Documentation"
+msgstr "Review Documentation"
+
+msgid "Getting Started"
+msgstr "Getting Started"
+
+msgid "Setting up Pie-Register"
+msgstr "Setting up Pie-Register"
+
+msgid "Installation Problems"
+msgstr "Installation Problems"
+
+msgid "Using Pie-Register"
+msgstr "Using Pie-Register"
+
+msgid "success"
+msgstr "success"
+
+msgid "Invalid username"
+msgstr "Invalid username"
+
+msgid "is incorrect"
+msgstr "is incorrect"
+
+msgid "Invalid Security Code"
+msgstr "Invalid Security Code"
+
+msgid "Username already exists"
+msgstr "Username already exists"
+
+msgid "E-mail address already exists"
+msgstr "E-mail address already exists"
+
+msgid "is required"
+msgstr "is required"
+
+msgid "The password you entered for the username"
+msgstr "The password you entered for the username"
+
+msgid "Invalid username or password."
+msgstr "Invalid username or password."
+
+msgid "News and Announcements"
+msgstr "News and Announcements"
+
+msgid "Embedding Forms/Shortcodes"
+msgstr "Embedding Forms/Shortcodes"
+
+msgid ""
+"Now, you can easily embed your Login, Registration, Forgot Password forms "
+"and Profile pages anywhere inside a post, page or a custom post type or even "
+"into the widgets through the use of following shortcodes"
+msgstr ""
+"Now, you can easily embed your Login, Registration, Forgot Password forms "
+"and Profile pages anywhere inside a post, page or a custom post type or even "
+"into the widgets through the use of following shortcodes"
+
+msgid "For login form use"
+msgstr "For login form use"
+
+msgid "For Registration form use"
+msgstr "For Registration form use"
+
+msgid "For forgot password form use"
+msgstr "For forgot password form use"
+
+msgid "For profile page use"
+msgstr "For profile page use"
+
+msgid "Comments"
+msgstr "Comments"
+
+msgid "Submit"
+msgstr "Submit"
+
+msgid "State"
+msgstr "State"
+
+msgid "Log in"
+msgstr "Log in"
+
+msgid "Back to"
+msgstr "Back to"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "* This field is required"
+msgstr "* This field is required"
+
+msgid "* Please select an option"
+msgstr "* Please select an option"
+
+msgid "* This checkbox is required"
+msgstr "* This checkbox is required"
+
+msgid "* Both date range fields are required"
+msgstr "* Both date range fields are required"
+
+msgid "* Field must equal test"
+msgstr "* Field must equal test"
+
+msgid "* Invalid "
+msgstr "* Invalid "
+
+msgid "Date Range"
+msgstr "Date Range"
+
+msgid "Date Time Range"
+msgstr "Date Time Range"
+
+msgid "* Minimum "
+msgstr "* Minimum "
+
+msgid " characters required"
+msgstr " characters required"
+
+msgid "* Maximum "
+msgstr "* Maximum "
+
+msgid " characters allowed"
+msgstr " characters allowed"
+
+msgid "* You must fill one of the following fields"
+msgstr "* You must fill one of the following fields"
+
+msgid "* Minimum value is "
+msgstr "* Minimum value is "
+
+msgid "* Date prior to "
+msgstr "* Date prior to "
+
+msgid "* Date past "
+msgstr "* Date past "
+
+msgid " options allowed"
+msgstr " options allowed"
+
+msgid "* Please select "
+msgstr "* Please select "
+
+msgid " options"
+msgstr " options"
+
+msgid "* Fields do not match"
+msgstr "* Fields do not match"
+
+msgid "* Invalid credit card number"
+msgstr "* Invalid credit card number"
+
+msgid "* Invalid phone number"
+msgstr "* Invalid phone number"
+
+msgid "* Allowed Format (xxx) xxx-xxxx"
+msgstr "* Allowed Format (xxx) xxx-xxxx"
+
+msgid "* Minimum 10 Digits starting with Country Code"
+msgstr "* Minimum 10 Digits starting with Country Code"
+
+msgid "* Invalid email address"
+msgstr "* Invalid email address"
+
+msgid "* Not a valid integer"
+msgstr "* Not a valid integer"
+
+msgid "* Invalid number"
+msgstr "* Invalid number"
+
+msgid "* Invalid month"
+msgstr "* Invalid month"
+
+msgid "* Invalid day"
+msgstr "* Invalid day"
+
+msgid "* Invalid year"
+msgstr "* Invalid year"
+
+msgid "* Invalid file extension"
+msgstr "* Invalid file extension"
+
+msgid "* Invalid date, must be in YYYY-MM-DD format"
+msgstr "* Invalid date, must be in YYYY-MM-DD format"
+
+msgid "* Invalid IP address"
+msgstr "* Invalid IP address"
+
+msgid "* Invalid URL"
+msgstr "* Invalid URL"
+
+msgid "* Numbers only"
+msgstr "* Numbers only"
+
+msgid "* Letters only"
+msgstr "* Letters only"
+
+msgid "* No special characters allowed"
+msgstr "* No special characters allowed"
+
+msgid "* This user is already taken"
+msgstr "* This user is already taken"
+
+msgid "* This username is available"
+msgstr "* This username is available"
+
+msgid "* This name is available"
+msgstr "* This name is available"
+
+msgid "* Validating, please wait"
+msgstr "* Validating, please wait"
+
+msgid "* This name is already taken"
+msgstr "* This name is already taken"
+
+msgid "* Please input HELLO"
+msgstr "* Please input HELLO"
+
+msgid "* Invalid Date"
+msgstr "* Invalid Date"
+
+msgid "* Invalid Date or Date Format"
+msgstr "* Invalid Date or Date Format"
+
+msgid "Expected Format: "
+msgstr "Expected Format: "
+
+msgid "mm/dd/yyyy hh:mm:ss AM|PM or "
+msgstr "mm/dd/yyyy hh:mm:ss AM|PM or "
+
+msgid "yyyy-mm-dd hh:mm:ss AM|PM"
+msgstr "yyyy-mm-dd hh:mm:ss AM|PM"
+
+msgid "none"
+msgstr "none"
+
+msgid "AM"
+msgstr "AM"
+
+msgid "PM"
+msgstr "PM"
+
+msgid "Strength Indicator"
+msgstr "Strength Indicator"
+
+msgid "Very weak"
+msgstr "Very weak"
+
+msgid "You can sort fields vertically"
+msgstr "You can sort fields vertically"
+
+msgid "Weak"
+msgstr "Weak"
+
+msgid "Medium"
+msgstr "Medium"
+
+msgid "Strong"
+msgstr "Strong"
+
+msgid "Mismatch"
+msgstr "Mismatch"
+
+msgid "Short Code"
+msgstr "Short Code"
+
+msgid "Reset Button Text"
+msgstr "Reset Button Text"
+
+msgid "Create a Support Ticket"
+msgstr "Create a Support Ticket"
+
+msgid "Enable Invitation Codes"
+msgstr "Enable Invitation Codes"
+
+msgid ""
+"Set this to Yes if you want users to register only by your defined invitaion "
+"codes. You will have to add invitation code field in the form editor"
+msgstr ""
+"Set this to Yes if you want users to register only by your defined invitaion "
+"codes. You will have to add invitation code field in the form editor"
+
+msgid "Insert Code"
+msgstr "Insert Code"
+
+msgid "Number of time a particular code can be used for registration"
+msgstr "Number of time a particular code can be used for registration"
+
+msgid "Add Code"
+msgstr "Add Code"
+
+msgid "Per-Page Item"
+msgstr "Per-Page Item"
+
+msgid "Bulk Actions"
+msgstr "Bulk Actions"
+
+msgid "Active"
+msgstr "Active"
+
+msgid "Unactive"
+msgstr "Unactive"
+
+msgid "Code Name"
+msgstr "Code Name"
+
+msgid "Usage"
+msgstr "Usage"
+
+msgid "Used"
+msgstr "Used"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Lost your password?"
+msgstr "Lost your password?"
+
+msgid "Payment Gateway"
+msgstr "Payment Gateway"
+
+msgid "Admin Notifications"
+msgstr "Admin Notifications"
+
+msgid "User Notifications"
+msgstr "User Notifications"
+
+msgid "Invitation Codes"
+msgstr "Invitation Codes"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "Previous"
+msgstr "Previous"
+
+msgid "Selected Logo"
+msgstr "Selected Logo"
+
+msgid "Show Custom Logo"
+msgstr "Show Custom Logo"
+
+msgid "Paypal (one time subscription)"
+msgstr "Paypal (one time subscription)"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Log In"
+msgstr "Log In"
+
+msgid "Remember Me"
+msgstr "Remember Me"
+
+msgid "Confirm E-mail"
+msgstr "Confirm E-mail"
+
+msgid "ERROR"
+msgstr "ERROR"
+
+msgid "e-mail: "
+msgstr "e-mail: "
+
+msgid ""
+"Your account requires activation by an administrator before you will be able "
+"to login."
+msgstr ""
+"Your account requires activation by an administrator before you will be able "
+"to login."
+
+msgid "Verification URL: "
+msgstr "Verification URL: "
+
+msgid "Please use the link above to verify and activate your account"
+msgstr "Please use the link above to verify and activate your account"
+
+msgid "Please click on the above link to verify your email"
+msgstr "Please click on the above link to verify your email"
+
+msgid "Alternate Login Page"
+msgstr "Alternate Login Page"
+
+msgid "Redirect Users"
+msgstr "Redirect Users"
+
+#: ******* Add These Variables Since 2.0.13 ********
+msgid "HH"
+msgstr "HH"
+
+msgid "* Invalid Username"
+msgstr "* Invalid Username"
+
+msgid "* Invalid File"
+msgstr "* Invalid File"
+
+msgid "* Maximum value is "
+msgstr "* Maximum value is "
+
+msgid "No Icon"
+msgstr "No Icon"
+
+msgid "Calendar Icon"
+msgstr "Calendar Icon"
+
+msgid "Custom Icon"
+msgstr "Custom Icon"
+
+msgid "Number"
+msgstr "Number"
+
+msgid "Alphanumeric"
+msgstr "Alphanumeric"
+
+msgid "None"
+msgstr "None"
+
+msgid "USA Format (xxx) (xxx-xxxx)"
+msgstr "USA Format (xxx) (xxx-xxxx)"
+
+msgid "Phone International xxx-xxx-xxxx"
+msgstr "Phone International xxx-xxx-xxxx"
+
+msgid "Rows"
+msgstr "Rows"
+
+msgid "Columns"
+msgstr "Columns"
+
+msgid "Min"
+msgstr "Min"
+
+msgid "Max"
+msgstr "Max"
+
+msgid "12 hour"
+msgstr "12 hour"
+
+msgid "24 hour"
+msgstr "24 hour"
+
+msgid "Date Field"
+msgstr "Date Field"
+
+msgid "Date Picker"
+msgstr "Date Picker"
+
+msgid "Date Drop Down"
+msgstr "Date Drop Down"
+
+msgid "Re-Captcha"
+msgstr "Re-Captcha"
+
+msgid "Math Captcha"
+msgstr "Math Captcha"
+
+msgid "Select Page"
+msgstr "Select Page"
+
+msgid "Redirect URL"
+msgstr "Redirect URL"
+
+msgid "Appear Captcha in login form which you want"
+msgstr "Appear Captcha in login form which you want"
+
+msgid "Appear Captcha in Forgot Password form which you want"
+msgstr "Appear Captcha in Forgot Password form which you want"
+
+msgid ""
+"Warning: Turning off any script here may stop Pie-Register to work properly, "
+"please do it carefully!"
+msgstr ""
+"Warning: Turning off any script here may stop Pie-Register to work properly, "
+"please do it carefully!"
+
+msgid "Password Strength Meter Settings"
+msgstr "Password Strength Meter Settings"
+
+msgid "Re-Captcha Skin"
+msgstr "Re-Captcha Skin"
+
+msgid "red"
+msgstr "red"
+
+msgid "white"
+msgstr "white"
+
+msgid "clean"
+msgstr "clean"
+
+msgid "blackglass"
+msgstr "blackglass"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Sandbox"
+msgstr "Sandbox"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "Custom Fields"
+msgstr "Custom Fields"
+
+msgid "Other"
+msgstr "Other"
+
+msgid "User E-mail"
+msgstr "User E-mail"
+
+msgid "User First Name"
+msgstr "User First Name"
+
+msgid "User Last Name"
+msgstr "User Last Name"
+
+msgid "User URL"
+msgstr "User URL"
+
+msgid "User AIM"
+msgstr "User AIM"
+
+msgid "User YIM"
+msgstr "User YIM"
+
+msgid "User Jabber"
+msgstr "User Jabber"
+
+msgid "User Biographical Info"
+msgstr "User Biographical Info"
+
+msgid "User Registration Date"
+msgstr "User Registration Date"
+
+msgid "Blog Name"
+msgstr "Blog Name"
+
+msgid "Site URL"
+msgstr "Site URL"
+
+msgid "Blog Name With Site URL"
+msgstr "Blog Name With Site URL"
+
+msgid "Reset Password URL"
+msgstr "Reset Password URL"
+
+msgid "User Activation URL"
+msgstr "User Activation URL"
+
+msgid "Reset Email URL"
+msgstr "Reset Email URL"
+
+msgid "User IP"
+msgstr "User IP"
+
+msgid "User New E-mail"
+msgstr "User New E-mail"
+
+msgid "Pending Payment URL"
+msgstr "Pending Payment URL"
+
+msgid "Email Edit Verification"
+msgstr "Email Edit Verification"
+
+msgid "Select Per-Page Invitaion code"
+msgstr "Select Per-Page Invitaion code"
+
+msgid "Edit Form"
+msgstr "Edit Form"
+
+msgid "Edit Button"
+msgstr "Edit Button"
+
+msgid "Edit Field"
+msgstr "Edit Field"
+
+msgid "International"
+msgstr "International"
+
+msgid "Default State"
+msgstr "Default State"
+
+msgid "Click Here to Select/De-select All"
+msgstr "Click Here to Select/De-select All"
+
+#: Countries Name
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+msgid "Albania"
+msgstr "Albania"
+
+msgid "Algeria"
+msgstr "Algeria"
+
+msgid "American Samoa"
+msgstr "American Samoa"
+
+msgid "Andorra"
+msgstr "Andorra"
+
+msgid "Angola"
+msgstr "Angola"
+
+msgid "Antigua and Barbuda"
+msgstr "Antigua and Barbuda"
+
+msgid "Argentina"
+msgstr "Argentina"
+
+msgid "Armenia"
+msgstr "Armenia"
+
+msgid "Australia"
+msgstr "Australia"
+
+msgid "Austria"
+msgstr "Austria"
+
+msgid "Azerbaijan"
+msgstr "Azerbaijan"
+
+msgid "Bahamas"
+msgstr "Bahamas"
+
+msgid "Bahrain"
+msgstr "Bahrain"
+
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+msgid "Barbados"
+msgstr "Barbados"
+
+msgid "Belarus"
+msgstr "Belarus"
+
+msgid "Belgium"
+msgstr "Belgium"
+
+msgid "Belize"
+msgstr "Belize"
+
+msgid "Benin"
+msgstr "Benin"
+
+msgid "Bermuda"
+msgstr "Bermuda"
+
+msgid "Bhutan"
+msgstr "Bhutan"
+
+msgid "Bolivia"
+msgstr "Bolivia"
+
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia and Herzegovina"
+
+msgid "Botswana"
+msgstr "Botswana"
+
+msgid "Brazil"
+msgstr "Brazil"
+
+msgid "Brunei"
+msgstr "Brunei"
+
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+msgid "Burundi"
+msgstr "Burundi"
+
+msgid "Cambodia"
+msgstr "Cambodia"
+
+msgid "Cameroon"
+msgstr "Cameroon"
+
+msgid "Canada"
+msgstr "Canada"
+
+msgid "Cape Verde"
+msgstr "Cape Verde"
+
+msgid "Central African Republic"
+msgstr "Central African Republic"
+
+msgid "Chad"
+msgstr "Chad"
+
+msgid "Chile"
+msgstr "Chile"
+
+msgid "China"
+msgstr "China"
+
+msgid "Colombia"
+msgstr "Colombia"
+
+msgid "Comoros"
+msgstr "Comoros"
+
+msgid "Congo"
+msgstr "Congo"
+
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+msgid "Côte d'Ivoire"
+msgstr "Côte d'Ivoire"
+
+msgid "Croatia"
+msgstr "Croatia"
+
+msgid "Cuba"
+msgstr "Cuba"
+
+msgid "Cyprus"
+msgstr "Cyprus"
+
+msgid "Czech Republic"
+msgstr "Czech Republic"
+
+msgid "Denmark"
+msgstr "Denmark"
+
+msgid "Djibouti"
+msgstr "Djibouti"
+
+msgid "Dominica"
+msgstr "Dominica"
+
+msgid "Dominican Republic"
+msgstr "Dominican Republic"
+
+msgid "East Timor"
+msgstr "East Timor"
+
+msgid "Ecuador"
+msgstr "Ecuador"
+
+msgid "Egypt"
+msgstr "Egypt"
+
+msgid "El Salvador"
+msgstr "El Salvador"
+
+msgid "Equatorial Guinea"
+msgstr "Equatorial Guinea"
+
+msgid "Eritrea"
+msgstr "Eritrea"
+
+msgid "Estonia"
+msgstr "Estonia"
+
+msgid "Ethiopia"
+msgstr "Ethiopia"
+
+msgid "Fiji"
+msgstr "Fiji"
+
+msgid "Finland"
+msgstr "Finland"
+
+msgid "France"
+msgstr "France"
+
+msgid "Gabon"
+msgstr "Gabon"
+
+msgid "Gambia"
+msgstr "Gambia"
+
+msgid "Georgia"
+msgstr "Georgia"
+
+msgid "Germany"
+msgstr "Germany"
+
+msgid "Ghana"
+msgstr "Ghana"
+
+msgid "Greece"
+msgstr "Greece"
+
+msgid "Greenland"
+msgstr "Greenland"
+
+msgid "Grenada"
+msgstr "Grenada"
+
+msgid "Guam"
+msgstr "Guam"
+
+msgid "Guatemala"
+msgstr "Guatemala"
+
+msgid "Guinea"
+msgstr "Guinea"
+
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+msgid "Guyana"
+msgstr "Guyana"
+
+msgid "Haiti"
+msgstr "Haiti"
+
+msgid "Honduras"
+msgstr "Honduras"
+
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+msgid "Hungary"
+msgstr "Hungary"
+
+msgid "Iceland"
+msgstr "Iceland"
+
+msgid "India"
+msgstr "India"
+
+msgid "Indonesia"
+msgstr "Indonesia"
+
+msgid "Iran"
+msgstr "Iran"
+
+msgid "Iraq"
+msgstr "Iraq"
+
+msgid "Ireland"
+msgstr "Ireland"
+
+msgid "Israel"
+msgstr "Israel"
+
+msgid "Italy"
+msgstr "Italy"
+
+msgid "Jamaica"
+msgstr "Jamaica"
+
+msgid "Japan"
+msgstr "Japan"
+
+msgid "Jordan"
+msgstr "Jordan"
+
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+msgid "Kenya"
+msgstr "Kenya"
+
+msgid "Kiribati"
+msgstr "Kiribati"
+
+msgid "North Korea"
+msgstr "North Korea"
+
+msgid "South Korea"
+msgstr "South Korea"
+
+msgid "Kuwait"
+msgstr "Kuwait"
+
+msgid "Kyrgyzstan"
+msgstr "Kyrgyzstan"
+
+msgid "Laos"
+msgstr "Laos"
+
+msgid "Latvia"
+msgstr "Latvia"
+
+msgid "Lebanon"
+msgstr "Lebanon"
+
+msgid "Lesotho"
+msgstr "Lesotho"
+
+msgid "Liberia"
+msgstr "Liberia"
+
+msgid "Libya"
+msgstr "Libya"
+
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+msgid "Lithuania"
+msgstr "Lithuania"
+
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+msgid "Macedonia"
+msgstr "Macedonia"
+
+msgid "Madagascar"
+msgstr "Madagascar"
+
+msgid "Malawi"
+msgstr "Malawi"
+
+msgid "Malaysia"
+msgstr "Malaysia"
+
+msgid "Maldives"
+msgstr "Maldives"
+
+msgid "Mali"
+msgstr "Mali"
+
+msgid "Malta"
+msgstr "Malta"
+
+msgid "Marshall Islands"
+msgstr "Marshall Islands"
+
+msgid "Mauritania"
+msgstr "Mauritania"
+
+msgid "Mauritius"
+msgstr "Mauritius"
+
+msgid "Mexico"
+msgstr "Mexico"
+
+msgid "Micronesia"
+msgstr "Micronesia"
+
+msgid "Moldova"
+msgstr "Moldova"
+
+msgid "Monaco"
+msgstr "Monaco"
+
+msgid "Mongolia"
+msgstr "Mongolia"
+
+msgid "Montenegro"
+msgstr "Montenegro"
+
+msgid "Morocco"
+msgstr "Morocco"
+
+msgid "Mozambique"
+msgstr "Mozambique"
+
+msgid "Myanmar"
+msgstr "Myanmar"
+
+msgid "Namibia"
+msgstr "Namibia"
+
+msgid "Nauru"
+msgstr "Nauru"
+
+msgid "Nepal"
+msgstr "Nepal"
+
+msgid "Netherlands"
+msgstr "Netherlands"
+
+msgid "New Zealand"
+msgstr "New Zealand"
+
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+msgid "Niger"
+msgstr "Niger"
+
+msgid "Nigeria"
+msgstr "Nigeria"
+
+msgid "Norway"
+msgstr "Norway"
+
+msgid "Northern Mariana Islands"
+msgstr "Northern Mariana Islands"
+
+msgid "Oman"
+msgstr "Oman"
+
+msgid "Pakistan"
+msgstr "Pakistan"
+
+msgid "Palau"
+msgstr "Palau"
+
+msgid "Palestine"
+msgstr "Palestine"
+
+msgid "Panama"
+msgstr "Panama"
+
+msgid "Papua New Guinea"
+msgstr "Papua New Guinea"
+
+msgid "Paraguay"
+msgstr "Paraguay"
+
+msgid "Peru"
+msgstr "Peru"
+
+msgid "Philippines"
+msgstr "Philippines"
+
+msgid "Poland"
+msgstr "Poland"
+
+msgid "Portugal"
+msgstr "Portugal"
+
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+msgid "Qatar"
+msgstr "Qatar"
+
+msgid "Romania"
+msgstr "Romania"
+
+msgid "Russia"
+msgstr "Russia"
+
+msgid "Rwanda"
+msgstr "Rwanda"
+
+msgid "Saint Kitts and Nevis"
+msgstr "Saint Kitts and Nevis"
+
+msgid "Saint Lucia"
+msgstr "Saint Lucia"
+
+msgid "Saint Vincent and the Grenadines"
+msgstr "Saint Vincent and the Grenadines"
+
+msgid "Samoa"
+msgstr "Samoa"
+
+msgid "San Marino"
+msgstr "San Marino"
+
+msgid "Sao Tome and Principe"
+msgstr "Sao Tome and Principe"
+
+msgid "Saudi Arabia"
+msgstr "Saudi Arabia"
+
+msgid "Senegal"
+msgstr "Senegal"
+
+msgid "Serbia and Montenegro"
+msgstr "Serbia and Montenegro"
+
+msgid "Seychelles"
+msgstr "Seychelles"
+
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+msgid "Singapore"
+msgstr "Singapore"
+
+msgid "Slovakia"
+msgstr "Slovakia"
+
+msgid "Slovenia"
+msgstr "Slovenia"
+
+msgid "Solomon Islands"
+msgstr "Solomon Islands"
+
+msgid "Somalia"
+msgstr "Somalia"
+
+msgid "South Africa"
+msgstr "South Africa"
+
+msgid "Spain"
+msgstr "Spain"
+
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+msgid "Sudan"
+msgstr "Sudan"
+
+msgid "Sudan, South"
+msgstr "Sudan, South"
+
+msgid "Suriname"
+msgstr "Suriname"
+
+msgid "Swaziland"
+msgstr "Swaziland"
+
+msgid "Sweden"
+msgstr "Sweden"
+
+msgid "Switzerland"
+msgstr "Switzerland"
+
+msgid "Syria"
+msgstr "Syria"
+
+msgid "Taiwan"
+msgstr "Taiwan"
+
+msgid "Tajikistan"
+msgstr "Tajikistan"
+
+msgid "Tanzania"
+msgstr "Tanzania"
+
+msgid "Thailand"
+msgstr "Thailand"
+
+msgid "Togo"
+msgstr "Togo"
+
+msgid "Tonga"
+msgstr "Tonga"
+
+msgid "Trinidad and Tobago"
+msgstr "Trinidad and Tobago"
+
+msgid "Tunisia"
+msgstr "Tunisia"
+
+msgid "Turkey"
+msgstr "Turkey"
+
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+msgid "Uganda"
+msgstr "Uganda"
+
+msgid "Ukraine"
+msgstr "Ukraine"
+
+msgid "United Arab Emirates"
+msgstr "United Arab Emirates"
+
+msgid "United Kingdom"
+msgstr "United Kingdom"
+
+msgid "United States"
+msgstr "United States"
+
+msgid "Uruguay"
+msgstr "Uruguay"
+
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+msgid "Vatican City"
+msgstr "Vatican City"
+
+msgid "Venezuela"
+msgstr "Venezuela"
+
+msgid "Vietnam"
+msgstr "Vietnam"
+
+msgid "Virgin Islands, British"
+msgstr "Virgin Islands, British"
+
+msgid "Virgin Islands, U.S."
+msgstr "Virgin Islands, U.S."
+
+msgid "Yemen"
+msgstr "Yemen"
+
+msgid "Zambia"
+msgstr "Zambia"
+
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: USA State
+msgid "Alabama"
+msgstr "Alabama"
+
+msgid "Alaska"
+msgstr "Alaska"
+
+msgid "Arizona"
+msgstr "Arizona"
+
+msgid "Arkansas"
+msgstr "Arkansas"
+
+msgid "California"
+msgstr "California"
+
+msgid "Colorado"
+msgstr "Colorado"
+
+msgid "Connecticut"
+msgstr "Connecticut"
+
+msgid "Delaware"
+msgstr "Delaware"
+
+msgid "District of Columbia"
+msgstr "District of Columbia"
+
+msgid "Florida"
+msgstr "Florida"
+
+msgid "Hawaii"
+msgstr "Hawaii"
+
+msgid "Idaho"
+msgstr "Idaho"
+
+msgid "Illinois"
+msgstr "Illinois"
+
+msgid "Indiana"
+msgstr "Indiana"
+
+msgid "Iowa"
+msgstr "Iowa"
+
+msgid "Kansas"
+msgstr "Kansas"
+
+msgid "Kentucky"
+msgstr "Kentucky"
+
+msgid "Louisiana"
+msgstr "Louisiana"
+
+msgid "Maine"
+msgstr "Maine"
+
+msgid "Maryland"
+msgstr "Maryland"
+
+msgid "Massachusetts"
+msgstr "Massachusetts"
+
+msgid "Michigan"
+msgstr "Michigan"
+
+msgid "Minnesota"
+msgstr "Minnesota"
+
+msgid "Mississippi"
+msgstr "Mississippi"
+
+msgid "Missouri"
+msgstr "Missouri"
+
+msgid "Montana"
+msgstr "Montana"
+
+msgid "Nebraska"
+msgstr "Nebraska"
+
+msgid "Nevada"
+msgstr "Nevada"
+
+msgid "New Hampshire"
+msgstr "New Hampshire"
+
+msgid "New Jersey"
+msgstr "New Jersey"
+
+msgid "New Mexico"
+msgstr "New Mexico"
+
+msgid "New York"
+msgstr "New York"
+
+msgid "North Carolina"
+msgstr "North Carolina"
+
+msgid "North Dakota"
+msgstr "North Dakota"
+
+msgid "Ohio"
+msgstr "Ohio"
+
+msgid "Oklahoma"
+msgstr "Oklahoma"
+
+msgid "Oregon"
+msgstr "Oregon"
+
+msgid "Pennsylvania"
+msgstr "Pennsylvania"
+
+msgid "Rhode Island"
+msgstr "Rhode Island"
+
+msgid "South Carolina"
+msgstr "South Carolina"
+
+msgid "South Dakota"
+msgstr "South Dakota"
+
+msgid "Tennessee"
+msgstr "Tennessee"
+
+msgid "Texas"
+msgstr "Texas"
+
+msgid "Utah"
+msgstr "Utah"
+
+msgid "Vermont"
+msgstr "Vermont"
+
+msgid "Virginia"
+msgstr "Virginia"
+
+msgid "Washington"
+msgstr "Washington"
+
+msgid "West Virginia"
+msgstr "West Virginia"
+
+msgid "Wisconsin"
+msgstr "Wisconsin"
+
+msgid "Wyoming"
+msgstr "Wyoming"
+
+msgid "Armed Forces Americas"
+msgstr "Armed Forces Americas"
+
+msgid "Armed Forces Europe"
+msgstr "Armed Forces Europe"
+
+msgid "Armed Forces Pacific"
+msgstr "Armed Forces Pacific"
+
+#: Canada State
+msgid "Alberta"
+msgstr "Alberta"
+
+msgid "British Columbia"
+msgstr "British Columbia"
+
+msgid "Manitoba"
+msgstr "Manitoba"
+
+msgid "New Brunswick"
+msgstr "New Brunswick"
+
+msgid "Newfoundland and Labrador"
+msgstr "Newfoundland and Labrador"
+
+msgid "Northwest Territories"
+msgstr "Northwest Territories"
+
+msgid "Nova Scotia"
+msgstr "Nova Scotia"
+
+msgid "Nunavut"
+msgstr "Nunavut"
+
+msgid "Ontario"
+msgstr "Ontario"
+
+msgid "Prince Edward Island"
+msgstr "Prince Edward Island"
+
+msgid "Quebec"
+msgstr "Quebec"
+
+msgid "Saskatchewan"
+msgstr "Saskatchewan"
+
+msgid "Yukon"
+msgstr "Yukon"
+
+msgid "Pie Register - Login"
+msgstr "Pie Register - Login"
+
+msgid "Pie Register - Registration"
+msgstr "Pie Register - Registration"
+
+msgid "Pie Register - Forgot Password"
+msgstr "Pie Register - Forgot Password"
+
+msgid "Pie Register - Profile"
+msgstr "Pie Register - Profile"
+
+msgid "Password Fields do not macth!"
+msgstr "Password Fields do not macth!"
+
+msgid "There was a problem and the email was probably not sent."
+msgstr "There was a problem and the email was probably not sent."
+
+msgid ""
+"Please follow the link sent to your new Email to verify and make the change "
+"applied!"
+msgstr ""
+"Please follow the link sent to your new Email to verify and make the change "
+"applied!"
+
+msgid "This Email already Exists"
+msgstr "This Email already Exists"
+
+msgid "Something Went Wrong updating Profile fields, please try again!"
+msgstr "Something Went Wrong updating Profile fields, please try again!"
+
+msgid "Your Profile has been updated."
+msgstr "Your Profile has been updated."
+
+msgid "Invalid profile picture"
+msgstr "Invalid profile picture"
+
+msgid "Invalid upload file."
+msgstr "Invalid upload file."
+
+msgid "Password not entered"
+msgstr "Password not entered"
+
+msgid "Invalid Math Captcha"
+msgstr "Invalid Math Captcha"
+
+msgid "Invalid Username or Email, try again!"
+msgstr "Invalid Username or Email, try again!"
+
+msgid "Invalid Captcha"
+msgstr "Invalid Captcha"
+
+msgid ""
+"Thank you for your registration. You will receieve your login credentials "
+"soon."
+msgstr ""
+"Thank you for your registration. You will receieve your login credentials "
+"soon."
+
+msgid "Invalid activation key"
+msgstr "Invalid activation key"
+
+msgid "You key has been expired, please reset password again!"
+msgstr "You key has been expired, please reset password again!"
+
+msgid "Password Lost and Found"
+msgstr "Password Lost and Found"
+
+msgid ""
+"This Reset key is invalid or no longer exists. Please reset password again!"
+msgstr ""
+"This Reset key is invalid or no longer exists. Please reset password again!"
+
+msgid "Minimum 8 characters required in password"
+msgstr "Minimum 8 characters required in password"
+
+msgid "New password"
+msgstr "New password"
+
+msgid "Confirm new password"
+msgstr "Confirm new password"
+
+msgid "Reset Password"
+msgstr "Reset Password"
+
+msgid "Jan"
+msgstr "Jan"
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "Mar"
+msgstr "Mar"
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "Jun"
+msgstr "Jun"
+
+msgid "Jul"
+msgstr "Jul"
+
+msgid "Aug"
+msgstr "Aug"
+
+msgid "Sep"
+msgstr "Sep"
+
+msgid "Oct"
+msgstr "Oct"
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "Dec"
+msgstr "Dec"
+
+msgid "There is a problem updating your new Email Address, Pleasde try again!"
+msgstr "There is a problem updating your new Email Address, Pleasde try again!"
+
+msgid ""
+"You have successfully verified your new Email address. Your Account Email "
+"has been changed"
+msgstr ""
+"You have successfully verified your new Email address. Your Account Email "
+"has been changed"
+
+msgid "Invalid or malformed request. This key is no longer exists"
+msgstr "Invalid or malformed request. This key is no longer exists"
+
+#: ******* Add These Variables Since 2.0.13 ********
+msgid "Sorry, your nonce did not verify."
+msgstr "Sorry, your nonce did not verify."
+
+#: ******* Add These Variables Since 2.0.15 ********
+msgid "File Get Contents"
+msgstr "File Get Contents"
+
+msgid "MB String"
+msgstr "MB String"
+
+msgid "PHP Post Max Size"
+msgstr "PHP Post Max Size"
+
+msgid "PHP Time Limit"
+msgstr "PHP Time Limit"
+
+msgid "WP Memory Limit"
+msgstr "WP Memory Limit"
+
+msgid "WP Debug Mode"
+msgstr "WP Debug Mode"
+
+msgid "WP Language"
+msgstr "WP Language"
+
+msgid "WP Max Upload Size"
+msgstr "WP Max Upload Size"
+
+msgid "Please install File Get Contents on server"
+msgstr "Please install File Get Contents on server"
+
+msgid "Please install MB String on server"
+msgstr "Please install MB String on server"
+
+msgid "Please install ini_get on server"
+msgstr "Please install ini_get on server"
+
+msgid "Please install CURL on server"
+msgstr "Please install CURL on server"
+
+msgid "Old Password"
+msgstr "Old Password"
+
+msgid "Old Password Field do not macth!"
+msgstr "Old Password Field do not macth!"
+
+msgid "Old and New passwords are same!"
+msgstr "Old and New passwords are same!"
+
+msgid "Invalid Old Password Field!"
+msgstr "Invalid Old Password Field!"
+
+msgid "Email Edit Verifications"
+msgstr "Email Edit Verifications"
+
+msgid "1 Step (Verify new address only)"
+msgstr "1 Step (Verify new address only)"
+
+msgid ""
+"2 Step (Authenticate request by sending an email to old address + verify new "
+"address)"
+msgstr ""
+"2 Step (Authenticate request by sending an email to old address + verify new "
+"address)"
+
+msgid "Invalid request. This key is no longer exists"
+msgstr "Invalid request. This key is no longer exists"
