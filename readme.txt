@@ -1,5 +1,5 @@
 ﻿=== Pie Register ===
-Contributors: genetech
+Contributors: GTSolutions
 
 Tags: register plugin, user register, register, registration, registration plugin, custom registration, custom login plugin, custom login, custom registration, enhance login, enhance profile, custom  logo screen, user registration, custom profile page
 Requires at least: 3.5
