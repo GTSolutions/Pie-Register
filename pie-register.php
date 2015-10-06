@@ -5,9 +5,10 @@ Plugin URI: http://pieregister.genetechsolutions.com/
 Description: <strong>WordPress 3.5 + ONLY.</strong> Enhance your Registration form, Custom logo, Password field, Invitation codes, Paypal, Captcha validation, Email verification and more.
 
 Author: Genetech Solutions
-Version: 2.0.19
+Version: 2.0.20
 Author URI: http://www.genetechsolutions.com/
-			
+GitHub Plugin URI: https://github.com/GTSolutions/Pie-Register
+GitHub Branch:     master
 CHANGELOG
 See readme.txt
 */
@@ -941,7 +942,7 @@ if( !class_exists('PieRegister') ){
 							*/
 							if( $user ) {
 								wp_set_current_user( $user->ID, $user->user_login );
-								wp_set_auth_cookie( $user->ID );
+								wp_set_auth_cookie( $user->ID, $creds['remember'], $piereg_secure_cookie );
 								do_action( 'wp_login', $user->user_login, $user );
 							}
 							do_action("piereg_admin_login_before_redirect_hook",$user);
@@ -976,7 +977,7 @@ if( !class_exists('PieRegister') ){
 								*/
 								if( $user ) {
 									wp_set_current_user( $user->ID, $user->user_login );
-									wp_set_auth_cookie( $user->ID );
+									wp_set_auth_cookie( $user->ID, $creds['remember'], $piereg_secure_cookie );
 									do_action( 'wp_login', $user->user_login, $user );
 								}
 								do_action("piereg_user_login_before_redirect_hook",$user);
@@ -989,7 +990,7 @@ if( !class_exists('PieRegister') ){
 								*/
 								if( $user ) {
 									wp_set_current_user( $user->ID, $user->user_login );
-									wp_set_auth_cookie( $user->ID );
+									wp_set_auth_cookie( $user->ID, $creds['remember'], $piereg_secure_cookie );
 									do_action( 'wp_login', $user->user_login, $user );
 								}
 								do_action("piereg_user_login_before_redirect_hook",$user);

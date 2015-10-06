@@ -4,7 +4,7 @@ Contributors: GTSolutions
 Tags: register plugin, user register, register, registration, registration plugin, custom registration, custom login plugin, custom login, custom registration, enhance login, enhance profile, custom  logo screen, user registration, custom profile page
 Requires at least: 3.5
 Tested up to: 4.3
-Stable tag: 2.0.19
+Stable tag: 2.0.20
 
 Custom Registration form, Custom Login Pages, Custom Profile Page, Invitation codes, Paypal, Email verification, user moderation & more.
 == Description ==
@@ -53,6 +53,9 @@ Please follow our plugin [documentation](http://pieregister.genetechsolutions.co
 Please visit our [Website Forum](http://pieregister.genetechsolutions.com "Pie-Register Forum") in order to get support regarding this plugin!
 
 == CHANGELOG ==
+### 2.0.20
+* Fixed "Remember me" issue.
+
 ### 2.0.19
 * Fixed Security Vulnerability and SQL Injection issues.
 * Section break field label can now be keep emptied.
