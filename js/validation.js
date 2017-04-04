@@ -1559,7 +1559,7 @@
 			//alert(options.isError);
 			field.parent().closest("li").find(".legend_txt").remove();
 			field.parent().closest("li").find(".fieldset").addClass("error");
-			console.log(field.parent().closest("li"));
+			//console.log(field.parent().closest("li"));
 			return field.parent("div").append('<div class="legend_txt"><span class="error legend">'+promptText+'</span></div>').show();
 			/*return prompt.animate({
 				"opacity": 0.87

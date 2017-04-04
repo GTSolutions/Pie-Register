@@ -2,7 +2,7 @@
 /* vertical scrollbar */
 .pieregister-admin .mCSB_container{
 	width:auto;
-	margin-right:30px;
+	margin-right:11px;
 	overflow:hidden;
 }
 .pieregister-admin .mCSB_container.mCS_no_scrollbar{

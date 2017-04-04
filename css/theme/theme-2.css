@@ -1,0 +1,318 @@
+/********************************************************************/
+/*
+	*	Registration Form
+*/
+.pieregWrapper #pie_register ::-moz-selection { /* Code for Firefox */
+    background: rgb(0, 108, 211);
+    background: rgba(0, 108, 211,0.7);
+}
+
+.pieregWrapper #pie_register ::selection {
+    background: rgb(0, 108, 211);
+    background: rgba(0, 108, 211, 0.7);
+}
+/*#pie_register_reg_form,*/ .piereg_container{
+	background-color:rgb(231, 238, 244);
+	background-color:rgba(231, 238, 244,0.8);
+	padding:10px;
+}
+#pie_register_reg_form .fieldset h2#piereg_pie_form_heading, #pie_regiser_form h1#piereg_pie_form_heading, .piereg_profile_cont #piereg_pie_form_heading{
+	color:rgb(0, 108, 211);
+}
+#pie_register_reg_form .fieldset p#piereg_pie_form_desc{
+	color:rgb(122, 123, 127);
+}
+.pieregWrapper #pie_register .fields label{
+	color:rgb(122, 123, 127);
+	margin-top:5px;
+}
+.pieregWrapper #pie_register .fields .input_fields,
+.pieregWrapper #pie_register .fields select,
+.pieregWrapper #pie_register .fields textarea,
+.piereg_login_container .piereg_login_wrapper .piereg_loginform .input_fields,
+.pieregWrapper #pie_register .fields .input_fields, .pieregWrapper #piereg_login .input_fields{
+	border:2px solid rgb(213, 222, 229);
+	background:rgb(255,255,255);
+	color:rgb(0, 0, 0);
+	border-radius:0px;
+	padding:5px;
+}
+
+.pieregWrapper #pie_register .fields .address2 select,
+.pieregWrapper #pie_register .fields .piereg_time .time_fields select{
+	height:auto;
+}
+
+.pieregWrapper #pie_register .fields div#piereg_passwordStrength{
+	border:2px solid rgb(213, 222, 229);
+	color:rgb(0, 0, 0);
+	border-radius:0px;
+}
+.pieregWrapper #pie_register li.fields .sectionBreak{
+	border:1px solid rgb(0, 108, 211);
+}
+.pieregWrapper #pie_register .fields input[type="file"]{
+	padding:0px;
+}
+
+.pieregWrapper #pie_register .fields,
+.pieregWrapper #pie_register .fields p,
+.pieregWrapper #pie_register .fields span
+{color:rgb(122, 123, 127);}
+
+.pieregWrapper #pie_register .fields button,
+.pieregWrapper #pie_register .fields .button,
+.pieregWrapper #pie_register .fields input[type="button"],
+.pieregWrapper #pie_register .fields input[type="reset"],
+.pieregWrapper #pie_register .fields input[type="submit"],
+.piereg_container .piereg_login_wrapper .submit input[type="submit"],
+.pieregWrapper input[type="submit"],
+.pieregWrapper .pie_prev, .pieregWrapper .pie_next,
+#piereg_login form#piereg_lostpasswordform p input[type="submit"]
+{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,0.9);
+	border-radius:0px;
+}
+
+.pieregWrapper #pie_register .fields button:hover,
+.pieregWrapper #pie_register .fields button:focus,
+.pieregWrapper #pie_register .fields .button:hover,
+.pieregWrapper #pie_register .fields .button:focus,
+.pieregWrapper #pie_register .fields input[type="button"]:hover,
+.pieregWrapper #pie_register .fields input[type="button"]:focus,
+.pieregWrapper #pie_register .fields input[type="reset"]:hover,
+.pieregWrapper #pie_register .fields input[type="reset"]:focus,
+.pieregWrapper #pie_register .fields input[type="submit"]:hover,
+.pieregWrapper #pie_register .fields input[type="submit"]:focus{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,1.0);
+	border-radius:0px;
+}
+
+.pieregWrapper #pie_register .fields button:active,
+.pieregWrapper #pie_register .fields .button:active,
+.pieregWrapper #pie_register .fields input[type="button"]:active,
+.pieregWrapper #pie_register .fields input[type="reset"]:active,
+.pieregWrapper #pie_register .fields input[type="submit"]:active{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,0.9);
+	border-radius:0px;
+}
+
+.pieregWrapper #pie_register a{color:rgb(35, 129, 199);color:rgba(35, 129, 199,0.8);}
+.pieregWrapper #pie_register a:hover,
+.pieregWrapper #pie_register a:focus{color:rgb(35, 129, 199);}
+.pieregWrapper #pie_register a:active{color:rgb(35, 129, 199);}
+
+/* Input field */
+.pieregWrapper #pie_register ::-webkit-file-upload-button {
+	background:rgb(82, 82, 82);
+	color:rgb(255, 255, 255);
+	padding:5px;
+	border:none;
+}
+
+/********************************************************************/
+/*
+	*	Login Form
+*/
+.piereg_container div.piereg_login_container ::-moz-selection { /* Code for Firefox */
+    background: rgb(0, 108, 211);
+    background: rgba(0, 108, 211, 0.7);
+}
+
+.piereg_container div.piereg_login_container ::selection {
+    background: rgb(0, 108, 211);
+    background: rgba(0, 108, 211, 0.7);
+}
+.piereg_container div.piereg_login_container{
+	background-color:rgb(231, 238, 244);
+	background-color:rgba(231, 238, 244,0.8);
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.piereg_container div.piereg_login_container .piereg_login_wrapper label{
+	color:rgb(122, 123, 127);
+}
+.piereg_container div.piereg_login_container form div input.pr_math_captcha_input_field{
+	margin-top:4px;
+}
+.piereg_container div.piereg_login_container form div input.pr_math_captcha_input_field,
+.piereg_container div.piereg_login_container form p .input{
+	border:2px solid rgb(213, 222, 229);
+	background:rgb(255,255,255);
+	color:rgb(0, 0, 0);
+	border-radius:0px;
+	padding:5px;
+}
+.piereg_container div.piereg_login_container form p.forgetmenot{margin-top:10px;}
+
+.piereg_container div.piereg_login_container form p input[type="submit"]{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,0.9);
+	border-radius:0px;
+}
+.piereg_container div.piereg_login_container form p input[type="submit"]:hover,
+.piereg_container div.piereg_login_container form p input[type="submit"]:focus{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,1.0);
+	border-radius:0px;
+}
+
+.piereg_container div.piereg_login_container form p input[type="submit"]:active{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,0.9);
+	border-radius:0px;
+}
+.piereg_container div.piereg_login_container #nav a{color:rgb(35, 129, 199);color:rgba(35, 129, 199, 0.8);}
+.piereg_container div.piereg_login_container #nav a:hover,
+.piereg_container div.piereg_login_container #nav a:focus{color:rgb(35, 129, 199);}
+.piereg_container div.piereg_login_container #nav a:active{color:rgb(35, 129, 199);}
+
+
+/********************************************************************/
+/*
+	*	Forgot Password Form
+*/
+
+div.pieregForgotPassword ::-moz-selection { /* Code for Firefox */
+    background: rgb(156, 213, 206);
+    background: rgba(156, 213, 206,0.7);
+}
+
+div.pieregForgotPassword ::selection {
+    background: rgb(156, 213, 206);
+    background: rgba(156, 213, 206,0.7);
+}
+
+div.pieregForgotPassword{
+	background-color:rgb(231, 238, 244);
+	background-color:rgba(231, 238, 244,0.8);
+	padding:10px;
+}
+#piereg_login form#piereg_lostpasswordform p label{color:rgb(122, 123, 127);}
+div.pieregForgotPassword form div input.pr_math_captcha_input_field{
+	margin-top:4px !important;
+}
+div.pieregForgotPassword form div input.pr_math_captcha_input_field,
+div.pieregForgotPassword form p .input{
+	border:2px solid rgb(213, 222, 229);
+	background:rgb(255,255,255);
+	color:rgb(0, 0, 0);
+	border-radius:0px;
+	padding:5px;
+}
+
+#piereg_login form#piereg_lostpasswordform p input[type="submit"]{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,0.9);
+	border-radius:0px;
+}
+#piereg_login form#piereg_lostpasswordform p input[type="submit"]:hover,
+#piereg_login form#piereg_lostpasswordform p input[type="submit"]:focus{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,1.0);
+	border-radius:0px;
+}
+
+#piereg_login form#piereg_lostpasswordform p input[type="submit"]:active{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,0.9);
+	border-radius:0px;
+}
+
+
+/********************************************************************/
+/*
+	*	Reset Password Form
+*/
+
+div.piereg_login_container form.piereg_resetpassform .field .input{
+	border:2px solid rgb(213, 222, 229);
+	background:rgb(255,255,255);
+	color:rgb(0, 0, 0);
+	border-radius:0px;
+	padding:5px;
+}
+
+div.piereg_login_container form.piereg_resetpassform .pie_submit input[type="submit"]{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,0.9);
+	border-radius:0px;
+}
+div.piereg_login_container form.piereg_resetpassform .pie_submit input[type="submit"]:hover,
+div.piereg_login_container form.piereg_resetpassform .pie_submit input[type="submit"]:focus{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,1.0);
+	border-radius:0px;
+}
+div.piereg_login_container form.piereg_resetpassform .pie_submit input[type="submit"]:active{
+	background:rgb(35, 129, 199);
+	background:rgba(35, 129, 199,0.9);
+	border-radius:0px;
+}
+
+div.piereg_login_container form.piereg_resetpassform a{color:rgb(35, 129, 199);color:rgba(35, 129, 199,0.8);}
+div.piereg_login_container form.piereg_resetpassform a:hover,
+div.piereg_login_container form.piereg_resetpassform a:focus{color:rgb(35, 129, 199);}
+div.piereg_login_container form.piereg_resetpassform a:active{color:rgb(35, 129, 199);}
+
+/********************************************************************/
+/*
+	*	Profile Edit Form
+*/
+
+.pieregProfileWrapper.pieregWrapper {
+	background-color:rgb(231, 238, 244);
+	background-color:rgba(231, 238, 244,0.8);
+	padding:10px;
+}
+.pieregProfileWrapper.pieregWrapper ul#pie_register .fields h1#piereg_pie_form_heading{
+	color:rgb(0, 108, 211);
+}
+/********************************************************************/
+/*
+	*	Renew AccountForm
+*/
+.pieregformWrapper.pieregWrapper .pieregister_renew_account h2.pr_renew_headding{
+	color:rgb(0, 108, 211);
+}
+
+
+.piereg_container .piereg_login_wrapper .submit input[type="submit"], .pieregWrapper input[type="submit"]{
+	padding: 6px 10px;
+	font-size: 15px;
+	color:#fff
+}
+
+
+
+.pieregWrapper .piereg_profile_cont , .piereg_profile_cont, #pie_register.pie_profile .fields span, #pie_register.pie_profile .fields a{background-color:#EAF0F5;}
+#pie_register.pie_profile .fields span, #pie_register.pie_profile .fields2 label, #pie_register.pie_profile .fields a{color:rgb(122, 123, 127);text-decoration:none}
+#pie_register.pie_profile .fields a:hover{text-decoration:underline}
+#pie_register.pie_profile .fields2{background:none !important}
+.piereg-profile-logout-url a{color:rgb(122, 123, 127); border-bottom:none !important}
+.piereg-profile-logout-url a:hover{text-decoration:underline; color:rgb(122, 123, 127)}
+
+#pie_register.pie_profile tr:first-child .fields {border-top: 1px solid rgb(0, 108, 211);}
+#pie_register.pie_profile .fields2{border: 1px solid rgb(0, 108, 211);}
+#pie_register.pie_profile .fields {border: 1px solid rgb(0, 108, 211);}
+
+.pieregWrapper #pie_register .fields .fieldset .input_fields.piereg_recaptcha_reg_div iframe {
+	border: 1px;	
+	width: 100% !important;
+}
+.pieregWrapper #pie_register .fields .fieldset .input_fields.piereg_recaptcha_reg_div
+{
+	width: auto;
+    
+    background: rgb(255,255,255);
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    padding: 0px;
+    
+}
+
+
+

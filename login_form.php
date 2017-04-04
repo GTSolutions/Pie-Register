@@ -1,22 +1,34 @@
 <?php
+if(!isset($pagenow)){
+	global $pagenow;
+}
+
+if(!class_exists("PieRegister")){
+	require_once(PIEREG_DIR_NAME.'/pie-register.php');
+}
+
 function pieOutputLoginForm($piereg_widget = false){
-$users_can_register =  get_option("users_can_register");
-$option			= get_option("pie_register_2");
+if(!isset($pagenow)){
+	global $pagenow;
+}
+
+$pie_register_base = new PieReg_Base();
+$option			= get_option(OPTION_PIE_REGISTER);
 $form_data = "";
 $form_data .= '<div class="piereg_container">
-<div class="piereg_login_container">
+<div class="piereg_login_container pieregWrapper">
 <div class="piereg_login_wrapper">';
-
-  //If Registration contanis errors
+//If Registration contanis errors
 global $wp_session,$errors;
 $newpasspageLock = 0;
 
 			if(isset($_GET['payment']) && $_GET['payment'] == "success")
 			{
 				$fields = maybe_unserialize(get_option("pie_fields"));
-				$login_success = apply_filters("piereg_success_message",__($fields['submit']['message'],"piereg"));
+				$login_success = apply_filters("piereg_success_message",__( $option['payment_success_msg'], "piereg" ));
 				unset($fields);
 			}elseif(isset($_GET['payment']) && $_GET['payment'] == "cancel"){
+				# noutusing
 				/******************************************************/
 				/*$user_id 		= intval(base64_decode($_GET['pay_id']));
 				$user_data		= get_userdata($user_id);
@@ -54,25 +66,35 @@ $newpasspageLock = 0;
 					unset($user_data);
 				}*/
 				/******************************************************/
-				
+
 				$login_error = apply_filters("piereg_cancled_message",__("You canceled your payment.","piereg"));
 			}
-
 			if(isset($errors->errors['login-error'][0]) > 0)
 			{
 				$login_error = apply_filters("piereg_login_error",__($errors->errors['login-error'][0],"piereg"));
 			}
+			elseif( (isset($_GET['pr_key']) && isset($_GET['pr_invalid_username'])) && ($_GET['pr_key'] != "" && $_GET['pr_invalid_username'] != "") && ( isset($_REQUEST['action']) && $_REQUEST['action'] != 'pie_login_sms' ) )
+			{
+				$pr_error_message = base64_decode(trim($_GET['pr_key']));
+				if(!empty($pr_error_message))
+					$login_error = apply_filters("piereg_login_after_registration_error",__($pr_error_message,"piereg"));
+				else
+					$login_error = apply_filters("piereg_login_after_registration_error",__("Invalid username","piereg"));
+			}
 			else if (! empty($_GET['action']) )
         	{
-          
             if ( 'loggedout' == $_GET['action'] )
                 $login_warning = '<strong>'.ucwords(__("warning","piereg")).'</strong>: '.apply_filters("piereg_now_logout",__("You are now logged out.","piereg"));
+
             elseif ( 'recovered' == $_GET['action'] )
                 $login_success = '<strong>'.ucwords(__("success","piereg")).'</strong>: '.apply_filters("piereg_check_yor_emailconfrm_link",__("Check your e-mail for the confirmation link.","piereg"));
+
 			elseif ( 'payment_cancel' == $_GET['action'] )
                 $login_warning = '<strong>'.ucwords(__("warning","piereg")).'</strong>: '.apply_filters("piereg_canelled_your_registration",__("You have canelled your registration.","piereg"));
+
 			elseif ( 'payment_success' == $_GET['action'] )
                 $login_success = '<strong>'.ucwords(__("success","piereg")).'</strong>: '.apply_filters("piereg_thank_you_for_registration",__("Thank you for your registration. You will receieve your login credentials soon.","piereg"));		
+
 			elseif ( 'activate' == $_GET['action'] )
 			{
 				$unverified = get_users(array('meta_key'=> 'hash','meta_value' => $_GET['activation_key']));
@@ -81,18 +103,15 @@ $newpasspageLock = 0;
 					$user_id	= $unverified[0]->ID;
 					$user_login = $unverified[0]->user_login;
 					$user_email = $unverified[0]->user_email;
-					if($user_login == $_GET['id'])
+					if($user_login == $_GET['pie_id'])
 					{
+						do_action( "piereg_action_hook_before_user_activate", $user_id, $user_login, $user_email ); # newlyAddedHookFilter
 						update_user_meta( $user_id, 'active', 1);
-						$hash = "";
-						update_user_meta( $user_id, 'hash', $hash );
 						
 						/*************************************/
 						/////////// THANK YOU E-MAIL //////////
-						
-						
 						$form 			= new Registration_form();
-						$subject 		= html_entity_decode($option['user_subject_email_email_thankyou'],ENT_COMPAT,"UTF-8");
+						$subject 		= html_entity_decode($option['user_subject_email_email_thankyou'],ENT_COMPAT,"UTF-8");;
 						$message_temp = "";
 						if($option['user_formate_email_email_thankyou'] == "0"){
 							$message_temp	= nl2br(strip_tags($option['user_message_email_email_thankyou']));
@@ -103,16 +122,11 @@ $newpasspageLock = 0;
 						$from_name		= $option['user_from_name_email_thankyou'];
 						$from_email		= $option['user_from_email_email_thankyou'];
 						$reply_email 	= $option['user_to_email_email_thankyou'];
-		
 						//Headers
-		
 						$headers  = 'MIME-Version: 1.0' . "\r\n";
 						$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-		
 						if(!empty($from_email) && filter_var($from_email,FILTER_VALIDATE_EMAIL))//Validating From
-		
 						$headers .= "From: ".$from_name." <".$from_email."> \r\n";
-		
 						if($reply_email){
 							$headers .= "Reply-To: {$reply_email}\r\n";
 							$headers .= "Return-Path: {$from_name}\r\n";
@@ -120,20 +134,19 @@ $newpasspageLock = 0;
 							$headers .= "Reply-To: {$from_email}\r\n";
 							$headers .= "Return-Path: {$from_email}\r\n";
 						}		
-		
-						wp_mail($user_email, $subject, $message , $headers);
-						
-						/////////// END THANK YOU E-MAIL //////////
+						if(!wp_mail($user_email, $subject, $message , $headers)){
+							$form->pr_error_log("'The e-mail could not be sent. Possible reason: your host may have disabled the mail() function...'".(PieRegister::get_error_log_info(__FUNCTION__,__LINE__,__FILE__)));
+						}
 						/*************************************/
-						
 						$login_success = '<strong>'.ucwords(__("success","piereg")).'</strong>: '.apply_filters("piereg_your_account_is_now_active",__("Your account is now active","piereg"));	
 					}
 					else
 					{
-						 $login_error = '<strong>'.ucwords(__("error","piereg")).'</strong>: '.apply_filters("piereg_invalid_activation_key",__("Invalid activation key","piereg"));
-					}
+							 $login_error = '<strong>'.ucwords(__("error","piereg")).'</strong>: '.apply_filters("piereg_invalid_activation_key",__("Invalid activation key","piereg"));
+
+					}	
 				}else{
-					$user_name = esc_sql($_GET['id']);
+					$user_name = esc_sql($_GET['pie_id']);
 					$user = get_userdatabylogin($user_name);
 					if($user){
 						$user_meta = get_user_meta( $user->ID, 'active');
@@ -148,11 +161,9 @@ $newpasspageLock = 0;
 						}
 					}
 					else{
-						$login_error = '<strong>'.ucwords(__("error","piereg")).'</strong>: '.apply_filters("piereg_invalid_activation_key",__("You are block","piereg"));
+						$login_error = '<strong>'.ucwords(__("error","piereg")).'</strong>: '.apply_filters("piereg_invalid_activation_key",__("Invalid activation key","piereg"));
 					}
 				}
-				
-				 
 			}
 			elseif ( 'resetpass' == $_GET['action'] || 'rp' == $_GET['action'] ){
 				$user = check_password_reset_key($_GET['key'], $_GET['login']);
@@ -177,9 +188,7 @@ $newpasspageLock = 0;
 						$login_error =  '<strong>'.ucwords(__("error","piereg")).'</strong>: '.apply_filters("piereg_the_passwords_do_not_match",__( 'The passwords do not match',"piereg"));
 						$errors->add( 'password_reset_mismatch',$login_error );
 					}
-					
 					do_action( 'validate_password_reset', $errors, $user );
-				
 					if ( ( ! $errors->get_error_code() ) && isset( $_POST['pass1'] ) && !empty( $_POST['pass1'] ) ) {
 						reset_password($user, $_POST['pass1']);
 						$newpasspageLock = 1;
@@ -196,230 +205,211 @@ $newpasspageLock = 0;
 			$wp_session['message'] = "";
 		}
 		if ( !empty($login_error) )
-			$form_data .= '<p class="piereg_login_error"> ' . apply_filters('piereg_messages', $login_error) . "</p>\n";
-		
+			$form_data .= '<p class="piereg_login_error"> ' . apply_filters('piereg_messages', $login_error) . "</p>";
+
 		if ( !empty($login_success) )
-			$form_data .= '<p class="piereg_message">' . apply_filters('piereg_messages',$login_success) . "</p>\n";
-		
+			$form_data .= '<p class="piereg_message">' . apply_filters('piereg_messages',$login_success) . "</p>";
+
 		if ( !empty($login_warning) )
-			$form_data .= '<p class="piereg_warning">' . apply_filters('piereg_messages',$login_warning) . "</p>\n";
-		
+			$form_data .= '<p class="piereg_warning">' . apply_filters('piereg_messages',$login_warning) . "</p>";
+
 		if(isset($_POST['success']) && $_POST['success'] != "")
 			$form_data .= '<p class="piereg_message">'.apply_filters('piereg_messages',__($_POST['success'],"piereg")).'</p>';
+
 		if(isset($_POST['error']) && $_POST['error'] != "")
-			$form_data .= '<p class="piereg_login_error">'.apply_filters('piereg_messages',__($_POST['error'],"piereg")).'</p>';	
-		
+			$form_data .= '<p class="piereg_login_error">'.apply_filters('piereg_messages',__($_POST['error'],"piereg")).'</p>';
+
+
 if ( isset($_GET['action']) && ('rp' == $_GET['action'] || 'resetpass' == $_GET['action']) && ($newpasspageLock == 0) ){
+	
+	if(file_exists( (get_stylesheet_directory()."/pie-register/pie_register_template/reset_password/reset_password_form_template.php"))){
+		require_once(get_stylesheet_directory()."/pie-register/pie_register_template/reset_password/reset_password_form_template.php");
+	}
+	elseif(file_exists(dirname(__FILE__)."/pie_register_template/reset_password/reset_password_form_template.php")){
+		require_once(dirname(__FILE__)."/pie_register_template/reset_password/reset_password_form_template.php");
+	}
+	$r_pass_form = new Reset_pass_form_template($option);
 	$form_data .= '
 	  <form name="resetpassform" class="piereg_resetpassform" action="'.pie_modify_custom_url(pie_login_url(),'action=resetpass&key=' . urlencode( $_GET['key'] ) . '&login=' . urlencode( $_GET['login'] )).'" method="post" autocomplete="off">
+		<input type="hidden" id="user_login" value="'.esc_attr( $_GET['login'] ).'" autocomplete="off">';
+			$form_data .= $r_pass_form->add_new_confirm_pass();
+			$form_data .= $r_pass_form->add_submit();
+			$form_data .= $r_pass_form->add_login_register($pagenow);
+		$form_data .= '</form>';
+}
+elseif ( isset($_GET['action'],$_GET['reference_key'],$_GET['security_token']) && $_REQUEST['action'] == 'pie_login_sms' ){
+	$form_data .= apply_filters("piereg_login_sms_form",$piereg_widget);
+}
+else{
 	
-		<input type="hidden" id="user_login" value="'.esc_attr( $_GET['login'] ).'" autocomplete="off">
-		<div class="field">
-		  <label for="pass1">'.__("New password","piereg").'</label>
-		  <input type="password" name="pass1" id="pass1" class="input validate[required]" size="20" value="" autocomplete="off">
-		</div>
-		<div class="field">
-		  <label for="pass2">'.__("Confirm new password","piereg").'</label>
-		  <input type="password" name="pass2" id="pass2" class="input validate[required,equals[pass1]]" size="20" value="" autocomplete="off">
-		</div>
-		<div class="pie_submit">
-		  <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="'.__("Reset Password","piereg").'">
-		</div>
-		<div class="field">
-		 <div class="nav">
-		 	<a href="'.pie_login_url().'">'.__("Log in","piereg").'</a>';
-	if($users_can_register == 1){
-		$form_data	.= '&nbsp;|&nbsp;<a href="'.pie_registration_url().'">'.__("Register","piereg").'</a>';
-	}
-	$form_data .= '</div>
-		</div>
-		<div class="backtoblog">
-			<a title="'.__("Are you lost?","piereg").'" href="'.get_bloginfo("url").'">&larr; '.__("Back to","piereg").' '.get_bloginfo("name").'</a>
-		</div>
-	  </form>';
-}else{
-	$form_data .= '
-	<form method="post" action="" class="piereg_loginform" name="loginform">
-		<p>';
-		
-	if(isset($option['login_username_label']) && !empty($option['login_username_label'])){
-			$form_data .= '<label for="user_login">'.((isset($option['login_username_label']) && !empty($option['login_username_label']))? __($option['login_username_label'],"piereg") : __("Username","piereg")) .'</label>';
-	}
-	$user_name_val = ((isset($_POST['log']) && !empty($_POST['log']))?$_POST['log']:"");
-	$form_data .= '<input placeholder="'.((isset($option['login_username_placeholder']) && !empty($option['login_username_placeholder']))? __($option['login_username_placeholder'],"piereg") : "").'" type="text" size="20" value="'.$user_name_val.'" class="input validate[required]" id="user_login" name="log">
-		</p>
-		<p>';
-	
-	if(isset($option['login_password_label']) && !empty($option['login_password_label'])){
-		$form_data .= '<label for="user_pass">'.((isset($option['login_password_label']) && !empty($option['login_password_label']))? __($option['login_password_label'],"piereg") : __("Password","piereg")).'</label>';
-	}
-	
-	$form_data .= '
-			<input placeholder="'.((isset($option['login_password_placeholder']) && !empty($option['login_password_placeholder']))? __($option['login_password_placeholder'],"piereg") : "").'" type="password" size="20" value="" class="input validate[required]" id="user_pass" name="pwd">
-		</p>';
-		
-		global $piereg_math_captcha_login,$piereg_math_captcha_login_widget;
-		if($option['capthca_in_login'] != 0 && !empty($option['capthca_in_login'])){
-			if($piereg_math_captcha_login == false && $piereg_widget == false){
-				$form_data  .= '<p>';
-				if(!empty($option['capthca_in_login_label']))
-					$form_data  .= '<label style="margin-top:0px;">'.$option['capthca_in_login_label'].'</label>';
-				
-				$form_data  .= login_form_captcha($option['capthca_in_login'],$piereg_widget);
-				$form_data  .= '</p>';
-				$piereg_math_captcha_login = true;
-			}elseif($piereg_math_captcha_login_widget == false && $piereg_widget == true){
-				$form_data  .= '<p>';
-				if(!empty($option['capthca_in_login_label']))
-					$form_data  .= '<label style="margin-top:0px;">'.$option['capthca_in_login_label'].'</label>';
-				
-				$form_data  .= login_form_captcha($option['capthca_in_login'],$piereg_widget);
-				$form_data  .= '</p>';
-				$piereg_math_captcha_login_widget = true;
-			}
+		if(file_exists( (get_stylesheet_directory()."/pie-register/pie_register_template/login/login_form_template.php"))){
+			require_once(get_stylesheet_directory()."/pie-register/pie_register_template/login/login_form_template.php");
 		}
-		//if(!is_page()) {
-			$form_data .= '
-			<p class="forgetmenot">
-				<label for="rememberme">
-					<input type="checkbox" value="forever" id="rememberme" name="rememberme"> '.__("Remember Me","piereg").'
-				</label>
-			</p>';
-		//}
+		elseif(file_exists(dirname(__FILE__)."/pie_register_template/login/login_form_template.php")){
+			require_once(dirname(__FILE__)."/pie_register_template/login/login_form_template.php");
+		}
+
+		$login_form = new Login_form_template($option);
+
 		$form_data .= '
-		<p class="submit">
-			<input type="submit" value="'.__("Log In","piereg").'" class="button button-primary button-large" id="wp-submit" name="wp-submit">
-			<input type="hidden" value="'.admin_url().'" name="redirect_to">
-			<input type="hidden" value="1" name="testcookie">
-		</p>';
-		
-		//if(!is_page() ) {
-			$form_data .= '<p id="nav">';
-			if($users_can_register == 1){		
-				$form_data .= '<a href="'.pie_registration_url().'">'.__("Register","piereg").'</a>&nbsp;<a style="cursor:default;text-decoration:none;" href="javascript:;">&nbsp;|&nbsp;</a>&nbsp;';
+		<form method="post" class="piereg_loginform" name="loginform">';
+			
+			$form_data .= $login_form->add_username();
+			
+			$form_data .= $login_form->add_password();
+			
+			
+			global $piereg_math_captcha_login,$piereg_math_captcha_login_widget,$wpdb;
+			$table_name = $wpdb->prefix . "pieregister_lockdowns";
+			$user_ip = $_SERVER['REMOTE_ADDR'];
+			
+			$get_results = $wpdb->get_results($wpdb->prepare("SELECT * FROM `".$table_name."` WHERE `user_ip` = %s;",$user_ip));
+			
+			if(isset($wpdb->last_error) && !empty($wpdb->last_error))
+			{
+				PieRegister::pr_error_log($wpdb->last_error.(PieRegister::get_error_log_info(__FUNCTION__,__LINE__,__FILE__)));
 			}
-			$form_data .= '<a title="'.__("Password Lost and Found","piereg").'" href="'.pie_lostpassword_url().'">'.__("Lost your password?","piereg").'</a> </p>';
-		//} ?>
+			
+			$is_security_captcha = false;
+			$security_captcha_login = 0;
+			if(isset($get_results[0]->is_security_captcha) && $get_results[0]->is_security_captcha == 2){
+				$is_security_captcha = true;
+				$security_captcha_login = $option['security_captcha_login'];
+			}
+			$capthca_in_login = $option['capthca_in_login'];
+			if($is_security_captcha){
+				$capthca_in_login = $security_captcha_login;
+			}
+			
+			if($capthca_in_login != 0 && !empty($capthca_in_login) && $option['captcha_in_login_value'] == 1){
+				$attempts = false;
+				if($pie_register_base->piereg_pro_is_activate){
+					if($option['captcha_in_login_attempts'] > 0){
+						if( count($get_results) > 0 && $option['captcha_in_login_attempts'] <= $get_results[0]->login_attempt){
+							$attempts = true;
+						}
+					}else{
+						$attempts = true;
+					}
+				}else{
+					$attempts = true;
+				}
+				/*if( isset($option['captcha_in_login_attempts']) )
+				{
+					
+					if( $option['captcha_in_login_attempts'] > 0 && $pie_register_base->piereg_pro_is_activate ){
+						if( count($get_results) > 0 && $option['captcha_in_login_attempts'] <= $get_results[0]->login_attempt){
+							$attempts = true;
+						}
+					}elseif( $option['captcha_in_login_attempts'] > 0 && !$pie_register_base->piereg_pro_is_activate ){
+						$attempts = true;
+					}elseif( $option['captcha_in_login_attempts'] == 0 && $pie_register_base->piereg_pro_is_activate || !$pie_register_base->piereg_pro_is_activate ){
+						$attempts = true;
+					}
+				}*/
+				
+				if( $attempts ){
+					if($piereg_math_captcha_login == false && $piereg_widget == false){
+						if(!empty($option['capthca_in_login_label']))
+							$form_data .= $login_form->add_capthca_label();
+						
+						$form_data  .= login_form_captcha($capthca_in_login,$piereg_widget);
+						$piereg_math_captcha_login = true;
+					}elseif($piereg_math_captcha_login_widget == false && $piereg_widget == true){
+						if(!empty($option['capthca_in_login_label']))
+							$form_data .= $login_form->add_capthca_label();
+						
+						$form_data  .= login_form_captcha($capthca_in_login,$piereg_widget);
+						$piereg_math_captcha_login_widget = true;
+					}
+				}
+			}
 	
-		<?php if(isset($pagenow) && $pagenow == 'wp-login.php' ){
-					$form_data .= '
-					<p id="backtoblog"><a title="'.__("Are you lost?","piereg").'" href="'.bloginfo("url").'">&larr;'.__(" Back to","piereg").' '.get_bloginfo("name").'</a></p>';
-			} 
-	$form_data .= '
-	</form>';
+			$form_data .= $login_form->add_rememberme();
+			$form_data .= $login_form->add_submit();
+			$form_data .= $login_form->add_register_lostpassword($pagenow);
+			
+		$form_data .= '
+		</form>';
+	
 }
 
 $form_data .='</div>
 </div></div>';
-
 return $form_data;
 }
 
 if(!function_exists("login_form_captcha"))
 {
 	function login_form_captcha($value = 0,$piereg_widget = false){
+		if(file_exists( (get_stylesheet_directory()."/pie-register/pie_register_template/login/login_form_template.php"))){
+			require_once(get_stylesheet_directory()."/pie-register/pie_register_template/login/login_form_template.php");
+		}
+		elseif(file_exists(dirname(__FILE__)."/pie_register_template/login/login_form_template.php")){
+			require_once(dirname(__FILE__)."/pie_register_template/login/login_form_template.php");
+		}
+		
+		if(!isset($option)){
+			$option = get_option(OPTION_PIE_REGISTER);
+		}
+		$login_form = new Login_form_template($option);
 		$output = "";
-		if($value == 1){//Re-Captcha
+		if($value == 2){ // Math Captcha
+			$cap_id = "";
+			if( $piereg_widget ){
+				$cap_id = "is_login_widget";
+				$cookie = 'Login_form_widget';
+			}else{
+				$cap_id = "not_login_widget";
+				$cookie = 'Login_form';
+			}
+			
 			$data = "";
-			$settings  	=  get_option("pie_register_2");
-			$publickey		= $settings['captcha_publc'] ;
+			$data .='<div class="prMathCaptcha" data-cookiename="'.$cookie.'" id="'.$cap_id.'" style="display:inline-block;">';
+			
+			$field_id = "";
+			$math_captcha_field = $login_form->add_mathcaptcha_input($piereg_widget);
+			$data .=  $math_captcha_field['data'];
+			$field_id = $math_captcha_field['field_id'];
+			$data .= '</div>';
+			$output = $data;
+			 
+		}elseif($value == 1 || $value == 3){//Re-Captcha
+			$data = "";
+			$settings  	=  get_option(OPTION_PIE_REGISTER);
+			$publickey	= $settings['captcha_publc'] ;
 			
 			if($publickey)
 			{
-				$captcha_skin = (isset($settings['piereg_recapthca_skin_login']) && !empty($settings['piereg_recapthca_skin_login']))?$settings['piereg_recapthca_skin_login']:"red";
-				$data .= '<script type="text/javascript">
-					 var RecaptchaOptions = {
-						theme : "'.$captcha_skin.'"
-					 };
-				 </script>';
-				$data .= '<div id="recaptcha_widget_div">';
-					require_once(PIEREG_DIR_NAME.'/recaptchalib.php');
-				$data .= recaptcha_get_html($publickey);
+				$cap_id = "";
+				 if( $piereg_widget ){
+				 	$cap_id = "is_widget";
+				 }else{
+				 	$cap_id = "not_widget";
+				 }
+				$data .= '<div class="piereg_recaptcha_widget_div" id="'.$cap_id.'">';
 				$data .= '</div>';
 			}
 			return $data;
 		
-		}elseif($value == 2){ // Math Captcha
-			$operator = rand(0,1);
-			////1 for add(+)
-			////0 for subtract(-)
-			$result = 0;
-			if($operator == 1){	
-				$start = rand(1,9);
-				$end = rand(5,20);
-				$result = $start + $end;
-				$operator = "+";
-			}
-			else{
-				$start = rand(50,30);
-				$end = rand(5,20);
-				$result = $start - $end;
-				$operator = "-";
-			}
-			$result1 = $result + 12;
-			$result2 = $result + 786;
-			$result3 = $result - 5;
-			$result1 = base64_encode($result1);
-			$result2 = base64_encode($result2);
-			$result3 = base64_encode($result3);
-			//print_r($_COOKIE['piereg_math_captcha_registration']);
-			$data = "";
-			$data .='<div style="display:inline-block;">
-			<script type="text/javascript">';
-			if($piereg_widget == true){
-				/*$data .= 'document.cookie= "piereg_math_captcha_Login_form_widget="+dummy_array;';*/
-				$data .= 'document.cookie= "piereg_math_captcha_Login_form_widget='.$result1."|".$result2."|".$result3.'";';
-			}
-			else{
-				/*$data .= 'document.cookie= "piereg_math_captcha_Login_form="+dummy_array;';*/
-				$data .= 'document.cookie= "piereg_math_captcha_Login_form='.$result1."|".$result2."|".$result3.'";';
-			}
-			$data .= '</script>';
-			
-			
-			
-			//$data .= '<div id="pieregister_math_captha_login_form" class="piereg_math_captcha"></div>';//canvase div for math captcha display
-			//$data .= '<input id="" type="text" style="width:auto;margin: 6px 0 0 6px;" name="piereg_math_captcha_login"/>';
-			
-			$field_id = "";
-			if($piereg_widget == true){
-				$data .= '<div id="pieregister_math_captha_login_form_widget" class="piereg_math_captcha"></div>';
-				$data .= '<input id="" type="text" class="piereg_math_captcha_input" name="piereg_math_captcha_login_widget"/>';
-				$field_id = "#pieregister_math_captha_login_form_widget";
-			}
-			else{
-				$data .= '<div id="pieregister_math_captha_login_form" class="piereg_math_captcha"></div>';
-				$data .= '<input id="" type="text" style="width:auto;margin-top:2px;" name="piereg_math_captcha_login"/>';
-				$field_id = "#pieregister_math_captha_login_form";
-			}
-			
-			
-			$image_name = rand(0,10);
-			$color[0] = 'rgba(0, 0, 0, 0.6)';
-			$color[1] = 'rgba(153, 31, 0, 0.9)';
-			$color[2] = 'rgba(64, 171, 229,0.8)';
-			$color[3] = 'rgba(0, 61, 21, 0.8)';
-			$color[4] = 'rgba(0, 0, 204, 0.7)';
-			$color[5] = 'rgba(0, 0, 0, 0.5)';
-			$color[6] = 'rgba(198, 81, 209, 1.0)';
-			$color[7] = 'rgba(0, 0, 999, 0.5)';
-			$color[8] = 'rgba(0, 0, 0, 0.5)';
-			$color[9] = 'rgba(0, 0, 0, 0.5)';
-			$color[10] = 'rgba(255, 63, 143, 0.9)';
-			
-			$data .= '
-			 <script type="text/javascript">
-				jQuery("'.$field_id.'").css({
-					"background" : "url('.plugins_url('pie-register').'/images/math_captcha/'.$image_name.'.png)",
-					"color"		 : "'.$color[$image_name].'"
-				});
-				jQuery("'.$field_id.'").html("'.$start." ".$operator." ".$end . ' = ");
-			 </script>
-			 </div>';
-			 
-			 $output = $data;
-			 
 		}
+		
 		return $output;
 	}
 }
+
+function update_user_meta_hash() {
+	$activation_key = isset($_GET['activation_key']) ? $_GET['activation_key'] : "";
+    $unverified = get_users(array('meta_key'=> 'hash','meta_value' => $activation_key));
+    if(sizeof($unverified )==1)
+    {
+        $user_id	= $unverified[0]->ID;
+        $user_login = $unverified[0]->user_login;
+        if($user_login == $_GET['pie_id'])
+        {
+            $hash = "";
+            update_user_meta( $user_id, 'hash', $hash );
+        }
+    }
+}
+add_action('wp_footer','update_user_meta_hash');

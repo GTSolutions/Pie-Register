@@ -1,0 +1,127 @@
+/*************** General Settings *****************/
+.test-delete{
+	background: #52ADCC;
+}
+body .pieregister-admin .piereg_gs_menu a:focus{
+	outline:none !important;
+	box-shadow:none !important;
+}
+.pieregister-admin .piereg_gs_menu .ui-widget-content{
+	background: none;
+    border: inherit;
+	color:none;
+}
+.pieregister-admin .piereg_gs_menu .ui-widget-header {
+  background: rgb(255,255,255);
+  border: inherit;
+  /*border-bottom:3px solid rgb(82, 173, 204);*/
+  border-bottom:3px solid #52ADCC;
+  border-radius:0px;
+  color: none;
+  font-weight: inherit;
+  padding:0px;
+}
+.pieregister-admin .piereg_gs_menu .ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all
+{
+	padding:0px;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-default,
+.pieregister-admin .piereg_gs_menu .ui-widget-content .ui-state-default,
+.pieregister-admin .piereg_gs_menu .ui-widget-header .ui-state-default {
+outline:none;
+background: rgb(255,255,255);
+color:rgb(140, 140, 140);
+border:0px;
+height:80px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-default a,
+.pieregister-admin .piereg_gs_menu .ui-state-default a:link,
+.pieregister-admin .piereg_gs_menu .ui-state-default a:visited {
+  color: rgb(140, 140, 140);
+  text-decoration: none;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-active,
+.pieregister-admin .piereg_gs_menu .ui-state-hover,
+.pieregister-admin .piereg_gs_menu .ui-widget-content .ui-state-active,
+.pieregister-admin .piereg_gs_menu .ui-widget-header .ui-state-active {
+background-color: #52ADCC !important;
+color:rgb(254, 255, 255);
+}
+.pieregister-admin .piereg_gs_menu .ui-state-active a,
+.pieregister-admin .piereg_gs_menu .ui-state-active a:link,
+.pieregister-admin .piereg_gs_menu .ui-state-active a:visited,
+.pieregister-admin .piereg_gs_menu .ui-state-hover a {
+  color:rgb(255, 255, 255) !important;
+  font-weight: bold;
+}
+
+.pieregister-admin .piereg_gs_menu .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.pieregister-admin .piereg_gs_menu li.piereg-gs-menu-btn{
+	border-radius:0px !important;
+	margin:0px !important;
+}
+
+/*************General Settings page menu****************/
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-front-end-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-form-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-payment-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-presentation-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-other div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-uninstall-settings div.piereg-menu-icon
+{
+	padding:20px 0px;
+}
+/*Front-end settings*/
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-front-end-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/front-end-settings-off.png') no-repeat scroll center center;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-active.piereg-front-end-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-hover.piereg-front-end-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/front-end-settings-on.png') no-repeat scroll center center;
+}
+/*Form Settings*/
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-form-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/form-settings-off.png') no-repeat scroll center center;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-active.piereg-form-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-hover.piereg-form-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/form-settings-on.png') no-repeat scroll center center;
+}
+/*Payment Settings*/
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-payment-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/payment-settings-off.png') no-repeat scroll center center;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-active.piereg-payment-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-hover.piereg-payment-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/payment-settings-on.png') no-repeat scroll center center;
+}
+/*Presentation Settings*/
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-presentation-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/presentation-settings-off.png') no-repeat scroll center center;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-active.piereg-presentation-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-hover.piereg-presentation-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/presentation-settings-on.png') no-repeat scroll center center;
+}
+/*Other*/
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-other div.piereg-menu-icon{
+	background:url('images/general-settings-page/others-off.png') no-repeat scroll center center;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-active.piereg-other div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-hover.piereg-other div.piereg-menu-icon{
+	background:url('images/general-settings-page/others-on.png') no-repeat scroll center center;
+}
+/*Uninstall Settings*/
+.pieregister-admin .piereg_gs_menu .ui-state-default.piereg-uninstall-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/uninstall-settings-off.png') no-repeat scroll center center;
+}
+.pieregister-admin .piereg_gs_menu .ui-state-active.piereg-uninstall-settings div.piereg-menu-icon,
+.pieregister-admin .piereg_gs_menu .ui-state-hover.piereg-uninstall-settings div.piereg-menu-icon{
+	background:url('images/general-settings-page/uninstall-settings-on.png') no-repeat scroll center center;
+}

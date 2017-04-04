@@ -1,0 +1,82 @@
+.pieregister-admin a{color:rgb(1, 45, 127);text-decoration:none;}
+.pieregister-admin a:hover{color:#FD003A;}
+.pieregister-admin .piereg_rw_list{list-style:none;padding:5px;margin:0px;display:block;line-height:normal;border:1px solid #DFDFDF;overflow:hidden;-moz-border-radius:3px;z-index:1;position:relative;}
+.pieregister-admin .piereg_rw_list li {margin:5px;padding:5px;border:1px solid #DFDFDF;float:left;width:30%;background:#FFF;-moz-border-radius:3px;}
+.pieregister-admin .piereg_rw_list li ul{list-style:none;padding:0px;height:225px;overflow:auto;}
+.pieregister-admin .piereg_rw_list li li{float:none;width:auto !important;height:auto;overflow:visible;border:none;border-bottom:1px dashed #DFDFDF;-moz-border-radius:0px;}
+.pieregister-admin .piereg_rw_list .widget-title{background:#DFDFDF repeat-x scroll left top;color:#333;border:1px solid #DFDFDF;-moz-border-radius:3px;}
+.pieregister-admin .piereg_rw_list .widget-title a,
+.pieregister-admin .piereg_rw_list .widget-title a:hover ,
+.pieregister-admin .piereg_rw_list .widget-title a:visited{color:#333 !important;}
+.pieregister-admin .piereg_rw_list h4{margin:0px;padding:5px;}
+.pieregister-admin .piereg_rw_list span{float:right;}
+.pieregister-admin .piereg_rw_main_table{width:100%;padding:5px;margin:10px 0px;}
+.pieregister-admin .piereg_rw_main_table table{background:#FFF;}
+.pieregister-admin .piereg_rw_post_list {background:#FFF;height:400px;margin:35px 10px 10px 0px;border:1px solid #ccc;overflow:auto;list-style:none;padding:0px;}
+.pieregister-admin .piereg_rw_post_list li{padding:5px;margin:5px 5px;border-bottom:1px dashed rgb(1, 45, 127);}
+.pieregister-admin .piereg_rw_post_list li a,
+.pieregister-admin .piereg_rw_post_list li a:visited{display:block;}
+.pieregister-admin .not_registered{opacity:0.15;}
+.pieregister-admin .rbet_checkbox div{position:relative;}
+.pieregister-admin .rbet_tip{display:none;position:absolute;background:url(images/tip.gif) top left no-repeat;padding:5px 4px;width:242px;height:70px;left:-60px;top:-55px;z-index:5;line-height:135%;cursor:default;color:#2583AD;font-size:11px;font-weight:normal;}
+.pieregister-admin .rbet_tip_img{background:url(images/help.gif) top left no-repeat;background-position:0px 15px;position:relative;padding:16px 0px 5px 0px;margin:0px 5px;}
+.pieregister-admin .rbet_tip_img ,link{padding:16px 16px 5px 0px;outline:none;}
+.pieregister-admin .piereg_rw_wrapper{border:1px solid #DFDFDF;-moz-border-radius:3px;position:relative;padding:5px;}
+.pieregister-admin #rbet_extended{background:#FFF;padding:10px;margin-top:12px;border:1px solid #DFDFDF;-moz-border-radius:3px;}
+.pieregister-admin #rbet_extended h3{background:#DFDFDF url(images/gray-grad.png) repeat-x scroll left top;color:#333;border:1px solid #DFDFDF;padding:8px 13px;margin:0px;font-weight:bold;position:relative;-moz-border-radius:3px;}
+.pieregister-admin #rbet_extended h3 .rbet_tip{left:auto;margin-left:-60px;font-size:10px;}
+.pieregister-admin #rbet_extended h3 .rbet_tip_img{background-image:url(images/help.gif);}
+.pieregister-admin #rbet_extended h3 img{vertical-align:middle;}
+.pieregister-admin #rbet_extended h3 a,
+.pieregister-admin #rbet_extended h3 a:visited{color:#FFF;text-decoration:none;}
+.pieregister-admin #rbet_extended a,
+.pieregister-admin #rbet_extended a:visited{}
+.pieregister-admin #rbet_extended table{width:100%;}
+.pieregister-admin #rbet_extended tr{background:none;}
+.pieregister-admin #rbet_extended td{border-bottom:1px solid #DFDFDF;width:50%;font-size:12px;font-family:tahoma;color:#666;font-weight:bold;vertical-align:top;line-height:100%;}
+.pieregister-admin #rbet_extended input{vertical-align:top;margin-right:5px;}
+.pieregister-admin .pr_blue{width:20px; height:20px; background:rgb(1, 45, 127);float:left;}
+.pieregister-admin .pr_red{ width:20px; height:20px; background:rgb(255, 0, 0 );float:left;}
+.pieregister-admin .pr_rw_right{float:left; border:#333 1px solid;}
+
+/*22092014 Styles*/
+.pieregister-admin .pr_rw_breadcrums{background:url(images/breadcrumb-arrow.png) 0.5% center no-repeat #FFFFFF;padding:1% 2.5%;color:#6b6b6b;font-size:22px;font-weight:normal;border:solid 1px #e4e4e4;}
+.pieregister-admin .restrict_widgets_Legend_area{background:#FFFFFF;float:left;width:100%;margin-top:1%;border:solid 1px #e4e4e4;}
+.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_left{float:left;width:30%;margin:1%;}
+.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_left h3{margin:3% 0;}
+.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_right{float:left;width:20%;margin:1%;border:solid 1px #e4e4e4;padding:1%;}
+.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_right h3{margin:0 0 3% 0;}
+.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_right .piereg_legend_area{width:100%;}
+.pieregister-admin .piereg_rw_list{border:0;padding:0;}
+.pieregister-admin .form-table td{padding:0;}
+.pieregister-admin .form-table{float:left;}
+.pieregister-admin .form-table td ul li{margin:1em 1% 0 0;}
+.pieregister-admin .form-table .widget-title {background:none;border:0;border-bottom:solid 1px #dfdfdf;padding: 3% inherit;}
+.pieregister-admin .widget-list-control-item a{padding: 1% inherit;display:block;}
+.pieregister-admin .widefat{border:solid 1px #e4e4e4;}
+.pieregister-admin .piereg_user_roles tr:hover{background:#EFEFEF;}
+.pieregister-admin .piereg_rw_main_table{background:#FFFFFF;}
+.pieregister-admin .piereg_rw_main_table input[type=submit],
+.pieregister-admin .restrict_widgets_Legend_area_left input[type=button]{background:#939393;border:solid 1px #d6d6d6;color:#FFFFFF;padding:10px;cursor:pointer;}
+.pieregister-admin .piereg_breadcrum_bulet{background:url(images/breadcrumb-arrow.png) center;text-indent:-9999px;}
+.pieregister-admin #pieregister_rw_unselect_all, #pieregister_rw_select_all{cursor:pointer;}
+.pieregister-admin .piereg_user_roles label {display: inline-block;height: 100%;width: 100%;}
+
+/*
+	*	Media Quries
+*/
+@media (max-width: 960px) {
+	.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_left{width:40%;}
+	.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_right{width:30%;}
+}
+@media (max-width: 750px) {
+	.pieregister-admin .wrap .pr_rw_breadcrums{padding: 1% 4%;}
+	.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_left{width:49%;}
+	.pieregister-admin .restrict_widgets_Legend_area .restrict_widgets_Legend_area_right{width:40%;}
+	.pieregister-admin .piereg_rw_list li{width:45%;}
+}
+@media (max-width: 450px) {
+	.pieregister-admin .wrap .pr_rw_breadcrums{font-size:18px;}
+	.pieregister-admin .piereg_rw_list li{width:96%;}
+	.pieregister-admin .piereg_rw_list li ul{height:auto;min-height:10px;max-height:225px;}
+}

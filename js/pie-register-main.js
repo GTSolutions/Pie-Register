@@ -63,11 +63,22 @@ function seladd(clickety){
 	set_add_del(); 
 	return false;
 }
+function selectText(containerid) {
+	if (document.selection) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select();
+    } else if (window.getSelection()) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+}
 function toggleVerificationType(first_type,second_type){
 	if(piereg(second_type).is(":checked")){
 		piereg(second_type).attr("checked",false);
 	}
 }
-
 // Declare jQuery Object to $.
 $ = jQuery;

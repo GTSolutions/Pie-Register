@@ -151,15 +151,18 @@
 .pieregister-admin .ui-state-default,
 .pieregister-admin .ui-widget-content .ui-state-default,
 .pieregister-admin .ui-widget-header .ui-state-default {
-	border: 1px solid #1c94c4;
+	/*border: 1px solid #1c94c4;*/
+	border: 1px solid rgb(1, 45, 127);
 	background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
 	font-weight: bold;
-	color: #1c94c4;
+	/*color: #1c94c4;*/
+	color: rgb(1, 45, 127);
 }
 .pieregister-admin .ui-state-default a,
 .pieregister-admin .ui-state-default a:link,
 .pieregister-admin .ui-state-default a:visited {
-	color: #1c94c4;
+	/*color: #1c94c4;*/
+	color: rgb(1, 45, 127);
 	text-decoration: none;
 }
 .pieregister-admin .ui-state-hover,
@@ -198,7 +201,9 @@
 .pieregister-admin .ui-state-active a:link,
 .pieregister-admin .ui-state-active a:visited {
 	/*color: #eb8f00;*/
-	color: rgb(153, 153, 153);
+	/*color: rgb(153, 153, 153);*/
+	color: rgb(250, 0, 0);
+    font-weight: normal;
 	text-decoration: none;
 }
 

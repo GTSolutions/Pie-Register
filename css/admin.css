@@ -1,0 +1,141 @@
+/* Datepicker
+----------------------------------*/
+.pieregWrapper .ui-datepicker { width: 17em; padding: .2em .2em 0; }
+.pieregWrapper .ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.pieregWrapper .ui-datepicker .ui-datepicker-prev,
+.pieregWrapper .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.pieregWrapper .ui-datepicker .ui-datepicker-prev-hover,
+.pieregWrapper .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.pieregWrapper .ui-datepicker .ui-datepicker-prev { left:2px; }
+.pieregWrapper .ui-datepicker .ui-datepicker-next { right:2px; }
+.pieregWrapper .ui-datepicker .ui-datepicker-prev-hover { left:1px; }
+.pieregWrapper .ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.pieregWrapper .ui-datepicker .ui-datepicker-prev span,
+.pieregWrapper .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.pieregWrapper .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.pieregWrapper .ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.pieregWrapper .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.pieregWrapper .ui-datepicker select.ui-datepicker-month, 
+.pieregWrapper .ui-datepicker select.ui-datepicker-year { width: 49%;}
+.pieregWrapper .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.pieregWrapper .ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.pieregWrapper .ui-datepicker td { border: 0; padding: 1px; }
+.pieregWrapper .ui-datepicker td span,
+.pieregWrapper .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
+.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+/* with multiple calendars */
+.pieregWrapper .ui-datepicker.ui-datepicker-multi { width:auto; }
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-group { float:left; }
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.pieregWrapper .ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.pieregWrapper .ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.pieregWrapper .ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.pieregWrapper .ui-datepicker-row-break { clear:both; width:100%; }
+/* RTL support */
+.pieregWrapper .ui-datepicker-rtl { direction: rtl; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.pieregWrapper .ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}
+.pieregWrapper .ui-widget-content { border: 1px solid #aaaaaa; background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x; color: #222222; }
+.form-table tr td:first-child{padding-left: 0; width: 200px;}
+div.pie_register-admin-meta{display:inline-block;width:100%;}
+div.pie_register-admin-meta div.piereg_restriction_field_area{display:inline-block;width:100%;margin:5px auto;}
+div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_label{float:left;width:30%;}
+div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input{float:left;width:69%;}
+div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input input[type=text],
+div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input input[type=url],
+div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input select{width:70%;}
+div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input textarea{width:100%;min-height:100px;max-height:500px;min-width:50%;max-width:100%;}
+div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input div.piereg_input_radio{width:auto;display:inline-block;padding-right:20px;}
+div.pie_register-admin-meta .pie_register_saprator_admin_meta{border:#CCC 1px groove;height:1px;}
+/* Form Edit */
+.pie-content-ul {
+	width:100%;
+	max-height:380px;
+	overflow:auto;
+}
+.pieregister-admin .advance_fields.dropdown_field_value label {
+	margin:0 10px;
+	min-width:0 !important;
+	width:auto !important;
+}
+.pieregister-admin .advance_fields.dropdown_field_value label.select_option_display {/*margin-right:32px !important;*/
+	min-width:111px !important;
+}
+.pieregister-admin .advance_fields.dropdown_field_value label.select_option_then_price {/*margin-right:44px !important;*/
+	min-width:111px !important;
+}
+.pieregister-admin .enabel_conditional_logic_area input.conditional_value {
+	width:auto !important;
+}
+.pieregister-admin .advance_fields hr {
+	border:1px solid rgb(150, 150, 150);
+}
+.pieregister-admin .enabel_conditional_logic_area .advance_fields a {
+	float:none !important;
+}
+.pieregister-admin .advance_options_fields .message_required{color:#FFFFFF;font-size:10px;float:left;margin:4px 0 0 120px;line-height:12px;max-width:282px;}
+/* End Form Edit */\
+/* Invitation Page*/
+.invitation.settings .widefat th, .invitation.settings .widefat th a{ color:#fefefe !important;font-weight:normal !important; text-shadow:none !important;}
+.invitation.settings .widefat th{background:#64727C !important;}
+.invitation.settings .widefat th:nth-child(1){width:35px;}
+.invitation.settings .name.column-name > input[type=text], .invitation.settings .usage.column-usage > input[type=text]{width:100%;}
+.invitation.settings .name.column-name > span, .invitation.settings .code_usage.column-code_usage > span, .invitation.settings .usage.column-usage > span{cursor: pointer;}
+.invitation.settings .column-id{width:10%;}
+/* End Invitation page */
+/* Notification Page*/
+#piereg_user_notification .hide-div, #piereg_user_notification .btnvisibile{display:none;}
+/* End Notification Page*/
+/* Form Editor */
+.wp-core-ui .button-disaled, .wp-core-ui .button-disaled:hover, .wp-core-ui .button-disaled:focus{cursor:default;background:#CCC;border:1px solid #666;box-shadow:0 1px 0 #999;-o-box-shadow:0 1px 0 #999;-moz-box-shadow:0 1px 0 #999;-webkit-box-shadow:0 1px 0 #999;-ms-box-shadow:0 1px 0 #999;color:#666;}
+.pieHelpTicket p{margin:8px 0px 0px;}
+table.piereg_form_table{width:100%;}
+table.piereg_form_table > thead > tr > th,table.piereg_form_table > tfoot > tr > th{ background:#64727C;color:#FFF;padding:10px; font-size:14px;text-shadow:none;}
+table.piereg_form_table > thead > tr > th:nth-child(1){width:20px;}
+table.piereg_form_table > tbody > tr:nth-child(even){background:#F9F9F9;}
+table.piereg_form_table > tbody > tr:hover{background:#FCF7F7;}
+table.piereg_form_table > tbody > tr > td{border:#D0D0D0 1px solid;padding:5px;vertical-align:middle;}
+table.piereg_form_table > tbody > tr > td:nth-child(1),table.piereg_form_table > tbody > tr > td:nth-child(2),table.piereg_form_table > tbody > tr > td:nth-child(4),table.piereg_form_table > tbody > tr > td:nth-child(5){text-align:center;}
+table.piereg_form_table > tbody > tr > td > div.piereg-actions > span a{cursor:pointer;}
+table.piereg_form_table > tbody > tr > td > textarea, table.piereg_form_table .style_textarea{width:100%;height:100%;background:none !important;width:100% !important;border:none !important;box-shadow:none !important; resize: none; line-height: 20px;cursor:text;}
+/* End Form Editor */
+/* RegUX*/
+/* thickbox fix / hack because wordpress has changed the includes thickbox.css core file */
+#TB_overlay {z-index: 99998 !important; /*they have it set at some crazy number */}
+#TB_window {z-index: 99999 !important; /*they have it set at some crazy number */}
+#TB_window {font: 12px "Open Sans", sans-serif;	color: #333333;}
+#TB_secondLine {font: 10px "Open Sans", sans-serif;color:#666666;}
+.rtl #TB_window,.rtl #TB_secondLine {font-family: Tahoma, sans-serif;}
+:lang(he-il) .rtl #TB_window,:lang(he-il) .rtl #TB_secondLine {font-family: Arial, sans-serif;}
+#TB_window a:link {color: #666666;}
+#TB_window a:visited {color: #666666;}
+#TB_window a:hover {color: #000;}
+#TB_window a:active {color: #666666;}
+#TB_window a:focus{color: #666666;}
+/* end thickbox fixes */
+/* End RegUX*/

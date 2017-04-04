@@ -3,10 +3,11 @@ Contributors: GTSolutions
 
 Tags: register plugin, user register, register, registration, registration plugin, custom registration, custom login plugin, custom login, custom registration, enhance login, enhance profile, custom  logo screen, user registration, custom profile page
 Requires at least: 3.5
-Tested up to: 4.3
-Stable tag: 2.0.20
+Tested up to: 4.7
+Stable tag: 3.0
 
-Custom Registration form, Custom Login Pages, Custom Profile Page, Invitation codes, Paypal, Email verification, user moderation & more.
+Enhance default Registration form, Custom logo, Password field, Invitation codes, Paypal, Captcha validation, Email verification, user moderation &amp; more.
+
 == Description ==
 **Welcome to Pie Register by Genetech Solutions.**
 
@@ -31,28 +32,24 @@ With Pie Register you can:
 *   Create Custom Profile Pages
 *   Add Widgets
 
-With the clean, attractive and easy to use interface introduced in Pie Register 2.0 and above you can drag and drop fields to your forms and add advanced registration features&#160;to your service that can help you go above and beyond the competition.
+With the clean, attractive and easy to use interface introduced in Pie Register 3.0 and above you can drag and drop fields to your forms and add advanced registration features to your service that can help you go above and beyond the competition.
 
-= Translation =
-
-* Brazilian Portuguese (pt_BR) (thanks to <a href="mailto:guilhermebarbeiro@gmail.com">GBDesigner</a>)
-* Italian (it_IT) (thanks to <a href="mailto:gcassarino@gmail.com">Gianluca Cassarino</a>)
-* Serbo-Croatian (rs_SR) (thanks to <a href="mailto:djuraskovicb@gmail.com">Borisa Djuraskovic</a>)
-
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://pieregister.genetechsolutions.com/" target="_blank">GenetechSolutions</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 == Installation ==
 Just follow the simple steps:
+1. Upload the `pie-register` directory to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Set the options in the Settings Panel
 
-1.   **Upload the `pie-register` directory to the `/wp-content/plugins/` directory**
-2.   **Activate the plugin through the 'Plugins' menu in WordPress**
 
-Please follow our plugin [documentation](http://pieregister.genetechsolutions.com/documentation/ "Pie-Register Documentation") on how to Create Registration Form, Login , Forgot Password and Profile Pages using Shortcodes and Widgets.
-
-== Support Forum ==
-Please visit our [Website Forum](http://pieregister.genetechsolutions.com "Pie-Register Forum") in order to get support regarding this plugin!
+== Support ==
+* Please visit our [Website Forum](http://pieregister.com/forum/ "Pie-Register Forum") in order to get support regarding this plugin!
 
 == CHANGELOG ==
+### 3.0
+* Admin UI updates
+* Major security fixes
+
 ### 2.0.20
 * Fixed "Remember me" issue.
 
@@ -275,15 +272,15 @@ Please visit our [Website Forum](http://pieregister.genetechsolutions.com "Pie-R
 ### v1.2.6 October 4 2011
 * Fixed Multiple Invitation Saving Problem
 
-=v1.2.5
-*Fixed custom meta fields "Saving" problem by the admin. (Fixed by Julian Warren with Thanks)
-*Added New Layout Pie-Register Menu built!
+### v1.2.5
+* Fixed custom meta fields "Saving" problem by the admin. (Fixed by Julian Warren with Thanks)
+* Added New Layout Pie-Register Menu built!
 
 ### v1.2.4
-*Fixed the "Backslash" problem on the admin Setting Page.
+* Fixed the 'Backslash' problem on the admin Setting Page.
 
 ### v1.2.3
-*Highlighted the Code to put on the wp-login.php at the plugin page.
+* Highlighted the Code to put on the wp-login.php at the plugin page.
 
 ### v1.2.2
 
@@ -297,7 +294,7 @@ Please visit our [Website Forum](http://pieregister.genetechsolutions.com "Pie-R
 * Compatible to Wp 3.0.4
 
 
-=v1.2.0
+### v1.2.0
 
 * Fixed Image uploads errors.
 * First step to Compatiblity to Wp 3.0
@@ -356,10 +353,7 @@ Please visit our [Website Forum](http://pieregister.genetechsolutions.com "Pie-R
 
 == Screenshots ==
 
-1. Pie-Register Form Editor
-2. Pie-Register Invitation Code
-3. Pie Register User Notifications Settings
-4. Pie-Register Admin Notification Settings
-5. Pie-Register Genereal Settings Page
-6. Pie-Register User Import/Export
-7. Pie-Register Paypal Settings Page
+1. Registration Page
+2. Pie Register Settings
+3. Invitation Tracking Dashboard Widget
+4. Unverified User Management

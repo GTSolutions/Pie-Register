@@ -1664,4 +1664,10 @@ $.widget( "ui.tabs", {
 
 jQuery(document).ready(function(){
 	jQuery("#payment_gateway_tabs").tabs();
+	jQuery("#notifications_tabs, #blacklisted_tabs, #bulkemails_tabs").tabs();
+	
+});
+
+jQuery(window).load(function(){
+	jQuery(".hideBorder").show();
 });

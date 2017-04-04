@@ -21,14 +21,25 @@ piereg(document).ready(function($){
 				if(getRules !== null){
 					var str = getRules[1];
 					var rules = str.split(/\[|,|\]/);
-					piereg_validate = ValidateField(rules,this,true,".widget ");
+					
+					if( piereg(this).hasClass('hasDatepicker') && piereg(this).val() == "" )
+					{
+						// skip validate on blur if datepicker on empty.
+					} else {
+						piereg_validate = ValidateField(rules,this,true,".widget ");
+					}
+					
+					if(piereg_validate){
+						
+					}else{
+					}
 				}
 			}
 
 		});
 		/* Validate On Blur Field(s) */
 		piereg(".pieregWrapper .fieldset .input_fields").on("blur",function(){
-		  	var piereg_validate = true;
+			var piereg_validate = true;
 			var rulesParsing = piereg(this).attr("class");
 			if(rulesParsing !== null)
 			{
@@ -36,10 +47,17 @@ piereg(document).ready(function($){
 				if(getRules !== null){
 					var str = getRules[1];
 					var rules = str.split(/\[|,|\]/);
-					piereg_validate = ValidateField(rules,this,piereg_validate,"");
+					
+					if( piereg(this).hasClass('hasDatepicker') && piereg(this).val() == "" )
+					{
+						// skip validate on blur if datepicker on empty.
+					} else {
+						piereg_validate = ValidateField(rules,this,piereg_validate,"");
+						
+					}	
 				}
 			}																  
-																				  
+																  
 			/*
 			var getRules = /piereg_validate\[(.*)\]/.exec(rulesParsing);
 			
@@ -62,6 +80,25 @@ piereg(document).ready(function($){
 			ValidateField(rules,this);
 		});*/
 		
+		/* Validate On Submit Renew Account's Field(s) */
+		piereg("#piereg_loginform").on("submit",function(){
+			var piereg_validate = true;
+			piereg("#piereg_loginform ul li .input_fields").each(function(i,obj){
+				var rulesParsing = piereg(obj).attr("class");
+				if(rulesParsing !== null)
+				{
+					var getRules = /piereg_validate\[(.*)\]/.exec(rulesParsing);
+					if(getRules !== null){
+						var str = getRules[1];
+						var rules = str.split(/\[|,|\]/);
+						piereg_validate = ValidateField(rules,obj,piereg_validate,"");
+					}
+				}
+			});
+			if(!piereg_validate)
+				return false;
+		});
+		
 		/* Validate On Submit widget Field(s) */
 		piereg("#pie_widget_regiser_form").on("submit",function(){
 			var piereg_validate = true;
@@ -81,11 +118,39 @@ piereg(document).ready(function($){
 			if(!piereg_validate)
 				return false;
 		});
+		
+		/* Remove validation and strength meter default on Reset (Widget) */
+		piereg("#pie_widget_regiser_form input[type='reset']").on("click",function(){
+			piereg( "#pie_widget_regiser_form ul .input_fields" ).each(function(i,obj) {
+				piereg(obj).closest("li").find(".legend_txt").remove();
+				piereg(obj).closest("div.fieldset").removeClass("error");
+			});				
+			if( piereg('#piereg_passwordStrength_widget').length > 0  ) {
+				piereg( "#piereg_passwordStrength_widget" ).removeAttr('class').attr('class', '');
+				piereg( "#piereg_passwordStrength_widget" ).addClass("piereg_pass");
+				piereg( "#piereg_passwordStrength_widget" ).html("Strength Indicator");
+			}
+		});
+		
+		/* Remove validation and strength meter default on Reset */
+		piereg("#pie_regiser_form input[type='reset']").on("click",function(){
+			piereg( "#pie_regiser_form ul .input_fields" ).each(function(i,obj) {
+				piereg(obj).closest("li").find(".legend_txt").remove();
+				piereg(obj).closest("div.fieldset").removeClass("error");
+			});
+			
+			if( piereg('#piereg_passwordStrength').length > 0  ) {
+				piereg( "#piereg_passwordStrength" ).removeAttr('class').attr('class', '');
+				piereg( "#piereg_passwordStrength" ).addClass("piereg_pass");
+				piereg( "#piereg_passwordStrength" ).html("Strength Indicator");
+			}
+		});
+		
 		/* Validate On Submit Field(s) */
 		piereg("#pie_regiser_form").on("submit",function(){
+			
 			var piereg_validate = true;
 			piereg( "#pie_regiser_form ul .input_fields" ).each(function(i,obj) {
-				
 				var rulesParsing = piereg(obj).attr("class");
 				if(rulesParsing !== null)
 				{
@@ -97,6 +162,7 @@ piereg(document).ready(function($){
 					}
 				}
 			});
+			
 			if(!piereg_validate)
 				return false;
 		});
@@ -155,52 +221,203 @@ piereg(document).ready(function($){
 			pieNextPage(this);
 		}); 
 		
-		
+		piereg('input[name="pie_reset"]').click(function(){
+			piereg("#pie_register").find(".legend_txt").remove();
+			piereg("#pie_register").find("div.fieldset").removeClass("error");
+		});
 		
 	})(jQuery);
+	
+	
+	
+	piereg("input.piereg_username_input_field").alphanum({
+		allow              : '_',    // Allow extra characters
+		disallow           : '',    // Disallow extra characters
+		allowSpace         : false,  // Allow the space character
+		allowNumeric       : true,  // Allow digits 0-9
+		allowUpper         : true,  // Allow upper case characters
+		allowLower         : true,  // Allow lower case characters
+		allowCaseless      : true,  // Allow characters that do not have both upper & lower variants
+									// eg Arabic or Chinese
+		allowLatin         : true,  // a-z A-Z
+		allowOtherCharSets : true,  // eg é, Á, Arabic, Chinese etc
+		forceUpper         : false, // Convert lower case characters to upper case
+		forceLower         : false, // Convert upper case characters to lower case
+		maxLength          : NaN    // eg Max Length
+	});
+	
+	
+	piereg("input.piereg_name_input_field").alphanum({
+		allow              : '',    // Allow extra characters
+		disallow           : '',    // Disallow extra characters
+		allowSpace         : true,  // Allow the space character
+		allowNumeric       : false,  // Allow digits 0-9
+		allowUpper         : true,  // Allow upper case characters
+		allowLower         : true,  // Allow lower case characters
+		allowCaseless      : true,  // Allow characters that do not have both upper & lower variants
+									// eg Arabic or Chinese
+		allowLatin         : true,  // a-z A-Z
+		allowOtherCharSets : true,  // eg é, Á, Arabic, Chinese etc
+		forceUpper         : false, // Convert lower case characters to upper case
+		forceLower         : false, // Convert upper case characters to lower case
+		maxLength          : NaN    // eg Max Length
+	});
+	/* Restrict username of Upprecase & space (start)*/ // Edited by AHMED 120515
+	//piereg('input.piereg_username_input_field').keypress(function(e) {
+		/*if (this.value.match(/[^a-zA-Z0-9]/g)) {
+			//console.log(this.value);
+			this.value = this.value.replace(/[^a-zA-Z0-9]/g, '');
+		}
+		var charCode = 0;
+		if(key.which > 0) {
+			charCode = key.which;
+		} else if(key.keyCode > 0){
+			//charCode = key.keyCode;
+		} else{			
+			charCode = key.charCode;
+		}
+		var charString = String.fromCharCode(charCode);
+		if(piereg.inArray( charString , ['%', ' ','~','~','!','@','#','$','%','^','&','*','(',')','+','=','{','}','[',']','\\','|',':',';','"',"'",'<','>','/','?','*','-','+','.'] ) >= 0){
+			return false;
+		}*/
+	//});
+	
+	/*piereg('input.piereg_username_input_field').keyup(function(key,obj) {
+		if( key.keyCode == 17 || (key.ctrlKey == true && key.keyCode == 65) ) {
+			return false;
+		} else {
+			var currpostion	= getCursorPosition('.piereg_username_input_field');
+			piereg(this).val( piereg(this).val().toLowerCase() );
+			piereg(this).setCursorPosition(currpostion, false);
+		}
+	});
+	/* Restrict username of Upprecase & space (end)*/
+	
 });
 
+function getCursorPosition(classname){
+	var ctl = document.querySelector(classname);
+    var startPos = ctl.selectionStart;
+    var endPos = ctl.selectionEnd;
+    return endPos;  
+}
+
+piereg.fn.setCursorPosition = function(start, end) {
+    if(!end) end = start; 
+    return this.each(function() {
+        if (this.setSelectionRange) {
+            this.focus();
+            this.setSelectionRange(start, end);
+        } else if (this.createTextRange) {
+            var range = this.createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', end);
+            range.moveStart('character', start);
+            range.select();
+        }
+    });
+};
+
+function validImportForm(form, inputclass){
+	
+	if(inputclass)	 
+	{
+		if(piereg(inputclass).val().length == "0")
+		{ 
+			alert("No file selected.");
+			return false;
+		}		
+	} 
+	
+	if( window.confirm("Are you sure, you want to overwrite all your existing settings?") )
+	{
+		form.submit();	
+	}
+}
 
 function ValidateField(rules,option,piereg_validate,IsWidget){
 	var getAllRules = getRegexAndErrorMsg();
 	var breakLoop = false;
+	var $this_fields_is_display = piereg(option).closest('.fields').css('display');
+	//var $thisIsGroup = false;
+	//var $hasError = false;
+	//if(piereg(option).closest('.fieldset').hasClass('piegroup')){
+		//$thisIsGroup = true;
+	//}
+	//if(piereg(option).closest('.fieldset').hasClass('error')){
+		//$hasError = true;
+	//}
 	for (var i = 0; i < rules.length; i++) {
 		switch(rules[i]){
 			case "required":
 				switch(piereg(option).attr("type")){
 					case "radio":
 					case "checkbox":
-
+						if($this_fields_is_display == 'none'){
+							//if(!thisIsGroup && $hasError)
+							RemoveErrorMsg(option);
+						}else{
 						//piereg("input[data-map-field-by-class="+(piereg(option).attr("data-map-field-by-class"))+"]").each(function(i,obj) {
-						pieregchecked = false;
-						var $checked = false;
-						//piereg("input[data-map-field-by-class=radio_14]").each(function(i,obj) {
-						piereg(IsWidget+"input[data-map-field-by-class="+(piereg(option).attr("data-map-field-by-class"))+"]").each(function(i,obj) {
-							if(piereg(obj).prop("checked"))
+							pieregchecked = false;
+							var $checked = false;
+							//piereg("input[data-map-field-by-class=radio_14]").each(function(i,obj) {
+							piereg(IsWidget+"input[data-map-field-by-class="+(piereg(option).attr("data-map-field-by-class"))+"]").each(function(i,obj) {
+								if(piereg(obj).prop("checked"))
+								{
+									$checked = true;
+								}
+							});
+													
+							if(!$checked) 
 							{
-								$checked = true;
+								ShowErrorMsg(option,getCustomFieldMessage(option,getAllRules.required.alertText));
+								breakLoop = true;
+							}else{
+								RemoveErrorMsg(option);
 							}
-						});
-						
-						
-						
-						if(!$checked)
-						{
-							ShowErrorMsg(option,getCustomFieldMessage(option,getAllRules.required.alertText));
-							breakLoop = true;
-						}else{
-							RemoveErrorMsg(option);
 						}
-						
 					break;
-					
 					default:
-						if(piereg(option).val().trim() == ""){
-							ShowErrorMsg(option,getCustomFieldMessage(option,getAllRules.required.alertText));
-							breakLoop = true;
-						}else{
-							RemoveErrorMsg(option);
+						if( piereg(option).attr("data-type") == "list" )
+						{
+							var hasError = 0;
+							var totalFields = piereg(".pie_list_cover").find(".input_fields").length;
+							piereg(".pie_list_cover").find("input[type=text]").each(function(i,obj){
+								if(piereg(this).val() !== "" )
+								{
+									err_remain = hasError;	
+								}else
+								{
+									hasError++;
+								}
+
+							});
+							
+							if(hasError<totalFields)
+							{
+								RemoveErrorMsg(option);
+														
+							}else{
+								ShowErrorMsg(option,getCustomFieldMessage(option,getAllRules.list.alertText));
+								breakLoop = true;
+								
+							}			
 						}
+						else{
+							
+							if($this_fields_is_display == 'none'){
+								RemoveErrorMsg(option);
+							}else{
+								if(piereg(option).val().trim() == ""){
+									ShowErrorMsg(option,getCustomFieldMessage(option,getAllRules.required.alertText));
+									breakLoop = true;
+								}else{
+									RemoveErrorMsg(option);
+								}
+							}
+						}
+						
+						
 					break;
 				}
 					
@@ -208,7 +425,17 @@ function ValidateField(rules,option,piereg_validate,IsWidget){
 			break;
 			case "equals":
 				i++;
-				if(piereg(option).val().trim() != piereg("#"+rules[i]).val().trim()){
+				
+				var field_confirm 	= piereg(option).val().trim();
+				var field_value 	= piereg("#"+rules[i]).val().trim();
+					
+				// To check if rule is email
+				if(rules[i].indexOf('email_') !== -1) {
+					var field_confirm 	= field_confirm.toLowerCase();
+					var field_value 	= field_value.toLowerCase();
+				} 
+				
+				if(field_confirm != field_value){
 					ShowErrorMsg(option,getCustomFieldMessage(option,getAllRules.equals.alertText));
 					breakLoop = true;
 				}/*else if(piereg(option).val().trim() == "" ){
@@ -225,39 +452,42 @@ function ValidateField(rules,option,piereg_validate,IsWidget){
 					case "email":
 					case "number":
 					case "alphanumeric":
-					case "alphabetic":
 					case "url":
 					case "phone_standard":
 					case "phone_international":
 					case "month":
-					case  "day":
-					case  "year":
-						if(piereg(option).val().trim() != "")
+					case "day":
+					case "year":
+						
+						//console.log(getAllRules[rules[i]]);
+						if(!piereg(option).val().trim().match(new RegExp(getAllRules[rules[i]].regex),piereg(option).val().trim()))
 						{
-							console.log( rules[i] );
-							if(!piereg(option).val().trim().match(new RegExp(getAllRules[rules[i]].regex),piereg(option).val().trim()))
-							{
+							if(piereg(option).val().trim() == "") {
+								RemoveErrorMsg(option);
+							} else {
 								ShowErrorMsg(option,getCustomFieldMessage(option,getAllRules[rules[i]].alertText));
 								breakLoop = true;
-							}else{
-								RemoveErrorMsg(option);
 							}
+						}else{
+							RemoveErrorMsg(option);
 						}
+						
 					break;
 				}
 				
-			break;
-			
-			/*case "username":
-				if(!piereg(option).val().trim().match(new RegExp(getAllRules.username.regex),piereg(option).val().trim()))
+			break;			
+			case "username":
+			case "alphabetic":
+				
+				if(piereg(option).val().trim().match(new RegExp(getAllRules.username.regex),piereg(option).val().trim()))
 				{
 					ShowErrorMsg(option,getCustomFieldMessage(option,getAllRules.username.alertText));
 					breakLoop = true;
 				}else{
 					RemoveErrorMsg(option);
 				}
-			break;*/
-			
+				
+			break;			
 			case "minSize":
 				i++;
 				if(piereg(option).val().trim() != ""){
@@ -300,7 +530,6 @@ function ValidateField(rules,option,piereg_validate,IsWidget){
 						RemoveErrorMsg(option);
 					}
 				}
-				
 			break;
 			case "min":
 				i++;
@@ -333,7 +562,6 @@ function ValidateField(rules,option,piereg_validate,IsWidget){
 			
 		}
 		
-		
 		if(breakLoop)
 		{
 			piereg_validate = false;
@@ -347,29 +575,14 @@ function ValidateField(rules,option,piereg_validate,IsWidget){
 function pieNextPage(elem)
 {
 	//pieHideFields();
-	piereg(elem).closest('.pieregformWrapper').find('form .fields').css('display','none');
+	piereg(elem).closest('.pieregformWrapper').find('#pie_register .fields,form .fields').css('display','none');
 	var id 		= piereg(elem).attr("id");
-	//var pageNo 	= piereg("#"+id+"_curr").val();
-	var pageNo = piereg(elem).closest('form').find("#"+id+"_curr").val();
-	var totalPages = piereg(elem).closest('form').find('.piereg_regform_total_pages').val();
-	//var pageNo = piereg("#"+id+"_curr").val();
-	//var elms = document.getElementsByClassName('pageFields_'+pageNo);
-	piereg(elem).closest('form').find('.pageFields_'+pageNo).css('display','block');/*
-	for(a = 0 ; a < elms.length ; a++)
-	{
-		elms[a].style.display = "";	
-	} */
-	
-	//
-	
-	/*piereg('html, body').animate({
-        scrollTop: piereg(".piereg_progressbar").offset().top
-    }, 0);*/
-	//alert("pageno"+pageNo+" Total Pages:"+totalPages);
+	var pageNo = piereg(elem).closest('form,#pie_regiser_form').find("#"+id+"_curr").val();
+	var totalPages = piereg(elem).closest('form,#pie_regiser_form').find('.piereg_regform_total_pages').val();
+	piereg(elem).closest('form,#pie_regiser_form').find('.pageFields_'+pageNo).css('display','block');
 	piereg(elem).closest('.pieregformWrapper').find(".piereg_progressbar" ).progressbar( "option", {
 	  value: pageNo / totalPages * 100
-	}); 
-	 	
+	});
 }
 
 function pieHideFields()
@@ -390,6 +603,37 @@ function getCustomFieldMessage(option,message){
 	return message;
 }
 
+/*
+function validateBeforeRemove( option )
+{
+	var err_remain		= 0; 
+	var field_class 	= piereg(option).attr('class');
+	var field_value 	= piereg.trim(this.value);
+	var getAllRules 	= getRegexAndErrorMsg();
+	
+	if (field_value == "" && field_class.indexOf("required") >= 0) {
+		err_remain++;
+	}
+	else if(field_class !== null)
+	{
+		
+		var getRules		= /piereg_validate\[(.*)\]/.exec(field_class);		
+		if(getRules !== null){
+			var str = getRules[1];
+			var rules = str.split(/\[|,|\]/);			
+			for (var i = 0; i < rules.length; i++) {
+				
+				switch(rules[i]){
+					case "custom":
+					break;
+				}
+			}
+		}
+	}
+	return err_remain;
+}
+*/
+
 function ShowErrorMsg(field,promptText){
 	piereg(field).closest("li").find(".legend_txt").remove();
 	piereg(field).closest("li").find(".fieldset").addClass("error");
@@ -397,12 +641,179 @@ function ShowErrorMsg(field,promptText){
 }
 
 
+
 function RemoveErrorMsg(field){
-	piereg(field).closest("li").find(".legend_txt").remove();
-	piereg(field).closest("div.fieldset").removeClass("error");
+	var field_name = piereg(field).attr('name');
+	var err_remain = 0;
+	var container	= piereg(field).closest('.fieldset');
+	
+	/*
+	if( typeof field_name == "string" && (field_name.indexOf("address_") >= 0 || field_name.indexOf("date_") >= 0 || field_name.indexOf("time_") >= 0) )
+	{
+		validateBeforeRemove(field)
+	}
+	else {
+		piereg(field).closest("li").find(".legend_txt").remove();
+		piereg(field).closest("div.fieldset").removeClass("error");
+	}
+	*/
+	
+	
+	if (typeof field_name == "string" && field_name.indexOf("address_") >= 0 ) {
+		
+		piereg(container).find(".input_fields").each(function(){
+			var field_class = piereg(this).attr('class');
+			var field_value = piereg.trim(this.value);
+			if (field_value == "" && field_class.indexOf("required") >= 0) {
+				err_remain++;
+			}else if( field_class.indexOf("alphabetic") >= 0 ) {
+				var regex = /^[a-zA-Z\s]+$/;
+				if(!regex.test(field_value)) {
+					err_remain++;
+				}
+			}
+		})
+			
+	}
+	else if(typeof field_name == "string" && field_name.indexOf("date_") >= 0 )
+	{
+		piereg(container).find(".input_fields").each(function(i,obj) {
+																					
+			var rulesParsing 	= piereg(obj).attr("class");
+			var field_class 	= piereg(obj).attr('class');
+			var field_value 	= piereg.trim(this.value);
+			
+			if (field_value == "" && field_class.indexOf("required") >= 0) {
+				err_remain++;
+			} 
+			else if(rulesParsing !== null)
+			{
+				var getAllRules 	= getRegexAndErrorMsg();
+				var getRules		= /piereg_validate\[(.*)\]/.exec(rulesParsing);
+				
+				if(getRules !== null){
+					var str = getRules[1];
+					var rules = str.split(/\[|,|\]/);
+					
+					for (var i = 0; i < rules.length; i++) {
+						
+						if(	rules[i] == 'custom' )
+						{
+							i++;
+							if(!piereg(obj).val().trim().match(new RegExp(getAllRules[rules[i]].regex),piereg(obj).val().trim()))
+							{
+								if(piereg(obj).val().trim() !== "") {
+									err_remain++;
+									break;
+								}
+							}
+						}
+						
+					}
+					
+					if(err_remain != 0){
+						return false;
+					}
+					
+				}
+			}
+			
+		})
+		
+	}
+	else if(typeof field_name == "string" && field_name.indexOf("time_") >= 0 ){
+		
+		piereg(container).find(".input_fields").each(function(i,obj) {
+																					
+			var rulesParsing 	= piereg(obj).attr("class");
+			var field_class 	= piereg(obj).attr('class');
+			var field_value 	= piereg.trim(this.value);
+			
+			if (field_value == "" && field_class.indexOf("required") >= 0) {
+				err_remain++;
+			} 
+			else if(rulesParsing !== null)
+			{
+				var getAllRules 	= getRegexAndErrorMsg();
+				var getRules		= /piereg_validate\[(.*)\]/.exec(rulesParsing);
+				
+				if(getRules !== null){
+					var str = getRules[1];
+					var rules = str.split(/\[|,|\]/);
+					
+					for (var i = 0; i < rules.length; i++) {
+						
+						if(	rules[i] == 'custom' )
+						{
+							i++;
+							if(!piereg(obj).val().trim().match(new RegExp(getAllRules[rules[i]].regex),piereg(obj).val().trim()))
+							{
+								if(piereg(obj).val().trim() !== "") {
+									err_remain++;
+									break;
+								}
+							}
+						}
+						
+						if( rules[i] == 'minSize' )
+						{
+							i++;
+							var strlen = piereg(obj).val().trim();
+							if(rules[i] > strlen.length)
+							{
+								err_remain++;
+							}
+						}
+						if( rules[i] == 'maxSize' )
+						{
+							i++;
+							var strlen = piereg(obj).val().trim();
+							if(rules[i] < strlen.length)
+							{
+								err_remain++;
+							}
+						}
+						if( rules[i] == 'min' )
+						{
+							i++;
+							$value = parseInt(piereg(obj).val());
+							if($value < rules[i])
+							{
+								err_remain++;
+							}
+						}
+						
+						if( rules[i] == 'max' )
+						{
+							i++;
+							$value = parseInt(piereg(obj).val());
+							if($value > rules[i])
+							{
+								err_remain++;
+							}
+						}
+						
+					}
+					
+					if(err_remain != 0){
+						return false;
+					}
+					
+				}
+			}
+			
+		})
+	}
+	else {
+		piereg(field).closest("li").find(".legend_txt").remove();
+		piereg(field).closest("div.fieldset").removeClass("error");
+	}
+	
+	if( err_remain == 0 ) {
+		piereg(field).closest("li").find(".legend_txt").remove();
+		piereg(field).closest("div.fieldset").removeClass("error");
+	}
 }
-
-
 
 function getRegexAndErrorMsg(){
 	var allRules ={
@@ -414,19 +825,26 @@ function getRegexAndErrorMsg(){
 			"alertTextDateRange": piereg_validation_engn[4]//"* Both date range fields are required"
 		},
 		"username": {
-			"regex": "none",
+			"regex": /\s+/g,
 			"alertText": piereg_validation_engn[53]//"* Invalid Username"
+		},		
+		"list":
+		{
+			"regex": /^[A-Za-z ]+$/,
+			"alertText": piereg_validation_engn[1]//"* At least one field is required"
 		},
 		"ext": {
 			"regex": "none",
 			"alertText": piereg_validation_engn[54]//"* Invalid File"
 		},
 		"alphanumeric": {
-			"regex": /^[a-zA-Z0-9]+$/,
-			"alertText": piereg_validation_engn[53]//"* Invalid Username"
+			//"regex": /^[a-zA-Z0-9]+$/,
+			"regex": /^[a-zA-Z0-9 ]+$/,
+			"alertText": piereg_validation_engn[57]//"* Only Alphanumeric characters are allowed"
 		},
 		"alphabetic": {
-			"regex": /^[a-zA-Z\s]+$/,
+			//"regex": /^[a-zA-Z\s]+$/,
+			"regex": /\s+/g,
 			"alertText": piereg_validation_engn[56]//"* Alphabetic Letters only"
 		},
 		"requiredInFunction": { 
@@ -500,7 +918,7 @@ function getRegexAndErrorMsg(){
 		},
 		 "phone_standard": {
 			// credit: jquery.h5validate.js / orefalo
-			"regex": /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/,
+			"regex": /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/,
 			"alertText": piereg_validation_engn[23]//"* Allowed Format (xxx) xxx-xxxx"
 		},
 		"phone_international": {
@@ -510,7 +928,8 @@ function getRegexAndErrorMsg(){
 		},
 		"email": {
 			// Shamelessly lifted from Scott Gonzalez via the Bassistance Validation plugin http://projects.scottsplayground.com/email_address_validation/
-			"regex": /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i,
+			/*"regex": /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i,*/
+			"regex": /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i,
 			"alertText": piereg_validation_engn[25]//"* Invalid email address"
 		},
 		"integer": {

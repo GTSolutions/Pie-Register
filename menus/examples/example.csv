@@ -1,2 +1,3 @@
-"User ID","Username","Display name","E-mail","Website","User Registered","First Name","Last Name","Nickname","Biographical Info","Role"
-"1","Pie-Register","Pie-Register","pieregister@genetechsolutions.com","http://pieregister.genetechsolutions.com/","2014-04-08 14:13:47","Genetech Solutions","Pie-Register","Pie-Register",,"administrator"
+"user_login","user_email","user_pass","first_name","last_name","display_name","role","pie_usermeta_1","pie_usermeta_2"
+"pieregister","pie.register@localhost.localdomain",,"Pie","Register","Pie Register","admin","Test","Test"
+

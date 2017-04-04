@@ -22,1411 +22,985 @@ body .piereg_container label,
 body .piereg_container span,
 body .piereg_container h2,
 body .piereg_container h1,
+body .linkStyle1
 /*body .pieregForgotPassword **/
 
-{
-	padding-left:0px;
-	padding-right:0px;
-	padding-top:0px;
-	padding-bottom:0px;
-	visibility:visible;
-	width:auto;
-	height:auto;
+{padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;visibility:visible;width:auto;height:auto;
 /*	display:;*/
-	margin-left:0px;
-	margin-right:0px;
-	margin-top:0px;
-	margin-bottom:0px;
-	text-decoration:none;
-	text-shadow:none;
+	margin-left:0px;margin-right:0px;margin-top:0px;margin-bottom:0px;text-decoration:none;text-shadow:none;
 /*	font-size:*/
-	font-style:normal;
-	font-weight:normal;
-	list-style:none;
-	box-sizing:border-box;
-	opacity:1;
-	border:none;
-	background:none;
-	box-shadow:none;
-	float:none;
-	max-height:none;
-	min-height:none;
-	max-width:none;
-	min-width:none;
-}
+	font-style:normal;font-weight:normal;list-style:none;box-sizing:border-box;opacity:1;border:none;background:none;box-shadow:none;float:none;max-height:none;min-height:none;max-width:none;min-width:none;}
+body .pieregWrapper li::before{display:none !important}
+body .pieregWrapper::before *{display:none !important}
+body .pieregWrapper li::before{display:none !important}
+body .pieregWrapper ul::before{display:none !important}
+body .pieregWrapper img::before{display:none !important}
+body .pieregWrapper div::before{display:none !important}
+body .pieregWrapper a::before{display:none !important}
+body .pieregWrapper p::before{display:none !important}
+body .pieregWrapper input::before{display:none !important}
+body .pieregWrapper label::before{display:none !important}
+body .pieregWrapper span::before{display:none !important}
+body .pieregWrapper h2::before{display:none !important}
+body .pieregWrapper h1::before{display:none !important}
+body .piereg_container *::before{display:none !important}
+body .piereg_container li::before{display:none !important}
+body .piereg_container ul::before{display:none !important}
+body .piereg_container img::before{display:none !important}
+body .piereg_container div::before{display:none !important}
+body .piereg_container a::before{display:none !important}
+body .piereg_container p::before{display:none !important}
+body .piereg_container input::before{display:none !important}
+body .piereg_container label::before{display:none !important}
+body .piereg_container span::before{display:none !important}
+body .piereg_container h2::before{display:none !important}
+body .piereg_container h1::before{display:none !important}
 
-/*#piereg_login form#piereg_loginform h1 {display:none;}*/
-body.pieregister_preview_page::before{
-	background-color:none;
-	box-shadow : none;
-    content: "";
-    display: inline;
-    height: auto;
-    left: 0;
-    min-height: auto;
-    position: static;
-    top: 0;
-    width: auto;
-    z-index: 0;
-}
-#piereg_login{display:inline-block;}
-#piereg_login form#piereg_resetpassform {
-	margin: auto;
-	width: 300px;
-}
-#piereg_login form#piereg_resetpassform p {
-	float: left;
-	margin: 16px 0 0;
-	width: 100%;
-}
-#piereg_login form#piereg_resetpassform p label{
-	float: left;
-	margin: 10px 0px 4px 0px;
-	width: 100%;
-}
-#piereg_login form#piereg_loginform .input,#login form#piereg_lostpasswordform .input{
-	border-radius: 3px;
-	border: 1px solid #d5d5d5;
-	height:32px;
-	padding: 0px 5px 0px 5px;
-	margin-top: 0px;
-	margin-bottom: 0;
-	width: 78%;
-	float: left;
-	color:#848484;
-}
-.widget #piereg_login form#piereg_loginform .input,.widget #login form#piereg_lostpasswordform .input{
-	border-radius: 3px;
-	border: 1px solid #d5d5d5;
-	padding: 0px 5px 0px 5px;
-	margin-top: 0px;
-	margin-bottom: 0;
-	width: 100%;
-	display:block;
-	float: none;
-	color:#848484;
-}
+/*#piereg_login form#piereg_loginform h1{display:none;}*/
+body.pieregister_preview_page::before{background-color:none;box-shadow :none;
+    content:"";
+    display:inline;
+    height:auto;
+    left:0;
+    min-height:auto;
+    position:static;
+    top:0;
+    width:auto;
+    z-index:0;}
+body .pieregWrapper strong, body .pieregWrapper strong *{font-weight:bold}
+body .pieregWrapper em, body .pieregWrapper em span, body .pieregWrapper var, body .pieregWrapper var span{font-style:italic}
+.aligncenter{text-align:center;}
+#piereg_login{display:inline-block;}.widget #piereg_login{width:100%;}
+#piereg_login form#piereg_resetpassform{margin:auto;width:300px;}
+#piereg_login form#piereg_resetpassform p{float:left;margin:16px 0 0;width:100%;}
+#piereg_login form#piereg_resetpassform p label{float:left;margin:10px 0px 4px 0px;width:100%;}
+#piereg_login form#piereg_loginform .input,#login form#piereg_lostpasswordform .input{border-radius:3px;border:1px solid #d5d5d5;height:32px;padding:0px 5px 0px 5px;margin-top:0px;margin-bottom:0;width:78%;float:left;color:#848484;}
+.widget #piereg_login form#piereg_loginform .input,.widget #login form#piereg_lostpasswordform .input{border-radius:3px;border:1px solid #d5d5d5;padding:0px 5px 0px 5px;margin-top:0px;margin-bottom:0;width:100%;display:block;float:none;color:#848484;}
 
-#piereg_login form#piereg_loginform {
-/*	margin: auto;
-	width: 300px;*/
+#piereg_login form#piereg_loginform{
+/*	margin:auto;width:300px;*/
 }
 #piereg_login form#piereg_lostpasswordform .piereg_recaptcha_widget_div
 {
-    padding-top: 10px;
-	float:left;
-	width:100%;
-}
+    padding-top:10px;float:left;width:100%;}
+.piereg_recaptcha_widget_div > div > div, .piereg_recaptcha_widget_div > div > div > iframe{max-width:100%;}
 form.piereg_loginform .piereg_recaptcha_widget_div{
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-.widget #piereg_login form#piereg_loginform {
-	margin: auto;
-	width: 100%;
-}
-#piereg_login form#piereg_loginform p {
-	float: left;
-	margin: 16px 0 0;
-	width: 100%;
-} 
-#piereg_login form#piereg_loginform p label {
-	float: left;
-	margin: 10px 0 3px 0;
-	min-width: 100px;
-}
+    padding-bottom:10px;
+    padding-top:10px;}
+.widget #piereg_login form#piereg_loginform{margin:auto;width:100%;}
+#piereg_login form#piereg_loginform p{float:left;margin:16px 0 0;width:100%;} 
+#piereg_login form#piereg_loginform p label{float:left;margin:10px 0 3px 0;min-width:100px;}
 
-.pieregWrapper #pie_register .piereg_payment_selection {
-	background:#F4F4F4;
-    border: 1px solid rgb(214, 214, 214);
-    clear: both;
-    display: inline-block;
-    padding: 5px 10px;
-    width: 100%;
+.pieregWrapper #pie_register .piereg_payment_selection{background:#F4F4F4;
+    border:1px solid rgb(214, 214, 214);
+    clear:both;
+    display:inline-block;
+    padding:5px 10px;
+    width:100%;}
+body .pieregWrapper #pie_register .fields .fieldset .piereg_payment_selection input[type="radio"]{
+    margin-top:18px;}
+body .pieregWrapper #pie_register .fields .fieldset .piereg_payment_selection label img{max-width:240px;cursor:pointer;}
+/*#piereg_login form#piereg_lostpasswordform h1{display:none;}*/
+#piereg_login form#piereg_lostpasswordform{
+/*	margin:auto;width:300px;*/
 }
-body .pieregWrapper #pie_register .fields .fieldset .piereg_payment_selection input[type="radio"] {
-    margin-top: 18px;
-}
-body .pieregWrapper #pie_register .fields .fieldset .piereg_payment_selection label img{
-	max-width:240px;
-	cursor:pointer;
-}
-/*#piereg_login form#piereg_lostpasswordform h1 {display:none;}*/
-#piereg_login form#piereg_lostpasswordform {
-/*	margin: auto;
-	width: 300px;*/
-}
-.widget #piereg_login form#piereg_lostpasswordform {
-  margin: auto;
-  width: auto;
-}
+.widget #piereg_login form#piereg_lostpasswordform{
+  margin:auto;
+  width:auto;}
 .widget .pieregForgotPassword .forgot_pass_links{text-align:center;}
-#piereg_login form#piereg_lostpasswordform p {
-	float: left;
-	margin: 16px 0 0;
-	width: 100%;
-}
-#piereg_login form#piereg_lostpasswordform p label {
-	float: left;
-	margin: 10px 0 10px;
-	min-width: 100px;
-	width:100%;
-}
-.widget .pieregForgotPassword label {
-  float: none;
-  width: 100%;
-}
-.piereg_edit_profile_link{float:right; margin-top:-47px; background: url(../images/edit_profile.png) no-repeat right 2px; text-decoration: none; width:15px; height:18px;}
+#piereg_login form#piereg_lostpasswordform p{float:left;margin:16px 0 0;width:100%;}
+#piereg_login form#piereg_lostpasswordform p label{float:left;margin:0 0 10px;min-width:100px;width:100%;}
+.widget .pieregForgotPassword label{
+  float:none;
+  width:100%;}
+.piereg_edit_profile_link{float:right;margin-top:-47px;background:url(../images/edit_profile.png) no-repeat right 2px;text-decoration:none;width:15px;height:18px;}
 /*footer{float:left;width:100%;}*/
-.piereg_main_wrapper{width:960px; margin:auto;padding:15px 20px;background:#ffffff; overflow:hidden;}
+.piereg_main_wrapper{width:960px;margin:auto;padding:15px 20px;background:#ffffff;overflow:hidden;}
 .piereg_form_wrapper{width:700px;}
-#piereg_pie_form_heading{font-size: 1.285714286rem;line-height: 1.6;font-family: "Open Sans", Helvetica, Arial, sans-serif; color:#444444;}
-#piereg_pie_form_desc{font-family: "Open Sans", Helvetica, Arial, sans-serif;color: #444; font-size:14px;}
-.pieregWrapper ul {
-	padding:0;
-	list-style:none;
-	width: 100%;
-	margin:10px 0;
-	/*margin:5% 0;*/
+#piereg_pie_form_heading{font-size:1.285714286rem;line-height:1.6;font-family:"Open Sans", Helvetica, Arial, sans-serif;color:#444444;}
+#piereg_pie_form_desc{font-family:"Open Sans", Helvetica, Arial, sans-serif;color:#444;font-size:14px;}
+.pieregWrapper ul{padding:0;list-style:none;width:100%;margin:10px 0;/*margin:5% 0;*/
 }
-.pieregWrapper .fields .fieldset{
-	padding: 8px 10px;
-	overflow:hidden;
-}
-.pieregWrapper .fields .fieldset .fieldset_child {
-    padding: 10px 0;
-}
-.widget #pie_register .fields .fieldset {
-  float: none;
-  margin-left: 0;
-  padding: 0;
-  width: 97%;
-}
-.pieregWrapper #pie_register .fields .legend_txt{text-align: center;clear:both;}
+.pieregWrapper .fields .fieldset{padding:8px 10px;overflow:hidden;}
+.pieregWrapper .fields .fieldset .fieldset_child{
+    padding:10px 0;}
+.widget #pie_register .fields .fieldset{
+  float:none;
+  margin-left:0;
+  padding:0;
+  width:97%;}
+.pieregWrapper #pie_register .fields .legend_txt{text-align:center;clear:both;}
 .pieregWrapper #pie_register .fields .fieldset .input_fields.piereg_recaptcha_reg_div{border:none;padding:0px;}
 .widget #pie_register .fields .legend_txt{
-  bottom: 0;
-  float: none;
-  left: 0;
-  position: relative;
-}
+  bottom:0;
+  float:none;
+  left:0;
+  position:relative;}
 .pieregWrapper #pie_register .fields .fieldset.error
-{
-	border:#c84040 1px solid;
-	border-left:#c84040 4px solid;
-}
+{border:#c84040 1px solid;border-left:#c84040 4px solid;}
 .pieregWrapper #pie_register .fields .legend.error
-{
-	color: #c84040;
-	padding: 5px;
-	text-align: center;
-	/*background: #ffffff;*/
-	padding-top: 0;
-	padding-bottom: 0;
-	line-height: normal;
-	position: static;
-	display: inline-block;
-	margin: auto;
-	width: auto;
-}
-.pieregWrapper #pie_register #piereg_pie_form_desc {
-	margin-top: 9px;
-}
+{color:#c84040;padding:5px;text-align:center;/*background:#ffffff;*/
+	padding-top:0;padding-bottom:0;line-height:normal;position:static;display:inline-block;margin:auto;width:auto;}
+.pieregWrapper #pie_register #piereg_pie_form_desc{margin-top:9px;}
 
-.pieregWrapper #pie_register .fields2 {
-	width: 91.9%;
-	padding: 2% 4% 8px 4%;
-	border:1px solid #ffffff;
-	float:left;
-	margin-bottom:2px;
-	font-family:arial;
-	color:#66696b;
-	font-size: 14px;
-	position: relative;
-	margin-top: 9px;
+.pieregWrapper #pie_register .fields2{width:91.9%;padding:2% 4% 8px 4%;border:1px solid #ffffff;float:left;margin-bottom:2px;font-family:arial;color:#66696b;font-size:14px;position:relative;margin-top:9px;}
+.pieregWrapper #pie_register .fields2 .label_position{float:left;line-height:43px;margin-right:10px;}
+.pieregWrapper #pie_register .fields2 .fields_position{float:right;width:81%;}
+.pieregWrapper #pie_register .fields2 label{font-size:18px;color:#2d2f30;float:left;width:100%;text-transform:capitalize;}
+.pieregWrapper #pie_register .fields2 .input_fields{width:262px;border-radius:3px;border:1px solid #d5d5d5;height:32px;padding:0px 5px 0px 5px;margin-top:7px;margin-bottom:10px;}
+.pieregWrapper #pie_register .fields .pie_list{float:left;width:100%;position:relative;margin-left:0;}
+.pieregWrapper #pie_register .fields .pie_list:nth-child(2){margin-left:0;}
+.widget #pie_register .fields .pie_list{float:right;width:87%;position:relative;}
+.widget .pie_list .input_fields{
+  float:left !important;
+  width:48% !important;}
+.pieregWrapper #pie_register .fields .pie_list img{position:absolute;top:0%;cursor:pointer;}
+.pieregWrapper #pie_register .fields .pie_list input.input_fields{margin-bottom:10px;float:left;margin-right:0.8%}
+.pieregWrapper #pie_register .fields{width:100%;padding:0% 0% 0px 0%;font-family:arial;color:#262626;font-size:14px;position:relative;margin-top:9px;margin-bottom:8px;clear:both;overflow:hidden;list-style:none
 }
-.pieregWrapper #pie_register .fields2 .label_position {
-	float:left;
-	line-height:43px;
-	margin-right:10px;
+.pieregWrapper #pie_register .fields #piereg_pie_form_heading{font-size:24px;font-weight:bold;color:#262626;}
+.pieregWrapper #pie_register .fields .submit_field{width:22%;height:33px;float:right;padding:16px 12px 8px 12px;margin-right:33px;margin-top:-9px;position:relative;}
+.pieregWrapper #pie_register .fields .submit_field .submit_btn{float:right;background:#464646;color:#ffffff;border:0;cursor:pointer;width:74px;height:26px;}
+.pieregWrapper #pie_register .fields .label_position{float:left;line-height:43px;margin-right:10px;}
+.pieregWrapper #pie_register .fields .fields_position{float:right;width:81%;}
+.pieregWrapper #pie_register .fields label{font-size:14px;color:#848484;/*width:100%;text-transform:capitalize;*/
+	line-height:normal;width:29%;float:left;word-break:break-word;font-weight:normal
 }
-.pieregWrapper #pie_register .fields2 .fields_position {
-	float:right;
-	width:81%;
-}
-.pieregWrapper #pie_register .fields2 label {
-	font-family: 'HelveticaRegular';
-	font-size: 18px;
-	color:#2d2f30;
-	float: left;
-	width: 100%;
-	text-transform:capitalize;
-}
-.pieregWrapper #pie_register .fields2 .input_fields {
-	width: 262px;
-	border-radius: 3px;
-	border: 1px solid #d5d5d5;
-	height:32px;
-	padding: 0px 5px 0px 5px;
-	margin-top: 7px;
-	margin-bottom: 10px;
-}
-.pieregWrapper #pie_register .fields .pie_list{float:left; width: 100%; position:relative;}
-.widget #pie_register .fields .pie_list{float:right; width: 87%; position:relative;}
-.widget .pie_list .input_fields {
-  float: left !important;
-  width: 48% !important;
-}
-.pieregWrapper #pie_register .fields .pie_list img{position:absolute; left:-20px;top: 0%; cursor:pointer;}
-.pieregWrapper #pie_register .fields .pie_list input.input_fields{margin-bottom: 10px; float:left; margin-right:0.8%}
-.pieregWrapper #pie_register .fields {
-	width: 100%;
-	padding: 0% 0% 0px 0%;
-	font-family:arial;
-	color:#262626;
-	font-size: 14px;
-	position: relative;
-	margin-top: 9px;
-	margin-bottom: 8px;
-	clear:both;
-	overflow:hidden;
-	list-style:none
-}
-.pieregWrapper #pie_register .fields #piereg_pie_form_heading{font-size:24px; font-weight:bold; color:#262626;}
-.pieregWrapper #pie_register .fields .submit_field {
-	width: 22%;
-	height: 33px;
-	float: right;
-	padding: 16px 12px 8px 12px;
-	margin-right: 33px;
-	margin-top: -9px;
-	position: relative;
-}
-.pieregWrapper #pie_register .fields .submit_field .submit_btn {
-	float:right;
-	background:#464646;
-	color:#ffffff;
-	border: 0;
-	cursor: pointer;
-	width:74px;
-	height:26px;
-}
-.pieregWrapper #pie_register .fields .label_position {
-	float:left;
-	line-height:43px;
-	margin-right:10px;
-}
-.pieregWrapper #pie_register .fields .fields_position {
-	float:right;
-	width:81%;
-}
-.pieregWrapper #pie_register .fields label {
-	/*font-family: 'HelveticaRegular';*/
-	font-family: arial;
-	font-size: 14px;
-	color:#848484;
-	/*width: 100%;
-	text-transform:capitalize;*/
-	line-height: normal;
-	width: 29%;
-	float: left;
-	word-break: break-word;
-	font-weight:normal
-}
-.widget #pie_register .fields label{
-	float:none;
-	display:block;
-	margin: 0 0 10px;
-	width:auto;
-}
-.pieregWrapper #pie_register .fields .submit_field .edit_btn {
-	left: -15px;
-	top: 13px;
-}
-.pieregWrapper #pie_register .fields .input_fields {
-	border-radius: 3px;
-	border: 1px solid #d5d5d5;
-	padding: 2px 5px;
-	margin-top: 0px;
-	margin-bottom: 0;
-	width: 60%;
-	display:inline-block;
-	color:#848484;
-	box-sizing:border-box
-}
-.widget #pie_register .fields .input_fields {
-	float:none;
-	display:block;
-	margin:5px 0;
-	width:100%;
-}
-.pieregWrapper #pie_register .fields .radio_wrap {
-	float: none;
-	width: 62%;
-	margin-top: 0px;
-	/*display: inline-flex;*/
-	display: inline-block;
-}
-.widget #pie_register .fields .radio_wrap {
-	float: none;
-	width: 100%;
-	margin-top: 0px;
-	display: inline-flex;
-}
-.pieregWrapper #pie_register .fields .radio_wrap label {
-	font-size: 15px;
-	float: left;
-	width: auto;
-	/*margin-right: 5px;*/
-	margin-right: 20px;
+.widget #pie_register .fields label{float:none;display:block;margin:0 0 10px;width:auto;}
+.pieregWrapper #pie_register .fields .submit_field .edit_btn{left:-15px;top:13px;}
+.pieregWrapper #pie_register .fields .input_fields, .pieregWrapper #piereg_login .input_fields{border-radius:3px;border:1px solid #d5d5d5;padding:2px 5px;margin-top:0px;margin-bottom:0;width:60%;display:inline-block;color:#848484;box-sizing:border-box;line-height:20px;font-size:13px;}
+
+
+.piereg_login_container .piereg_login_wrapper .piereg_loginform .input_fields, .piereg_login_container .piereg_login_wrapper .piereg_resetpassform .input_fields{width:50%;border-radius:3px;border:1px solid #d5d5d5;padding:2px 5px;margin-top:0px;margin-bottom:0;display:inline-block;color:#848484;box-sizing:border-box;margin-bottom:10px;line-height:18px;font-size:13px;}
+
+.piereg_login_container .piereg_login_wrapper .piereg_loginform .piereg_math_captcha_input,
+.piereg_login_container .piereg_login_wrapper .piereg_resetpassform .piereg_math_captcha_input,
+.pieregForgotPassword #piereg_forgotpassword .piereg_math_captcha_input{width:50%;border-radius:3px;border:1px solid #d5d5d5;padding:2px 5px;margin-top:0px;margin-bottom:0;display:inline-block;color:#848484;box-sizing:border-box;margin-bottom:10px;line-height:18px;width:80px;margin-top:7px
 }
 
 
-.pieregWrapper #pie_register .fields .radio_wrap .radio_fields {
-	width: 12px;
-	float: left;
-	/*margin-right: 20px;*/
-	margin-right: 5px;
-	vertical-align: middle;
-	/*margin-top: 6px;*/
-	margin-top: 3px;
+.widget #pie_register .fields .input_fields{float:none;display:block;margin:5px 0;width:100%;}
+.pieregWrapper #pie_register .fields .radio_wrap{float:none;width:62%;margin-top:0px;/*display:inline-flex;*/
+	display:inline-block;}
+.widget #pie_register .fields .radio_wrap{float:none;width:100%;margin-top:0px;display:inline-flex;}
+.pieregWrapper #pie_register .fields .radio_wrap label{font-size:15px;float:left;width:auto;/*margin-right:5px;*/
+	margin-right:20px;}
+
+
+.pieregWrapper #pie_register .fields .radio_wrap .radio_fields{width:12px;float:left;/*margin-right:20px;*/
+	margin-right:5px;vertical-align:middle;/*margin-top:6px;*/
+	margin-top:6px;}
+.pieregWrapper #pie_register .fields .radio_fields{float:left;}
+.pieregWrapper #pie_register .fields input[type="checkbox"].input_fields, .pieregWrapper #pie_register .fields input[type="radio"].input_fields{width:auto;}
+.pieregWrapper #pie_register .fields select{/*width:262px;*/
+	width:60%;border-radius:3px;border:1px solid #d5d5d5;`
+	margin-top:0px;margin-bottom:0px;/*width:62.1%;*/
+	color:#848484;height:auto;font-size:13px;}
+.pieregWrapper #pie_register .fields textarea{border-radius:3px;border:1px solid #d5d5d5;padding:5px 5px 5px 5px;margin-top:0px;margin-bottom:10px;resize:none;font-family:arial;color:#848484;width:60%;display:inline-block;float:none;}
+.widget #pie_register .fields textarea{width:100%;}
+.pieregWrapper #pie_register .fields .date_format_field img{vertical-align:middle;/*margin-left:5px;position:absolute;*/
+	/*right:4%;*/
+	width:24px;/*top:48%;*/
 }
-.pieregWrapper #pie_register .fields .radio_fields {
-	float:left;
+.pieregWrapper #pie_register .fields .hasDatepicker{width:100% !important;margin-right:3px;}
+.pieregWrapper #pie_register .fields.label_top .hasDatepicker{width:96% !important;margin-right:3px;}
+.pieregWrapper #pie_register .fields .pie_wrap_buttons{width:88% !important;}
+.pieregWrapper #pie_register .fields.label_top .pie_wrap_buttons{width:94% !important;}
+
+
+.pieregWrapper #pie_register .fields .inner_fields{float:left;margin-right:0px;width:50%;}
+.pieregWrapper #pie_register .fields .inner_fields label{width:auto;float:left;display:block;width:20%;}
+.pieregWrapper #pie_register .fields .piereg_time{display:inline-block;/*width:71%;*/
+	width:60%;}
+.widget #pie_register .fields .piereg_time{width:100%;}
+.pieregWrapper #pie_register .fields .piereg_time .input_fields{width:98%;}
+.pieregWrapper #pie_register .fields .piereg_time .colon{float:left;line-height:21px;margin-right:3%;margin-left:1%;}
+.pieregWrapper #pie_register .fields .piereg_time .time_fields{float:left;width:28%;margin-right:3.5%;}
+
+.pieregWrapper #pie_register .fields .piereg_time.date_format_field .time_fields{width:31%;}
+
+.pieregWrapper #pie_register .fields .piereg_time .time_fields:last-child{margin-right:0}
+/*.pieregWrapper #pie_register .fields .piereg_time.date_format_field .time_fields:nth-child(2){margin-left:9px;}*/
+/*.pieregWrapper #pie_register .fields .piereg_time.date_format_field .time_fields:nth-child(3){margin-left:6px;}*/
+
+.pieregWrapper #pie_register .fields .piereg_time .time_fields .input_fields{width:100%;margin-bottom:3px;float:left;
+/*	margin-right:2%;*/
+/*	height:23px;*/
+	height:auto;margin-right:0%;}
+.pieregWrapper #pie_register .fields .piereg_time .time_fields select.input_fields{width:92%}
+
+
+.pieregWrapper #pie_register .fields .piereg_time .time_fields label{font-size:14px;width:auto;float:none;display:block;clear:both;}
+.pieregWrapper #pie_register .fields .piereg_time .time_fields:first-child select{margin-left:0;}
+.pieregWrapper #pie_register .fields .piereg_time .time_fields select{width:100%;height:22px;margin-left:0%;margin-top:0px;}
+.widget #pie_register .fields select{margin-top:5px !important;}
+.pieregWrapper #pie_register .fields .address_main{display:inline-block;width:71%;float:right;}
+.widget #pie_register .fields .address_main{display:block;width:100%;float:none;}
+.pieregWrapper #pie_register .fields .address{float:left;width:87%;margin-right:0;margin-bottom:6px;}
+.widget #pie_register .fields .address{width:100%;float:none;}
+.pieregWrapper #pie_register .fields .address label{font-size:14px;width:83%;}
+.pieregWrapper #pie_register .fields .address .input_fields{width:98%;}
+.pieregWrapper #pie_register .fields .address2{float:left;width:50%;}
+.pieregWrapper #pie_register .fields .address2 .input_fields{width:95%;/*width:78%;*/
 }
-.pieregWrapper #pie_register .fields input[type="checkbox"].input_fields, .pieregWrapper #pie_register .fields input[type="radio"].input_fields {
-	width:auto;
-}
-.pieregWrapper #pie_register .fields select {
-	/*width: 262px;*/
-	width: 60%;
-	border-radius: 3px;
-	border: 1px solid #d5d5d5;`
-	margin-top: 0px;
-	margin-bottom: 0px;
-	/*width: 62.1%;*/
-	color:#848484;
-	height: auto;
-}
-.pieregWrapper #pie_register .fields textarea {
-	border-radius: 3px;
-	border: 1px solid #d5d5d5;
-	padding: 5px 5px 5px 5px;
-	margin-top: 0px;
-	margin-bottom: 10px;
-	resize: none;
-	font-family: arial;
-	color:#848484;
-	width: 60%;
-	display: inline-block;
-	float: none;
-}
-.widget #pie_register .fields textarea {
-	width:100%;
-}
-.pieregWrapper #pie_register .fields .date_format_field img {
-	vertical-align:middle;
-	/*margin-left: 5px;
-	position: absolute;*/
-	/*right: 4%;*/
-	width: 24px;
-	/*top: 48%;*/
-}
-.pieregWrapper #pie_register .fields .hasDatepicker{width:87% !important; margin-right:3px;}
-.pieregWrapper #pie_register .fields .inner_fields {
-	float:left;
-	margin-right: 0px;
-	width: 50%;
-}
-.pieregWrapper #pie_register .fields .inner_fields label {
-	width: auto;
-	float: left;
-	display: block;
-	width: 20%;
-}
-.pieregWrapper #pie_register .fields .piereg_time {
-	display: inline-block;
-	/*width: 71%;*/
-	width: 60%;
-}
-.widget #pie_register .fields .piereg_time{
-	width:100%;
-}
-.pieregWrapper #pie_register .fields .piereg_time .input_fields{width: 98%;}
-.pieregWrapper #pie_register .fields .piereg_time .colon {
-	float: left;
-	line-height: 21px;
-	margin-right: 2%;
-	margin-left: 1%;
-}
-.pieregWrapper #pie_register .fields .piereg_time .time_fields {
-	float: left;
-	width: 28%;
-}
-.pieregWrapper #pie_register .fields .piereg_time .time_fields .input_fields {
-	width: 89%;
-	margin-bottom:3px;
-	float: left;
-	margin-right: 2%;
-}
-.pieregWrapper #pie_register .fields .piereg_time .time_fields label {
-	font-size:14px;
-	width: auto;
-	float: none;
-	display:block;
-}
-.pieregWrapper #pie_register .fields .piereg_time .time_fields:first-child select {
-	margin-left:0;
-}
-.pieregWrapper #pie_register .fields .piereg_time .time_fields select {
-	width: 100%;
-	height: auto;
-	margin-left: 6%;
-	margin-top: 0px;
-}
-.widget #pie_register .fields select{
-	margin-top:5px !important;
-}
-.pieregWrapper #pie_register .fields .address_main{display:inline-block; width: 71%;float: right;}
-.widget #pie_register .fields .address_main{
-	display:block;
-	width:100%;
-	float:none;
-}
-.pieregWrapper #pie_register .fields .address {
-	float: left;
-	width: 87%;
-	margin-right: 0;
-	margin-bottom: 6px;
-}
-.widget #pie_register .fields .address {
-	width:100%;
-	float:none;
-}
-.pieregWrapper #pie_register .fields .address label {
-	font-size:14px;
-	width: 83%;
-}
-.pieregWrapper #pie_register .fields .address .input_fields {
-	width: 98%;
-}
-.pieregWrapper #pie_register .fields .address2 {
-	float:left;
-	width: 50%;
-}
-.pieregWrapper #pie_register .fields .address2 .input_fields {
-	width: 95%;
-	/*width: 78%;*/
-}
-.pieregWrapper #pie_register .fields .address2 select {
-	width:96%;
-	margin-top: 0px;
-	padding:0;
-	/*height: 22px;*/
+.pieregWrapper #pie_register .fields .address2 select{width:96%;margin-top:0px;padding:0;/*height:22px;*/
 }
 .pieregWrapper #pie_register .fields input[type="submit"],
 .pieregWrapper #pie_register .fields input[type="reset"]{float:right;}
 .pieregWrapper #pie_register .fields .piereg_cancel_profile_edit_btn{float:right;margin-left:10px;}
-#piereg_recaptcha_area {
-	float:left;
-}
-.piereg_login_error {
-	margin: 0 0 0px 0px ;
-	padding: 12px;
-	border-width: 1px;
-	border-style: solid;
-	color:#ffffff !important;
-	/*background:url(../images/err_msg.png) no-repeat 20px 18px #d22828;*/
-	background:url('../images/err_msg.png') no-repeat 20px 18px rgb(217, 83, 79);
-	border-color:rgb(212, 63, 58);
-	padding-left: 40px;
-	/*border-radius: 8px;*/
-	margin: 0 0 10px;
-}
-.piereg_message {
-	margin: 0 0 0px 0px;
-	padding: 12px 10px 12px 50px;
-	border-width: 1px;
-	border-style: solid ;
-	/*background: url(../images/success_msg.png) no-repeat 20px 11px #6a9644;*/
-	background: url('../images/success_msg.png') no-repeat 20px 11px rgb(92, 184, 92);
-	border-color:rgb(76, 174, 76);
-	padding-left: 44px;
-	/*border-radius: 8px;*/
-	color:#ffffff;
-	margin: 0 0 10px;
-}
-.piereg_warning {
-	margin: 0px 0px 0px 0px;
-	padding: 12px 10px 12px 50px;
-	border-width: 1px;
-	border-style: solid;
-	/*background: url(../images/warning_msg.png) no-repeat 20px 14px #e98237;*/
-	background: url('../images/warning_msg.png') no-repeat 20px 14px rgb(240, 173, 78);
-	border-color:rgb(238, 162, 54);
-	padding-left: 44px;
-	/*border-radius: 8px;*/
-	color:#ffffff;
-	margin: 0 0 10px;
-}
-@font-face {
-	font-family: 'HelveticaRegular';
-	src: url('../fonts/helvetica-webfont.eot');
-	src: url('../fonts/helvetica-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/helvetica-webfont.woff') format('woff'),  url('../fonts/helvetica-webfont.ttf') format('truetype'),  url('../fonts/helvetica-webfont.svg#HelveticaRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'MyriadProRegular';
-	src: url('../fonts/myriadp2-webfont.eot');
-	src: url('../fonts/myriadp2-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/myriadp2-webfont.woff') format('woff'),  url('../fonts/myriadp2-webfont.ttf') format('truetype'),  url('../fonts/myriadp2-webfont.svg#MyriadProRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-.piereg_progressbar.ui-progressbar {height: 2em;text-align: left;overflow: hidden;transition: all 500ms;-moz-transition: all 500ms;-o-transition: all 500ms;-webkit-transition: all 500ms;}
-.piereg_progressbar.ui-progressbar .ui-progressbar-value {
-	margin: -1px;
-	height: 100%;
-}
-.piereg_progressbar.ui-progressbar .ui-progressbar-overlay {
-	background: url("images/animated-overlay.gif");
-	height: 100%;
-	filter: alpha(opacity=25);
-	opacity: 0.25;
-}
-.piereg_progressbar.ui-progressbar-indeterminate .ui-progressbar-value {
-	background-image: none;
-}
-.pieregWrapper .ui-widget-header {
-	border: 1px solid #aaaaaa;
-	background: #cccccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
-	color: #222222;
-	font-weight: bold;
-}
-.pieregWrapper .ui-widget-header a {
-	color: #222222;
-}
-.pieregWrapper .ui-corner-all, .pieregWrapper .ui-corner-top, .pieregWrapper .ui-corner-right, .pieregWrapper .ui-corner-tr {
-	border-top-right-radius: 4px;
-}
-.pieregWrapper .ui-widget-content {
-	border: 1px solid #aaaaaa;
-	background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
-	color: #222222;
-}
-.pieregWrapper #pie_register .label_top label{width:100%;line-height: 24px;}
+#piereg_recaptcha_area{float:left;}
+.piereg_container .piereg_login_error, .pieregForgotPassword.pieregWrapper .piereg_login_error{margin:0 0 0px 0px ;padding:12px;border-width:1px;border-style:solid;color:#ffffff;/*background:url(../images/err_msg.png) no-repeat 20px 18px #d22828;*/
+	background:url('../images/err_msg.png') no-repeat 20px 18px rgb(217, 83, 79);border-color:rgb(212, 63, 58);padding-left:40px;/*border-radius:8px;*/
+	margin:0 0 10px;text-align:left;clear:both;}
+.piereg_container .piereg_login_error a, .pieregForgotPassword.pieregWrapper .piereg_login_error a{color:#337ab7}
+body .pieregWrapper .piereg_message{margin:0 0 0px 0px;padding:12px 10px 12px 50px;border-width:1px;border-style:solid ;/*background:url(../images/success_msg.png) no-repeat 20px 11px #6a9644;*/
+	background:url('../images/success_msg.png') no-repeat 20px center rgb(92, 184, 92);border-color:rgb(76, 174, 76);padding-left:44px;/*border-radius:8px;*/
+	color:#ffffff;margin:0 0 10px;clear:both;}
+body .pieregWrapper .piereg_warning{margin:0px 0px 0px 0px;padding:12px 10px 12px 50px;border-width:1px;border-style:solid;background:url('../images/warning_msg.png') no-repeat 20px 14px rgb(240, 173, 78);border-color:rgb(238, 162, 54);padding-left:44px;color:#ffffff;}
+.piereg_progressbar.ui-progressbar{height:2em;text-align:left;overflow:hidden;transition:all 500ms;-moz-transition:all 500ms;-o-transition:all 500ms;-webkit-transition:all 500ms;}
+.piereg_progressbar.ui-progressbar .ui-progressbar-value{margin:-1px;height:100%;}
+.piereg_progressbar.ui-progressbar .ui-progressbar-overlay{background:url("images/animated-overlay.gif");height:100%;filter:alpha(opacity=25);opacity:0.25;}
+.piereg_progressbar.ui-progressbar-indeterminate .ui-progressbar-value{background-image:none;}
+.pieregWrapper .ui-widget-header{border:1px solid #aaaaaa;background:#cccccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;color:#222222;font-weight:bold;}
+.pieregWrapper .ui-widget-header a{color:#222222;}
+.pieregWrapper .ui-corner-all, .pieregWrapper .ui-corner-top, .pieregWrapper .ui-corner-right, .pieregWrapper .ui-corner-tr{border-top-right-radius:4px;}
+.pieregWrapper .ui-widget-content{border:1px solid #aaaaaa;background:#ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;color:#222222;}
+.pieregWrapper #pie_register .label_top label{width:100%;line-height:24px;}
 .pieregWrapper #pie_register .label_top span{color:#848484;}
 .pieregWrapper #pie_register .label_top .input_fields{width:96%;}
 .pieregWrapper #pie_register .label_top .time{width:97.3%;}
 .pieregWrapper #pie_register .label_top textarea{width:96%;}
-.pieregWrapper #pie_register .label_top .address_main{
-    float: left;
-    width: 100%;
-}
-.pieregWrapper #pie_register .label_top .address{float: left;width: 98%;}
-.pieregWrapper #pie_register .label_top .address2{width: 50%;}
-.pieregWrapper #pie_register .label_top .address2 .input_fields{width: 88%;}
-.pieregWrapper #pie_register .label_top .address2 select{margin-bottom:0; width: 93%;}
-.pieregWrapper #pie_register .label_top .pie_list{float: left;width: 97.2%;}
-.pieregWrapper #pie_register .label_top .pie_list img{position: absolute;top: -21px;left: 30px;}
+.pieregWrapper #pie_register .label_top .address_main{float:left;width:100%;}
+.pieregWrapper #pie_register .label_top #recaptcha_widget_div{float:left}
+.pieregWrapper #recaptcha_widget_div{float:left;margin-bottom:10px;width:100%;}
+.pieregWrapper .fields .fieldset #recaptcha_widget_div{width:auto;}
+.pieregWrapper #pie_register .label_top .address{float:left;width:98%;}
+.pieregWrapper #pie_register .label_top .address2{width:50%;}
+.pieregWrapper #pie_register .label_top .address2 .input_fields{width:88%;}
+.pieregWrapper #pie_register .label_top .address2 select{margin-bottom:0;width:93%;}
+.pieregWrapper #pie_register .label_top .pie_list{float:left;width:97.2%;}
+.pieregWrapper #pie_register .label_top .pie_list img{position:absolute;top:-21px;left:30px;}
 .pieregWrapper #pie_register .label_top select{width:97.9%;}
-.pieregWrapper #pie_register .label_top .radio_wrap label{margin-right:0;}
-.pieregWrapper #pie_register li.fields .wdth-lft{width: 63%!important;float: left;}
-.pieregWrapper #pie_register li.fields .mrgn-lft{margin-left: 29%;}
-.pieregWrapper #pie_register li.fields .sectionBreak{width: 62% !important;float: none;border: 1px solid #aaaaaa;margin-top: 20px;display: inline-block;}
-.pieregWrapper #pie_register li.fields .desc {font-size:10px;float: right;/*margin-top:4px;*/width: 71%;line-height: normal;margin: 4px 0 0;}
-.pieregWrapper #pie_register li.label_top .desc{float:left; width:100%;}
-.pie_profile#pie_register{}
-.pie_profile#pie_register .fields{width:79%; margin:0;border:none;border-bottom:1px solid #e4e4e4;border-right:1px solid #e4e4e4; float:none;vertical-align:middle; padding:2% 0%;}
-.pieregWrapper #pie_register .piereg_custom_list {margin-bottom: 0;}
-.pie_profile#pie_register .fields2{margin:0;border:none;border-bottom:1px solid #e4e4e4;border-right:1px solid #e4e4e4; border-left:1px solid #e4e4e4;background:#f9f9f9; /*width:20%;*/ width:30%; float:none;vertical-align:middle; padding:2% 0%;}
+.pieregWrapper #pie_register .label_top .radio_wrap label{margin-right:10px;}
+.pieregWrapper #pie_register li.fields .wdth-lft{width:63%!important;float:left;}
+.pieregWrapper #pie_register li.fields .mrgn-lft{margin-left:29%;}
+.pieregWrapper #pie_register li.fields .sectionBreak{width:62% !important;float:none;border:1px solid #aaaaaa;margin-top:20px;display:inline-block;}
+.pieregWrapper #pie_register li.fields .desc{font-size:10px;float:right;/*margin-top:4px;*/width:71%;line-height:normal;margin:4px 0 0;}
+.pieregWrapper #pie_register li.label_top .desc{float:left;width:100%;}
+.pie_profile#pie_register{border-collapse:collapse;}
+.pie_profile#pie_register .fields{width:79%;margin:0;border:1px solid #e4e4e4;float:none;vertical-align:middle;padding:2% 0%;word-wrap:break-word;word-break:break-all}
+.pieregWrapper #pie_register .piereg_custom_list{margin-bottom:0;}
+.pie_profile#pie_register .fields2{margin:0;border:1px solid #e4e4e4;/*background:#f9f9f9;width:20%;*/ width:30%;float:none;vertical-align:middle;padding:2% 0%;}
 .pie_profile#pie_register tr:first-child .fields2{border-top:1px solid #e4e4e4;}
 .pie_profile#pie_register tr:first-child .fields{border-top:1px solid #e4e4e4;}
-.pie_profile#pie_register .fields2 label{color:#616161; font-size:13px; font-weight:bold;padding:0% 10%;width: 80%; text-transform:inherit;line-height: 21px;height: auto; float:left;}
-.pie_profile#pie_register .fields span{padding:0% 2%;line-height: 35px; float:left; font-size:12px; color:#848484;width: 80%; background:#ffffff;line-height: 21px;}
-.pie_profile#pie_register .fields span ol{margin:0; list-style:none;}
-.pie_profile#pie_register .fields span ol li{float:left; color:#797979; background:#e4f0fa; margin:0px 3px; padding:2px 9px;}
+.pie_profile#pie_register .fields2 label{color:#616161;font-size:13px;font-weight:bold;padding:0% 10%;width:80%;text-transform:inherit;line-height:21px;height:auto;float:left;}
+.pie_profile#pie_register .fields span, .pie_profile#pie_register .fields a{padding:0% 2%;line-height:35px;float:left;font-size:12px;color:#848484;width:80%;background:#ffffff;line-height:21px;}
+pie_profile#pie_register .fields span, .pie_profile#pie_register .fields a.uploaded_file{width:auto;}
+.pie_profile#pie_register .fields span ol{margin:0;list-style:none;}
+.pie_profile#pie_register .fields span ol li{float:left;color:#797979;background:#e4f0fa;margin:0px 3px;padding:2px 9px;}
 .pie_profile#pie_register .fields span ol li:first-child{margin-left:0;}
+
 /*.entry-header{display:none;}*/
 .preview_page{background:#cccccc;}
 #password_meter
-{
-	overflow:hidden;
-}
+{overflow:hidden;}
 .pieregWrapper #pie_register .label_top #password_meter{width:100%;}
 #passwordDescription
-{
-	float:left;	
-	margin-top:10px;
-	width: 100%;
-	font-family: arial;
-	font-size: 14px;
-	color: #848484;
-}
+{float:left;margin-top:10px;width:100%;font-family:arial;font-size:14px;color:#848484;}
 /*#passwordStrength,#piereg_passwordStrength
-{
-	height:10px;
-	display:block;
-	float:left;
-	margin-top:13px;
-	transition: all 500ms;
-	-moz-transition: all 500ms;
-	-o-transition: all 500ms;
-	-webkit-transition: all 500ms;
-}*/
+{height:10px;display:block;float:left;margin-top:13px;transition:all 500ms;-moz-transition:all 500ms;-o-transition:all 500ms;-webkit-transition:all 500ms;}*/
 .piereg_strength0,.strength0
-{
-	width:60%;
-	background:#cccccc;
-}
+{width:60%;background:#cccccc;}
 .strength1
-{
-	width:14%;
-	background:#ff0000;
-}
+{width:14%;background:#ff0000;}
 .strength2
-{
-	width:28%;	
-	background:#ff5f5f;
-}
+{width:28%;background:#ff5f5f;}
 .strength3
-{
-	width:42%;
-	background:#56e500;
-}
+{width:42%;background:#56e500;}
 .strength4
-{
-	width:50%;
-	background:#4dcd00;	
+{width:50%;background:#4dcd00;	
 }
 .strength5
-{
-	background:#399800;
-	width:60%;
-}
+{background:#399800;width:60%;}
 .widget .piereg_strength0,.widget .strength0
-{
-	width:100%;
-	background:#cccccc;
-}
+{width:100%;background:#cccccc;}
 .widget .strength1
-{
-	width:20%;
-	background:#ff0000;
-}
+{width:20%;background:#ff0000;}
 .widget .strength2
-{
-	width:40%;	
-	background:#ff5f5f;
-}
+{width:40%;background:#ff5f5f;}
 .widget .strength3
-{
-	width:60%;
-	background:#56e500;
-}
+{width:60%;background:#56e500;}
 .widget .strength4
-{
-	width:80%;
-	background:#4dcd00;	
+{width:80%;background:#4dcd00;	
 }
 .widget .strength5
-{
-	background:#399800;
-	width:100%;
-}
+{background:#399800;width:100%;}
 /*----------------------------------*/
-.pieregWrapper .ui-helper-hidden { display: none; }
-.pieregWrapper .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
-.pieregWrapper .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
-.pieregWrapper .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-.pieregWrapper .ui-helper-clearfix { display: inline-block; }
+.pieregWrapper .ui-helper-hidden{display:none;}
+.pieregWrapper .ui-helper-hidden-accessible{position:absolute;left:-99999999px;}
+.pieregWrapper .ui-helper-reset{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none;}
+.pieregWrapper .ui-helper-clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.pieregWrapper .ui-helper-clearfix{display:inline-block;}
 /* required comment for clearfix to work in Opera \*/
-/** html .ui-helper-clearfix { height:1%; }*/
-.pieregWrapper .ui-helper-clearfix { display:block; }
+/** html .ui-helper-clearfix{height:1%;}*/
+.pieregWrapper .ui-helper-clearfix{display:block;}
 /* end clearfix */
-.pieregWrapper .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+.pieregWrapper .ui-helper-zfix{width:100%;height:100%;top:0;left:0;position:absolute;opacity:0;filter:Alpha(Opacity=0);}
 
 /* Interaction Cues
 ----------------------------------*/
-.pieregWrapper .ui-state-disabled { cursor: default !important; }
+.pieregWrapper .ui-state-disabled{cursor:default !important;}
 
 /* Icons
 ----------------------------------*/
 /* states and images */
-.pieregWrapper .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.pieregWrapper .ui-icon{display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat;}
 
 /* Misc visuals
 ----------------------------------*/
 /* Overlays */
-.pieregWrapper .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.pieregWrapper .ui-widget-overlay{position:absolute;top:0;left:0;width:100%;height:100%;}
 /*----------------------------------*/
-.pieregWrapper .ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 1.1em; }
-.pieregWrapper .ui-widget .ui-widget { font-size: 1em; }
+.pieregWrapper .ui-widget{font-family:Verdana,Arial,sans-serif;font-size:1.1em;}
+.pieregWrapper .ui-widget .ui-widget{font-size:1em;}
 .pieregWrapper .ui-widget input,
 .pieregWrapper .ui-widget select,
 .pieregWrapper .ui-widget textarea,
-.pieregWrapper .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }
-.pieregWrapper .ui-widget-content { border: 1px solid #aaaaaa; background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x; color: #222222; }
-.pieregWrapper .ui-widget-content a { color: #222222; }
-.pieregWrapper .ui-widget-header { border: 1px solid #aaaaaa; background: #cccccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x; color: #222222; font-weight: bold; }
-.pieregWrapper .ui-widget-header a { color: #222222; }
+.pieregWrapper .ui-widget button{font-family:Verdana,Arial,sans-serif;font-size:1em;}
+.pieregWrapper .ui-widget-content{border:1px solid #aaaaaa;background:#ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;color:#222222;}
+.pieregWrapper .ui-widget-content a{color:#222222;}
+.pieregWrapper .ui-widget-header{border:1px solid #aaaaaa;background:#cccccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;color:#222222;font-weight:bold;}
+.pieregWrapper .ui-widget-header a{color:#222222;}
 /* Interaction states
 ----------------------------------*/
 .pieregWrapper .ui-state-default,
 .pieregWrapper .ui-widget-content .ui-state-default,
-.pieregWrapper .ui-widget-header .ui-state-default { border: 1px solid #d3d3d3; background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #555555; }
+.pieregWrapper .ui-widget-header .ui-state-default{border:1px solid #d3d3d3;background:#e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;font-weight:normal;color:#555555;}
 
 .pieregWrapper .ui-state-default a,
 .pieregWrapper .ui-state-default a:link,
-.pieregWrapper .ui-state-default a:visited { color: #555555; text-decoration: none; }
+.pieregWrapper .ui-state-default a:visited{color:#555555;text-decoration:none;}
 
 .pieregWrapper .ui-state-hover,
 .pieregWrapper .ui-widget-content .ui-state-hover,
 .pieregWrapper .ui-widget-header .ui-state-hover,
 .pieregWrapper .ui-state-focus,
 .pieregWrapper .ui-widget-content .ui-state-focus,
-.pieregWrapper .ui-widget-header .ui-state-focus { border: 1px solid #999999; background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121; }
+.pieregWrapper .ui-widget-header .ui-state-focus{border:1px solid #999999;background:#dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;font-weight:normal;color:#212121;}
 
 .pieregWrapper .ui-state-hover a,
-.pieregWrapper .ui-state-hover a:hover { color: #212121; text-decoration: none; }
+.pieregWrapper .ui-state-hover a:hover{color:#212121;text-decoration:none;}
 .pieregWrapper .ui-state-active,
 .pieregWrapper .ui-widget-content .ui-state-active,
-.pieregWrapper .ui-widget-header .ui-state-active { border: 1px solid #aaaaaa; background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #212121; }
+.pieregWrapper .ui-widget-header .ui-state-active{border:1px solid #aaaaaa;background:#ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;font-weight:normal;color:#212121;}
 .pieregWrapper .ui-state-active a,
 .pieregWrapper .ui-state-active a:link,
-.pieregWrapper .ui-state-active a:visited { color: #212121; text-decoration: none; }
-.pieregWrapper .ui-widget :active { outline: none; }
+.pieregWrapper .ui-state-active a:visited{color:#212121;text-decoration:none;}
+.pieregWrapper .ui-widget :active{outline:none;}
 /* Interaction Cues
 ----------------------------------*/
 .pieregWrapper .ui-state-highlight,
 .pieregWrapper .ui-widget-content .ui-state-highlight,
-.pieregWrapper .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1; background: #fbf9ee url(images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x; color: #363636; }
+.pieregWrapper .ui-widget-header .ui-state-highlight {border:1px solid #fcefa1;background:#fbf9ee url(images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x;color:#363636;}
 .pieregWrapper .ui-state-highlight a,
 .pieregWrapper .ui-widget-content .ui-state-highlight a,
-.pieregWrapper .ui-widget-header .ui-state-highlight a { color: #363636; }
+.pieregWrapper .ui-widget-header .ui-state-highlight a{color:#363636;}
 .pieregWrapper .ui-state-error,
 .pieregWrapper .ui-widget-content .ui-state-error,
-.pieregWrapper .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #fef1ec url(images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x; color: #cd0a0a; }
+.pieregWrapper .ui-widget-header .ui-state-error{border:1px solid #cd0a0a;background:#fef1ec url(images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;color:#cd0a0a;}
 .pieregWrapper .ui-state-error a,
 .pieregWrapper .ui-widget-content .ui-state-error a,
-.pieregWrapper .ui-widget-header .ui-state-error a { color: #cd0a0a; }
+.pieregWrapper .ui-widget-header .ui-state-error a{color:#cd0a0a;}
 .pieregWrapper .ui-state-error-text,
 .pieregWrapper .ui-widget-content .ui-state-error-text,
-.pieregWrapper .ui-widget-header .ui-state-error-text { color: #cd0a0a; }
+.pieregWrapper .ui-widget-header .ui-state-error-text{color:#cd0a0a;}
 .pieregWrapper .ui-priority-primary,
 .pieregWrapper .ui-widget-content .ui-priority-primary,
-.pieregWrapper .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.pieregWrapper .ui-widget-header .ui-priority-primary{font-weight:bold;}
 .pieregWrapper .ui-priority-secondary,
 .pieregWrapper .ui-widget-content .ui-priority-secondary,
-.pieregWrapper .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.pieregWrapper .ui-widget-header .ui-priority-secondary{opacity:.7;filter:Alpha(Opacity=70);font-weight:normal;}
 .pieregWrapper .ui-state-disabled,
 .pieregWrapper .ui-widget-content .ui-state-disabled,
-.pieregWrapper .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.pieregWrapper .ui-widget-header .ui-state-disabled{opacity:.35;filter:Alpha(Opacity=35);background-image:none;}
 /* Icons
 ----------------------------------*/
 /* states and images */
-.pieregWrapper .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_222222_256x240.png); }
-.pieregWrapper .ui-widget-content .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
-.pieregWrapper .ui-widget-header .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
-.pieregWrapper .ui-state-default .ui-icon { background-image: url(images/ui-icons_888888_256x240.png); }
+.pieregWrapper .ui-icon{width:16px;height:16px;background-image:url(images/ui-icons_222222_256x240.png);}
+.pieregWrapper .ui-widget-content .ui-icon{background-image:url(images/ui-icons_222222_256x240.png);}
+.pieregWrapper .ui-widget-header .ui-icon{background-image:url(images/ui-icons_222222_256x240.png);}
+.pieregWrapper .ui-state-default .ui-icon{background-image:url(images/ui-icons_888888_256x240.png);}
 .pieregWrapper .ui-state-hover .ui-icon,
-.pieregWrapper .ui-state-focus .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
-.pieregWrapper .ui-state-active .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
-.pieregWrapper .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_2e83ff_256x240.png); }
+.pieregWrapper .ui-state-focus .ui-icon{background-image:url(images/ui-icons_454545_256x240.png);}
+.pieregWrapper .ui-state-active .ui-icon{background-image:url(images/ui-icons_454545_256x240.png);}
+.pieregWrapper .ui-state-highlight .ui-icon{background-image:url(images/ui-icons_2e83ff_256x240.png);}
 .pieregWrapper .ui-state-error .ui-icon,
-.pieregWrapper .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_cd0a0a_256x240.png); }
+.pieregWrapper .ui-state-error-text .ui-icon{background-image:url(images/ui-icons_cd0a0a_256x240.png);}
 /* positioning */
-.pieregWrapper .ui-icon-carat-1-n { background-position: 0 0; }
-.pieregWrapper .ui-icon-carat-1-ne { background-position: -16px 0; }
-.pieregWrapper .ui-icon-carat-1-e { background-position: -32px 0; }
-.pieregWrapper .ui-icon-carat-1-se { background-position: -48px 0; }
-.pieregWrapper .ui-icon-carat-1-s { background-position: -64px 0; }
-.pieregWrapper .ui-icon-carat-1-sw { background-position: -80px 0; }
-.pieregWrapper .ui-icon-carat-1-w { background-position: -96px 0; }
-.pieregWrapper .ui-icon-carat-1-nw { background-position: -112px 0; }
-.pieregWrapper .ui-icon-carat-2-n-s { background-position: -128px 0; }
-.pieregWrapper .ui-icon-carat-2-e-w { background-position: -144px 0; }
-.pieregWrapper .ui-icon-triangle-1-n { background-position: 0 -16px; }
-.pieregWrapper .ui-icon-triangle-1-ne { background-position: -16px -16px; }
-.pieregWrapper .ui-icon-triangle-1-e { background-position: -32px -16px; }
-.pieregWrapper .ui-icon-triangle-1-se { background-position: -48px -16px; }
-.pieregWrapper .ui-icon-triangle-1-s { background-position: -64px -16px; }
-.pieregWrapper .ui-icon-triangle-1-sw { background-position: -80px -16px; }
-.pieregWrapper .ui-icon-triangle-1-w { background-position: -96px -16px; }
-.pieregWrapper .ui-icon-triangle-1-nw { background-position: -112px -16px; }
-.pieregWrapper .ui-icon-triangle-2-n-s { background-position: -128px -16px; }
-.pieregWrapper .ui-icon-triangle-2-e-w { background-position: -144px -16px; }
-.pieregWrapper .ui-icon-arrow-1-n { background-position: 0 -32px; }
-.pieregWrapper .ui-icon-arrow-1-ne { background-position: -16px -32px; }
-.pieregWrapper .ui-icon-arrow-1-e { background-position: -32px -32px; }
-.pieregWrapper .ui-icon-arrow-1-se { background-position: -48px -32px; }
-.pieregWrapper .ui-icon-arrow-1-s { background-position: -64px -32px; }
-.pieregWrapper .ui-icon-arrow-1-sw { background-position: -80px -32px; }
-.pieregWrapper .ui-icon-arrow-1-w { background-position: -96px -32px; }
-.pieregWrapper .ui-icon-arrow-1-nw { background-position: -112px -32px; }
-.pieregWrapper .ui-icon-arrow-2-n-s { background-position: -128px -32px; }
-.pieregWrapper .ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
-.pieregWrapper .ui-icon-arrow-2-e-w { background-position: -160px -32px; }
-.pieregWrapper .ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
-.pieregWrapper .ui-icon-arrowstop-1-n { background-position: -192px -32px; }
-.pieregWrapper .ui-icon-arrowstop-1-e { background-position: -208px -32px; }
-.pieregWrapper .ui-icon-arrowstop-1-s { background-position: -224px -32px; }
-.pieregWrapper .ui-icon-arrowstop-1-w { background-position: -240px -32px; }
-.pieregWrapper .ui-icon-arrowthick-1-n { background-position: 0 -48px; }
-.pieregWrapper .ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
-.pieregWrapper .ui-icon-arrowthick-1-e { background-position: -32px -48px; }
-.pieregWrapper .ui-icon-arrowthick-1-se { background-position: -48px -48px; }
-.pieregWrapper .ui-icon-arrowthick-1-s { background-position: -64px -48px; }
-.pieregWrapper .ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
-.pieregWrapper .ui-icon-arrowthick-1-w { background-position: -96px -48px; }
-.pieregWrapper .ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
-.pieregWrapper .ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
-.pieregWrapper .ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
-.pieregWrapper .ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
-.pieregWrapper .ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
-.pieregWrapper .ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
-.pieregWrapper .ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
-.pieregWrapper .ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
-.pieregWrapper .ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
-.pieregWrapper .ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
-.pieregWrapper .ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
-.pieregWrapper .ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
-.pieregWrapper .ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
-.pieregWrapper .ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
-.pieregWrapper .ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
-.pieregWrapper .ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
-.pieregWrapper .ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
-.pieregWrapper .ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
-.pieregWrapper .ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
-.pieregWrapper .ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
-.pieregWrapper .ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
-.pieregWrapper .ui-icon-arrow-4 { background-position: 0 -80px; }
-.pieregWrapper .ui-icon-arrow-4-diag { background-position: -16px -80px; }
-.pieregWrapper .ui-icon-extlink { background-position: -32px -80px; }
-.pieregWrapper .ui-icon-newwin { background-position: -48px -80px; }
-.pieregWrapper .ui-icon-refresh { background-position: -64px -80px; }
-.pieregWrapper .ui-icon-shuffle { background-position: -80px -80px; }
-.pieregWrapper .ui-icon-transfer-e-w { background-position: -96px -80px; }
-.pieregWrapper .ui-icon-transferthick-e-w { background-position: -112px -80px; }
-.pieregWrapper .ui-icon-folder-collapsed { background-position: 0 -96px; }
-.pieregWrapper .ui-icon-folder-open { background-position: -16px -96px; }
-.pieregWrapper .ui-icon-document { background-position: -32px -96px; }
-.pieregWrapper .ui-icon-document-b { background-position: -48px -96px; }
-.pieregWrapper .ui-icon-note { background-position: -64px -96px; }
-.pieregWrapper .ui-icon-mail-closed { background-position: -80px -96px; }
-.pieregWrapper .ui-icon-mail-open { background-position: -96px -96px; }
-.pieregWrapper .ui-icon-suitcase { background-position: -112px -96px; }
-.pieregWrapper .ui-icon-comment { background-position: -128px -96px; }
-.pieregWrapper .ui-icon-person { background-position: -144px -96px; }
-.pieregWrapper .ui-icon-print { background-position: -160px -96px; }
-.pieregWrapper .ui-icon-trash { background-position: -176px -96px; }
-.pieregWrapper .ui-icon-locked { background-position: -192px -96px; }
-.pieregWrapper .ui-icon-unlocked { background-position: -208px -96px; }
-.pieregWrapper .ui-icon-bookmark { background-position: -224px -96px; }
-.pieregWrapper .ui-icon-tag { background-position: -240px -96px; }
-.pieregWrapper .ui-icon-home { background-position: 0 -112px; }
-.pieregWrapper .ui-icon-flag { background-position: -16px -112px; }
-.pieregWrapper .ui-icon-calendar { background-position: -32px -112px; }
-.pieregWrapper .ui-icon-cart { background-position: -48px -112px; }
-.pieregWrapper .ui-icon-pencil { background-position: -64px -112px; }
-.pieregWrapper .ui-icon-clock { background-position: -80px -112px; }
-.pieregWrapper .ui-icon-disk { background-position: -96px -112px; }
-.pieregWrapper .ui-icon-calculator { background-position: -112px -112px; }
-.pieregWrapper .ui-icon-zoomin { background-position: -128px -112px; }
-.pieregWrapper .ui-icon-zoomout { background-position: -144px -112px; }
-.pieregWrapper .ui-icon-search { background-position: -160px -112px; }
-.pieregWrapper .ui-icon-wrench { background-position: -176px -112px; }
-.pieregWrapper .ui-icon-gear { background-position: -192px -112px; }
-.pieregWrapper .ui-icon-heart { background-position: -208px -112px; }
-.pieregWrapper .ui-icon-star { background-position: -224px -112px; }
-.pieregWrapper .ui-icon-link { background-position: -240px -112px; }
-.pieregWrapper .ui-icon-cancel { background-position: 0 -128px; }
-.pieregWrapper .ui-icon-plus { background-position: -16px -128px; }
-.pieregWrapper .ui-icon-plusthick { background-position: -32px -128px; }
-.pieregWrapper .ui-icon-minus { background-position: -48px -128px; }
-.pieregWrapper .ui-icon-minusthick { background-position: -64px -128px; }
-.pieregWrapper .ui-icon-close { background-position: -80px -128px; }
-.pieregWrapper .ui-icon-closethick { background-position: -96px -128px; }
-.pieregWrapper .ui-icon-key { background-position: -112px -128px; }
-.pieregWrapper .ui-icon-lightbulb { background-position: -128px -128px; }
-.pieregWrapper .ui-icon-scissors { background-position: -144px -128px; }
-.pieregWrapper .ui-icon-clipboard { background-position: -160px -128px; }
-.pieregWrapper .ui-icon-copy { background-position: -176px -128px; }
-.pieregWrapper .ui-icon-contact { background-position: -192px -128px; }
-.pieregWrapper .ui-icon-image { background-position: -208px -128px; }
-.pieregWrapper .ui-icon-video { background-position: -224px -128px; }
-.pieregWrapper .ui-icon-script { background-position: -240px -128px; }
-.pieregWrapper .ui-icon-alert { background-position: 0 -144px; }
-.pieregWrapper .ui-icon-info { background-position: -16px -144px; }
-.pieregWrapper .ui-icon-notice { background-position: -32px -144px; }
-.pieregWrapper .ui-icon-help { background-position: -48px -144px; }
-.pieregWrapper .ui-icon-check { background-position: -64px -144px; }
-.pieregWrapper .ui-icon-bullet { background-position: -80px -144px; }
-.pieregWrapper .ui-icon-radio-off { background-position: -96px -144px; }
-.pieregWrapper .ui-icon-radio-on { background-position: -112px -144px; }
-.pieregWrapper .ui-icon-pin-w { background-position: -128px -144px; }
-.pieregWrapper .ui-icon-pin-s { background-position: -144px -144px; }
-.pieregWrapper .ui-icon-play { background-position: 0 -160px; }
-.pieregWrapper .ui-icon-pause { background-position: -16px -160px; }
-.pieregWrapper .ui-icon-seek-next { background-position: -32px -160px; }
-.pieregWrapper .ui-icon-seek-prev { background-position: -48px -160px; }
-.pieregWrapper .ui-icon-seek-end { background-position: -64px -160px; }
-.pieregWrapper .ui-icon-seek-start { background-position: -80px -160px; }
+.pieregWrapper .ui-icon-carat-1-n{background-position:0 0;}
+.pieregWrapper .ui-icon-carat-1-ne{background-position:-16px 0;}
+.pieregWrapper .ui-icon-carat-1-e{background-position:-32px 0;}
+.pieregWrapper .ui-icon-carat-1-se{background-position:-48px 0;}
+.pieregWrapper .ui-icon-carat-1-s{background-position:-64px 0;}
+.pieregWrapper .ui-icon-carat-1-sw{background-position:-80px 0;}
+.pieregWrapper .ui-icon-carat-1-w{background-position:-96px 0;}
+.pieregWrapper .ui-icon-carat-1-nw{background-position:-112px 0;}
+.pieregWrapper .ui-icon-carat-2-n-s{background-position:-128px 0;}
+.pieregWrapper .ui-icon-carat-2-e-w{background-position:-144px 0;}
+.pieregWrapper .ui-icon-triangle-1-n{background-position:0 -16px;}
+.pieregWrapper .ui-icon-triangle-1-ne{background-position:-16px -16px;}
+.pieregWrapper .ui-icon-triangle-1-e{background-position:-32px -16px;}
+.pieregWrapper .ui-icon-triangle-1-se{background-position:-48px -16px;}
+.pieregWrapper .ui-icon-triangle-1-s{background-position:-64px -16px;}
+.pieregWrapper .ui-icon-triangle-1-sw{background-position:-80px -16px;}
+.pieregWrapper .ui-icon-triangle-1-w{background-position:-96px -16px;}
+.pieregWrapper .ui-icon-triangle-1-nw{background-position:-112px -16px;}
+.pieregWrapper .ui-icon-triangle-2-n-s{background-position:-128px -16px;}
+.pieregWrapper .ui-icon-triangle-2-e-w{background-position:-144px -16px;}
+.pieregWrapper .ui-icon-arrow-1-n{background-position:0 -32px;}
+.pieregWrapper .ui-icon-arrow-1-ne{background-position:-16px -32px;}
+.pieregWrapper .ui-icon-arrow-1-e{background-position:-32px -32px;}
+.pieregWrapper .ui-icon-arrow-1-se{background-position:-48px -32px;}
+.pieregWrapper .ui-icon-arrow-1-s{background-position:-64px -32px;}
+.pieregWrapper .ui-icon-arrow-1-sw{background-position:-80px -32px;}
+.pieregWrapper .ui-icon-arrow-1-w{background-position:-96px -32px;}
+.pieregWrapper .ui-icon-arrow-1-nw{background-position:-112px -32px;}
+.pieregWrapper .ui-icon-arrow-2-n-s{background-position:-128px -32px;}
+.pieregWrapper .ui-icon-arrow-2-ne-sw{background-position:-144px -32px;}
+.pieregWrapper .ui-icon-arrow-2-e-w{background-position:-160px -32px;}
+.pieregWrapper .ui-icon-arrow-2-se-nw{background-position:-176px -32px;}
+.pieregWrapper .ui-icon-arrowstop-1-n{background-position:-192px -32px;}
+.pieregWrapper .ui-icon-arrowstop-1-e{background-position:-208px -32px;}
+.pieregWrapper .ui-icon-arrowstop-1-s{background-position:-224px -32px;}
+.pieregWrapper .ui-icon-arrowstop-1-w{background-position:-240px -32px;}
+.pieregWrapper .ui-icon-arrowthick-1-n{background-position:0 -48px;}
+.pieregWrapper .ui-icon-arrowthick-1-ne{background-position:-16px -48px;}
+.pieregWrapper .ui-icon-arrowthick-1-e{background-position:-32px -48px;}
+.pieregWrapper .ui-icon-arrowthick-1-se{background-position:-48px -48px;}
+.pieregWrapper .ui-icon-arrowthick-1-s{background-position:-64px -48px;}
+.pieregWrapper .ui-icon-arrowthick-1-sw{background-position:-80px -48px;}
+.pieregWrapper .ui-icon-arrowthick-1-w{background-position:-96px -48px;}
+.pieregWrapper .ui-icon-arrowthick-1-nw{background-position:-112px -48px;}
+.pieregWrapper .ui-icon-arrowthick-2-n-s{background-position:-128px -48px;}
+.pieregWrapper .ui-icon-arrowthick-2-ne-sw{background-position:-144px -48px;}
+.pieregWrapper .ui-icon-arrowthick-2-e-w{background-position:-160px -48px;}
+.pieregWrapper .ui-icon-arrowthick-2-se-nw{background-position:-176px -48px;}
+.pieregWrapper .ui-icon-arrowthickstop-1-n{background-position:-192px -48px;}
+.pieregWrapper .ui-icon-arrowthickstop-1-e{background-position:-208px -48px;}
+.pieregWrapper .ui-icon-arrowthickstop-1-s{background-position:-224px -48px;}
+.pieregWrapper .ui-icon-arrowthickstop-1-w{background-position:-240px -48px;}
+.pieregWrapper .ui-icon-arrowreturnthick-1-w{background-position:0 -64px;}
+.pieregWrapper .ui-icon-arrowreturnthick-1-n{background-position:-16px -64px;}
+.pieregWrapper .ui-icon-arrowreturnthick-1-e{background-position:-32px -64px;}
+.pieregWrapper .ui-icon-arrowreturnthick-1-s{background-position:-48px -64px;}
+.pieregWrapper .ui-icon-arrowreturn-1-w{background-position:-64px -64px;}
+.pieregWrapper .ui-icon-arrowreturn-1-n{background-position:-80px -64px;}
+.pieregWrapper .ui-icon-arrowreturn-1-e{background-position:-96px -64px;}
+.pieregWrapper .ui-icon-arrowreturn-1-s{background-position:-112px -64px;}
+.pieregWrapper .ui-icon-arrowrefresh-1-w{background-position:-128px -64px;}
+.pieregWrapper .ui-icon-arrowrefresh-1-n{background-position:-144px -64px;}
+.pieregWrapper .ui-icon-arrowrefresh-1-e{background-position:-160px -64px;}
+.pieregWrapper .ui-icon-arrowrefresh-1-s{background-position:-176px -64px;}
+.pieregWrapper .ui-icon-arrow-4{background-position:0 -80px;}
+.pieregWrapper .ui-icon-arrow-4-diag{background-position:-16px -80px;}
+.pieregWrapper .ui-icon-extlink{background-position:-32px -80px;}
+.pieregWrapper .ui-icon-newwin{background-position:-48px -80px;}
+.pieregWrapper .ui-icon-refresh{background-position:-64px -80px;}
+.pieregWrapper .ui-icon-shuffle{background-position:-80px -80px;}
+.pieregWrapper .ui-icon-transfer-e-w{background-position:-96px -80px;}
+.pieregWrapper .ui-icon-transferthick-e-w{background-position:-112px -80px;}
+.pieregWrapper .ui-icon-folder-collapsed{background-position:0 -96px;}
+.pieregWrapper .ui-icon-folder-open{background-position:-16px -96px;}
+.pieregWrapper .ui-icon-document{background-position:-32px -96px;}
+.pieregWrapper .ui-icon-document-b{background-position:-48px -96px;}
+.pieregWrapper .ui-icon-note{background-position:-64px -96px;}
+.pieregWrapper .ui-icon-mail-closed{background-position:-80px -96px;}
+.pieregWrapper .ui-icon-mail-open{background-position:-96px -96px;}
+.pieregWrapper .ui-icon-suitcase{background-position:-112px -96px;}
+.pieregWrapper .ui-icon-comment{background-position:-128px -96px;}
+.pieregWrapper .ui-icon-person{background-position:-144px -96px;}
+.pieregWrapper .ui-icon-print{background-position:-160px -96px;}
+.pieregWrapper .ui-icon-trash{background-position:-176px -96px;}
+.pieregWrapper .ui-icon-locked{background-position:-192px -96px;}
+.pieregWrapper .ui-icon-unlocked{background-position:-208px -96px;}
+.pieregWrapper .ui-icon-bookmark{background-position:-224px -96px;}
+.pieregWrapper .ui-icon-tag{background-position:-240px -96px;}
+.pieregWrapper .ui-icon-home{background-position:0 -112px;}
+.pieregWrapper .ui-icon-flag{background-position:-16px -112px;}
+.pieregWrapper .ui-icon-calendar{background-position:-32px -112px;}
+.pieregWrapper .ui-icon-cart{background-position:-48px -112px;}
+.pieregWrapper .ui-icon-pencil{background-position:-64px -112px;}
+.pieregWrapper .ui-icon-clock{background-position:-80px -112px;}
+.pieregWrapper .ui-icon-disk{background-position:-96px -112px;}
+.pieregWrapper .ui-icon-calculator{background-position:-112px -112px;}
+.pieregWrapper .ui-icon-zoomin{background-position:-128px -112px;}
+.pieregWrapper .ui-icon-zoomout{background-position:-144px -112px;}
+.pieregWrapper .ui-icon-search{background-position:-160px -112px;}
+.pieregWrapper .ui-icon-wrench{background-position:-176px -112px;}
+.pieregWrapper .ui-icon-gear{background-position:-192px -112px;}
+.pieregWrapper .ui-icon-heart{background-position:-208px -112px;}
+.pieregWrapper .ui-icon-star{background-position:-224px -112px;}
+.pieregWrapper .ui-icon-link{background-position:-240px -112px;}
+.pieregWrapper .ui-icon-cancel{background-position:0 -128px;}
+.pieregWrapper .ui-icon-plus{background-position:-16px -128px;}
+.pieregWrapper .ui-icon-plusthick{background-position:-32px -128px;}
+.pieregWrapper .ui-icon-minus{background-position:-48px -128px;}
+.pieregWrapper .ui-icon-minusthick{background-position:-64px -128px;}
+.pieregWrapper .ui-icon-close{background-position:-80px -128px;}
+.pieregWrapper .ui-icon-closethick{background-position:-96px -128px;}
+.pieregWrapper .ui-icon-key{background-position:-112px -128px;}
+.pieregWrapper .ui-icon-lightbulb{background-position:-128px -128px;}
+.pieregWrapper .ui-icon-scissors{background-position:-144px -128px;}
+.pieregWrapper .ui-icon-clipboard{background-position:-160px -128px;}
+.pieregWrapper .ui-icon-copy{background-position:-176px -128px;}
+.pieregWrapper .ui-icon-contact{background-position:-192px -128px;}
+.pieregWrapper .ui-icon-image{background-position:-208px -128px;}
+.pieregWrapper .ui-icon-video{background-position:-224px -128px;}
+.pieregWrapper .ui-icon-script{background-position:-240px -128px;}
+.pieregWrapper .ui-icon-alert{background-position:0 -144px;}
+.pieregWrapper .ui-icon-info{background-position:-16px -144px;}
+.pieregWrapper .ui-icon-notice{background-position:-32px -144px;}
+.pieregWrapper .ui-icon-help{background-position:-48px -144px;}
+.pieregWrapper .ui-icon-check{background-position:-64px -144px;}
+.pieregWrapper .ui-icon-bullet{background-position:-80px -144px;}
+.pieregWrapper .ui-icon-radio-off{background-position:-96px -144px;}
+.pieregWrapper .ui-icon-radio-on{background-position:-112px -144px;}
+.pieregWrapper .ui-icon-pin-w{background-position:-128px -144px;}
+.pieregWrapper .ui-icon-pin-s{background-position:-144px -144px;}
+.pieregWrapper .ui-icon-play{background-position:0 -160px;}
+.pieregWrapper .ui-icon-pause{background-position:-16px -160px;}
+.pieregWrapper .ui-icon-seek-next{background-position:-32px -160px;}
+.pieregWrapper .ui-icon-seek-prev{background-position:-48px -160px;}
+.pieregWrapper .ui-icon-seek-end{background-position:-64px -160px;}
+.pieregWrapper .ui-icon-seek-start{background-position:-80px -160px;}
 /* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
-.pieregWrapper .ui-icon-seek-first { background-position: -80px -160px; }
-.pieregWrapper .ui-icon-stop { background-position: -96px -160px; }
-.pieregWrapper .ui-icon-eject { background-position: -112px -160px; }
-.pieregWrapper .ui-icon-volume-off { background-position: -128px -160px; }
-.pieregWrapper .ui-icon-volume-on { background-position: -144px -160px; }
-.pieregWrapper .ui-icon-power { background-position: 0 -176px; }
-.pieregWrapper .ui-icon-signal-diag { background-position: -16px -176px; }
-.pieregWrapper .ui-icon-signal { background-position: -32px -176px; }
-.pieregWrapper .ui-icon-battery-0 { background-position: -48px -176px; }
-.pieregWrapper .ui-icon-battery-1 { background-position: -64px -176px; }
-.pieregWrapper .ui-icon-battery-2 { background-position: -80px -176px; }
-.pieregWrapper .ui-icon-battery-3 { background-position: -96px -176px; }
-.pieregWrapper .ui-icon-circle-plus { background-position: 0 -192px; }
-.pieregWrapper .ui-icon-circle-minus { background-position: -16px -192px; }
-.pieregWrapper .ui-icon-circle-close { background-position: -32px -192px; }
-.pieregWrapper .ui-icon-circle-triangle-e { background-position: -48px -192px; }
-.pieregWrapper .ui-icon-circle-triangle-s { background-position: -64px -192px; }
-.pieregWrapper .ui-icon-circle-triangle-w { background-position: -80px -192px; }
-.pieregWrapper .ui-icon-circle-triangle-n { background-position: -96px -192px; }
-.pieregWrapper .ui-icon-circle-arrow-e { background-position: -112px -192px; }
-.pieregWrapper .ui-icon-circle-arrow-s { background-position: -128px -192px; }
-.pieregWrapper .ui-icon-circle-arrow-w { background-position: -144px -192px; }
-.pieregWrapper .ui-icon-circle-arrow-n { background-position: -160px -192px; }
-.pieregWrapper .ui-icon-circle-zoomin { background-position: -176px -192px; }
-.pieregWrapper .ui-icon-circle-zoomout { background-position: -192px -192px; }
-.pieregWrapper .ui-icon-circle-check { background-position: -208px -192px; }
-.pieregWrapper .ui-icon-circlesmall-plus { background-position: 0 -208px; }
-.pieregWrapper .ui-icon-circlesmall-minus { background-position: -16px -208px; }
-.pieregWrapper .ui-icon-circlesmall-close { background-position: -32px -208px; }
-.pieregWrapper .ui-icon-squaresmall-plus { background-position: -48px -208px; }
-.pieregWrapper .ui-icon-squaresmall-minus { background-position: -64px -208px; }
-.pieregWrapper .ui-icon-squaresmall-close { background-position: -80px -208px; }
-.pieregWrapper .ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
-.pieregWrapper .ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
-.pieregWrapper .ui-icon-grip-solid-vertical { background-position: -32px -224px; }
-.pieregWrapper .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
-.pieregWrapper .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
-.pieregWrapper .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+.pieregWrapper .ui-icon-seek-first{background-position:-80px -160px;}
+.pieregWrapper .ui-icon-stop{background-position:-96px -160px;}
+.pieregWrapper .ui-icon-eject{background-position:-112px -160px;}
+.pieregWrapper .ui-icon-volume-off{background-position:-128px -160px;}
+.pieregWrapper .ui-icon-volume-on{background-position:-144px -160px;}
+.pieregWrapper .ui-icon-power{background-position:0 -176px;}
+.pieregWrapper .ui-icon-signal-diag{background-position:-16px -176px;}
+.pieregWrapper .ui-icon-signal{background-position:-32px -176px;}
+.pieregWrapper .ui-icon-battery-0{background-position:-48px -176px;}
+.pieregWrapper .ui-icon-battery-1{background-position:-64px -176px;}
+.pieregWrapper .ui-icon-battery-2{background-position:-80px -176px;}
+.pieregWrapper .ui-icon-battery-3{background-position:-96px -176px;}
+.pieregWrapper .ui-icon-circle-plus{background-position:0 -192px;}
+.pieregWrapper .ui-icon-circle-minus{background-position:-16px -192px;}
+.pieregWrapper .ui-icon-circle-close{background-position:-32px -192px;}
+.pieregWrapper .ui-icon-circle-triangle-e{background-position:-48px -192px;}
+.pieregWrapper .ui-icon-circle-triangle-s{background-position:-64px -192px;}
+.pieregWrapper .ui-icon-circle-triangle-w{background-position:-80px -192px;}
+.pieregWrapper .ui-icon-circle-triangle-n{background-position:-96px -192px;}
+.pieregWrapper .ui-icon-circle-arrow-e{background-position:-112px -192px;}
+.pieregWrapper .ui-icon-circle-arrow-s{background-position:-128px -192px;}
+.pieregWrapper .ui-icon-circle-arrow-w{background-position:-144px -192px;}
+.pieregWrapper .ui-icon-circle-arrow-n{background-position:-160px -192px;}
+.pieregWrapper .ui-icon-circle-zoomin{background-position:-176px -192px;}
+.pieregWrapper .ui-icon-circle-zoomout{background-position:-192px -192px;}
+.pieregWrapper .ui-icon-circle-check{background-position:-208px -192px;}
+.pieregWrapper .ui-icon-circlesmall-plus{background-position:0 -208px;}
+.pieregWrapper .ui-icon-circlesmall-minus{background-position:-16px -208px;}
+.pieregWrapper .ui-icon-circlesmall-close{background-position:-32px -208px;}
+.pieregWrapper .ui-icon-squaresmall-plus{background-position:-48px -208px;}
+.pieregWrapper .ui-icon-squaresmall-minus{background-position:-64px -208px;}
+.pieregWrapper .ui-icon-squaresmall-close{background-position:-80px -208px;}
+.pieregWrapper .ui-icon-grip-dotted-vertical{background-position:0 -224px;}
+.pieregWrapper .ui-icon-grip-dotted-horizontal{background-position:-16px -224px;}
+.pieregWrapper .ui-icon-grip-solid-vertical{background-position:-32px -224px;}
+.pieregWrapper .ui-icon-grip-solid-horizontal{background-position:-48px -224px;}
+.pieregWrapper .ui-icon-gripsmall-diagonal-se{background-position:-64px -224px;}
+.pieregWrapper .ui-icon-grip-diagonal-se{background-position:-80px -224px;}
 
 /* Misc visuals
 ----------------------------------*/
 /* Corner radius */
-.pieregWrapper .ui-corner-tl { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; }
-.pieregWrapper .ui-corner-tr { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; }
-.pieregWrapper .ui-corner-bl { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
-.pieregWrapper .ui-corner-br { -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
-.pieregWrapper .ui-corner-top { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; }
-.pieregWrapper .pieregWrapper .ui-corner-bottom { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
-.pieregWrapper .ui-corner-right {  -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
-.pieregWrapper .ui-corner-left { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
-.pieregWrapper .ui-corner-all { -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.pieregWrapper .ui-corner-tl{-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;border-top-left-radius:4px;}
+.pieregWrapper .ui-corner-tr{-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;border-top-right-radius:4px;}
+.pieregWrapper .ui-corner-bl{-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-left-radius:4px;}
+.pieregWrapper .ui-corner-br{-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;border-bottom-right-radius:4px;}
+.pieregWrapper .ui-corner-top{-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;border-top-left-radius:4px;-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;border-top-right-radius:4px;}
+.pieregWrapper .pieregWrapper .ui-corner-bottom{-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-left-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;border-bottom-right-radius:4px;}
+.pieregWrapper .ui-corner-right{ -moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;border-top-right-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;border-bottom-right-radius:4px;}
+.pieregWrapper .ui-corner-left{-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;border-top-left-radius:4px;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-left-radius:4px;}
+.pieregWrapper .ui-corner-all{-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
 /* Overlays */
-.pieregWrapper .ui-widget-overlay { background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
-.pieregWrapper .ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }/* Resizable
+.pieregWrapper .ui-widget-overlay{background:#aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;opacity:.30;filter:Alpha(Opacity=30);}
+.pieregWrapper .ui-widget-shadow{margin:-8px 0 0 -8px;padding:8px;background:#aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;opacity:.30;filter:Alpha(Opacity=30);-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;}/* Resizable
 ----------------------------------*/
-.pieregWrapper .ui-resizable { position: relative;}
-.pieregWrapper .ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.pieregWrapper .ui-resizable{position:relative;}
+.pieregWrapper .ui-resizable-handle{position:absolute;font-size:0.1px;z-index:99999;display:block;}
 .pieregWrapper .ui-resizable-disabled .ui-resizable-handle,
-.pieregWrapper .ui-resizable-autohide .ui-resizable-handle { display: none; }
-.pieregWrapper .ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
-.pieregWrapper .ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
-.pieregWrapper .ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
-.pieregWrapper .ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
-.pieregWrapper .ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
-.pieregWrapper .ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
-.pieregWrapper .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
-.pieregWrapper .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}/* Selectable
+.pieregWrapper .ui-resizable-autohide .ui-resizable-handle{display:none;}
+.pieregWrapper .ui-resizable-n{cursor:n-resize;height:7px;width:100%;top:-5px;left:0;}
+.pieregWrapper .ui-resizable-s{cursor:s-resize;height:7px;width:100%;bottom:-5px;left:0;}
+.pieregWrapper .ui-resizable-e{cursor:e-resize;width:7px;right:-5px;top:0;height:100%;}
+.pieregWrapper .ui-resizable-w{cursor:w-resize;width:7px;left:-5px;top:0;height:100%;}
+.pieregWrapper .ui-resizable-se{cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px;}
+.pieregWrapper .ui-resizable-sw{cursor:sw-resize;width:9px;height:9px;left:-5px;bottom:-5px;}
+.pieregWrapper .ui-resizable-nw{cursor:nw-resize;width:9px;height:9px;left:-5px;top:-5px;}
+.pieregWrapper .ui-resizable-ne{cursor:ne-resize;width:9px;height:9px;right:-5px;top:-5px;}/* Selectable
 ----------------------------------*/
-.pieregWrapper .ui-selectable-helper { border:1px dotted black }
+.pieregWrapper .ui-selectable-helper{border:1px dotted black }
 /* Accordion
 ----------------------------------*/
-.pieregWrapper .ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
-.pieregWrapper .ui-accordion .ui-accordion-li-fix { display: inline; }
-.pieregWrapper .ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
-.pieregWrapper .ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
+.pieregWrapper .ui-accordion .ui-accordion-header{cursor:pointer;position:relative;margin-top:1px;zoom:1;}
+.pieregWrapper .ui-accordion .ui-accordion-li-fix{display:inline;}
+.pieregWrapper .ui-accordion .ui-accordion-header-active{border-bottom:0 !important;}
+.pieregWrapper .ui-accordion .ui-accordion-header a{display:block;font-size:1em;padding:.5em .5em .5em .7em;}
 /* IE7-/Win - Fix extra vertical space in lists */
-.pieregWrapper .ui-accordion a { zoom: 1; }
-.pieregWrapper .ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
-.pieregWrapper .ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
-.pieregWrapper .ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
-.pieregWrapper .ui-accordion .ui-accordion-content-active { display: block; }/* Autocomplete
+.pieregWrapper .ui-accordion a{zoom:1;}
+.pieregWrapper .ui-accordion-icons .ui-accordion-header a{padding-left:2.2em;}
+.pieregWrapper .ui-accordion .ui-accordion-header .ui-icon{position:absolute;left:.5em;top:50%;margin-top:-8px;}
+.pieregWrapper .ui-accordion .ui-accordion-content{padding:1em 2.2em;border-top:0;margin-top:-2px;position:relative;top:1px;margin-bottom:2px;overflow:auto;display:none;zoom:1;}
+.pieregWrapper .ui-accordion .ui-accordion-content-active{display:block;}/* Autocomplete
 ----------------------------------*/
-.pieregWrapper .ui-autocomplete { position: absolute; cursor: default; }	
-.pieregWrapper .ui-autocomplete-loading { background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat; }
+.pieregWrapper .ui-autocomplete{position:absolute;cursor:default;}	
+.pieregWrapper .ui-autocomplete-loading{background:white url('images/ui-anim_basic_16x16.gif') right center no-repeat;}
 /* workarounds */
-/** html .ui-autocomplete { width:1px; }*/ /* without this, the menu expands to 100% in IE6 */
+/** html .ui-autocomplete{width:1px;}*/ /* without this, the menu expands to 100% in IE6 */
 /* Menu
 ----------------------------------*/
-.pieregWrapper .ui-menu {
-	list-style:none;
-	padding: 2px;
-	margin: 0;
-	display:block;
-}
-.pieregWrapper .ui-menu .ui-menu {
-	margin-top: -3px;
-}
-.pieregWrapper .ui-menu .ui-menu-item {
-	margin:0;
-	padding: 0;
-	zoom: 1;
-	float: left;
-	clear: left;
-	width: 100%;
-}
-.pieregWrapper .ui-menu .ui-menu-item a {
-	text-decoration:none;
-	display:block;
-	padding:.2em .4em;
-	line-height:1.5;
-	zoom:1;
-}
+.pieregWrapper .ui-menu{list-style:none;padding:2px;margin:0;display:block;}
+.pieregWrapper .ui-menu .ui-menu{margin-top:-3px;}
+.pieregWrapper .ui-menu .ui-menu-item{margin:0;padding:0;zoom:1;float:left;clear:left;width:100%;}
+.pieregWrapper .ui-menu .ui-menu-item a{text-decoration:none;display:block;padding:.2em .4em;line-height:1.5;zoom:1;}
 .pieregWrapper .ui-menu .ui-menu-item a.ui-state-hover,
-.pieregWrapper .ui-menu .ui-menu-item a.ui-state-active {
-	font-weight: normal;
-	margin: -1px;
-}
+.pieregWrapper .ui-menu .ui-menu-item a.ui-state-active{font-weight:normal;margin:-1px;}
 /* Button
 ----------------------------------*/
-.pieregWrapper .ui-button { display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
-.pieregWrapper .ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
-.pieregWrapper button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
-.pieregWrapper .ui-button-icons-only { width: 3.4em; } 
-.pieregWrapper button.ui-button-icons-only { width: 3.7em; } 
+.pieregWrapper .ui-button{display:inline-block;position:relative;padding:0;margin-right:.1em;text-decoration:none !important;cursor:pointer;text-align:center;zoom:1;overflow:visible;} /* the overflow property removes extra width in IE */
+.pieregWrapper .ui-button-icon-only{width:2.2em;} /* to make room for the icon, a width needs to be set here */
+.pieregWrapper button.ui-button-icon-only{width:2.4em;} /* button elements seem to need a little more width */
+.pieregWrapper .ui-button-icons-only{width:3.4em;} 
+.pieregWrapper button.ui-button-icons-only{width:3.7em;} 
 /*button text element */
-.pieregWrapper .ui-button .ui-button-text { display: block; line-height: 1.4;  }
-.pieregWrapper .ui-button-text-only .ui-button-text { padding: .4em 1em; }
+.pieregWrapper .ui-button .ui-button-text{display:block;line-height:1.4; }
+.pieregWrapper .ui-button-text-only .ui-button-text{padding:.4em 1em;}
 .pieregWrapper .ui-button-icon-only .ui-button-text,
-.pieregWrapper .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.pieregWrapper .ui-button-icons-only .ui-button-text{padding:.4em;text-indent:-9999999px;}
 .pieregWrapper .ui-button-text-icon .ui-button-text,
-.pieregWrapper .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
-.pieregWrapper .ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+.pieregWrapper .ui-button-text-icons .ui-button-text{padding:.4em 1em .4em 2.1em;}
+.pieregWrapper .ui-button-text-icons .ui-button-text{padding-left:2.1em;padding-right:2.1em;}
 /* no icon support for input elements, provide padding by default */
-.pieregWrapper input.ui-button { padding: .4em 1em; }
+.pieregWrapper input.ui-button{padding:.4em 1em;}
 /*button icon element(s) */
 .pieregWrapper .ui-button-icon-only .ui-icon,
 .pieregWrapper .ui-button-text-icon .ui-icon,
 .pieregWrapper .ui-button-text-icons .ui-icon,
-.pieregWrapper .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
-.pieregWrapper .ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.pieregWrapper .ui-button-icons-only .ui-icon{position:absolute;top:50%;margin-top:-8px;}
+.pieregWrapper .ui-button-icon-only .ui-icon{left:50%;margin-left:-8px;}
 .pieregWrapper .ui-button-text-icon .ui-button-icon-primary, 
 .pieregWrapper .ui-button-text-icons .ui-button-icon-primary,
-.pieregWrapper .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.pieregWrapper .ui-button-icons-only .ui-button-icon-primary{left:.5em;}
 .pieregWrapper .ui-button-text-icons .ui-button-icon-secondary,
-.pieregWrapper .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.pieregWrapper .ui-button-icons-only .ui-button-icon-secondary{right:.5em;}
 /*button sets*/
-.pieregWrapper .ui-buttonset { margin-right: 7px; }
-.pieregWrapper .ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+.pieregWrapper .ui-buttonset{margin-right:7px;}
+.pieregWrapper .ui-buttonset .ui-button{margin-left:0;margin-right:-.3em;}
 /* workarounds */
-.pieregWrapper button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+.pieregWrapper button.ui-button::-moz-focus-inner{border:0;padding:0;} /* reset extra padding in Firefox */
 
 
 /* Dialog
 ----------------------------------*/
-.pieregWrapper .ui-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
-.pieregWrapper .ui-dialog .ui-dialog-titlebar { padding: .5em 1em .3em; position: relative;  }
-.pieregWrapper .ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .2em 0; } 
-.pieregWrapper .ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
-.pieregWrapper .ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.pieregWrapper .ui-dialog{position:absolute;padding:.2em;width:300px;overflow:hidden;}
+.pieregWrapper .ui-dialog .ui-dialog-titlebar{padding:.5em 1em .3em;position:relative; }
+.pieregWrapper .ui-dialog .ui-dialog-title{float:left;margin:.1em 16px .2em 0;} 
+.pieregWrapper .ui-dialog .ui-dialog-titlebar-close{position:absolute;right:.3em;top:50%;width:19px;margin:-10px 0 0 0;padding:1px;height:18px;}
+.pieregWrapper .ui-dialog .ui-dialog-titlebar-close span{display:block;margin:1px;}
 .pieregWrapper .ui-dialog .ui-dialog-titlebar-close:hover,
-.pieregWrapper .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
-.pieregWrapper .ui-dialog .ui-dialog-content { border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
-.pieregWrapper .ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
-.pieregWrapper .ui-dialog .ui-dialog-buttonpane button { float: right; margin: .5em .4em .5em 0; cursor: pointer; padding: .2em .6em .3em .6em; line-height: 1.4em; width:auto; overflow:visible; }
-.pieregWrapper .ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
-.pieregWrapper .ui-draggable .ui-dialog-titlebar { cursor: move; }
+.pieregWrapper .ui-dialog .ui-dialog-titlebar-close:focus{padding:0;}
+.pieregWrapper .ui-dialog .ui-dialog-content{border:0;padding:.5em 1em;background:none;overflow:auto;zoom:1;}
+.pieregWrapper .ui-dialog .ui-dialog-buttonpane{text-align:left;border-width:1px 0 0 0;background-image:none;margin:.5em 0 0 0;padding:.3em 1em .5em .4em;}
+.pieregWrapper .ui-dialog .ui-dialog-buttonpane button{float:right;margin:.5em .4em .5em 0;cursor:pointer;padding:.2em .6em .3em .6em;line-height:1.4em;width:auto;overflow:visible;}
+.pieregWrapper .ui-dialog .ui-resizable-se{width:14px;height:14px;right:3px;bottom:3px;}
+.pieregWrapper .ui-draggable .ui-dialog-titlebar{cursor:move;}
 /* Slider
 ----------------------------------*/
-.pieregWrapper .ui-slider { position: relative; text-align: left; }
-.pieregWrapper .ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
-.pieregWrapper .ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
-.pieregWrapper .ui-slider-horizontal { height: .8em; }
-.pieregWrapper .ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
-.pieregWrapper .ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
-.pieregWrapper .ui-slider-horizontal .ui-slider-range-min { left: 0; }
-.pieregWrapper .ui-slider-horizontal .ui-slider-range-max { right: 0; }
-.pieregWrapper .ui-slider-vertical { width: .8em; height: 100px; }
-.pieregWrapper .ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
-.pieregWrapper .ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
-.pieregWrapper .ui-slider-vertical .ui-slider-range-min { bottom: 0; }
-.pieregWrapper .ui-slider-vertical .ui-slider-range-max { top: 0; }/* Tabs
+.pieregWrapper .ui-slider{position:relative;text-align:left;}
+.pieregWrapper .ui-slider .ui-slider-handle{position:absolute;z-index:2;width:1.2em;height:1.2em;cursor:default;}
+.pieregWrapper .ui-slider .ui-slider-range{position:absolute;z-index:1;font-size:.7em;display:block;border:0;background-position:0 0;}
+.pieregWrapper .ui-slider-horizontal{height:.8em;}
+.pieregWrapper .ui-slider-horizontal .ui-slider-handle{top:-.3em;margin-left:-.6em;}
+.pieregWrapper .ui-slider-horizontal .ui-slider-range{top:0;height:100%;}
+.pieregWrapper .ui-slider-horizontal .ui-slider-range-min{left:0;}
+.pieregWrapper .ui-slider-horizontal .ui-slider-range-max{right:0;}
+.pieregWrapper .ui-slider-vertical{width:.8em;height:100px;}
+.pieregWrapper .ui-slider-vertical .ui-slider-handle{left:-.3em;margin-left:0;margin-bottom:-.6em;}
+.pieregWrapper .ui-slider-vertical .ui-slider-range{left:0;width:100%;}
+.pieregWrapper .ui-slider-vertical .ui-slider-range-min{bottom:0;}
+.pieregWrapper .ui-slider-vertical .ui-slider-range-max{top:0;}/* Tabs
 ----------------------------------*/
-.pieregWrapper .ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
-.pieregWrapper .ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
-.pieregWrapper .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
-.pieregWrapper .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
-.pieregWrapper .ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.pieregWrapper .ui-tabs{position:relative;padding:.2em;zoom:1;} /* position:relative prevents IE scroll bug (element with position:relative inside container with overflow:auto appear as "fixed") */
+.pieregWrapper .ui-tabs .ui-tabs-nav{margin:0;padding:.2em .2em 0;}
+.pieregWrapper .ui-tabs .ui-tabs-nav li{list-style:none;float:left;position:relative;top:1px;margin:0 .2em 1px 0;border-bottom:0 !important;padding:0;white-space:nowrap;}
+.pieregWrapper .ui-tabs .ui-tabs-nav li a{float:left;padding:.5em 1em;text-decoration:none;}
+.pieregWrapper .ui-tabs .ui-tabs-nav li.ui-tabs-selected{margin-bottom:0;padding-bottom:1px;}
 .pieregWrapper .ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
 .pieregWrapper .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
-.pieregWrapper .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.pieregWrapper .ui-tabs .ui-tabs-nav li.ui-state-processing a{cursor:text;}
 .pieregWrapper .ui-tabs .ui-tabs-nav li a,
-.pieregWrapper .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
-.pieregWrapper .ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
-.pieregWrapper .ui-tabs .ui-tabs-hide { display: none !important; }
+.pieregWrapper .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a{cursor:pointer;} /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor:text overall if defined elsewhere... */
+.pieregWrapper .ui-tabs .ui-tabs-panel{display:block;border-width:0;padding:1em 1.4em;background:none;}
+.pieregWrapper .ui-tabs .ui-tabs-hide{display:none !important;}
 /* Datepicker
 ----------------------------------*/
-.pieregWrapper .ui-datepicker { width: 17em; padding: .2em .2em 0; }
-.pieregWrapper .ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; }
+.pieregWrapper .ui-datepicker{width:17em;padding:.2em .2em 0;}
+.pieregWrapper .ui-datepicker .ui-datepicker-header{position:relative;padding:.2em 0;}
 .pieregWrapper .ui-datepicker .ui-datepicker-prev,
-.pieregWrapper .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.pieregWrapper .ui-datepicker .ui-datepicker-next{position:absolute;top:2px;width:1.8em;height:1.8em;}
 .pieregWrapper .ui-datepicker .ui-datepicker-prev-hover,
-.pieregWrapper .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
-.pieregWrapper .ui-datepicker .ui-datepicker-prev { left:2px; }
-.pieregWrapper .ui-datepicker .ui-datepicker-next { right:2px; }
-.pieregWrapper .ui-datepicker .ui-datepicker-prev-hover { left:1px; }
-.pieregWrapper .ui-datepicker .ui-datepicker-next-hover { right:1px; }
+.pieregWrapper .ui-datepicker .ui-datepicker-next-hover{top:1px;}
+.pieregWrapper .ui-datepicker .ui-datepicker-prev{left:2px;}
+.pieregWrapper .ui-datepicker .ui-datepicker-next{right:2px;}
+.pieregWrapper .ui-datepicker .ui-datepicker-prev-hover{left:1px;}
+.pieregWrapper .ui-datepicker .ui-datepicker-next-hover{right:1px;}
 .pieregWrapper .ui-datepicker .ui-datepicker-prev span,
-.pieregWrapper .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
-.pieregWrapper .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
-.pieregWrapper .ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
-.pieregWrapper .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.pieregWrapper .ui-datepicker .ui-datepicker-next span{display:block;position:absolute;left:50%;margin-left:-8px;top:50%;margin-top:-8px; }
+.pieregWrapper .ui-datepicker .ui-datepicker-title{margin:0 2.3em;line-height:1.8em;text-align:center;}
+.pieregWrapper .ui-datepicker .ui-datepicker-title select{font-size:1em;margin:1px 0;}
+.pieregWrapper .ui-datepicker select.ui-datepicker-month-year{width:100%;}
 .pieregWrapper .ui-datepicker select.ui-datepicker-month, 
-.pieregWrapper .ui-datepicker select.ui-datepicker-year { width: 49%;}
-.pieregWrapper .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
-.pieregWrapper .ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
-.pieregWrapper .ui-datepicker td { border: 0; padding: 1px; }
+.pieregWrapper .ui-datepicker select.ui-datepicker-year{width:49%;}
+.pieregWrapper .ui-datepicker table{width:100%;font-size:.9em;border-collapse:collapse;margin:0 0 .4em;}
+.pieregWrapper .ui-datepicker th{padding:.7em .3em;text-align:center;font-weight:bold;border:0; }
+.pieregWrapper .ui-datepicker td{border:0;padding:1px;}
 .pieregWrapper .ui-datepicker td span,
-.pieregWrapper .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none; }
-.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
-.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
-.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+.pieregWrapper .ui-datepicker td a{display:block;padding:.2em;text-align:right;text-decoration:none;}
+.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane{background-image:none;margin:.7em 0 0 0;padding:0 .2em;border-left:0;border-right:0;border-bottom:0;}
+.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane button{float:right;margin:.5em .2em .4em;cursor:pointer;padding:.2em .6em .3em .6em;width:auto;overflow:visible;}
+.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current{float:left;}
 /* with multiple calendars */
-.pieregWrapper .ui-datepicker.ui-datepicker-multi { width:auto; }
-.pieregWrapper .ui-datepicker-multi .ui-datepicker-group { float:left; }
-.pieregWrapper .ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
-.pieregWrapper .ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
-.pieregWrapper .ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
-.pieregWrapper .ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
-.pieregWrapper .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
-.pieregWrapper .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
-.pieregWrapper .ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
-.pieregWrapper .ui-datepicker-row-break { clear:both; width:100%; }
+.pieregWrapper .ui-datepicker.ui-datepicker-multi{width:auto;}
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-group{float:left;}
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-group table{width:95%;margin:0 auto .4em;}
+.pieregWrapper .ui-datepicker-multi-2 .ui-datepicker-group{width:50%;}
+.pieregWrapper .ui-datepicker-multi-3 .ui-datepicker-group{width:33.3%;}
+.pieregWrapper .ui-datepicker-multi-4 .ui-datepicker-group{width:25%;}
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header{border-left-width:0;}
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header{border-left-width:0;}
+.pieregWrapper .ui-datepicker-multi .ui-datepicker-buttonpane{clear:left;}
+.pieregWrapper .ui-datepicker-row-break{clear:both;width:100%;}
 /* RTL support */
-.pieregWrapper .ui-datepicker-rtl { direction: rtl; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group { float:right; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
-.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.pieregWrapper .ui-datepicker-rtl{direction:rtl;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-prev{right:2px;left:auto;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-next{left:2px;right:auto;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-prev:hover{right:1px;left:auto;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-next:hover{left:1px;right:auto;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane{clear:right;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane button{float:left;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current{float:right;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group{float:right;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header{border-right-width:0;border-left-width:1px;}
+.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header{border-right-width:0;border-left-width:1px;}
 /* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
-.pieregWrapper .ui-datepicker-cover {
-    display: none; /*sorry for IE5*/
-    display/**/: block; /*sorry for IE5*/
-    position: absolute; /*must have*/
-    z-index: -1; /*must have*/
-    filter: mask(); /*must have*/
-    top: -4px; /*must have*/
-    left: -4px; /*must have*/
-    width: 200px; /*must have*/
-    height: 200px; /*must have*/
+.pieregWrapper .ui-datepicker-cover{
+    display:none;/*sorry for IE5*/
+    display/**/:block;/*sorry for IE5*/
+    position:absolute;/*must have*/
+    z-index:-1;/*must have*/
+    filter:mask();/*must have*/
+    top:-4px;/*must have*/
+    left:-4px;/*must have*/
+    width:200px;/*must have*/
+    height:200px;/*must have*/
 }/* Progressbar
 ----------------------------------*/
-/*.ui-progressbar { height:2em; text-align: left; }
-.ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; }*/
-div.piereg_entry-content{
-	margin: 0 auto;
-	max-width: 604px;
-	width: 100%;
-}
-div.pieregForgotPassword{
-	box-sizing: border-box;
-	float: left;
-	padding: 15px;
-	width: 100%;
-}
+/*.ui-progressbar{height:2em;text-align:left;}
+.ui-progressbar .ui-progressbar-value{margin:-1px;height:100%;}*/
+div.piereg_entry-content{margin:0 auto;max-width:604px;width:100%;}
+div.pieregForgotPassword{box-sizing:border-box;float:none;padding:15px;width:100%;}
 .widget #pie_register input[type="submit"],
 .widget #pie_register input[type="button"],
-.widget #pie_register input[type="reset"]{
-	padding-left:8px;
-	padding-right:8px;
-}
+.widget #pie_register input[type="reset"]{padding-left:8px;padding-right:8px;}
 .widget .piereg_container .piereg_strength0,
-.widget .piereg_container .strength0{
-	width:100%;
-}
-.pieregWrapper .piereg_progressbar {border: 1px solid #AAAAAA;background-color:#fff;border-radius:5px;height:35px;transition: all 500ms;-moz-transition: all 500ms;-o-transition: all 500ms;-webkit-transition: all 500ms;}
+.widget .piereg_container .strength0{width:100%;}
+.pieregWrapper .piereg_progressbar{border:1px solid #AAAAAA;background-color:#fff;border-radius:5px;height:35px;transition:all 500ms;-moz-transition:all 500ms;-o-transition:all 500ms;-webkit-transition:all 500ms;}
 
 .pieregWrapper .pie_next,
 .pieregWrapper .piewid_pie_next
 {
-  float: right;
-  margin-left: 5px;
-  margin-right: 0;
-}
+  float:right;
+  margin-left:5px;
+  margin-right:0;}
 .piereg_container
-{
-	width:100%;
-}
-.piereg_container p{
-	margin:0;
-}
+{width:100%;}
+.piereg_container p{margin:0;}
 /**************************** LOGIN & FORGOT PASSWORD CSS **************************************/
-.piereg_login_container{
-	display:block;
-	/*width:350px;*/
+.piereg_login_container{display:block;/*width:350px;*/
 }
-.widget .piereg_login_container{
-	display:block;
-	width:100%;
-}
-.piereg_login_container .piereg_login_wrapper{
-	padding:0;
-	margin:10px 15px;
-}
-.widget .piereg_login_container .piereg_login_wrapper{
-	margin:10px 0;
-}
-.piereg_login_container .piereg_login_wrapper label{
-	display:block;
-	width:100%;
-	margin:0 0 10px;
-}
-.piereg_login_container .piereg_login_wrapper .input_field{
-	margin: 0 0 10px;
-	width:100%;
-}
-.piereg_login_container .piereg_login_wrapper .pie_submit{
-	margin:10px 0;
-}
+.widget .piereg_login_container{display:block;width:100%;}
+.piereg_login_container .piereg_login_wrapper{padding:0;margin:10px 15px;}
+.widget .piereg_login_container .piereg_login_wrapper{margin:10px 0;}
+.piereg_login_container .piereg_login_wrapper label{display:block;width:100%;margin:0 0 10px;}
+.piereg_login_container .piereg_login_wrapper .input_field{margin:0 0 10px;width:100%;}
+.piereg_login_container .piereg_login_wrapper .pie_submit{margin:10px 0;}
 /**************************END FORGOT PASSWORD CSS *************************************/
 /**************************** REGISTRATION CSS **************************************/
 /**************************** END REGISTRATION CSS **********************************/
-#piereg_passwordStrength{
-	padding :5px 0px;
-	height:auto;
-	margin-top:0px;
-	width:60%;
-	text-align:center;
-	display:block;
-	float:left;
-	transition: all 500ms;
-	-moz-transition: all 500ms;
-	-o-transition: all 500ms;
-	-webkit-transition: all 500ms;
+#piereg_passwordStrength{padding :5px 0px;height:auto;margin-top:0px;width:60%;text-align:center;display:block;float:left;transition:all 500ms;-moz-transition:all 500ms;-o-transition:all 500ms;-webkit-transition:all 500ms;}
+
+.label_top #piereg_passwordStrength{float:none;margin:0 auto;clear:both;
+
 }
-.widget #piereg_passwordStrength_widget{
-	padding :5px 0px;
-	height:auto;
-	margin-top:0px;
-	width:60%;
-	text-align:center;
-	display:block;
-	float:left;
-	transition: all 500ms;
-	-moz-transition: all 500ms;
-	-o-transition: all 500ms;
-	-webkit-transition: all 500ms;
-	width:100%;
-}
-.pieregWrapper .piereg_pass{
-	background: #EEEEEE;
-	border:#D6D6D6 1px solid;
-}
-.pieregWrapper .piereg_pass_v_week{
-	background: #FFA0A0;
-	border:#F04040 1px solid;
-}
-.pieregWrapper .piereg_pass_week{
-	background: #FFB78C;
-	border:#FF853C 1px solid;
-}
-.pieregWrapper .piereg_pass_medium{
-	background: #FFEC8B;
-	border:#FFCC00 1px solid;
-}
-.pieregWrapper .piereg_pass_strong{
-	background: #C3FF88;
-	border:#8DFF1C 1px solid;
-}
+.label_top #password_meter label{display:none}
+
+.widget #piereg_passwordStrength_widget{padding :5px 0px;height:auto;margin-top:0px;width:60%;text-align:center;display:block;float:left;transition:all 500ms;-moz-transition:all 500ms;-o-transition:all 500ms;-webkit-transition:all 500ms;width:100%;}
+.pieregWrapper .piereg_pass{background:#EEEEEE;border:#D6D6D6 1px solid;}
+.pieregWrapper .piereg_pass_v_week{background:#FFA0A0;border:#F04040 1px solid;}
+.pieregWrapper .piereg_pass_week{background:#FFB78C;border:#FF853C 1px solid;}
+.pieregWrapper .piereg_pass_medium{background:#FFEC8B;border:#FFCC00 1px solid;}
+.pieregWrapper .piereg_pass_strong{background:#C3FF88;border:#8DFF1C 1px solid;}
 .pieregWrapper .piereg_submit_button{margin-right:10%;}
-@font-face {
-    font-family: piereg_math_captcha_font;
-    src: url(../fonts/comic.ttf);
-}
 #piereg_login .piereg_math_captcha,
 .piereg_container .piereg_math_captcha,
-#pie_register_reg_form .piereg_math_captcha{float:left;padding:5px 10px;margin:0px 5px 0px 0px;font-family:piereg_math_captcha_font;font-size:20px;-moz-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
+#pie_register_reg_form .piereg_math_captcha{float:left;padding:0px 10px;margin:0px 5px 0px 0px;font-size:20px;-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none; height:33px;}
 #piereg_login .piereg_math_captcha_input,
 .piereg_container .piereg_math_captcha_input{width:100px;margin-top:2px;}
 .piereg_container #show_payment_method_image img{padding-bottom:10px;}
-.piereg_container .pieregWrapper #pie_register .fields div#show_payment_method {display: inline-block;width: 100%;}
+.piereg_container .pieregWrapper #pie_register .fields div#show_payment_method{display:inline-block;width:100%;}
+.edit-profile-img{margin-left:29% !important;margin-top:10px !important;}
+#pie_register_reg_form, .piereg_container{padding:10px;clear:both}
 
-@media (max-width: 500px) {
-	.pieregWrapper #pie_register .fields .address2{width:100%;}
+
+.pieregWrapper #pie_register .fields .piereg_time.date_with_icon .input_fields{width:90% !important}
+.pieregWrapper #pie_register .fields .piereg_time.date_with_icon img{width:7% !important;max-width:25px !important}
+.pieregWrapper #pie_register .label_top .piereg_time{width:100%}
+.pieregWrapper .piereg_recaptcha_reg_div iframe{max-height:78px;}
+.pieregWrapper .input_fields{overflow:hidden;}
+
+
+
+@media (max-width:767px){.pieregWrapper #pie_register .fields .piereg_time .time_fields{width:27%;}
+}
+
+@media (max-width:700px){.pieregWrapper .wrapmathcaptcha input{width:45% !important}
+}
+
+@media (max-width:545px){.edit-profile-img{margin-left:1% !important;}
+	.pieregWrapper .wrapmathcaptcha{float:left;width:70%;}
+	.pieregWrapper .wrapmathcaptcha input{width:60% !important}
+}
+
+@media (max-width:500px){.pieregWrapper #pie_register .fields .address2{width:100%;}
 	.pieregWrapper #pie_register .fields .address2 .input_fields{width:98%;}
+	.piereg_login_container .piereg_login_wrapper .piereg_loginform .input_fields,
+	.piereg_login_container .piereg_login_wrapper .piereg_resetpassform .input_fields,
+	.pieregWrapper #pie_register .fields .input_fields, .pieregWrapper #piereg_login .input_fields{width:100%;}
+	.pieregWrapper #pie_register .fields label{width:100%;float:left}
+	.fields #recaptcha_widget_div{width:100%;float:left}
+	.pieregWrapper #pie_register .fields .piereg_time{width:100%;}
+	.pieregWrapper #pie_register .fields .piereg_time.date_with_icon .input_fields{width:80% !important}
+	.pieregWrapper #pie_register .fields .piereg_time.date_with_icon img{max-width:25px !important}
+	.pieregWrapper .wrapmathcaptcha{float:left;width:100%;}
+	.pieregWrapper .wrapmathcaptcha input{width:50% !important}
+		
+
 }
 
-.piereg_container .pie-register-social-login{
-	list-style:none;
-	display:inline-block;
-	margin: 0px;
-	padding:0px;
-	width:100%;
-}
+.piereg_container .pie-register-social-login{list-style:none;display:inline-block;margin:0px;padding:0px;width:100%;}
 
-.piereg_container .pie-register-social-login.piereg_left_icons li{
-	float:left;
-	padding:1px 3px;
-}
-.piereg_container .pie-register-social-login.piereg_right_icons li{
-	float:right;
-	padding:1px 3px;
-}
-.pieregWrapper #pie_register .fieldset #show_payment_method {
-    padding-top: 10px;
-	padding-bottom:10px;
-}
-.pieregWrapper #pie_register div.piereg-html-field-content{
-	float:left;
-}
+.piereg_container .pie-register-social-login.piereg_left_icons li{float:left;padding:1px 3px;}
+.piereg_container .pie-register-social-login.piereg_right_icons li{float:right;padding:1px 3px;}
+.pieregWrapper #pie_register .fieldset #show_payment_method{
+    padding-top:10px;padding-bottom:10px;}
+.pieregWrapper #pie_register div.piereg-html-field-content{float:left;}
 .pieregWrapper #pie_register .PieRegister_paypal_pro .fields #PR_card_verification{width:100px;}
 
 
 /*Main UL of form*/
 
-.pieregformWrapper #pie_register_reg_form ul#pie_register{
-	padding:0;
-	margin:10px 0;
-}
+.pieregformWrapper #pie_register_reg_form ul#pie_register{padding:0;margin:10px 0;}
 .pieregWrapper #pie_register .fields textarea{box-sizing:border-box;}
 
-.pieregWrapper{float:left; width:100%}
-
-.pieregWrapper .pie_list_cover{width:60%; float:left;}
+.pieregWrapper{float:left;width:100%}
+.pieregWrapper .pie_list_cover{width:60%;float:left;}
 .pieregWrapper #pie_register .fields select{padding:0px;}
 
 
-@media (max-width: 479px) {
-	.pieregWrapper #pie_register .fields label{width:100%; margin-bottom:5px;}
+@media (max-width:479px){.pieregWrapper #pie_register .fields label{width:100%;margin-bottom:5px;}
 	.pieregWrapper #pie_register .fields .input_fields, #piereg_passwordStrength, .pieregWrapper #pie_register .fields textarea, .pieregWrapper #pie_register .fields select, .pieregWrapper #pie_register .fields .address_main, .pieregWrapper #pie_register .fields .address label, .pieregWrapper #pie_register .fields .address .input_fields, .pieregWrapper #pie_register .fields .address, .pieregWrapper #pie_register .fields .address2 select{width:100%}
 	.pieregWrapper .pie_list_cover{width:97%}
 	.pieregWrapper #pie_register .fields .pie_list img{left:auto}
 	.pieregWrapper #pie_register li.fields .sectionBreak{width:100% !important}
-	.pieregWrapper #pie_register .fields .address label{font-size:12px; text-align:right;}
-	.piereg_container .piereg_login_wrapper .submit input[type="submit"], .pieregWrapper input[type="submit"] {
-    box-sizing: border-box; width: 100%;}
+	.pieregWrapper #pie_register .fields .address label{font-size:12px;}
+	.piereg_container .piereg_login_wrapper .submit input[type="submit"], .pieregWrapper input[type="submit"], .pieregWrapper .pie_prev, .pieregWrapper .pie_next, .pieregWrapper .piereg_cancel_profile_edit_btn, .pieregWrapper input[type="reset"]{box-sizing:border-box;width:100%;margin-bottom:10px;}
 	.piereg_container div.piereg_login_container form p .input{width:100%;}
+	.pieregWrapper #pie_register .fields .pie_wrap_buttons{width:100% !important;}
+	#pie_register.pie_profile .fields2 label{width:96%;font-size:11px;padding:0 2%;}
+	.piereg_recaptcha_widget_div > div > div{border-radius:4px;overflow:hidden;width:230px !important;}
+	#recaptcha_area{max-width:100% !important;overflow:hidden;}
 }
 
-.piereg_container .piereg_login_wrapper .submit input[type="submit"], .pieregWrapper input[type="submit"], .pieregWrapper .piereg_cancel_profile_edit_btn{
-	padding: 6px 10px;
-	font-size: 15px;
-	color:#fff
-}
+.piereg_container .piereg_login_wrapper .submit input[type="submit"], .pieregWrapper input[type="submit"], .pieregWrapper .pie_prev, .pieregWrapper .pie_next, #piereg_login form#piereg_lostpasswordform p input[type="submit"], .pieregWrapper input[type="reset"], .pieregWrapper input[type="button"], .pieregWrapper input[type="reset"]{padding:6px 10px;font-size:15px;color:#fff;border:none;	background:#bcbcc1;cursor:pointer;border-radius:0px;margin:0 2px;margin-bottom:5px}
+
+.pieregWrapper img.pie_prev, .pieregWrapper img.pie_next{background-color:transparent}
+/*.pieregWrapper input[type="reset"]{margin-right:10px;}*/
 
 
 .piereg_container div.piereg_login_container .forgetmenot input{margin-right:3px;}
 .piereg_container div.piereg_login_container .submit input{margin-bottom:10px;}
-.piereg_container div.piereg_login_container .piereg_login_error{color:red}
-#recaptcha_area table {
-  table-layout: inherit;
-}
+/*.piereg_container div.piereg_login_container .piereg_login_error{color:red}*/
+.linkStyle1{color:#337ab7;text-decoration:none}
+.linkStyle1:hover{color:#337ab7;text-decoration:underline}
+.widget_pie_login_widget .piereg_login_container .piereg_login_wrapper .piereg_loginform .input_fields, .widget_pie_login_widget .piereg_login_container .piereg_login_wrapper .piereg_resetpassform .input_fields{width:100%;}
+
+
+
+.pieregformWrapper .field_note{font-size:12px;color:#FF0000;}
+.pieregformWrapper .required{color:#FF0000}
+.pieregWrapper #pie_register .fields button:hover,
+.pieregWrapper #pie_register .fields button:focus,
+.pieregWrapper #pie_register .fields .button:hover,
+.pieregWrapper #pie_register .fields .button:focus,
+.pieregWrapper #pie_register .fields input[type="button"]:hover,
+.pieregWrapper #pie_register .fields input[type="button"]:focus,
+.pieregWrapper #pie_register .fields input[type="reset"]:hover,
+.pieregWrapper #pie_register .fields input[type="reset"]:focus,
+.pieregWrapper #pie_register .fields input[type="submit"]:hover,
+.pieregWrapper #pie_register .fields input[type="submit"]:focus,
+.piereg_container .piereg_login_wrapper .submit input[type="submit"]:hover,
+.piereg_container .piereg_resetpassform .submit input[type="submit"]:hover,
+.pieregWrapper input[type="submit"]:hover,
+.pieregWrapper .pie_prev, .pieregWrapper .pie_next:hover,
+#piereg_login form#piereg_lostpasswordform p input[type="submit"]:hover,
+.piereg_container .piereg_login_wrapper .submit input[type="submit"]:focus,
+.piereg_container .piereg_resetpassform .submit input[type="submit"]:focus,
+.pieregWrapper input[type="submit"]:focus,
+.pieregWrapper .pie_prev, .pieregWrapper .pie_next:focus,
+#piereg_login form#piereg_lostpasswordform p input[type="submit"]:focus{background:#b1b1b6 ;}
+
+table.recaptchatable{table-layout:auto;}
+.pieregWrapper .piereg_profile_cont, .piereg_profile_cont{padding:10px}
+#pieregister_math_captha{margin-top:10px !important;}
+
+.pieregWrapper .piereg_ps_user_profile_result .pie_profile{width:100%;}
+/*.pieregWrapper .piereg_ps_user_profile_result .piereg_ps_user_profile_result_avatar{border:1px solid #f5f5f5;margin-bottom:12px !important;}*/
+div.pieregformWrapper div.piereg_show_user_profile div.piereg_ps_user_profile_result div.piereg_ps_user_profile_result_avatar{width:150px;}
+div.pieregformWrapper div.piereg_show_user_profile div.piereg_ps_user_profile_result div.piereg_ps_user_profile_result_avatar img{width:100%;}
+.pieregWrapper .piereg_ps_search_result .piereg_ps_user_avatar img{width:48px;}
+.pieregWrapper .piereg_ps_search_result .piereg_ps_user_desc{margin-left:58px;}
+
+.piereg_ps_search_result .piereg_ps_user_desc ul li, .piereg_ps_search_result .piereg_ps_user_desc ul a, .piereg_ps_search_result .piereg_ps_user_desc ul li a span{color:#848484}
+
+.pieregWrapper .piereg_profile_cont, .piereg_profile_cont{clear:both}
+#pie_register.pie_profile{width:100%}
+.piereg_profile_cont a.uploaded_file{box-shadow:none;}
+
+.fields .piereg_custom_list{border-collapse:collapse}
+.fields .piereg_custom_list td{border:1px solid #ccc;line-height:1;padding:8px 10px;}
+.pieregWrapper .piereg_ps_user_desc_top{margin-left:20px;}
+#recaptcha_area, #recaptcha_table{float:left}
+.pie_profile#pie_register .fields.fields2{word-wrap:inherit;word-break:inherit;}
+.pieregWrapper #pie_register .fields .address2 select, .pieregWrapper #pie_register .fields select{/*-webkit-appearance:none;*/height:34px;text-indent:2px;}
+.pieregWrapper #pie_register .fields .address2 select[multiple], .pieregWrapper #pie_register .fields select[multiple]{height:auto;}
+
+.piereg_container .piereg_login_wrapper .submit input[type="submit"],
+.pieregWrapper input[type="submit"],
+.pieregWrapper .pie_prev,
+.pieregWrapper .pie_next,
+#piereg_login form#piereg_lostpasswordform p input[type="submit"],
+.pieregWrapper input[type="reset"],
+.pieregWrapper input[type="button"]{}
